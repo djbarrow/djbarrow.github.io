@@ -1,0 +1,1229 @@
+<!--web51115-->
+
+
+ 
+
+
+
+
+
+
+
+
+<!--  -->
+<html>
+<head>
+<title>
+Yahoo! Mail - barrow_dj@yahoo.com</title>
+<script type="text/javascript">
+<!-- 
+	if(typeof top.frames["wmailmain"] != "undefined") window.open("http://mail.yahoo.com", "_top");
+// -->
+</script>
+
+<noscript>
+<META HTTP-EQUIV=Refresh CONTENT="0; URL=/ym/login?nojs=1">
+</noscript>
+
+
+
+        
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://us.js2.yimg.com/us.js.yimg.com/lib/pim/r/medici/12_31/mail/us/mail_blue_all.css" type="text/css" media="all">
+
+
+<script type="text/javascript" src="http://us.js2.yimg.com/us.js.yimg.com/lib/pim/r/medici/12_31/mail/mailcommonlib.js"></script>
+
+
+
+<style type="text/css">.replbq{width:100%}</style>
+<script type="text/javascript">
+<!-- 
+			
+			function ReplySMS(p_sFrom,p_sTo)
+			{
+				var oForm = document.showLetter;
+				var sURI = oForm.ymuri.value;
+				var sURLExtras = oForm.urlextras.value;
+				var sFrom = p_sFrom.replace(/\+/g, '%2b');
+				var sLocation = '/' + sURI + '/ComposeSMS?' + sURLExtras + '&To=' + sFrom + "&REP=1&From=" + p_sTo ;
+				window.location.href = sLocation;
+			};
+			
+			var pwWarningShown = false;
+			
+			function ShowPwWarning()
+			{
+				if(!pwWarningShown)
+				{
+					alert(document.showLetter.passwordwarningmessage.value);
+					pwWarningShown = true;
+				}
+			};
+			
+			var noFormWarning = false;
+			
+			function ShowFormWarning()
+			{
+				if(noFormWarning) return true;
+			
+				var oForm = document.showLetter;
+				if(window.showModalDialog)
+				{
+					var sURI = oForm.ymuri.value;
+					var sURLExtras = oForm.urlextras.value;
+					
+					var r = showModalDialog("/"+sURI+"/Static?file=FormWarning.html&"+sURLExtras,null,"dialogWidth:456px;dialogHeight:230px;center:yes;resizeable:no;status:no;help:no;scroll:no");
+			
+					if(r)
+					{
+						if(r.dontshow)
+						{
+							noFormWarning = true;
+							window.open("/"+sURI+"/Asynch?op=noformwarn&"+sURLExtras,"asynch");
+						}
+						return r.send;
+					}
+					return false;
+				}
+				else return confirm(oForm.formwarningmessage.value);
+			};
+
+			function ShowLinkWarning()
+			{
+				if(noFormWarning) return true;
+			
+				var oForm = document.showLetter;
+				if(window.showModalDialog)
+				{
+					var sURI = oForm.ymuri.value;
+					var sURLExtras = oForm.urlextras.value;
+					
+					var r = showModalDialog("/"+sURI+"/Static?file=LinkWarning.html&"+sURLExtras,null,"dialogWidth:456px;dialogHeight:230px;center:yes;resizeable:no;status:no;help:no;scroll:no");
+			
+					if(r)
+					{
+						if(r.dontshow)
+						{
+							noFormWarning = true;
+							window.open("/"+sURI+"/Asynch?op=noformwarn&"+sURLExtras,"asynch");
+						}
+						return r.send;
+					}
+					return false;
+				}
+				else return confirm(oForm.linkwarningmessage.value);
+			}
+			
+			function Reply_Click()
+			{
+
+				ResetFields();			
+				var oEvent = this.Event;
+				var nOffsetX = (oEvent.layerX) ? (oEvent.layerX) : oEvent.offsetX;
+				
+				if(nOffsetX > (this.offsetWidth-22)) this.Menu.Show();
+				else
+				{
+					document.compose.REP.value = "1";
+					document.compose.submit();			
+				}
+			};
+			
+			function ReplyMenu_Click()
+			{
+
+				var oLI = this.Sender.tagName == "LI" ? this.Sender : this.Sender.parentNode;
+				if(parseInt(oLI.value) == 0) document.compose.REP.value = "1";
+				else document.compose.REPA.value = "1";
+
+				document.compose.submit();
+			};
+		
+			function Forward_Click()
+			{
+
+				ResetFields();
+				var oEvent = this.Event;
+				var nOffsetX = (oEvent.layerX) ? (oEvent.layerX) : oEvent.offsetX;
+			
+				if(nOffsetX > (this.offsetWidth-22)) this.Menu.Show();
+				else
+				{
+					document.compose.FWD.value = "1";
+					document.compose.submit();				
+				}
+			};
+			
+			function ForwardMenu_Click()
+			{
+
+				var oLI = this.Sender.tagName == "LI" ? this.Sender : this.Sender.parentNode;
+				document.compose.FWD.value = "1";
+				document.compose.fwopt.value = (parseInt(oLI.value) == 0) ? 'quoted' : 'attach';
+
+				document.compose.submit();
+			};
+
+			function ResetFields() 
+			{
+				document.compose.REP.value = '';
+				document.compose.REPA.value = '';
+				document.compose.FWD.value = '';
+			}
+
+			function Delete_Click(p_oSender) 	 
+			{ 	 
+				var oForm = p_oSender.form; 	 
+				oForm.DEL.value = "Delete";
+				oForm.submit(); 	 
+			};			
+			
+			//-->
+</script>
+
+</head>
+<body onLoad="doSynch();">
+
+<span id="iObjectHere"></span>
+
+
+<form name=compose method=post action="/ym/Compose?box=Sent&Mid=2571_5882962_754206_678_767_0_134049_1325_4230394966&inc=&Search=&YY=52356&order=down&sort=date&pos=0&view=a&head=b">
+<input type=hidden name=REP value="">
+<input type=hidden name=REPA value="">
+<input type=hidden name=FWD value="">
+<input type=hidden name=fwopt value="quoted">
+<input type=hidden name=Idx value="0">
+<input type=hidden name=PhotoIcon value="">
+</form>
+
+<form name=spamform method=post action="/ym/blocksender2?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&inc=&Search=&YY=52356&order=down&sort=date&pos=0&view=a&head=b">
+<input type=hidden name=".crumb" value="0i.31MAWvXa"><input type=hidden name=NE value="barrow_dj@yahoo.com">
+<input type=hidden name=ISSPAM value="1">
+</form>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    function Help(link)
+    {
+		window.open(link,"help","width=400,height=500,scrollbars=yes,dependent=yes");
+    }
+
+    if(document.cookie != "" && document.cookie.indexOf("42rpDB") == -1) 
+    {
+	window.open("http://mail.yahoo.com", "_top");
+    }
+
+    var newWin=null;
+    var onscreen=false;
+
+    function NewWin(url,name,xpos,ypos,width,height)
+    {
+       newWin=window.open(
+           url,
+           name,
+           "screenX="+xpos+",screenY="+ypos+",WIDTH="+width+",HEIGHT="+height+ 
+           ",location=0,resizable=1,status=0,titlebar=1,directories=0,toolbar=0,menubar=0,scrollbars=0,status=0"
+       );
+       newWin.focus();
+       onscreen=true; 
+    }
+
+</script>
+
+<div id="universalheader"> 
+	<style type="text/css"><!--@import url("http://us.js1.yimg.com/us.yimg.com/lib/hdr/ygma_200506171349.css");body{margin:0px 4px;}--></style><div align=center id=ygma><form name=yhdr_form style="margin:0" action="http://srd.yahoo.com/loc=head&st=yahoo/*http://search.yahoo.com/search" target=_blank><input type=hidden name="fr" value="ush1-mail"><table width=100% cellpadding=0 cellspacing=0 border=0><tr bgcolor="#efefef"><td id=ygmalinks class=ygmabk width="100%" colspan=3><font face="arial,helvetica,sans-serif" size="-2"><a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=0/SIG=10mgpruen/*http://www.yahoo.com" target="_top"><font color=#000000>Yahoo!</font></a> &nbsp; <a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=1/SIG=11nr8k43d/*http://us.rd.yahoo.com/evt=31325/*http://my.yahoo.com" target="_top"><font color=#000000>My Yahoo!</font></a> &nbsp; <a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=2/SIG=10n3m6b64/*http://mail.yahoo.com" target="_top"><font color=#000000>Mail</font></a>&nbsp;  &nbsp;  &nbsp;<a id=ygmamyyhp href="http://us.ard.yahoo.com/SIG=12hr92nlf/M=289534.7350508.8248048.6766641/D=mail/S=150500004:HMYYH/Y=YAHOO/EXP=1135009796/A=3047844/R=0/SIG=10uacnjgh/*http://www.yahoo.com/bin/set" target="_top"><font color=#000000>Make Yahoo! your home page</font></a><div id=ygmamyyhpff></div><script type="text/javascript">var ygma_rd="http://us.ard.yahoo.com",ygma_space="/SIG=12hr92nlf/M=289534.7350508.8248048.6766641/D=mail/S=150500004:HMYYH/Y=YAHOO/EXP=1135009796/A=3047844/R=1",ygma_space2="/SIG=12hr92nlf/M=289534.7350508.8248048.6766641/D=mail/S=150500004:HMYYH/Y=YAHOO/EXP=1135009796/A=3047844/R=2",ygma_space3="/SIG=12hr92nlf/M=289534.7350508.8248048.6766641/D=mail/S=150500004:HMYYH/Y=YAHOO/EXP=1135009796/A=3047844/R=3",ygma_adid="3047844",ygma_prop="mail";</script><script type="text/javascript" src="http://us.js2.yimg.com/us.yimg.com/lib/hdr/myyhp_1.6.js"></script><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['hg67tM6.Iq8-']='&U=13audnhc8%2fN%3dhg67tM6.Iq8-%2fC%3d289534.7350508.8248048.6766641%2fD%3dHMYYH%2fB%3d3047844';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vkdr39p%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d2986521954%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=13audnhc8%2fN%3dhg67tM6.Iq8-%2fC%3d289534.7350508.8248048.6766641%2fD%3dHMYYH%2fB%3d3047844"></noscript></font></td><td class=ygmatcrn><spacer type=block width=1 height=1></td><td class=ygmabk rowspan=2><img src=http://us.i1.yimg.com/us.yimg.com/i/us/nt/hdr/stw.gif width=34 height=17 border=0 hspace=4 alt="Search the web"></td><td id=ygmasearch class=ygmabk rowspan=2 nowrap><font face="verdana,geneva,sans-serif" size="-2"><input type=text name=p size=12 title="Enter search terms here" maxlength=100> <input class=ygbt type=submit value="Search" title=Search></font></td></tr><tr><td rowspan=2 valign=top><a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=3/SIG=10n3m6b64/*http://mail.yahoo.com"><img id=ygmalogo src=http://us.i1.yimg.com/us.yimg.com/i/us/nt/ma/ma_mail_1.gif width=196 height=33 border=0 alt="Yahoo! Mail"></a></td><td id=ygmagreet width="100%" rowspan=2><font face="verdana,geneva,sans-serif" size=-2>Welcome, <strong>barrow_dj</strong><br>[<a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=4/SIG=133erplvs/*http://login.yahoo.com/config/login?logout=1&.done=http://mail.yahoo.com/&.src=ym&.lg=us&.intl=us" target="_top">Sign Out</a>, <a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=5/SIG=12go3ih84/*http://edit.yahoo.com/config/eval_profile?.done=http://mail.yahoo.com/&.src=ym" target="_top">My Account</a>]</font></td><td rowspan=2></td><td class=ygmacrn width=13 height=14 valign=top nowrap><spacer type=block width=13 height=14></td></tr><tr><td colspan=3 align=right id=ygmaproplinks><font face="verdana,geneva,sans-serif" size="-2"><a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=6/SIG=10n3m6b64/*http://mail.yahoo.com" target="_top">Mail Home</a> - <a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=7/SIG=12ruet0c4/*http://us.rd.yahoo.com/evt=30047/*http://help.yahoo.com/help/us/tutorials/mail/index.html" target="_top">Mail Tutorials</a> - <a href="http://us.ard.yahoo.com/SIG=12h4jeesg/M=289534.5473431.6553392.5333790/D=mail/S=150500004:HEADR/Y=YAHOO/EXP=1135009796/A=2378664/R=8/SIG=115b35dfb/*http://help.yahoo.com/help/us/mail/" target="_top">Help</a></font></td></tr></table></form></div><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['dQ67tM6.Iq8-']='&U=13a2ohdim%2fN%3ddQ67tM6.Iq8-%2fC%3d289534.5473431.6553392.5333790%2fD%3dHEADR%2fB%3d2378664';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vo4bk84%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d1431386430%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=13a2ohdim%2fN%3ddQ67tM6.Iq8-%2fC%3d289534.5473431.6553392.5333790%2fD%3dHEADR%2fB%3d2378664"></noscript>
+
+</div>
+
+<!-- START NORTH BANNER -->
+<div id="northbanner">
+<!-- adstart -->
+<script language="JavaScript">var yad_target="_top";var yad_URL=new Array();yad_URL[1]="http://us.ard.yahoo.com/SIG=129b8njof/M=374655.7344478.8242707.121/D=mail/S=150500004:N/Y=YAHOO/EXP=1135009796/A=3036757/R=0/id=flashurl/SIG=11bbndrap/*http://biz.yahoo.com/special/allbios.html";var yad_flashfile="http://us.a1.yimg.com/us.yimg.com/a/ya/yahoo_finance/20050927_60430_1_728x90_super_rockstar2.swf?clickTAG=javascript:YADopenWindow(1)&movie1="+encodeURIComponent('http://us.a1.yimg.com/us.yimg.com/a/ya/yahoo_finance/20050927_60430_1_sound.swf');var yad_altURL="http://us.ard.yahoo.com/SIG=129b8njof/M=374655.7344478.8242707.121/D=mail/S=150500004:N/Y=YAHOO/EXP=1135009796/A=3036757/R=1/id=altimgurl/SIG=11bbndrap/*http://biz.yahoo.com/special/allbios.html";var yad_altimg="http://us.a1.yimg.com/us.yimg.com/a/ya/yahoo_finance/20050927_60430_1_728x90_super_rockstar.jpg";var yad_width=728;var yad_height=90;</script><script language="JavaScript" src="http://us.a1.yimg.com/us.yimg.com/a/1-/jscodes/031016/ct_yad_031016.js"></script><noscript><a href="http://us.ard.yahoo.com/SIG=129b8njof/M=374655.7344478.8242707.121/D=mail/S=150500004:N/Y=YAHOO/EXP=1135009796/A=3036757/R=2/id=noscript/SIG=11bbndrap/*http://biz.yahoo.com/special/allbios.html" target="_top"><img src="http://us.a1.yimg.com/us.yimg.com/a/ya/yahoo_finance/20050927_60430_1_728x90_super_rockstar.jpg" width="728" height="90" border="0"></a></noscript><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['gA67tM6.Iq8-']='&U=132c625q9%2fN%3dgA67tM6.Iq8-%2fC%3d374655.7344478.8242707.121%2fD%3dN%2fB%3d3036757';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13ve5h68r%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d2092586970%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=132c625q9%2fN%3dgA67tM6.Iq8-%2fC%3d374655.7344478.8242707.121%2fD%3dN%2fB%3d3036757"></noscript><!-- adend -->			
+</div>
+<!-- END NORTH BANNER -->			
+
+
+<script>
+    var oKey = new ylib_keyevt();
+    oKey.addKey(67,-1,"location='http://us.f511.mail.yahoo.com/ym/ShowFolder?rb=Inbox&YY=52356&order=down&sort=date&pos=0&view=a&head=b&YN=1'","shift+ctrl"); // Check Mail | CTRL-C
+    try
+    {
+    if( parent.showCompose )
+        oKey.addKey(80,-1,"try {parent.showCompose();} catch(e) {location='http://us.f511.mail.yahoo.com/ym/Compose?YY=52356&order=down&sort=date&pos=0&view=a&head=b';}","shift+ctrl"); // Compose | CTRL-P
+    else
+        oKey.addKey(80,-1,"location='http://us.f511.mail.yahoo.com/ym/Compose?YY=52356&order=down&sort=date&pos=0&view=a&head=b'","shift+ctrl"); // Compose | CTRL-P
+    }
+    catch(error)
+    {
+        oKey.addKey(80,-1,"location='http://us.f511.mail.yahoo.com/ym/Compose?YY=52356&order=down&sort=date&pos=0&view=a&head=b'","shift+ctrl"); // Compose | CTRL-P
+    }
+
+    oKey.addKey(70,-1,"location='http://us.f511.mail.yahoo.com/ym/Folders?YY=52356&order=down&sort=date&pos=0&view=a&head=b'","shift+ctrl"); // Folders | CTRL-F
+    oKey.addKey(83,-1,"location='http://us.f511.mail.yahoo.com/ym/Search?P=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b'","shift+ctrl"); // Search | CTRL-S
+        oKey.addKey(72,-1,"location='http://help.yahoo.com/help/us/mail'","shift+ctrl"); // Help | CTRL-H
+    </script>
+
+<script language=javascript>
+
+    function init() 
+    { 
+		if(document.getElementById)
+		{
+			Tabs_Init();
+			LeftNav('popaccounts');
+			LeftNav('mailaccounts');
+			LeftNav('folderlist');
+			LeftNav('searchnav');
+			LeftNav('optionsnav');
+            LeftNav('savedsearches');
+			
+	    	document.onkeydown = function(evt) { oKey.keyevent(evt); }
+			if(typeof OnLoad != 'undefined') OnLoad();
+		}
+    }
+
+    onload=init
+
+</script>
+
+
+
+
+<div id="topnav">
+	<div>
+		<span id="mailtab" class="first selected"><span><a target="_top" href="http://us.rd.yahoo.com/mail_us/pimnav/mail/*http://us.f511.mail.yahoo.com/ym/welcome?YY=52356&order=down&sort=date&pos=0&view=a&head=b">Mail</a><a href="#mailshortcuts" class="jump"> <img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/bt_dd_l_2.gif" alt="Mail shortcuts"></a><span>| </span></span></span>
+		<span id="addressbooktab"><span><a target="_top" href="http://us.rd.yahoo.com/mail_us/pimnav/ab/*http://address.mail.yahoo.com">Addresses</a><a target="_top" href="#addressbookshortcuts" class="jump"> <img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/bt_dd_2.gif" alt="Address Book shortcuts"></a><span>| </span></span></span>
+		<span id="calendartab"><span><a target="_top" href="http://us.rd.yahoo.com/mail_us/pimnav/cal/*http://calendar.mail.yahoo.com">Calendar</a><a target="_top" href="#calendarshortcuts" class="jump"> <img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/bt_dd_2.gif" alt="Calendar shortcuts"></a><span>| </span></span></span>
+		<span id="notepadtab"><span><a target="_top" href="http://us.rd.yahoo.com/mail_us/pimnav/np/*http://notepad.mail.yahoo.com">Notepad</a><a target="_top" href="#notepadshortcuts" class="jump"> <img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/bt_dd_2.gif" alt="Notepad shortcuts"></a></span></span>
+				<span class="last" id="searchtestopionlinks">
+	  	    				    <a id="MailWhatsNewLink" href="http://us.rd.yahoo.com/evt=32563/*http://whatsnew.mail.yahoo.com/" style="text-decoration:underline;" target="_blank">What's New</a> - 
+	        
+	    		
+	                	            	            	            	    	    	
+
+									<a id="MailUpgradesLink" href="http://us.rd.yahoo.com/mail_us/nav/?http://billing.mail.yahoo.com/bm/Upgrades" target="_blank" title="Navigate to the Mail Upgrades page" style="text-decoration:underline;">Upgrades</a> - 
+					
+		<a id="MailOptionsLink" href="http://us.f511.mail.yahoo.com/ym/Options?YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Mail Options page" style="text-decoration:underline;">Options </a>
+	    			</span>
+	</div>
+</div>
+
+
+
+<div id="globalbuttonbartop" class="globalbuttonbar">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="1%" nowrap>
+<button id="checkmailbutton" type="button" onclick="window.location='/ym/ShowFolder?rb=Inbox&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b&YN=1';" title="Check for new mail (Shortcut keys: Control+Shift+C)">Check Mail</button>
+<button id="composebutton"  type="button" onclick="window.location='/ym/Compose?YY=52356&order=down&sort=date&pos=0&view=a&head=b';" title="Compose a new message (Shortcut keys: Control+Shift+P)">Compose</button>
+		
+		
+
+			
+</td>
+<td align="right" width="98%">
+		
+<!-- <span>TG: UI: SFI: SFV:</span> -->
+			
+<span id="searchtestfields">
+    
+
+<script>
+                    var url0 = "http://us.f511.mail.yahoo.com/ym/Search?Find=1&B=1&_p=top"; 
+    
+       function submitSearch(loc)
+    {
+ 	var S = document.getElementById("searchquery"+loc);
+        S = typeof S.length == "undefined" ? S : S[0];
+        S.value = S.value.replace(/^\s*/,"");
+        S.value = S.value.replace(/\s*$/,"");
+        if(S.value == "")
+	{
+	    //alert("Please enter a search term.");
+	    window.location = "http://us.f511.mail.yahoo.com/ym/Search?P=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b";
+	    return;		
+	}
+
+	var obj = document.getElementById("searchField"+loc);
+	var field = obj.value;
+	if(field == "sender" || field == "subject")
+	    submitAdvancedSearch(loc, field, S);
+	else if (field == "message" || field == "body" || field == "header")
+	    submitBasicSearch(loc, field, S);
+	else if (field == "web")
+	    submitWebSearch(loc, field, S);
+	else
+	    alert("Please select valid field to search on from drop down.");
+    }
+
+    function submitBasicSearch(loc, field, S)
+    {
+	var url = (loc==0 ? url0 : url1);
+	url += "&ftyp="+"A";
+	if(field == "header")
+	    url += "&T="+"HDRS_ONLY";
+	else if(field == "body")
+	    url += "&T="+"BODY_ONLY";
+	else if(field == "message")
+	    url += "&T="+"WHOLE_MSG";
+
+	url += "&M="+"CONTAINS";
+        url += "&S="+escapeStr(S.value);
+
+	url += "&ymuri="+"ym";
+ 	url += "&folderscrumb="+"gffiInpqX0L";
+	url += "&sfi="+ (field == "message" ? "2" : (field == "header" ? "3" : "4"));
+  	url += "&urlextras="+"YY=52356&order=down&sort=date&pos=0&view=a&head=b";
+	window.location=url;
+    }
+
+    function submitAdvancedSearch(loc, field, S)
+    {
+	var url = (loc==0 ? url0 : url1) + "&P=1";
+	url += "&ftyp="+"A";
+	if(field == "sender")
+	{
+	    url += "&FM="+"CONTAINS";
+	    url += "&FS="+escapeStr(S.value);
+	}
+	else if(field == "subject")
+	{
+	    url += "&SM="+"CONTAINS";
+	    url += "&SS="+escapeStr(S.value);
+	}
+
+	url += "&ymuri="+"ym";
+ 	url += "&folderscrumb="+"gffiInpqX0L";
+	url += "&sfi="+ (field == "sender" ? "0" : "1");
+  	url += "&urlextras="+"YY=52356&order=down&sort=date&pos=0&view=a&head=b";
+
+	window.location=url;
+    }
+
+    function submitWebSearch(loc, field, S)
+    {
+        if(!S || typeof S == "undefined")
+  	    S = document.getElementById("searchquery"+loc);
+	
+	var value = S == null ? "" : S.value.replace(/^\s*/,"");
+	value = value.length == 0 ? "" : S.value;
+	var es = escapeStr(value);
+ 
+		
+	  var searchURL = es == "" ? "http://search.yahoo.com?fr=ush2-mail" : "http://search.yahoo.com/search?fr=ush2-mail&ei=UTF-8";
+		
+	searchURL += es == "" ? "" : "&p="+es
+	var searchWin = window.open(searchURL, "_blank");
+	searchWin.focus();
+    }
+
+    function escapeStr(str) 
+    {
+	var len = str.length;
+	var es = "";
+	var icode;
+
+	for (i = 0 ; i < len ; i++) 
+	{
+	    icode = str.charCodeAt(i);
+	    es += icode == 0x20 ? "+" : icode == 0x2B ? "%2B" : 
+		  icode < 0x80 ? escape(str.charAt(i)) : 
+		  encodeURI(str.charAt(i));
+	}
+	return es;
+    }
+
+    function SearchQuery_KeyPress(p_oSender,p_oEvent, loc)
+    {
+	var isMailView = "1"
+	var ui         = "";
+	if(p_oEvent.keyCode == 13)
+	{
+	    if(ui == "3" && isMailView != "1")
+		submitWebSearch(loc, "web");
+	    else
+		window.setTimeout("submitSearch("+loc+")",10);
+	}
+    }
+
+        function Search_Click_top()
+    {
+ 	var oEvent = this.Event;
+	var nOffsetX = (oEvent.layerX) ? (oEvent.layerX) : oEvent.offsetX;
+	if(nOffsetX > (this.offsetWidth-22)) 
+	    this.Menu.Show();
+	else
+  	    submitSearch("0");
+    }	
+
+    function Search_Click_bottom()
+    {
+ 	var oEvent = this.Event;
+	var nOffsetX = (oEvent.layerX) ? (oEvent.layerX) : oEvent.offsetX;
+	if(nOffsetX > (this.offsetWidth-22)) 
+	    this.Menu.Show();
+	else
+  	    submitSearch("1");
+    }	
+
+    function SearchMenu_Click()
+    {
+	window.location = "http://us.f511.mail.yahoo.com/ym/Search?P=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b";
+    }
+   
+   </script>
+	<table cellpadding="0" cellspacing="0" border="0" style="margin-left:.5em;">
+		<tr>
+			<td>
+			    				<input type="text" size="20" maxlength=50 name="searchquery0" id="searchquery0" value="" style="margin-right:.5em;vertical-align:baseline;" onkeypress="SearchQuery_KeyPress(this,event,0);">
+			    	
+			</td>
+			<td nowrap>
+				<input type="hidden" id="searchField0" name="searchField" value="message">
+
+			    	
+			    <button id="searchmail0" type="button" name="searchmail0" value="Search Mail" class="hasdefaultstate">Search Mail</button>
+			     
+			        <button id="searchtheweb" type="button" name="searchtheweb" value="Search the Web" onclick="submitWebSearch(0)" style="width:11em; ">Search the Web</button>
+			</td>
+		</tr>
+	</table>
+
+</span>
+			
+		
+</td>
+</tr>
+</table>
+</div>
+		
+<table class="applicationcontainer managementview" cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr valign="top">
+<td width="167" id="first" nowrap>
+<script type="text/javascript">
+
+    var noDelAllMsgWarning = true;
+    var noDelBulkMsgWarning = true;
+
+    function EmptyFolder(folder)
+    {
+	var warnonempty = folder == "@B@Bulk" ? (!noDelBulkMsgWarning) : (!noDelAllMsgWarning)	
+	var emptyFol = true;
+	if(warnonempty)
+	{
+	    var sMessage = folder == "@B@Bulk" ? "Are you sure? Deleted Bulk messages are gone forever, and will not go to your Trash folder." : "Are you sure you want to empty the folder?";
+	    emptyFol = showEmptyFolderWarning(sMessage, folder);
+	}
+	
+	if(emptyFol)
+   	{		
+    	    var url = "/ym/ShowFolder?";
+    	    url += folder == "Trash" ? "ET" : "EB";
+    	    url += "=1&.crumb=.wkqVza8Wjm&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b";
+    	    window.open(url, '_self');
+	}
+    }
+
+    function showEmptyFolderWarning(sMessage, folder)
+    {
+    if ( ! window.showModalDialog || window.external.IYBrowserExtend) {
+	   if(!confirm(sMessage)) return false;
+
+    } else {
+            var oArguments = {
+                Message : sMessage,
+                ConfirmButtonValue : "Empty",
+                CancelButtonValue : "Don't Empty"
+            };
+
+            var sURI = "ym";
+            var sURLExtras = "YY=52356&order=down&sort=date&pos=0&view=a&head=b";
+	    var dialogHeight = folder == "@B@Bulk" ? 185 : 155;
+
+    	    var oAction = window.showModalDialog("/"+sURI+"/Static?file=ConfirmationDialog.html",oArguments,"dialogHeight:"+dialogHeight+"px;dialogWidth:500px;status:no;help:no;resizable:yes;scroll:no;");
+	    
+    	    if(oAction)
+    	    {
+    		    if(oAction.remember)
+    		    {
+			    var isBulkFol = folder == "@B@Bulk";
+    			    noDelAllMsgWarning = !isBulkFol ? true : noDelAllMsgWarning;
+			    noDelBulkMsgWarning = isBulkFol ? true : noDelBulkMsgWarning; 
+			    var op = isBulkFol ? "nodelbulkmsgwarn" : "nodelallmsgwarn";	
+    			    window.open("/ym/Asynch?op="+op+"&YY=52356&order=down&sort=date&pos=0&view=a&head=b", "asynch");
+    		    }
+    		    if(!oAction.confirmed) return false;
+    	    }
+    } 
+	return true;
+    }
+
+</script>
+
+
+<div id="leftnavad" class="modulecontainer sidebar">
+<div class="first">
+<span class="first"></span>
+<span class="last"></span>
+</div>
+<div>
+<div>
+				<a href="http://us.ard.yahoo.com/SIG=12feevoe5/M=349496.6440526.8459922.4937104/D=mail/S=150500004:MNW/Y=YAHOO/EXP=1135009796/A=3182123/R=0/SIG=13195h81d/*http://clk.atdmt.com/VON/go/yhxxxvon0510000104von/direct;wi.160;hi.35/01/&time=1135002596170382" target="_blank"><img src="http://view.atdmt.com/VON/view/yhxxxvon0510000104von/direct;wi.160;hi.35/01/&time=1135002596170382" width=160 height=35 border=0></a><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['fw67tM6.Iq8-']='&U=138tj68tr%2fN%3dfw67tM6.Iq8-%2fC%3d349496.6440526.8459922.4937104%2fD%3dMNW%2fB%3d3182123';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13v85mqvj%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d2335084867%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=138tj68tr%2fN%3dfw67tM6.Iq8-%2fC%3d349496.6440526.8459922.4937104%2fD%3dMNW%2fB%3d3182123"></noscript>
+</div>
+</div>
+<div class="last">
+<span class="first"></span>
+<span class="last"></span>
+</div>
+</div>
+
+	
+
+
+<div class="modulecontainer sidebar">
+<div class="first">
+<span class="first"></span>
+<span class="last"></span>
+</div>
+<div>
+
+<div id="folderlist">
+<div id="defaultfolders">
+<div>
+<span class="first">Folders</span>[<span id="addfoldercontrol">Add</span> - <a href="/ym/Folders?YY=52356&order=down&sort=date&pos=0&view=a&head=b">Edit</a>]</div>
+<ul>
+<li id="inbox" title="Navigate to the Inbox folder"><a href="/ym/ShowFolder?rb=Inbox&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b"  title="Navigate to the Inbox folder">Inbox</a></li>
+<li id="draft" title="Navigate to the Draft folder"><a href="/ym/ShowFolder?rb=Draft&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b"  title="Navigate to the Draft folder">Draft</a></li>
+<li id="sent" class="selected" title="Navigate to the Sent folder"><a href="/ym/ShowFolder?rb=Sent&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b"  title="Navigate to the Sent folder">Sent</a></li>
+<li id="bulk" title="Navigate to the Bulk folder"><a href="/ym/ShowFolder?rb=%40B%40Bulk&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" class="first" title="Navigate to the Bulk folder">Bulk</a><span>[<a href="javascript:EmptyFolder('@B@Bulk')" title="Empty all of the messages from the Bulk folder">Empty</a>]</span></li>
+<li id="trash" title="Navigate to the Trash folder"><a href="/ym/ShowFolder?rb=Trash&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" class="first" title="Navigate to the Trash folder">Trash</a><span>[<a href="javascript:EmptyFolder('Trash')" title="Empty all of the messages from the Trash folder">Empty</a>]</span></li>
+</ul>
+</div>
+
+<div id="customfolders">
+<div><span class="first">My Folders</span>[<span id="personalfoldersdisplaytoggle">Hide</span>]</div>
+<ul>
+<li   title="Navigate to the Accountants folder"><a href="/ym/ShowFolder?rb=Accountants&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Accountants folder">Accountants</a></li>
+<li   title="Navigate to the Accountants Sent folder"><a href="/ym/ShowFolder?rb=Accountants%20Sent&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Accountants Sent folder">Accountants Sent</a></li>
+<li   title="Navigate to the Contacts folder"><a href="/ym/ShowFolder?rb=Contacts&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Contacts folder">Contacts</a></li>
+<li   title="Navigate to the Evgeniya folder"><a href="/ym/ShowFolder?rb=Evgeniya&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Evgeniya folder">Evgeniya</a></li>
+<li   title="Navigate to the Harvey Nash folder"><a href="/ym/ShowFolder?rb=Harvey%20Nash&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Harvey Nash folder">Harvey Nash</a></li>
+<li   title="Navigate to the Important folder"><a href="/ym/ShowFolder?rb=Important&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Important folder">Important</a></li>
+<li   title="Navigate to the Jokes folder"><a href="/ym/ShowFolder?rb=Jokes&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Jokes folder">Jokes</a></li>
+<li   title="Navigate to the LA International folder"><a href="/ym/ShowFolder?rb=LA%20International&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the LA International folder">LA International</a></li>
+<li   title="Navigate to the Mailing Lists folder"><a href="/ym/ShowFolder?rb=Mailing%20Lists&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Mailing Lists folder">Mailing Lists</a></li>
+<li   title="Navigate to the Not very important folder"><a href="/ym/ShowFolder?rb=Not%20very%20important&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Not very important folder">Not very important</a></li>
+<li   title="Navigate to the Weekly Reports folder"><a href="/ym/ShowFolder?rb=Weekly%20Reports&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Weekly Reports folder">Weekly Reports</a></li>
+<li   title="Navigate to the angelika folder"><a href="/ym/ShowFolder?rb=angelika&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the angelika folder">angelika</a></li>
+<li   title="Navigate to the fundamental folder"><a href="/ym/ShowFolder?rb=fundamental&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the fundamental folder">fundamental</a></li>
+<li   title="Navigate to the hiring folder"><a href="/ym/ShowFolder?rb=hiring&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the hiring folder">hiring</a></li>
+<li   title="Navigate to the intresting links folder"><a href="/ym/ShowFolder?rb=intresting%20links&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the intresting links folder">intresting links</a></li>
+<li   title="Navigate to the jobs folder"><a href="/ym/ShowFolder?rb=jobs&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the jobs folder">jobs</a></li>
+<li   title="Navigate to the nerds folder"><a href="/ym/ShowFolder?rb=nerds&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the nerds folder">nerds</a></li>
+<li   title="Navigate to the orders folder"><a href="/ym/ShowFolder?rb=orders&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the orders folder">orders</a></li>
+<li   title="Navigate to the publishing folder"><a href="/ym/ShowFolder?rb=publishing&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the publishing folder">publishing</a></li>
+<li   title="Navigate to the resumes folder"><a href="/ym/ShowFolder?rb=resumes&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the resumes folder">resumes</a></li>
+<li   title="Navigate to the theoryofcdr folder"><a href="/ym/ShowFolder?rb=theoryofcdr&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the theoryofcdr folder">theoryofcdr</a></li>
+<li   title="Navigate to the theoryofcdrprize folder"><a href="/ym/ShowFolder?rb=theoryofcdrprize&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the theoryofcdrprize folder">theoryofcdrprize</a></li>
+<li   title="Navigate to the women folder"><a href="/ym/ShowFolder?rb=women&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the women folder">women</a></li>
+</ul>
+		
+</div>
+			
+</div>
+
+</div>
+<div class="last">
+<span class="first"></span>
+<span class="last"></span>
+</div>
+</div>
+
+
+   
+
+<div id="swads">
+
+
+
+	
+
+
+
+
+
+	
+
+
+	
+
+
+	
+	
+
+<div class="first">
+			<span style="font-weight: normal;"><a href="http://us.ard.yahoo.com/SIG=12f6hl910/M=350654.6450469.7500699.2058947/D=mail/S=150500004:SW1/Y=YAHOO/EXP=1135009796/A=3078061/R=0/SIG=124esb9bq/*http://www.freecreditreport.com/default.aspx?sc=645600&bcd=Bsmiley" target="_top"><img src="http://us.a1.yimg.com/us.yimg.com/a/co/consumer_info/25x25-smiley-01.gif" width="25" height="25" border="0"></a> <a href="http://us.ard.yahoo.com/SIG=12f6hl910/M=350654.6450469.7500699.2058947/D=mail/S=150500004:SW1/Y=YAHOO/EXP=1135009796/A=3078061/R=1/SIG=124esb9bq/*http://www.freecreditreport.com/default.aspx?sc=645600&bcd=Bsmiley" target="_top"><p>What's your</p><p>Credit Score?</p></a></span><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['eQ67tM6.Iq8-']='&U=138dqe9cq%2fN%3deQ67tM6.Iq8-%2fC%3d350654.6450469.7500699.2058947%2fD%3dSW1%2fB%3d3078061';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13ucted6o%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d893836512%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=138dqe9cq%2fN%3deQ67tM6.Iq8-%2fC%3d350654.6450469.7500699.2058947%2fD%3dSW1%2fB%3d3078061"></noscript>
+</div>
+
+<div>
+			<a href="http://us.ard.yahoo.com/SIG=12f98fk9n/M=359385.7411021.8303487.2059230/D=mail/S=150500004:SW2/Y=YAHOO/EXP=1135009796/A=3074659/R=0/SIG=10up2hg37/*http://videogames.yahoo.com/" target="_blank"> 	<img src="http://us.a1.yimg.com/us.yimg.com/a/ya/yahoo_games/re4_25x25.jpg" width="25" height="25" border="0"></a> <a href="http://us.ard.yahoo.com/SIG=12f98fk9n/M=359385.7411021.8303487.2059230/D=mail/S=150500004:SW2/Y=YAHOO/EXP=1135009796/A=3074659/R=1/SIG=10up2hg37/*http://videogames.yahoo.com/" target="_blank"> 	<p>See what¿s new at</p> 	<p>Y! Video Games</p> </a><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['eg67tM6.Iq8-']='&U=1384h2dff%2fN%3deg67tM6.Iq8-%2fC%3d359385.7411021.8303487.2059230%2fD%3dSW2%2fB%3d3074659';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13urq2i0l%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d358309413%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=1384h2dff%2fN%3deg67tM6.Iq8-%2fC%3d359385.7411021.8303487.2059230%2fD%3dSW2%2fB%3d3074659"></noscript>
+</div>
+
+<div class="last">
+			<a href="http://us.ard.yahoo.com/SIG=12f23h4h2/M=327663.7553909.8433020.2225282/D=mail/S=150500004:SW3/Y=YAHOO/EXP=1135009796/A=2844985/R=0/SIG=13mvdi040/*http://get.games.yahoo.com/proddesc?gamekey=chuzzle&ovchn=YAH&ovcpn=Network+Ads&ovcrn=Chuzzle+SW3&ovrfd=YAH&ovtac=AD" target="_blank"> 	<img src="http://us.a1.yimg.com/us.yimg.com/a/y_/y_games/chuzzle_smalllogo.jpg" width="25" height="25" border="0"></a> <a href="http://us.ard.yahoo.com/SIG=12f23h4h2/M=327663.7553909.8433020.2225282/D=mail/S=150500004:SW3/Y=YAHOO/EXP=1135009796/A=2844985/R=1/SIG=13mvdi040/*http://get.games.yahoo.com/proddesc?gamekey=chuzzle&ovchn=YAH&ovcpn=Network+Ads&ovcrn=Chuzzle+SW3&ovrfd=YAH&ovtac=AD" target="_blank"> 	<p>Set Chuzzles</p> 	<p>free on Y!Games</p> </a><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['ew67tM6.Iq8-']='&U=138t4nbhj%2fN%3dew67tM6.Iq8-%2fC%3d327663.7553909.8433020.2225282%2fD%3dSW3%2fB%3d2844985';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13u3bm6sn%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d966441784%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=138t4nbhj%2fN%3dew67tM6.Iq8-%2fC%3d327663.7553909.8433020.2225282%2fD%3dSW3%2fB%3d2844985"></noscript>
+</div>
+
+
+
+	
+</div>
+</td>
+<td width="3" id="spacer" nowrap><spacer type="block" width="3"></td>
+<td class="content">
+<!-- START MAIN APPLICATION CONTENT -->
+<div style="display:none" id="mobile" class="alertbox">
+<h3>Sorry, this feature is not yet available in your country.</h3><p>You can still receive new mail alerts through <a href="http://us.ard.yahoo.com/SIG=12evkunka/M=368520.7091038.8020997.6656957/D=mail/S=150500004:MM/Y=YAHOO/EXP=1135009796/A=2962382/R=0/SIG=10sfnqo88/*http://messenger.yahoo.com" target="_blank">Yahoo! Messenger</a>, or automatically manage your messages using <a href="http://us.ard.yahoo.com/SIG=12evkunka/M=368520.7091038.8020997.6656957/D=mail/S=150500004:MM/Y=YAHOO/EXP=1135009796/A=2962382/R=1/SIG=1137uedif/*http://mrd.mail.yahoo.com/filters">filters</a>.</p><script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['hQ67tM6.Iq8-']='&U=137lddpti%2fN%3dhQ67tM6.Iq8-%2fC%3d368520.7091038.8020997.6656957%2fD%3dMM%2fB%3d2962382';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13u05pv60%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d820056459%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=137lddpti%2fN%3dhQ67tM6.Iq8-%2fC%3d368520.7091038.8020997.6656957%2fD%3dMM%2fB%3d2962382"></noscript></div>
+			
+
+
+<div class="contentnav">					
+<span class="first">
+							Previous
+							 | 
+<a href="/ym/ShowLetter?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&NEXT=1&inc=&num=&Idx=0&Search=&YY=52356&order=down&sort=date&pos=0&view=a&head=b" onmouseover="self.status='From: D.J. Barrow, Subject: Re: Stuttgart';return true" onmouseout="window.status=window.defaultStatus;return true">Next</a>
+ 
+							| <a href="/ym/ShowFolder?box=Sent&back=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b" onmouseover="window.status='Folder: Sent';return true" onmouseout="window.status=window.defaultStatus;return true">Back to Messages</a>
+</span>
+<span class="last">
+ <!-- MessengerVoice -->
+							&nbsp;
+</span>
+</div>
+
+<form name="showLetter" method=post action="/ym/ShowLetter?Search=&Idx=0&YY=52356&order=down&sort=date&pos=0&view=a&head=b">
+<input type=hidden name=".crumb" value="AE1ipR85p/Q"><input type=hidden name="MsgId" value="2571_5882962_754206_678_767_0_134049_1325_4230394966">
+<input type=hidden name="box" value="Sent">
+<input type=hidden name=MOV value="">
+<input type=hidden name=NewFol value="">
+<input type="hidden" name="destBox" value="">
+<input type="hidden" name="DEL" value="">
+<input type="hidden" name="formwarningmessage" value="Warning! You are about to send information to someone other than Yahoo! If you do not want anyone outside of Yahoo! to have this information, click &#34;Cancel&#34; now. Remember: Yahoo! will NEVER ask you for your password in an unsolicited phone call or an unsolicited email. Please change your preferences if you do not want to see this message again.">
+<input type="hidden" name="linkwarningmessage" value="Warning! It appears that you are about to access a website that has non-standard web address format. Such sites may contain harmful entities such as viruses. We recommend you use extreme caution. Please change your preferences if you do not want to see this message again.">
+<input type="hidden" name="passwordwarningmessage" value="Warning! You are about to enter a password in a form that will not be sent to Yahoo! Remember: Yahoo! will NEVER ask you for your password in an unsolicited phone call or an unsolicited email.">
+
+<input type="hidden" name="newfoldermessage" id="newfoldermessage" value="Please enter a name for your folder.">
+<input type="hidden" name="ymuri" id="ymuri" value="ym">
+<input type="hidden" name="folderscrumb" id="folderscrumb" value="gffiInpqX0L">
+<input type="hidden" name="urlextras" id="urlextras" value="YY=52356&order=down&sort=date&pos=0&view=a&head=b">
+<input type="hidden" name="doneurl" id="doneurl" value="/ym/ShowLetter?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&inc=&num=&Idx=0&Search=&YY=52356&order=down&sort=date&pos=0&view=a&head=b"><input type="hidden" name="addfolderdoneurl" value="%2fym%2fShowLetter%3fMsgId%3d2571%5f5882962%5f754206%5f678%5f767%5f0%5f134049%5f1325%5f4230394966%26box%3dSent%26YY%3d52356%26order%3ddown%26sort%3ddate%26pos%3d0%26view%3da%26head%3db">
+<input type=hidden name=ICOK value="">
+<input type=hidden name=ICReplyBody value="">
+<input type=hidden name=ICFwdBody value="">
+<input type=hidden name=ICReplyTo value="">
+<input type=hidden name=ICReplyAllTo value="">
+<input type=hidden name=ICReplyAllCc value="">
+<input type=hidden name=ICReplySubj value="">
+<input type=hidden name=ICFwdSubj value="">
+<input type=hidden name=FromAddress value="barrow_dj@yahoo.com">
+						
+<div id="contentbuttonbartop" class="contentbuttonbar">
+<span class="first">
+<button type="button" name="delete" id="deletetop" value="Delete" onclick="Delete_Click(this);">Delete</button>
+	
+<button type="button" value="Reply" id="replytop" class="hasdefaultstate">Reply</button>
+	
+<button type="button" value="Forward" id="forwardtop" class="hasdefaultstate">Forward</button>
+	
+	
+	
+<button type="button" id="movetop" name="move" class="menubutton" title="Move selected message(s)">Move...</button>
+</span>
+</div>
+</form>
+<script type="text/javascript">
+						LHCol_Init();
+</script>
+<div class="messageinfo flaggedindicator">
+<p>
+<a style="float:right;valign:bottom;" href="/ym/ShowLetter?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&Idx=0&Search=&PRINT=1&ShowImages=&YY=52356&order=down&sort=date&pos=0&view=a&head=b" target=_blank>Printable View</a>
+						This message is not flagged. [ <a href="/ym/ShowLetter?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&Idx=0&Search=&FLG=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b">Flag Message</a> - <a href="/ym/ShowLetter?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&Idx=0&Search=&UNR=1&.crumb=AE1ipR85p/Q&YY=52356&order=down&sort=date&pos=0&view=a&head=b">Mark as Unread</a> ]
+</p>
+</div>
+<!-- START TOC -->					
+
+
+
+<!-- type = x-unknown -->
+
+
+<table class=messageheader cellspacing=0 cellpadding=0 width="100%" border=0>
+<tr><td class=label nowrap>Date:</td><td> Mon, 19 Dec 2005 06:29:31 -0800 (PST)</td></tr>
+<tr><td class=label nowrap>From:</td><td>&#34;D.J. Barrow&#34; &lt;barrow_dj@yahoo.com&gt;&nbsp;&nbsp;<a href="javascript:document.frmAddAddrs.submit()"><img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/el/abook_add_1.gif" align=top vspace=0 hspace=2 border=0 alt="Add to Address Book" width=16 height=16>Add to Address Book</a>&nbsp;&nbsp;<a href="#" onclick='document.getElementById("mobile").style.display="block"'><img src="http://us.i1.yimg.com/us.yimg.com/i/nt/ic/ut/bsc/txtmess12_1.gif" align=top vspace=0 hspace=2 border=0 width="12" height="12">Add Mobile Alert </a></td></tr>
+<tr><td class=label nowrap>Subject:</td><td> Re: Stuttgart</td></tr>
+<tr><td class=label nowrap>To:</td><td>mark_perry@runbox.com</td></tr>
+</table>
+<form name=frmAddAddrs action="http://address.mail.yahoo.com/yab/us?v=YM&.rand=20386&A=m&simp=1" method="post">
+<input type="hidden" name="fn" value="D.J.">
+<input type="hidden" name="ln" value="Barrow">
+<input type="hidden" name="e" value="barrow_dj@yahoo.com">
+<input type="hidden" name=".done" value="http://us.f511.mail.yahoo.com/ym/ShowLetter?MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&order=down&inc=&sort=date&view=a&head=b&box=Sent&YY=52356">
+</form>
+
+
+
+
+
+<div id=message>
+
+
+<!-- type = text -->
+
+
+<pre><tt>Hi Mark,
+The biggest problem I am having at the moment
+is that I keep restarting my life from scratch
+I will be living in a hotel again possibly for
+a few months. I don't have anything to settle
+down to. I can't even get planning permission
+to build a home near the farm at home in Ireland.
+
+I admit to having a lot of weaknesses in my
+character so do you.
+
+Whats your phone number?
+
+--- <a href="/ym/Compose?To=mark_perry@runbox.com&YY=52356&order=down&sort=date&pos=0&view=a&head=b">mark_perry@runbox.com</a> wrote:
+
+&gt; Hi DJ,
+&gt; you mention an interview in Stuttgart. Will you never learn?
+&gt; 
+&gt; Any life that you may by chance restart in Stuttgart will only result 
+in a similar end.
+&gt; You never socialised with anyone, just drank and stared at strippers.
+&gt; 
+&gt; You do not dream of "work" in Stuttgart", only restarting an old and 
+disastrous lifestyle.
+&gt; If you ever intend to get back to a "normal" life (whatever that may 
+be), you need to avoid the
+&gt; weaknesses in your character, that places such as Stuttgart brought 
+out.
+&gt; 
+&gt; Don't try to debate this with me, trust me on this one. DJ + 
+Stuttgart = Disaster
+&gt; 
+&gt; I'm off home now, CU
+&gt; 
+&gt; Mark
+&gt; 
+
+
+D.J. Barrow Linux kernel developer
+eMail: <a href="/ym/Compose?To=dj_barrow@ariasoft.ie&YY=52356&order=down&sort=date&pos=0&view=a&head=b">dj_barrow@ariasoft.ie</a> 
+Home: +353-22-47196.
+Mobile (IRL) +353-(0)86 1715438
+
+__________________________________________________
+Do You Yahoo!?
+Tired of spam?  Yahoo! Mail has the best spam protection around 
+<a href="http://mail.yahoo.com" target=_blank >http://mail.yahoo.com</a> 
+</tt></pre>
+
+
+
+
+
+
+
+
+<!-- toctype = X-unknown -->
+
+<!-- toctype = text -->
+<!-- text -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!-- END TOC -->				
+
+
+
+<form name=showLetter2 method=post action="/ym/ShowLetter?Idx=0&Search=&YY=52356&order=down&sort=date&pos=0&view=a&head=b">
+<input type=hidden name=".crumb" value="AE1ipR85p/Q"><input type=hidden name="MsgId" value="2571_5882962_754206_678_767_0_134049_1325_4230394966">
+<input type=hidden name="box" value="Sent">
+<input type=hidden name=MOV value="">
+<input type=hidden name=NewFol value="">
+<input type="hidden" name="destBox" value="">
+<input type="hidden" name="newfoldermessage" value="Please enter a name for your folder.">
+<input type="hidden" name="DEL" value="">				
+<div id="contentbuttonbarbottom" class="contentbuttonbar">
+<span class="first">
+<button type="button" name="delete" id="deletebottom" value="Delete" onclick="Delete_Click(this);">Delete</button>
+	
+<button type="button" value="Reply" id="replybottom" class="hasdefaultstate">Reply</button>
+	
+<button type="button" value="Forward" id="forwardbottom" class="hasdefaultstate">Forward</button>
+	
+	
+
+<button type="button" id="movebottom" name="move" class="menubutton" title="Move selected message(s)">Move...</button>
+</span>
+</div>
+</form>
+
+<div class="contentnav">
+<span class="first">
+								Previous
+								 | 
+<a href="/ym/ShowLetter?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&NEXT=1&inc=&num=&Idx=0&Search=&YY=52356&order=down&sort=date&pos=0&view=a&head=b" onmouseover="self.status='From: D.J. Barrow, Subject: Re: Stuttgart';return true" onmouseout="window.status=window.defaultStatus;return true">Next</a>
+								 | <a href="/ym/ShowFolder?box=Sent&YY=52356&order=down&sort=date&pos=0&view=a&head=b" onmouseover="window.status='Folder: Sent';return true" onmouseout="window.status=window.defaultStatus;return true">Back to Messages</a>
+</span>
+<span class="last">
+<a href="/ym/ShowLetter/file.txt?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&bodyPart=TEXT&filename=file.txt&save=1&download=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b">Save Message Text</a> | <a href="/ym/ShowLetter?box=Sent&MsgId=2571_5882962_754206_678_767_0_134049_1325_4230394966&Idx=0&Search=&Nhead=f&YY=52356&order=down&sort=date&pos=0&view=a&head=b">Full Headers</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+
+<div id="globalbuttonbarbottom" class="globalbuttonbar">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="1%" nowrap>
+<button id="checkmailbutton" type="button" onclick="window.location='/ym/ShowFolder?rb=Inbox&reset=1&YY=52356&order=down&sort=date&pos=0&view=a&head=b&YN=1';" title="Check for new mail (Shortcut keys: Control+Shift+C)">Check Mail</button>
+<button id="composebutton"  type="button" onclick="window.location='/ym/Compose?YY=52356&order=down&sort=date&pos=0&view=a&head=b';" title="Compose a new message (Shortcut keys: Control+Shift+P)">Compose</button>
+		
+		
+
+			
+</td>
+<td align="right" width="98%">
+		
+<!-- <span>TG: UI: SFI: SFV:</span> -->
+			
+<span id="searchtestfields">
+
+
+<script>
+                    var url1 = "http://us.f511.mail.yahoo.com/ym/Search?Find=1&B=1&_p=bottom"; 
+    
+   </script>
+	<table cellpadding="0" cellspacing="0" border="0" style="margin-left:.5em;">
+		<tr>
+			<td>
+			    				<input type="text" size="20" maxlength=50 name="searchquery1" id="searchquery1" value="" style="margin-right:.5em;vertical-align:baseline;" onkeypress="SearchQuery_KeyPress(this,event,1);">
+			    	
+			</td>
+			<td nowrap>
+				<input type="hidden" id="searchField1" name="searchField" value="message">
+
+			    	
+			    <button id="searchmail1" type="button" name="searchmail1" value="Search Mail" class="hasdefaultstate">Search Mail</button>
+			     
+			        <button id="searchtheweb" type="button" name="searchtheweb" value="Search the Web" onclick="submitWebSearch(1)" style="width:11em; ">Search the Web</button>
+			</td>
+		</tr>
+	</table>
+
+</span>
+			
+		
+</td>
+</tr>
+</table>
+</div>
+		
+<div id="movemenu" class="buttonmenu">
+<strong>Move Options</strong>
+<ul><li value="0">[New Folder]</li><li value="1" title="Inbox" iname="Inbox">
+Inbox</li><li value="1" title="Accountants" iname="Accountants">
+Accountants</li><li value="1" title="Accountants Sent" iname="Accountants Sent">
+Accountants Sent</li><li value="1" title="Contacts" iname="Contacts">
+Contacts</li><li value="1" title="Evgeniya" iname="Evgeniya">
+Evgeniya</li><li value="1" title="Harvey Nash" iname="Harvey Nash">
+Harvey Nash</li><li value="1" title="Important" iname="Important">
+Important</li><li value="1" title="Jokes" iname="Jokes">
+Jokes</li><li value="1" title="LA International" iname="LA International">
+LA International</li><li value="1" title="Mailing Lists" iname="Mailing Lists">
+Mailing Lists</li><li value="1" title="Not very important" iname="Not very important">
+Not very important</li><li value="1" title="Weekly Reports" iname="Weekly Reports">
+Weekly Reports</li><li value="1" title="angelika" iname="angelika">
+angelika</li><li value="1" title="fundamental" iname="fundamental">
+fundamental</li><li value="1" title="hiring" iname="hiring">
+hiring</li><li value="1" title="intresting links" iname="intresting links">
+intresting links</li><li value="1" title="jobs" iname="jobs">
+jobs</li><li value="1" title="nerds" iname="nerds">
+nerds</li><li value="1" title="orders" iname="orders">
+orders</li><li value="1" title="publishing" iname="publishing">
+publishing</li><li value="1" title="resumes" iname="resumes">
+resumes</li><li value="1" title="theoryofcdr" iname="theoryofcdr">
+theoryofcdr</li><li value="1" title="theoryofcdrprize" iname="theoryofcdrprize">
+theoryofcdrprize</li><li value="1" title="women" iname="women">
+women</li></ul>
+</div>		
+
+<div id="forwardmenu" class="buttonmenu">
+<strong>Forward Options</strong>
+<ul>
+<li value="0">As Inline Text</li>
+<li value="1">As Attachment</li>
+</ul>
+</div>
+
+<div id="replymenu" class="buttonmenu">
+<strong>Reply Options</strong>
+<ul>
+<li value="0">Reply To Sender</li>
+<li value="1">Reply To Everyone</li>
+</ul>		
+</div>
+		
+<script>
+function composeClickHandler(loc)
+{
+	try{
+	if( parent.showCompose )
+		parent.showCompose();
+	else window.location = loc;
+	}
+	catch(error){ window.location = loc; }
+}
+</script>
+<div id="mailshortcuts" class="shortcuts">
+	<strong><a name="mailshortcuts">Mail Shortcuts</a></strong>
+	<div>
+		<ul class="first">
+			<li class="special"><a href="http://us.f511.mail.yahoo.com/ym/ShowFolder?rb=Inbox&YN=1&YY=187066">Check Mail</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+C</li>
+			<li class="special"><a href='javascript:if(typeof(composeClickHandler)!="undefined")composeClickHandler("http://us.f511.mail.yahoo.com/ym/Compose?YY=147454");else{window.location="http://us.f511.mail.yahoo.com/ym/Compose?YY=510964";}'>Compose</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+P</li>
+		</ul>
+		<ul>
+			<li class="special"><a href="http://us.f511.mail.yahoo.com/ym/Folders?YY=5873">Folders</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+F</li>
+			<li class="special"><a href="http://us.f511.mail.yahoo.com/ym/Search?P=1&YY=203059">Advanced Search</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+S</li>
+		</ul>
+		<ul class="last">
+			<li><a href="http://us.f511.mail.yahoo.com/ym/Options?YY=389910">Options</a></li>
+			<li class="special"><a target="_top" href="http://help.yahoo.com/help/us/mail/">Help</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+H</li>
+		</ul>
+	</div> 
+</div>
+
+
+<div id="addressbookshortcuts" class="shortcuts">
+	<strong><a target="_top" name="addressbookshortcuts">Address Book Shortcuts</a></strong>	
+	<div>
+		<ul class="first">
+			<li><a target="_top" href="http://address.mail.yahoo.com?addcontact">Add Contact</a></li>
+			<li><a target="_top" href="http://address.mail.yahoo.com?Add&A=g">Add Category</a></li>
+			<li><a target="_top" href="http://address.mail.yahoo.com?edit_grp">Add List</a></li>
+		</ul>
+		<ul>			
+			<li><a target="_top" href="http://address.mail.yahoo.com">View Contacts</a></li>
+			<li><a target="_top" href="http://address.mail.yahoo.com?A=v&cat=__ll">View Lists</a></li>
+		</ul>				
+		<ul>
+			<li><a target="_top" href="http://us.f511.mail.yahoo.com/ym/quickbuilder">Quickbuilder</a></li>
+			<li><a target="_top" href="http://address.mail.yahoo.com?A=B">Import Contacts</a></li>
+					<li><a target="_top" href="http://address.mail.yahoo.com?A=x&A2=11">Synchronize</a></li>
+				</ul>
+		<ul class="last">							
+			<li><a target="_top" href="http://address.mail.yahoo.com?A=o">Addresses Options</a></li>
+			<li><a target="_top" href="http://help.yahoo.com/help/us/ab/">Addresses Help</a></li>
+		</ul>
+	</div> 
+</div>
+
+<div id="calendarshortcuts" class="shortcuts">
+	<strong><a target="_top" name="calendarshortcuts">Calendar Shortcuts</a></strong>
+	<div>
+		<ul class="first">
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=5">Add Event</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=33">Add Task</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=5&evt_type=13">Add Birthday</a></li>
+		</ul>
+		<ul>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=0">Day</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=1">Week</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=2">Month</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=3">Year</a></li>
+		</ul>
+		<ul>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=42">Event List</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=42&POS=0&TYP=101&MOD=0">Reminders</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=32">Tasks</a></li>
+		</ul>
+		<ul>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=84">Sharing</a></li>
+					<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=120">Synchronize</a></li>
+				</ul>
+		<ul class="last">
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=70">Calendar Options</a></li>
+			<li><a target="_top" href="http://help.yahoo.com/help/us/cal/">Calendar Help</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="notepadshortcuts" class="shortcuts">
+	<strong><a target="_top" name="notepadshortcuts">Notepad Shortcuts</a></strong>
+	<div>
+		<ul class="first">
+			<li><a target="_top" href="http://notepad.mail.yahoo.com/?v=161">Add Note</a></li>
+			<li><a target="_top" href="http://notepad.mail.yahoo.com/?v=168">Add Folder</a></li>
+		</ul>
+		<ul>
+			<li><a target="_top" href="http://notepad.mail.yahoo.com/?v=164">View Notes</a></li>
+		</ul>
+		<ul class="last">
+			<li><a target="_top" href="http://notepad.mail.yahoo.com/?v=165">Notepad Options</a></li>
+			<li><a target="_top" href="http://help.yahoo.com/help/us/notepad/">Notepad Help</a></li>
+		</ul>
+	</div> 
+</div>
+
+
+<div id="searchmenu" class="buttonmenu">
+<strong>Advanced Search</strong>
+<ul><li value="0">Advanced Search</li></ul>
+</div>
+<script type="text/javascript">
+
+	if(typeof Search_Click_top != 'undefined' && typeof Search_Click_bottom != 'undefined')
+	{
+	    var oSearchTop = MenuButton('searchmail0',Search_Click_top,'searchmenu',SearchMenu_Click);
+	    var oSearchBottom = MenuButton('searchmail1',Search_Click_bottom,'searchmenu',SearchMenu_Click);
+	}
+	
+</script>
+<br>
+
+<!-- SpaceID=150500004 loc=FOOT noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['gQ67tM6.Iq8-']='&U=1284stuur%2fN%3dgQ67tM6.Iq8-%2fC%3d-1%2fD%3dFOOT%2fB%3d-1';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13via0hr1%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d4052537073%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=1284stuur%2fN%3dgQ67tM6.Iq8-%2fC%3d-1%2fD%3dFOOT%2fB%3d-1"></noscript>
+	<script language=javascript> var ADFadids = "2378664,1052425"; function ADFlaunch() {var w; var l="http://us.ard.yahoo.com/SIG=12haeeavv/M=224039.2020109.3495275.1958505/D=mail/S=150500004:FOOT2/Y=YAHOO/EXP=1135009796/A=1052425/R=0/id=adfeedback/SIG=12it695us/*http://surveys.yahoo.com/user_ad_feedback?source=150500004:FOOT2&.q28=mail&.q26="+ADFadids; w=window.open(l,"AdFeedbackWin","toolbar=no,scrollbars=yes,resizable,location=no,height=400,width=640"); }</script><center><small><br>Copyright &copy; 1994-2005 <a href="http://us.ard.yahoo.com/SIG=12haeeavv/M=224039.2020109.3495275.1958505/D=mail/S=150500004:FOOT2/Y=YAHOO/EXP=1135009796/A=1052425/R=1/mail_us/tos/SIG=10mgpruen/*http://www.yahoo.com" target="_top">Yahoo!</a> Inc. All rights reserved. <a href="http://us.ard.yahoo.com/SIG=12haeeavv/M=224039.2020109.3495275.1958505/D=mail/S=150500004:FOOT2/Y=YAHOO/EXP=1135009796/A=1052425/R=2/SIG=1136qnvkg/*http://docs.yahoo.com/info/terms/" target="_top">Terms of Service</a> - <a href=http://us.ard.yahoo.com/SIG=12haeeavv/M=224039.2020109.3495275.1958505/D=mail/S=150500004:FOOT2/Y=YAHOO/EXP=1135009796/A=1052425/R=3/SIG=11lp7krrc/*http://docs.yahoo.com/info/copyright/copyright.html target="_top">Copyright/IP Policy</a> - <a href="http://us.ard.yahoo.com/SIG=12haeeavv/M=224039.2020109.3495275.1958505/D=mail/S=150500004:FOOT2/Y=YAHOO/EXP=1135009796/A=1052425/R=4/SIG=11he80eif/*http://docs.yahoo.com/info/guidelines/mail.html" target="_top">Guidelines</a> - <a href="javascript:ADFlaunch()">Ad Feedback</a><br>NOTICE: We collect personal information on this site.<br>To learn more about how we use your information, see our <a href="http://us.ard.yahoo.com/SIG=12haeeavv/M=224039.2020109.3495275.1958505/D=mail/S=150500004:FOOT2/Y=YAHOO/EXP=1135009796/A=1052425/R=5/SIG=11b5p6lhe/*http://privacy.yahoo.com/privacy/us/mail/" target="_top">Privacy Policy</a></small></center> <!-- SpaceID=150500004 loc=FSRVY noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['iA67tM6.Iq8-']='&U=129kag7mj%2fN%3diA67tM6.Iq8-%2fC%3d-1%2fD%3dFSRVY%2fB%3d-1';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vocro6k%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3452481854%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=129kag7mj%2fN%3diA67tM6.Iq8-%2fC%3d-1%2fD%3dFSRVY%2fB%3d-1"></noscript> <!-- SpaceID=150500004 loc=FR001 noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['dg67tM6.Iq8-']='&U=13am78n3t%2fN%3ddg67tM6.Iq8-%2fC%3d224039.2020109.3495275.1958505%2fD%3dFOOT2%2fB%3d1052425';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vek431k%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3681135472%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=13am78n3t%2fN%3ddg67tM6.Iq8-%2fC%3d224039.2020109.3495275.1958505%2fD%3dFOOT2%2fB%3d1052425"></noscript>
+
+
+        <!-- SpaceID=150500004 loc=RS noad-spid -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['dw67tM6.Iq8-']='&U=1264vh7l2%2fN%3ddw67tM6.Iq8-%2fC%3d-2%2fD%3dRS%2fB%3d-2';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vd7btct%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3197938417%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=1264vh7l2%2fN%3ddw67tM6.Iq8-%2fC%3d-2%2fD%3dRS%2fB%3d-2"></noscript>
+        <!-- SpaceID=150500004 loc=RS2 noad-spid -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['eA67tM6.Iq8-']='&U=127ahn66m%2fN%3deA67tM6.Iq8-%2fC%3d-2%2fD%3dRS2%2fB%3d-2';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vou4ipp%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3220249435%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=127ahn66m%2fN%3deA67tM6.Iq8-%2fC%3d-2%2fD%3dRS2%2fB%3d-2"></noscript>
+
+<br style="line-height: 6px;" />
+<iframe name="asynch" width=0 height=0 style="display:none;"></iframe>
+<!-- SpaceID=150500004 loc=MSMS noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['gw67tM6.Iq8-']='&U=1286f1ib9%2fN%3dgw67tM6.Iq8-%2fC%3d-1%2fD%3dMSMS%2fB%3d-1';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13unduoqk%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d218787442%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=1286f1ib9%2fN%3dgw67tM6.Iq8-%2fC%3d-1%2fD%3dMSMS%2fB%3d-1"></noscript><!-- SpaceID=150500004 loc=SW4 noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['fA67tM6.Iq8-']='&U=127nppqec%2fN%3dfA67tM6.Iq8-%2fC%3d-1%2fD%3dSW4%2fB%3d-1';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vt5r72t%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d1695907757%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=127nppqec%2fN%3dfA67tM6.Iq8-%2fC%3d-1%2fD%3dSW4%2fB%3d-1"></noscript><!-- SpaceID=150500004 loc=SW5 noad-spid -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['fQ67tM6.Iq8-']='&U=127l6jkkh%2fN%3dfQ67tM6.Iq8-%2fC%3d-2%2fD%3dSW5%2fB%3d-2';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vtofdd9%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d3585540565%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=127l6jkkh%2fN%3dfQ67tM6.Iq8-%2fC%3d-2%2fD%3dSW5%2fB%3d-2"></noscript><!-- SpaceID=150500004 loc=SW6 noad-spid -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['fg67tM6.Iq8-']='&U=127fsh444%2fN%3dfg67tM6.Iq8-%2fC%3d-2%2fD%3dSW6%2fB%3d-2';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vck9t9n%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d4196278578%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=127fsh444%2fN%3dfg67tM6.Iq8-%2fC%3d-2%2fD%3dSW6%2fB%3d-2"></noscript><!-- SpaceID=150500004 loc=MSMS noad -->
+<script language=javascript>
+if(window.yzq_d==null)window.yzq_d=new Object();
+window.yzq_d['gw67tM6.Iq8-']='&U=1286f1ib9%2fN%3dgw67tM6.Iq8-%2fC%3d-1%2fD%3dMSMS%2fB%3d-1';
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13unduoqk%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d2.1%2fW%3dH%2fY%3dYAHOO%2fF%3d218787442%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE&U=1286f1ib9%2fN%3dgw67tM6.Iq8-%2fC%3d-1%2fD%3dMSMS%2fB%3d-1"></noscript>
+</body>
+<script type="text/javascript">
+		var oReplyTop = MenuButton('replytop',Reply_Click,'replymenu',ReplyMenu_Click);
+		var oReplyBottom = MenuButton('replybottom',Reply_Click,'replymenu',ReplyMenu_Click);
+	
+		var oForwardTop = MenuButton('forwardtop',Forward_Click,'forwardmenu',ForwardMenu_Click);
+		var oForwardBottom = MenuButton('forwardbottom',Forward_Click,'forwardmenu',ForwardMenu_Click);
+		
+		var oMoveTop = MenuButton('movetop',Move_Click,'movemenu',DestinationFolder_Click);
+		var oMoveBottom = MenuButton('movebottom',Move_Click,'movemenu',DestinationFolder_Click);	
+</script>
+  
+</html>
+<!-- v3.304.18.37 1134530270 -->
+<!-- 0.35253 -->
+<script language=javascript>
+if(window.yzq_p==null)document.write("<scr"+"ipt language=javascript src=http://us.js2.yimg.com/us.js.yimg.com/lib/bc/bc_2.0.2.js></scr"+"ipt>");
+</script><script language=javascript>
+if(window.yzq_p)yzq_p('P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13qo58iav%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d1.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d1448260793%2fS%3d1%2fJ%3d5C27BECE');
+if(window.yzq_s)yzq_s();
+</script><noscript><img width=1 height=1 alt="" src="http://bc.us.yahoo.com/b?P=VeLJjM6.JpkiCqcLPtZwNgAOVimKaUOmw.MADPdO&T=13vpfeeog%2fX%3d1135002596%2fE%3d150500004%2fR%3dmail%2fK%3d5%2fV%3d3.1%2fW%3dJ%2fY%3dYAHOO%2fF%3d2259797831%2fQ%3d-1%2fS%3d1%2fJ%3d5C27BECE"></noscript>
+<!-- web51115.mail.yahoo.com compressed/chunked Mon Dec 19 06:29:55 PST 2005 -->

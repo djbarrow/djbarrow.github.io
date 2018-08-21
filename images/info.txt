@@ -1,0 +1,19 @@
+Fonts:
+heading text = Helvetica bold, 37pt. Lilac.
+shadow = Helvetica bold, 37pt. Black. Right 1 pixel, Down 2 pixels
+
+Heading images are 360x60. The comet should be aligned to the
+right-hand side of
+the image (see emptycomet.gif). If text has underhangs ("g/j/p/q/y"),
+then make image taller by adding rows at the bottom. (compare
+ariaprojectshead.gif with araiabouthead.gif)
+Text baseline is at top+50 pixels - this is where the lowest lilac
+pixel should be for letters like i,m,n, etc (curved letters may
+underhang slightly). Text is aligned at left, with shadow 1 pixel to
+right and 2 pixels down.
+
+
+>I looked around wit is your web page still there ?
+
+http://spirit.wit.ie/~kwalsh - it's there at the moment.
+

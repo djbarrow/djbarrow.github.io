@@ -1,0 +1,48 @@
+UL {
+	LIST-STYLE-IMAGE: url(redball.gif)
+}
+UL UL {
+	LIST-STYLE-IMAGE: url(redball.gif)
+}
+UL UL UL {
+	LIST-STYLE-IMAGE: url(redball.gif)
+}
+A:link {
+	COLOR: rgb(0,0,255)
+}
+A:active {
+	COLOR: rgb(0,64,0)
+}
+A:visited {
+	COLOR: rgb(204,0,0)
+}
+BODY {
+	COLOR: rgb(0,0,128); BACKGROUND-COLOR: rgb(102,204,255)
+}
+TABLE {
+	table-border-color-light: rgb(153, 153, 255); table-border-color-dark: rgb(51, 0, 153)
+}
+BODY {
+	FONT-SIZE: 10pt; BACKGROUND-IMAGE: url(nicebluebg.jpg); COLOR: rgb(0,0,128); FONT-FAMILY: Verdana, Arial, Helvetica
+}
+H1 {
+	COLOR: rgb(0,0,128); FONT-FAMILY: Verdana, Arial, Helvetica
+}
+H2 {
+	COLOR: rgb(0,0,128); FONT-FAMILY: Verdana, Arial, Helvetica
+}
+H3 {
+	COLOR: rgb(0,0,128); FONT-FAMILY: Verdana, Arial, Helvetica
+}
+H4 {
+	COLOR: rgb(0,0,128); FONT-FAMILY: Verdana, Arial, Helvetica
+}
+H5 {
+	COLOR: rgb(0,0,128); FONT-FAMILY: Verdana, Arial, Helvetica
+}
+H6 {
+	COLOR: rgb(0,0,128); FONT-FAMILY: Verdana, Arial, Helvetica
+}
+TD {
+	FONT-SIZE: 10pt
+}

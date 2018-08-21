@@ -1,0 +1,1508 @@
+<!--web51102-->
+
+
+ 
+
+
+
+
+
+
+
+
+<!--  -->
+<html>
+<head>
+<title>
+Yahoo! Mail - barrow_dj@yahoo.com</title>
+<script type="text/javascript">
+<!-- 
+	if(typeof top.frames["wmailmain"] != "undefined") window.open("http://mail.yahoo.com", "_top");
+// -->
+</script>
+
+<noscript>
+<META HTTP-EQUIV=Refresh CONTENT="0; URL=/ym/login?nojs=1">
+</noscript>
+
+
+
+        
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="http://us.js2.yimg.com/us.js.yimg.com/lib/pim/r/medici/12_31/mail/us/mail_blue_all.css" type="text/css" media="all">
+
+
+<script type="text/javascript" src="http://us.js2.yimg.com/us.js.yimg.com/lib/pim/r/medici/12_31/mail/mailcommonlib.js"></script>
+
+
+
+<style type="text/css">.replbq{width:100%}</style>
+<script type="text/javascript">
+<!-- 
+			
+			function ReplySMS(p_sFrom,p_sTo)
+			{
+				var oForm = document.showLetter;
+				var sURI = oForm.ymuri.value;
+				var sURLExtras = oForm.urlextras.value;
+				var sFrom = p_sFrom.replace(/\+/g, '%2b');
+				var sLocation = '/' + sURI + '/ComposeSMS?' + sURLExtras + '&To=' + sFrom + "&REP=1&From=" + p_sTo ;
+				window.location.href = sLocation;
+			};
+			
+			var pwWarningShown = false;
+			
+			function ShowPwWarning()
+			{
+				if(!pwWarningShown)
+				{
+					alert(document.showLetter.passwordwarningmessage.value);
+					pwWarningShown = true;
+				}
+			};
+			
+			var noFormWarning = false;
+			
+			function ShowFormWarning()
+			{
+				if(noFormWarning) return true;
+			
+				var oForm = document.showLetter;
+				if(window.showModalDialog)
+				{
+					var sURI = oForm.ymuri.value;
+					var sURLExtras = oForm.urlextras.value;
+					
+					var r = showModalDialog("/"+sURI+"/Static?file=FormWarning.html&"+sURLExtras,null,"dialogWidth:456px;dialogHeight:230px;center:yes;resizeable:no;status:no;help:no;scroll:no");
+			
+					if(r)
+					{
+						if(r.dontshow)
+						{
+							noFormWarning = true;
+							window.open("/"+sURI+"/Asynch?op=noformwarn&"+sURLExtras,"asynch");
+						}
+						return r.send;
+					}
+					return false;
+				}
+				else return confirm(oForm.formwarningmessage.value);
+			};
+
+			function ShowLinkWarning()
+			{
+				if(noFormWarning) return true;
+			
+				var oForm = document.showLetter;
+				if(window.showModalDialog)
+				{
+					var sURI = oForm.ymuri.value;
+					var sURLExtras = oForm.urlextras.value;
+					
+					var r = showModalDialog("/"+sURI+"/Static?file=LinkWarning.html&"+sURLExtras,null,"dialogWidth:456px;dialogHeight:230px;center:yes;resizeable:no;status:no;help:no;scroll:no");
+			
+					if(r)
+					{
+						if(r.dontshow)
+						{
+							noFormWarning = true;
+							window.open("/"+sURI+"/Asynch?op=noformwarn&"+sURLExtras,"asynch");
+						}
+						return r.send;
+					}
+					return false;
+				}
+				else return confirm(oForm.linkwarningmessage.value);
+			}
+			
+			function Reply_Click()
+			{
+
+				ResetFields();			
+				var oEvent = this.Event;
+				var nOffsetX = (oEvent.layerX) ? (oEvent.layerX) : oEvent.offsetX;
+				
+				if(nOffsetX > (this.offsetWidth-22)) this.Menu.Show();
+				else
+				{
+					document.compose.REP.value = "1";
+					document.compose.submit();			
+				}
+			};
+			
+			function ReplyMenu_Click()
+			{
+
+				var oLI = this.Sender.tagName == "LI" ? this.Sender : this.Sender.parentNode;
+				if(parseInt(oLI.value) == 0) document.compose.REP.value = "1";
+				else document.compose.REPA.value = "1";
+
+				document.compose.submit();
+			};
+		
+			function Forward_Click()
+			{
+
+				ResetFields();
+				var oEvent = this.Event;
+				var nOffsetX = (oEvent.layerX) ? (oEvent.layerX) : oEvent.offsetX;
+			
+				if(nOffsetX > (this.offsetWidth-22)) this.Menu.Show();
+				else
+				{
+					document.compose.FWD.value = "1";
+					document.compose.submit();				
+				}
+			};
+			
+			function ForwardMenu_Click()
+			{
+
+				var oLI = this.Sender.tagName == "LI" ? this.Sender : this.Sender.parentNode;
+				document.compose.FWD.value = "1";
+				document.compose.fwopt.value = (parseInt(oLI.value) == 0) ? 'quoted' : 'attach';
+
+				document.compose.submit();
+			};
+
+			function ResetFields() 
+			{
+				document.compose.REP.value = '';
+				document.compose.REPA.value = '';
+				document.compose.FWD.value = '';
+			}
+
+			function Delete_Click(p_oSender) 	 
+			{ 	 
+				var oForm = p_oSender.form; 	 
+				oForm.DEL.value = "Delete";
+				oForm.submit(); 	 
+			};			
+			
+			//-->
+</script>
+
+</head>
+<body onLoad="doSynch();">
+
+<span id="iObjectHere"></span>
+
+
+<form name=compose method=post action="/ym/Compose?box=Inbox&Mid=1956_6886430_590541_2695_2959_0_133666_9424_346330780&inc=&Search=&YY=65868&order=down&sort=date&pos=0&view=a&head=b">
+<input type=hidden name=REP value="">
+<input type=hidden name=REPA value="">
+<input type=hidden name=FWD value="">
+<input type=hidden name=fwopt value="quoted">
+<input type=hidden name=Idx value="0">
+<input type=hidden name=PhotoIcon value="">
+</form>
+
+<form name=spamform method=post action="/ym/blocksender2?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&inc=&Search=&YY=65868&order=down&sort=date&pos=0&view=a&head=b">
+<input type=hidden name=".crumb" value="mywDFHYRN/U"><input type=hidden name=NE value="Bryan.A.Palaszewski@nasa.gov">
+<input type=hidden name=ISSPAM value="1">
+</form>
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+
+    function Help(link)
+    {
+		window.open(link,"help","width=400,height=500,scrollbars=yes,dependent=yes");
+    }
+
+    if(document.cookie != "" && document.cookie.indexOf("T8toDB") == -1) 
+    {
+	window.open("http://mail.yahoo.com", "_top");
+    }
+
+    var newWin=null;
+    var onscreen=false;
+
+    function NewWin(url,name,xpos,ypos,width,height)
+    {
+       newWin=window.open(
+           url,
+           name,
+           "screenX="+xpos+",screenY="+ypos+",WIDTH="+width+",HEIGHT="+height+ 
+           ",location=0,resizable=1,status=0,titlebar=1,directories=0,toolbar=0,menubar=0,scrollbars=0,status=0"
+       );
+       newWin.focus();
+       onscreen=true; 
+    }
+
+</script>
+
+<div id="universalheader"> 
+<style type="text/css">
+<!-- @import url("http://us.js1.yimg.com/us.yimg.com/lib/hdr/ygma5.css");body{margin:0px 4px;} -->
+</style>
+<div align=center id=ygma>
+<form name=yhdr_form style="margin:0"  action="http://srd.yahoo.com/fp=150500001&loc=head&st=yahoo/*http://search.yahoo.com/search"  target=_blank>
+
+<input type=hidden name="fr" value="ush1-us-mail">
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr bgcolor="#efefef">
+<td id=ygmalinks class=ygmabk width="100%" colspan=3>
+<font face="arial,helvetica,sans-serif" size="-2">
+<a target="_top" href="http://www.yahoo.com" ><font color=#000000>Yahoo!</font></a> &nbsp; 
+<a target="_top" href="http://us.rd.yahoo.com/mail_us/myref/pimnav/letter/?http://my.yahoo.com"><font color=#000000>My Yahoo!</font></a> &nbsp;
+<a href="http://mail.yahoo.com" target="_top" ><font color=#000000>Mail</font></a> 
+</font>
+</td>
+<td class=ygmatcrn><spacer type=block width=1 height=1></td>
+<td class=ygmabk rowspan=2>
+<img src=http://us.i1.yimg.com/us.yimg.com/i/us/nt/hdr/stw.gif width=34 height=17 border=0 hspace=4 alt='Search the web'>
+</td>
+<td id=ygmasearch class=ygmabk rowspan=2 nowrap>
+<font face="verdana,geneva,sans-serif" size="-2">
+<input type=text name=p size=12 title='Enter search terms here' maxlength=100>
+<input class=ygbt type=submit value='Search' title=Search>
+</font>
+</td>
+</tr>
+<tr>
+<td rowspan=2 valign=top>
+<a href="http://mail.yahoo.com/"><img id=ygmalogo border=0 src="http://us.i1.yimg.com/us.yimg.com/i/us/nt/ma/ma_mail_1.gif" width=196 height=33 border=0 alt="Yahoo! Mail"></a>
+</td>
+<td id=ygmagreet width="100%" rowspan=2>
+<font face="verdana,geneva,sans-serif" size=-2>
+			Welcome, <strong>
+barrow_dj</strong>
+ <br> 			[<a href="/ym/Logout?YY=65868&order=down&sort=date&pos=0&view=a&head=b&YY=65868" target="_top">Sign Out</a>,
+<a href="http://edit.yahoo.com/config/eval_profile?.src=ym&.intl=&.done=http://mail.yahoo.com/&.src=ym" target="_top"> My Account</a>]<br>
+</font>
+</td>
+<td rowspan=2>
+
+</td>
+<td class=ygmacrn width=13 height=14 valign=top nowrap><spacer type=block width=13 height=14></td>
+</tr>
+<tr>
+<td colspan=3 align=right id=ygmaproplinks>
+<font face="verdana,geneva,sans-serif" size="-2">
+<a href="http://mail.yahoo.com/" target="_top">Mail Home</a> -
+ 
+ 
+<a target="_top" href="http://us.rd.yahoo.com/mail_us/help/?http://help.yahoo.com/help/us/mail"> 
+ 
+ 
+Help</a>
+
+</font>
+</td>
+</tr>
+</table>
+</form>
+</div>
+
+</div>
+
+<!-- START NORTH BANNER -->
+<div id="northbanner">
+<!-- adstart -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- adend -->			
+</div>
+<!-- END NORTH BANNER -->			
+
+
+<script>
+    var oKey = new ylib_keyevt();
+    oKey.addKey(67,-1,"location='http://us.f511.mail.yahoo.com/ym/ShowFolder?rb=Inbox&YY=65868&order=down&sort=date&pos=0&view=a&head=b&YN=1'","shift+ctrl"); // Check Mail | CTRL-C
+    try
+    {
+    if( parent.showCompose )
+        oKey.addKey(80,-1,"try {parent.showCompose();} catch(e) {location='http://us.f511.mail.yahoo.com/ym/Compose?YY=65868&order=down&sort=date&pos=0&view=a&head=b';}","shift+ctrl"); // Compose | CTRL-P
+    else
+        oKey.addKey(80,-1,"location='http://us.f511.mail.yahoo.com/ym/Compose?YY=65868&order=down&sort=date&pos=0&view=a&head=b'","shift+ctrl"); // Compose | CTRL-P
+    }
+    catch(error)
+    {
+        oKey.addKey(80,-1,"location='http://us.f511.mail.yahoo.com/ym/Compose?YY=65868&order=down&sort=date&pos=0&view=a&head=b'","shift+ctrl"); // Compose | CTRL-P
+    }
+
+    oKey.addKey(70,-1,"location='http://us.f511.mail.yahoo.com/ym/Folders?YY=65868&order=down&sort=date&pos=0&view=a&head=b'","shift+ctrl"); // Folders | CTRL-F
+    oKey.addKey(83,-1,"location='http://us.f511.mail.yahoo.com/ym/Search?P=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b'","shift+ctrl"); // Search | CTRL-S
+        oKey.addKey(72,-1,"location='http://help.yahoo.com/help/us/mail'","shift+ctrl"); // Help | CTRL-H
+    </script>
+
+<script language=javascript>
+
+    function init() 
+    { 
+		if(document.getElementById)
+		{
+			Tabs_Init();
+			LeftNav('popaccounts');
+			LeftNav('mailaccounts');
+			LeftNav('folderlist');
+			LeftNav('searchnav');
+			LeftNav('optionsnav');
+            LeftNav('savedsearches');
+			
+	    	document.onkeydown = function(evt) { oKey.keyevent(evt); }
+			if(typeof OnLoad != 'undefined') OnLoad();
+		}
+    }
+
+    onload=init
+
+</script>
+
+
+
+
+<div id="topnav">
+	<div>
+		<span id="mailtab" class="first selected"><span><a target="_top" href="http://us.rd.yahoo.com/mail_us/pimnav/mail/*http://us.f511.mail.yahoo.com/ym/welcome?YY=65868&order=down&sort=date&pos=0&view=a&head=b">Mail</a><a href="#mailshortcuts" class="jump"> <img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/bt_dd_l_2.gif" alt="Mail shortcuts"></a><span>| </span></span></span>
+		<span id="addressbooktab"><span><a target="_top" href="http://us.rd.yahoo.com/mail_us/pimnav/ab/*http://address.mail.yahoo.com">Addresses</a><a target="_top" href="#addressbookshortcuts" class="jump"> <img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/bt_dd_2.gif" alt="Address Book shortcuts"></a><span>| </span></span></span>
+		<span id="calendartab"><span><a target="_top" href="http://us.rd.yahoo.com/mail_us/pimnav/cal/*http://calendar.mail.yahoo.com">Calendar</a><a target="_top" href="#calendarshortcuts" class="jump"> <img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/bt_dd_2.gif" alt="Calendar shortcuts"></a><span>| </span></span></span>
+		<span id="notepadtab"><span><a target="_top" href="http://us.rd.yahoo.com/mail_us/pimnav/np/*http://notepad.mail.yahoo.com">Notepad</a><a target="_top" href="#notepadshortcuts" class="jump"> <img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/bt_dd_2.gif" alt="Notepad shortcuts"></a></span></span>
+				<span class="last" id="searchtestopionlinks">
+	  	    				    <a id="MailWhatsNewLink" href="http://us.rd.yahoo.com/evt=32563/*http://whatsnew.mail.yahoo.com/" style="text-decoration:underline;" target="_blank">What's New</a> - 
+	        
+	    		
+	                	            	            	            	    	    	
+
+									<a id="MailUpgradesLink" href="http://us.rd.yahoo.com/mail_us/nav/?http://billing.mail.yahoo.com/bm/Upgrades" target="_blank" title="Navigate to the Mail Upgrades page" style="text-decoration:underline;">Upgrades</a> - 
+					
+		<a id="MailOptionsLink" href="http://us.f511.mail.yahoo.com/ym/Options?YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Mail Options page" style="text-decoration:underline;">Options </a>
+	    			</span>
+	</div>
+</div>
+
+
+
+<div id="globalbuttonbartop" class="globalbuttonbar">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="1%" nowrap>
+<button id="checkmailbutton" type="button" onclick="window.location='/ym/ShowFolder?rb=Inbox&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b&YN=1';" title="Check for new mail (Shortcut keys: Control+Shift+C)">Check Mail</button>
+<button id="composebutton"  type="button" onclick="window.location='/ym/Compose?YY=65868&order=down&sort=date&pos=0&view=a&head=b';" title="Compose a new message (Shortcut keys: Control+Shift+P)">Compose</button>
+		
+		
+
+			
+</td>
+<td align="right" width="98%">
+		
+<!-- <span>TG: UI: SFI: SFV:</span> -->
+			
+<span id="searchtestfields">
+    
+
+<script>
+                    var url0 = "http://us.f511.mail.yahoo.com/ym/Search?Find=1&B=1&_p=top"; 
+    
+       function submitSearch(loc)
+    {
+ 	var S = document.getElementById("searchquery"+loc);
+        S = typeof S.length == "undefined" ? S : S[0];
+        S.value = S.value.replace(/^\s*/,"");
+        S.value = S.value.replace(/\s*$/,"");
+        if(S.value == "")
+	{
+	    //alert("Please enter a search term.");
+	    window.location = "http://us.f511.mail.yahoo.com/ym/Search?P=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b";
+	    return;		
+	}
+
+	var obj = document.getElementById("searchField"+loc);
+	var field = obj.value;
+	if(field == "sender" || field == "subject")
+	    submitAdvancedSearch(loc, field, S);
+	else if (field == "message" || field == "body" || field == "header")
+	    submitBasicSearch(loc, field, S);
+	else if (field == "web")
+	    submitWebSearch(loc, field, S);
+	else
+	    alert("Please select valid field to search on from drop down.");
+    }
+
+    function submitBasicSearch(loc, field, S)
+    {
+	var url = (loc==0 ? url0 : url1);
+	url += "&ftyp="+"A";
+	if(field == "header")
+	    url += "&T="+"HDRS_ONLY";
+	else if(field == "body")
+	    url += "&T="+"BODY_ONLY";
+	else if(field == "message")
+	    url += "&T="+"WHOLE_MSG";
+
+	url += "&M="+"CONTAINS";
+        url += "&S="+escapeStr(S.value);
+
+	url += "&ymuri="+"ym";
+ 	url += "&folderscrumb="+"L3KPZ26AVjT";
+	url += "&sfi="+ (field == "message" ? "2" : (field == "header" ? "3" : "4"));
+  	url += "&urlextras="+"YY=65868&order=down&sort=date&pos=0&view=a&head=b";
+	window.location=url;
+    }
+
+    function submitAdvancedSearch(loc, field, S)
+    {
+	var url = (loc==0 ? url0 : url1) + "&P=1";
+	url += "&ftyp="+"A";
+	if(field == "sender")
+	{
+	    url += "&FM="+"CONTAINS";
+	    url += "&FS="+escapeStr(S.value);
+	}
+	else if(field == "subject")
+	{
+	    url += "&SM="+"CONTAINS";
+	    url += "&SS="+escapeStr(S.value);
+	}
+
+	url += "&ymuri="+"ym";
+ 	url += "&folderscrumb="+"L3KPZ26AVjT";
+	url += "&sfi="+ (field == "sender" ? "0" : "1");
+  	url += "&urlextras="+"YY=65868&order=down&sort=date&pos=0&view=a&head=b";
+
+	window.location=url;
+    }
+
+    function submitWebSearch(loc, field, S)
+    {
+        if(!S || typeof S == "undefined")
+  	    S = document.getElementById("searchquery"+loc);
+	
+	var value = S == null ? "" : S.value.replace(/^\s*/,"");
+	value = value.length == 0 ? "" : S.value;
+	var es = escapeStr(value);
+ 
+		
+	  var searchURL = es == "" ? "http://search.yahoo.com?fr=ush2-mail" : "http://search.yahoo.com/search?fr=ush2-mail&ei=UTF-8";
+		
+	searchURL += es == "" ? "" : "&p="+es
+	var searchWin = window.open(searchURL, "_blank");
+	searchWin.focus();
+    }
+
+    function escapeStr(str) 
+    {
+	var len = str.length;
+	var es = "";
+	var icode;
+
+	for (i = 0 ; i < len ; i++) 
+	{
+	    icode = str.charCodeAt(i);
+	    es += icode == 0x20 ? "+" : icode == 0x2B ? "%2B" : 
+		  icode < 0x80 ? escape(str.charAt(i)) : 
+		  encodeURI(str.charAt(i));
+	}
+	return es;
+    }
+
+    function SearchQuery_KeyPress(p_oSender,p_oEvent, loc)
+    {
+	var isMailView = "1"
+	var ui         = "";
+	if(p_oEvent.keyCode == 13)
+	{
+	    if(ui == "3" && isMailView != "1")
+		submitWebSearch(loc, "web");
+	    else
+		window.setTimeout("submitSearch("+loc+")",10);
+	}
+    }
+
+        function Search_Click_top()
+    {
+ 	var oEvent = this.Event;
+	var nOffsetX = (oEvent.layerX) ? (oEvent.layerX) : oEvent.offsetX;
+	if(nOffsetX > (this.offsetWidth-22)) 
+	    this.Menu.Show();
+	else
+  	    submitSearch("0");
+    }	
+
+    function Search_Click_bottom()
+    {
+ 	var oEvent = this.Event;
+	var nOffsetX = (oEvent.layerX) ? (oEvent.layerX) : oEvent.offsetX;
+	if(nOffsetX > (this.offsetWidth-22)) 
+	    this.Menu.Show();
+	else
+  	    submitSearch("1");
+    }	
+
+    function SearchMenu_Click()
+    {
+	window.location = "http://us.f511.mail.yahoo.com/ym/Search?P=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b";
+    }
+   
+   </script>
+	<table cellpadding="0" cellspacing="0" border="0" style="margin-left:.5em;">
+		<tr>
+			<td>
+			    				<input type="text" size="20" maxlength=50 name="searchquery0" id="searchquery0" value="" style="margin-right:.5em;vertical-align:baseline;" onkeypress="SearchQuery_KeyPress(this,event,0);">
+			    	
+			</td>
+			<td nowrap>
+				<input type="hidden" id="searchField0" name="searchField" value="message">
+
+			    	
+			    <button id="searchmail0" type="button" name="searchmail0" value="Search Mail" class="hasdefaultstate">Search Mail</button>
+			     
+			        <button id="searchtheweb" type="button" name="searchtheweb" value="Search the Web" onclick="submitWebSearch(0)" style="width:11em; ">Search the Web</button>
+			</td>
+		</tr>
+	</table>
+
+</span>
+			
+		
+</td>
+</tr>
+</table>
+</div>
+		
+<table class="applicationcontainer managementview" cellpadding="0" cellspacing="0" border="0" width="100%">
+<tr valign="top">
+<td width="167" id="first" nowrap>
+<script type="text/javascript">
+
+    var noDelAllMsgWarning = true;
+    var noDelBulkMsgWarning = true;
+
+    function EmptyFolder(folder)
+    {
+	var warnonempty = folder == "@B@Bulk" ? (!noDelBulkMsgWarning) : (!noDelAllMsgWarning)	
+	var emptyFol = true;
+	if(warnonempty)
+	{
+	    var sMessage = folder == "@B@Bulk" ? "Are you sure? Deleted Bulk messages are gone forever, and will not go to your Trash folder." : "Are you sure you want to empty the folder?";
+	    emptyFol = showEmptyFolderWarning(sMessage, folder);
+	}
+	
+	if(emptyFol)
+   	{		
+    	    var url = "/ym/ShowFolder?";
+    	    url += folder == "Trash" ? "ET" : "EB";
+    	    url += "=1&.crumb=iOtQz2T3/gZ&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b";
+    	    window.open(url, '_self');
+	}
+    }
+
+    function showEmptyFolderWarning(sMessage, folder)
+    {
+    if ( ! window.showModalDialog || window.external.IYBrowserExtend) {
+	   if(!confirm(sMessage)) return false;
+
+    } else {
+            var oArguments = {
+                Message : sMessage,
+                ConfirmButtonValue : "Empty",
+                CancelButtonValue : "Don't Empty"
+            };
+
+            var sURI = "ym";
+            var sURLExtras = "YY=65868&order=down&sort=date&pos=0&view=a&head=b";
+	    var dialogHeight = folder == "@B@Bulk" ? 185 : 155;
+
+    	    var oAction = window.showModalDialog("/"+sURI+"/Static?file=ConfirmationDialog.html",oArguments,"dialogHeight:"+dialogHeight+"px;dialogWidth:500px;status:no;help:no;resizable:yes;scroll:no;");
+	    
+    	    if(oAction)
+    	    {
+    		    if(oAction.remember)
+    		    {
+			    var isBulkFol = folder == "@B@Bulk";
+    			    noDelAllMsgWarning = !isBulkFol ? true : noDelAllMsgWarning;
+			    noDelBulkMsgWarning = isBulkFol ? true : noDelBulkMsgWarning; 
+			    var op = isBulkFol ? "nodelbulkmsgwarn" : "nodelallmsgwarn";	
+    			    window.open("/ym/Asynch?op="+op+"&YY=65868&order=down&sort=date&pos=0&view=a&head=b", "asynch");
+    		    }
+    		    if(!oAction.confirmed) return false;
+    	    }
+    } 
+	return true;
+    }
+
+</script>
+
+
+
+	
+
+
+<div class="modulecontainer sidebar">
+<div class="first">
+<span class="first"></span>
+<span class="last"></span>
+</div>
+<div>
+
+<div id="folderlist">
+<div id="defaultfolders">
+<div>
+<span class="first">Folders</span>[<span id="addfoldercontrol">Add</span> - <a href="/ym/Folders?YY=65868&order=down&sort=date&pos=0&view=a&head=b">Edit</a>]</div>
+<ul>
+<li id="inbox" class="selected" title="Navigate to the Inbox folder"><a href="/ym/ShowFolder?rb=Inbox&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b"  title="Navigate to the Inbox folder">Inbox (1)</a></li>
+<li id="draft" title="Navigate to the Draft folder"><a href="/ym/ShowFolder?rb=Draft&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b"  title="Navigate to the Draft folder">Draft</a></li>
+<li id="sent" title="Navigate to the Sent folder"><a href="/ym/ShowFolder?rb=Sent&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b"  title="Navigate to the Sent folder">Sent</a></li>
+<li id="bulk" title="Navigate to the Bulk folder"><a href="/ym/ShowFolder?rb=%40B%40Bulk&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" class="first" title="Navigate to the Bulk folder">Bulk</a><span>[<a href="javascript:EmptyFolder('@B@Bulk')" title="Empty all of the messages from the Bulk folder">Empty</a>]</span></li>
+<li id="trash" title="Navigate to the Trash folder"><a href="/ym/ShowFolder?rb=Trash&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" class="first" title="Navigate to the Trash folder">Trash</a><span>[<a href="javascript:EmptyFolder('Trash')" title="Empty all of the messages from the Trash folder">Empty</a>]</span></li>
+</ul>
+</div>
+
+<div id="customfolders">
+<div><span class="first">My Folders</span>[<span id="personalfoldersdisplaytoggle">Hide</span>]</div>
+<ul>
+<li   title="Navigate to the Accountants folder"><a href="/ym/ShowFolder?rb=Accountants&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Accountants folder">Accountants</a></li>
+<li   title="Navigate to the Accountants Sent folder"><a href="/ym/ShowFolder?rb=Accountants%20Sent&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Accountants Sent folder">Accountants Sent</a></li>
+<li   title="Navigate to the Contacts folder"><a href="/ym/ShowFolder?rb=Contacts&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Contacts folder">Contacts</a></li>
+<li   title="Navigate to the Evgeniya folder"><a href="/ym/ShowFolder?rb=Evgeniya&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Evgeniya folder">Evgeniya</a></li>
+<li   title="Navigate to the Harvey Nash folder"><a href="/ym/ShowFolder?rb=Harvey%20Nash&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Harvey Nash folder">Harvey Nash</a></li>
+<li   title="Navigate to the Important folder"><a href="/ym/ShowFolder?rb=Important&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Important folder">Important</a></li>
+<li   title="Navigate to the Jokes folder"><a href="/ym/ShowFolder?rb=Jokes&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Jokes folder">Jokes</a></li>
+<li   title="Navigate to the LA International folder"><a href="/ym/ShowFolder?rb=LA%20International&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the LA International folder">LA International</a></li>
+<li   title="Navigate to the Mailing Lists folder"><a href="/ym/ShowFolder?rb=Mailing%20Lists&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Mailing Lists folder">Mailing Lists</a></li>
+<li   title="Navigate to the Not very important folder"><a href="/ym/ShowFolder?rb=Not%20very%20important&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Not very important folder">Not very important</a></li>
+<li   title="Navigate to the Weekly Reports folder"><a href="/ym/ShowFolder?rb=Weekly%20Reports&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the Weekly Reports folder">Weekly Reports</a></li>
+<li   title="Navigate to the angelika folder"><a href="/ym/ShowFolder?rb=angelika&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the angelika folder">angelika</a></li>
+<li   title="Navigate to the fundamental folder"><a href="/ym/ShowFolder?rb=fundamental&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the fundamental folder">fundamental</a></li>
+<li   title="Navigate to the hiring folder"><a href="/ym/ShowFolder?rb=hiring&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the hiring folder">hiring</a></li>
+<li   title="Navigate to the intresting links folder"><a href="/ym/ShowFolder?rb=intresting%20links&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the intresting links folder">intresting links</a></li>
+<li   title="Navigate to the jobs folder"><a href="/ym/ShowFolder?rb=jobs&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the jobs folder">jobs</a></li>
+<li   title="Navigate to the nerds folder"><a href="/ym/ShowFolder?rb=nerds&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the nerds folder">nerds</a></li>
+<li   title="Navigate to the orders folder"><a href="/ym/ShowFolder?rb=orders&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the orders folder">orders</a></li>
+<li   title="Navigate to the publishing folder"><a href="/ym/ShowFolder?rb=publishing&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the publishing folder">publishing</a></li>
+<li   title="Navigate to the resumes folder"><a href="/ym/ShowFolder?rb=resumes&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the resumes folder">resumes</a></li>
+<li   title="Navigate to the theoryofcdr folder"><a href="/ym/ShowFolder?rb=theoryofcdr&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the theoryofcdr folder">theoryofcdr</a></li>
+<li   title="Navigate to the theoryofcdrprize folder"><a href="/ym/ShowFolder?rb=theoryofcdrprize&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the theoryofcdrprize folder">theoryofcdrprize</a></li>
+<li   title="Navigate to the women folder"><a href="/ym/ShowFolder?rb=women&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" title="Navigate to the women folder">women</a></li>
+</ul>
+		
+</div>
+			
+</div>
+
+</div>
+<div class="last">
+<span class="first"></span>
+<span class="last"></span>
+</div>
+</div>
+
+
+   
+
+<div id="swads">
+
+
+	
+
+	
+
+	
+
+
+	
+
+
+	
+
+
+	
+
+
+	
+	
+
+
+
+
+
+
+	
+</div>
+</td>
+<td width="3" id="spacer" nowrap><spacer type="block" width="3"></td>
+<td class="content">
+<!-- START MAIN APPLICATION CONTENT -->
+<div style="display:none" id="mobile" class="alertbox">
+<!-- SpaceID=0 timeout (ads1) -->
+</div>
+			
+
+
+<div class="contentnav">					
+<span class="first">
+<a href="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&PREV=1&inc=&num=&Idx=0&Search=&YY=65868&order=down&sort=date&pos=0&view=a&head=b" onmouseover="window.status='From: mark_perry@runbox.com, Subject: Stuttgart';return true" onmouseout="window.status=window.defaultStatus;return true">Previous</a>
+							 | 
+<a href="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&NEXT=1&inc=&num=&Idx=0&Search=&YY=65868&order=down&sort=date&pos=0&view=a&head=b" onmouseover="self.status='From: mark_perry@runbox.com, Subject: Re: seeing as Jupiter has a suitable atmosphere for an atomic ramjet';return true" onmouseout="window.status=window.defaultStatus;return true">Next</a>
+ 
+							| <a href="/ym/ShowFolder?box=Inbox&back=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b" onmouseover="window.status='Folder: Inbox';return true" onmouseout="window.status=window.defaultStatus;return true">Back to Messages</a>
+</span>
+<span class="last">
+ <!-- MessengerVoice -->
+							&nbsp;
+</span>
+</div>
+
+<form name="showLetter" method=post action="/ym/ShowLetter?Search=&Idx=0&YY=65868&order=down&sort=date&pos=0&view=a&head=b">
+<input type=hidden name=".crumb" value="feDAZUeLzM5"><input type=hidden name="MsgId" value="1956_6886430_590541_2695_2959_0_133666_9424_346330780">
+<input type=hidden name="box" value="Inbox">
+<input type=hidden name=MOV value="">
+<input type=hidden name=NewFol value="">
+<input type="hidden" name="destBox" value="">
+<input type="hidden" name="DEL" value="">
+<input type="hidden" name="formwarningmessage" value="Warning! You are about to send information to someone other than Yahoo! If you do not want anyone outside of Yahoo! to have this information, click &#34;Cancel&#34; now. Remember: Yahoo! will NEVER ask you for your password in an unsolicited phone call or an unsolicited email. Please change your preferences if you do not want to see this message again.">
+<input type="hidden" name="linkwarningmessage" value="Warning! It appears that you are about to access a website that has non-standard web address format. Such sites may contain harmful entities such as viruses. We recommend you use extreme caution. Please change your preferences if you do not want to see this message again.">
+<input type="hidden" name="passwordwarningmessage" value="Warning! You are about to enter a password in a form that will not be sent to Yahoo! Remember: Yahoo! will NEVER ask you for your password in an unsolicited phone call or an unsolicited email.">
+
+<input type="hidden" name="newfoldermessage" id="newfoldermessage" value="Please enter a name for your folder.">
+<input type="hidden" name="ymuri" id="ymuri" value="ym">
+<input type="hidden" name="folderscrumb" id="folderscrumb" value="L3KPZ26AVjT">
+<input type="hidden" name="urlextras" id="urlextras" value="YY=65868&order=down&sort=date&pos=0&view=a&head=b">
+<input type="hidden" name="doneurl" id="doneurl" value="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&inc=&num=&Idx=0&Search=&YY=65868&order=down&sort=date&pos=0&view=a&head=b"><input type="hidden" name="addfolderdoneurl" value="%2fym%2fShowLetter%3fMsgId%3d1956%5f6886430%5f590541%5f2695%5f2959%5f0%5f133666%5f9424%5f346330780%26box%3dInbox%26YY%3d65868%26order%3ddown%26sort%3ddate%26pos%3d0%26view%3da%26head%3db">
+<input type=hidden name=ICOK value="">
+<input type=hidden name=ICReplyBody value="">
+<input type=hidden name=ICFwdBody value="">
+<input type=hidden name=ICReplyTo value="">
+<input type=hidden name=ICReplyAllTo value="">
+<input type=hidden name=ICReplyAllCc value="">
+<input type=hidden name=ICReplySubj value="">
+<input type=hidden name=ICFwdSubj value="">
+<input type=hidden name=FromAddress value="barrow_dj@yahoo.com">
+						
+<div id="contentbuttonbartop" class="contentbuttonbar">
+<span class="first">
+<button type="button" name="delete" id="deletetop" value="Delete" onclick="Delete_Click(this);">Delete</button>
+	
+<button type="button" value="Reply" id="replytop" class="hasdefaultstate">Reply</button>
+	
+<button type="button" value="Forward" id="forwardtop" class="hasdefaultstate">Forward</button>
+	
+	
+<button type="button" 
+	        value="Spam" 
+	     onclick="document.spamform.submit();">Spam</button>
+	
+<button type="button" id="movetop" name="move" class="menubutton" title="Move selected message(s)">Move...</button>
+</span>
+</div>
+</form>
+<script type="text/javascript">
+						LHCol_Init();
+</script>
+<div class="messageinfo flaggedindicator">
+<p>
+<a style="float:right;valign:bottom;" href="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&Idx=0&Search=&PRINT=1&ShowImages=&YY=65868&order=down&sort=date&pos=0&view=a&head=b" target=_blank>Printable View</a>
+						This message is not flagged. [ <a href="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&Idx=0&Search=&FLG=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b">Flag Message</a> - <a href="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&Idx=0&Search=&UNR=1&.crumb=feDAZUeLzM5&YY=65868&order=down&sort=date&pos=0&view=a&head=b">Mark as Unread</a> ]
+</p>
+</div>
+<!-- START TOC -->					
+
+
+
+<!-- type = x-unknown -->
+
+
+<table class=messageheader cellspacing=0 cellpadding=0 width="100%" border=0>
+<tr><td class=label nowrap>Date:</td><td> Fri, 16 Dec 2005 13:32:37 -0500</td></tr>
+<tr><td class=label nowrap>To:</td><td>&#34;D.J. Barrow&#34; &lt;dj_barrow@ariasoft.ie&gt;</td></tr>
+<tr><td class=label nowrap>From:</td><td>&#34;Bryan A Palaszewski&#34; &lt;Bryan.A.Palaszewski@nasa.gov&gt;&nbsp;&nbsp;<a href="http://address.mail.yahoo.com/yab?.rand=41098&v=SA&A=t&em=bryan.a.palaszewski%40nasa.gov&.done=http%3a%2f%2fus.f511.mail.yahoo.com%2fym%2fShowLetter%3fMsgId%3d1956%5f6886430%5f590541%5f2695%5f2959%5f0%5f133666%5f9424%5f346330780%26Idx%3d0%26YY%3d11530%26inc%3d25%26order%3ddown%26sort%3ddate%26pos%3d0%26view%3da%26head%3db%26box%3dInbox"><img border=0 src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/el/abook_rdex_1.gif" width=16 height=16 align=top hspace=2 alt="View Contact Details  ">View Contact Details  </a>&nbsp;&nbsp;<a href="#" onclick='document.getElementById("mobile").style.display="block"'><img src="http://us.i1.yimg.com/us.yimg.com/i/nt/ic/ut/bsc/txtmess12_1.gif" align=top vspace=0 hspace=2 border=0 width="12" height="12">Add Mobile Alert </a></td></tr>
+<tr><td class=label nowrap>Subject:</td><td> Re: seeing as Jupiter has a suitable atmosphere for an atomic ramjet</td></tr>
+<tr><td class=label nowrap>CC:</td><td>&#34;Mark Perry&#34; &lt;mark_perry@runbox.com&gt;</td></tr>
+</table>
+<form name=frmAddAddrs action="http://address.mail.yahoo.com/yab/us?v=YM&.rand=22011&A=m&simp=1" method="post">
+<input type="hidden" name="fn" value="Bryan A">
+<input type="hidden" name="ln" value="Palaszewski">
+<input type="hidden" name="e" value="bryan.a.palaszewski@nasa.gov">
+<input type="hidden" name=".done" value="http://us.f511.mail.yahoo.com/ym/ShowLetter?MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&order=down&inc=&sort=date&view=a&head=b&box=Inbox&YY=65868">
+</form>
+
+
+
+
+
+<div id=message>
+
+
+<!-- type = text -->
+
+
+<pre><tt>Yes. :)  There are whole areas of science and engineering that 
+specialize 
+in these topics.
+
+Hypersonic Aerodynamics
+High Speed Gas Dynamics
+Reentry Flow Physics
+
+See you,
+
+Bryan
+
+At 09:24 AM 12/16/2005 -0800, D.J. Barrow wrote:
+&gt;Hi Bryan,
+&gt;I haven't done the physics but I had hoped
+&gt;that you could go out further &amp; further where the
+&gt;atmosphere is thinner when you pick up speed &amp; counteract
+&gt;the heating effect if what you say is true I suspect this
+&gt;has been well researched, has it?
+&gt;
+&gt;
+&gt;--- Bryan A Palaszewski &lt;<a href="/ym/Compose?To=Bryan.A.Palaszewski@nasa.gov&YY=65868&order=down&sort=date&pos=0&view=a&head=b">Bryan.A.Palaszewski@nasa.gov</a>&gt; wrote:
+&gt;
+&gt; &gt; Hello,
+&gt; &gt;
+&gt; &gt; Physics of going at light speed QUITE is difficult. :)   If you do 
+some
+&gt; &gt; calculations, you'll find that going to the nearest star in a 40 to 
+45 
+&gt; year
+&gt; &gt; time frame (about 1/10th of the speed of light) requires more than 
+the
+&gt; &gt; total WORLD (i.e. Earth's) power output.  Depending on the 
+technology
+&gt; &gt; assumptions, it can be between 1 and 100 times the WORLD'S power
+&gt; &gt; output.  Thus, we go to Jupiter and mine it's atmosphere for the 
+fuel.
+&gt; &gt;
+&gt; &gt; If you fly at high speed (beyond orbital velocities) in an 
+atmosphere,
+&gt; &gt; aircraft tend to melt, unless they use extreme measures for thermal
+&gt; &gt; protection.  The temperatures of the aircraft skin can reach 
+amazing
+&gt; &gt; levels. :)  Hence we use ablative heat shield when spaceship return 
+from
+&gt; &gt; the Moon, etc.  Those vehicles have with initial velocities 
+entering the
+&gt; &gt; atmosphere of 25,000 MPH, and due to drag, they slow down quickly.
+&gt; &gt;
+&gt; &gt; So, travelling at VERY high speed in the atmosphere, let alone the 
+&gt; speed of
+&gt; &gt; light, is rather impractical.  :)  This is a BIG understatement.
+&gt; &gt;
+&gt; &gt; See you,
+&gt; &gt;
+&gt; &gt; Bryan
+&gt; &gt;
+&gt; &gt; At 08:53 AM 12/16/2005 -0800, you wrote:
+&gt; &gt; &gt;Hi Bryan,
+&gt; &gt; &gt;Daedalus also suggests the scramjet/ramjet.
+&gt; &gt; &gt;Whats wrong with a atomic scramjet probe going round round &amp;
+&gt; &gt; &gt;round inside Jupiters atmosphere till it picks
+&gt; &gt; &gt;up to the speed of light &amp; slingshotting away.
+&gt; &gt; &gt;
+&gt; &gt; &gt;That 50,000 ton rocket job appears moronic to me,
+&gt; &gt; &gt;the International space station was hard enough to build.
+&gt; &gt; &gt;
+&gt; &gt; &gt;
+&gt; &gt; &gt;--- Bryan A Palaszewski &lt;<a href="/ym/Compose?To=Bryan.A.Palaszewski@nasa.gov&YY=65868&order=down&sort=date&pos=0&view=a&head=b">Bryan.A.Palaszewski@nasa.gov</a>&gt; wrote:
+&gt; &gt; &gt;
+&gt; &gt; &gt; &gt; Hello,
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; Just so we are clear, you've misinterpreted my statements (or 
+lack of
+&gt; &gt; &gt; &gt; statements) in your draft.  We cannot get humans to Mars or to 
+the 
+&gt; nearest
+&gt; &gt; &gt; &gt; star with existing technology.  The NTR work will require many 
+years of
+&gt; &gt; &gt; &gt; development, and the Daedalus Project was a paper study.
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; For Daedalus, we'd need massive robotic factories to assemble 
+the 
+&gt; vehicle,
+&gt; &gt; &gt; &gt; which weighs 50,000 metric tonnes when it departs 
+&gt; Jupiter.  Acquiring the
+&gt; &gt; &gt; &gt; fuel from Jupiter's atmosphere (of about 30,000 to 40,000 
+metric 
+&gt; tonnes)
+&gt; &gt; &gt; &gt; takes 20 years of massive robotic factories floating in the
+&gt; &gt; &gt; &gt; atmosphere.  For Daedalus, none of these capabilities exist, or 
+are 
+&gt; likely
+&gt; &gt; &gt; &gt; to exist for a LONG LONG time.
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt;  From your draft:
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; Excerpt:
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; He also found nothing obviously impossible in my proposal, a 
+mission to
+&gt; &gt; &gt; &gt; Mars &amp; even Alpha Centauri is very feasible using todays 
+&gt; technology. This
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; End excerpt:
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; All of these things (whether it be a human mission to Mars and 
+any
+&gt; &gt; &gt; mission,
+&gt; &gt; &gt; &gt; robotic or human, to Alpha Centauri) are not "been there, done 
+that" or
+&gt; &gt; &gt; &gt; "very feasible with today's technology."  Please don't say that 
+in your
+&gt; &gt; &gt; &gt; book, as it is not true.
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; Have a great day.
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; See you,
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; Bryan
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; At 07:53 AM 12/16/2005 -0800, you wrote:
+&gt; &gt; &gt; &gt; &gt;Project Deadalus mentions the use of a ramjet
+&gt; &gt; &gt; &gt; &gt;why isn't it a case of been there done that.
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;--- Bryan A Palaszewski &lt;<a href="/ym/Compose?To=Bryan.A.Palaszewski@nasa.gov&YY=65868&order=down&sort=date&pos=0&view=a&head=b">Bryan.A.Palaszewski@nasa.gov</a>&gt; wrote:
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; Hello,
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; Here is the interstellar vehicle that is built in orbit 
+about
+&gt; &gt; &gt; Jupiter, and
+&gt; &gt; &gt; &gt; &gt; &gt; fueled from it's atmosphere.
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; Look for Daedalus Project of British Interplanetary Society 
+on the
+&gt; &gt; &gt; web. :)
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; <a href="http://www.daviddarling.info/encyclopedia/D/Daedalus.html" target=_blank >http://www.daviddarling.info/encyclopedia/D/Daedalus.html</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; <a href="http://www.geocities.com/TelevisionCity/2049/DAEDALUS.HTM" target=_blank >http://www.geocities.com/TelevisionCity/2049/DAEDALUS.HTM</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; See you,
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; Bryan
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; At 06:16 AM 12/16/2005 -0800, you wrote:
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;Why not use that to slingshot to Alpha Centuari
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;D.J. Barrow Linux kernel developer
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;eMail: <a href="/ym/Compose?To=dj_barrow@ariasoft.ie&YY=65868&order=down&sort=date&pos=0&view=a&head=b">dj_barrow@ariasoft.ie</a>
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;Home: +353-22-47196.
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;Mobile (IRL) +353-(0)86 1715438
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;__________________________________________________
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;Do You Yahoo!?
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;Tired of spam?  Yahoo! Mail has the best spam protection 
+around
+&gt; &gt; &gt; &gt; &gt; &gt; &gt;<a href="http://mail.yahoo.com" target=_blank >http://mail.yahoo.com</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; Bryan Palaszewski
+&gt; &gt; &gt; &gt; &gt; &gt; NASA John H. Glenn Research Center
+&gt; &gt; &gt; &gt; &gt; &gt; Lewis Field
+&gt; &gt; &gt; &gt; &gt; &gt; MS 5-10
+&gt; &gt; &gt; &gt; &gt; &gt; Cleveland, OH 44135
+&gt; &gt; &gt; &gt; &gt; &gt; (216) 977-7493  Voice
+&gt; &gt; &gt; &gt; &gt; &gt; (216) 433-5802  FAX
+&gt; &gt; &gt; &gt; &gt; &gt; <a href="/ym/Compose?To=bryan.a.palaszewski@nasa.gov&YY=65868&order=down&sort=date&pos=0&view=a&head=b">bryan.a.palaszewski@nasa.gov</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; SBIR Fuels and Space Propellants Web Site:
+&gt; &gt; &gt; &gt; &gt; &gt; <a href="http://sbir.grc.nasa.gov/launch/foctopsb.htm" target=_blank >http://sbir.grc.nasa.gov/launch/foctopsb.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; Digital Learning Network - Student Videoconferencing Web 
+Sites:
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_rocketry_videoc.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_rocketry_videoc.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_humans_in_space.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_humans_in_space.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/apollomoonlandingsvideocon.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/apollomoonlandingsvideocon.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/the_moon_videoconference.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/the_moon_videoconference.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/asteroidsvideocon2.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/asteroidsvideocon2.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/WhyAccidents.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/WhyAccidents.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/meet_a_nasa_aeronautics_ex.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/meet_a_nasa_aeronautics_ex.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/advanced_space_propulsion_.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/advanced_space_propulsion_.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/humans_to_mars_videoconfer.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/humans_to_mars_videoconfer.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/SystemsEngineering.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/SystemsEngineering.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/carsinspace.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/carsinspace.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/MoonBases.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/MoonBases.htm</a>
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;D.J. Barrow Linux kernel developer
+&gt; &gt; &gt; &gt; &gt;eMail: <a href="/ym/Compose?To=dj_barrow@ariasoft.ie&YY=65868&order=down&sort=date&pos=0&view=a&head=b">dj_barrow@ariasoft.ie</a>
+&gt; &gt; &gt; &gt; &gt;Home: +353-22-47196.
+&gt; &gt; &gt; &gt; &gt;Mobile (IRL) +353-(0)86 1715438
+&gt; &gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; &gt;__________________________________________________
+&gt; &gt; &gt; &gt; &gt;Do You Yahoo!?
+&gt; &gt; &gt; &gt; &gt;Tired of spam?  Yahoo! Mail has the best spam protection 
+around
+&gt; &gt; &gt; &gt; &gt;<a href="http://mail.yahoo.com" target=_blank >http://mail.yahoo.com</a>
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; Bryan Palaszewski
+&gt; &gt; &gt; &gt; NASA John H. Glenn Research Center
+&gt; &gt; &gt; &gt; Lewis Field
+&gt; &gt; &gt; &gt; MS 5-10
+&gt; &gt; &gt; &gt; Cleveland, OH 44135
+&gt; &gt; &gt; &gt; (216) 977-7493  Voice
+&gt; &gt; &gt; &gt; (216) 433-5802  FAX
+&gt; &gt; &gt; &gt; <a href="/ym/Compose?To=bryan.a.palaszewski@nasa.gov&YY=65868&order=down&sort=date&pos=0&view=a&head=b">bryan.a.palaszewski@nasa.gov</a>
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; SBIR Fuels and Space Propellants Web Site:
+&gt; &gt; &gt; &gt; <a href="http://sbir.grc.nasa.gov/launch/foctopsb.htm" target=_blank >http://sbir.grc.nasa.gov/launch/foctopsb.htm</a>
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt; Digital Learning Network - Student Videoconferencing Web Sites:
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_rocketry_videoc.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_rocketry_videoc.htm</a>
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_humans_in_space.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_humans_in_space.htm</a>
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; 
+&gt; 
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/apollomoonlandingsvideocon.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/apollomoonlandingsvideocon.htm</a>
+&gt; &gt; &gt; &gt;
+&gt; &gt; &gt; &gt;
+&gt; &gt;
+&gt;=== message truncated ===
+&gt;
+&gt;
+&gt;D.J. Barrow Linux kernel developer
+&gt;eMail: <a href="/ym/Compose?To=dj_barrow@ariasoft.ie&YY=65868&order=down&sort=date&pos=0&view=a&head=b">dj_barrow@ariasoft.ie</a>
+&gt;Home: +353-22-47196.
+&gt;Mobile (IRL) +353-(0)86 1715438
+&gt;
+&gt;__________________________________________________
+&gt;Do You Yahoo!?
+&gt;Tired of spam?  Yahoo! Mail has the best spam protection around
+&gt;<a href="http://mail.yahoo.com" target=_blank >http://mail.yahoo.com</a>
+
+
+Bryan Palaszewski
+NASA John H. Glenn Research Center
+Lewis Field
+MS 5-10
+Cleveland, OH 44135
+(216) 977-7493  Voice
+(216) 433-5802  FAX
+<a href="/ym/Compose?To=bryan.a.palaszewski@nasa.gov&YY=65868&order=down&sort=date&pos=0&view=a&head=b">bryan.a.palaszewski@nasa.gov</a>
+
+SBIR Fuels and Space Propellants Web Site:
+<a href="http://sbir.grc.nasa.gov/launch/foctopsb.htm" target=_blank >http://sbir.grc.nasa.gov/launch/foctopsb.htm</a>
+
+Digital Learning Network - Student Videoconferencing Web Sites:
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_rocketry_videoc.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_rocketry_videoc.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_humans_in_space.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/history_of_humans_in_space.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/apollomoonlandingsvideocon.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/apollomoonlandingsvideocon.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/the_moon_videoconference.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/the_moon_videoconference.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/asteroidsvideocon2.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/asteroidsvideocon2.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/WhyAccidents.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/WhyAccidents.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/meet_a_nasa_aeronautics_ex.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/meet_a_nasa_aeronautics_ex.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/advanced_space_propulsion_.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/advanced_space_propulsion_.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/humans_to_mars_videoconfer.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/humans_to_mars_videoconfer.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/SystemsEngineering.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/SystemsEngineering.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/carsinspace.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/carsinspace.htm</a>
+
+<a href="http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/MoonBases.htm" target=_blank >http://www.grc.nasa.gov/WWW/K-12/DLN/descriptions/MoonBases.htm</a>
+
+
+
+</tt></pre>
+
+
+
+
+
+
+
+
+<!-- toctype = X-unknown -->
+
+<!-- toctype = text -->
+<!-- text -->
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<!-- END TOC -->				
+
+
+
+<form name=showLetter2 method=post action="/ym/ShowLetter?Idx=0&Search=&YY=65868&order=down&sort=date&pos=0&view=a&head=b">
+<input type=hidden name=".crumb" value="feDAZUeLzM5"><input type=hidden name="MsgId" value="1956_6886430_590541_2695_2959_0_133666_9424_346330780">
+<input type=hidden name="box" value="Inbox">
+<input type=hidden name=MOV value="">
+<input type=hidden name=NewFol value="">
+<input type="hidden" name="destBox" value="">
+<input type="hidden" name="newfoldermessage" value="Please enter a name for your folder.">
+<input type="hidden" name="DEL" value="">				
+<div id="contentbuttonbarbottom" class="contentbuttonbar">
+<span class="first">
+<button type="button" name="delete" id="deletebottom" value="Delete" onclick="Delete_Click(this);">Delete</button>
+	
+<button type="button" value="Reply" id="replybottom" class="hasdefaultstate">Reply</button>
+	
+<button type="button" value="Forward" id="forwardbottom" class="hasdefaultstate">Forward</button>
+	
+	
+<button type="button" 
+	        value="Spam" 
+	     onclick="document.spamform.submit();">Spam</button>
+
+<button type="button" id="movebottom" name="move" class="menubutton" title="Move selected message(s)">Move...</button>
+</span>
+</div>
+</form>
+
+<div class="contentnav">
+<span class="first">
+<a href="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&PREV=1&inc=&num=&Idx=0&Search=&YY=65868&order=down&sort=date&pos=0&view=a&head=b" onmouseover="window.status='From: mark_perry@runbox.com, Subject: Stuttgart';return true" onmouseout="window.status=window.defaultStatus;return true">Previous</a>
+								 | 
+<a href="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&NEXT=1&inc=&num=&Idx=0&Search=&YY=65868&order=down&sort=date&pos=0&view=a&head=b" onmouseover="self.status='From: mark_perry@runbox.com, Subject: Re: seeing as Jupiter has a suitable atmosphere for an atomic ramjet';return true" onmouseout="window.status=window.defaultStatus;return true">Next</a>
+								 | <a href="/ym/ShowFolder?box=Inbox&YY=65868&order=down&sort=date&pos=0&view=a&head=b" onmouseover="window.status='Folder: Inbox';return true" onmouseout="window.status=window.defaultStatus;return true">Back to Messages</a>
+</span>
+<span class="last">
+<a href="/ym/ShowLetter/file.txt?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&bodyPart=TEXT&filename=file.txt&save=1&download=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b">Save Message Text</a> | <a href="/ym/ShowLetter?box=Inbox&MsgId=1956_6886430_590541_2695_2959_0_133666_9424_346330780&Idx=0&Search=&Nhead=f&YY=65868&order=down&sort=date&pos=0&view=a&head=b">Full Headers</a>
+</span>
+</div>
+</td>
+</tr>
+</table>
+
+<div id="globalbuttonbarbottom" class="globalbuttonbar">
+<table cellpadding="0" cellspacing="0" border="0">
+<tr>
+<td width="1%" nowrap>
+<button id="checkmailbutton" type="button" onclick="window.location='/ym/ShowFolder?rb=Inbox&reset=1&YY=65868&order=down&sort=date&pos=0&view=a&head=b&YN=1';" title="Check for new mail (Shortcut keys: Control+Shift+C)">Check Mail</button>
+<button id="composebutton"  type="button" onclick="window.location='/ym/Compose?YY=65868&order=down&sort=date&pos=0&view=a&head=b';" title="Compose a new message (Shortcut keys: Control+Shift+P)">Compose</button>
+		
+		
+
+			
+</td>
+<td align="right" width="98%">
+		
+<!-- <span>TG: UI: SFI: SFV:</span> -->
+			
+<span id="searchtestfields">
+
+
+<script>
+                    var url1 = "http://us.f511.mail.yahoo.com/ym/Search?Find=1&B=1&_p=bottom"; 
+    
+   </script>
+	<table cellpadding="0" cellspacing="0" border="0" style="margin-left:.5em;">
+		<tr>
+			<td>
+			    				<input type="text" size="20" maxlength=50 name="searchquery1" id="searchquery1" value="" style="margin-right:.5em;vertical-align:baseline;" onkeypress="SearchQuery_KeyPress(this,event,1);">
+			    	
+			</td>
+			<td nowrap>
+				<input type="hidden" id="searchField1" name="searchField" value="message">
+
+			    	
+			    <button id="searchmail1" type="button" name="searchmail1" value="Search Mail" class="hasdefaultstate">Search Mail</button>
+			     
+			        <button id="searchtheweb" type="button" name="searchtheweb" value="Search the Web" onclick="submitWebSearch(1)" style="width:11em; ">Search the Web</button>
+			</td>
+		</tr>
+	</table>
+
+</span>
+			
+		
+</td>
+</tr>
+</table>
+</div>
+		
+<div id="movemenu" class="buttonmenu">
+<strong>Move Options</strong>
+<ul><li value="0">[New Folder]</li><li value="1" title="Accountants" iname="Accountants">
+Accountants</li><li value="1" title="Accountants Sent" iname="Accountants Sent">
+Accountants Sent</li><li value="1" title="Contacts" iname="Contacts">
+Contacts</li><li value="1" title="Evgeniya" iname="Evgeniya">
+Evgeniya</li><li value="1" title="Harvey Nash" iname="Harvey Nash">
+Harvey Nash</li><li value="1" title="Important" iname="Important">
+Important</li><li value="1" title="Jokes" iname="Jokes">
+Jokes</li><li value="1" title="LA International" iname="LA International">
+LA International</li><li value="1" title="Mailing Lists" iname="Mailing Lists">
+Mailing Lists</li><li value="1" title="Not very important" iname="Not very important">
+Not very important</li><li value="1" title="Weekly Reports" iname="Weekly Reports">
+Weekly Reports</li><li value="1" title="angelika" iname="angelika">
+angelika</li><li value="1" title="fundamental" iname="fundamental">
+fundamental</li><li value="1" title="hiring" iname="hiring">
+hiring</li><li value="1" title="intresting links" iname="intresting links">
+intresting links</li><li value="1" title="jobs" iname="jobs">
+jobs</li><li value="1" title="nerds" iname="nerds">
+nerds</li><li value="1" title="orders" iname="orders">
+orders</li><li value="1" title="publishing" iname="publishing">
+publishing</li><li value="1" title="resumes" iname="resumes">
+resumes</li><li value="1" title="theoryofcdr" iname="theoryofcdr">
+theoryofcdr</li><li value="1" title="theoryofcdrprize" iname="theoryofcdrprize">
+theoryofcdrprize</li><li value="1" title="women" iname="women">
+women</li></ul>
+</div>		
+
+<div id="forwardmenu" class="buttonmenu">
+<strong>Forward Options</strong>
+<ul>
+<li value="0">As Inline Text</li>
+<li value="1">As Attachment</li>
+</ul>
+</div>
+
+<div id="replymenu" class="buttonmenu">
+<strong>Reply Options</strong>
+<ul>
+<li value="0">Reply To Sender</li>
+<li value="1">Reply To Everyone</li>
+</ul>		
+</div>
+		
+<script>
+function composeClickHandler(loc)
+{
+	try{
+	if( parent.showCompose )
+		parent.showCompose();
+	else window.location = loc;
+	}
+	catch(error){ window.location = loc; }
+}
+</script>
+<div id="mailshortcuts" class="shortcuts">
+	<strong><a name="mailshortcuts">Mail Shortcuts</a></strong>
+	<div>
+		<ul class="first">
+			<li class="special"><a href="http://us.f511.mail.yahoo.com/ym/ShowFolder?rb=Inbox&YN=1&YY=387381">Check Mail</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+C</li>
+			<li class="special"><a href='javascript:if(typeof(composeClickHandler)!="undefined")composeClickHandler("http://us.f511.mail.yahoo.com/ym/Compose?YY=91807");else{window.location="http://us.f511.mail.yahoo.com/ym/Compose?YY=521484";}'>Compose</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+P</li>
+		</ul>
+		<ul>
+			<li class="special"><a href="http://us.f511.mail.yahoo.com/ym/Folders?YY=351850">Folders</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+F</li>
+			<li class="special"><a href="http://us.f511.mail.yahoo.com/ym/Search?P=1&YY=359001">Advanced Search</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+S</li>
+		</ul>
+		<ul class="last">
+			<li><a href="http://us.f511.mail.yahoo.com/ym/Options?YY=736111">Options</a></li>
+			<li class="special"><a target="_top" href="http://help.yahoo.com/help/us/mail/">Help</a> Ctrl+<img src="http://us.i1.yimg.com/us.yimg.com/i/us/pim/r/medici/all/shift1.gif" width="9" height="8" alt="shift" border="0">+H</li>
+		</ul>
+	</div> 
+</div>
+
+
+<div id="addressbookshortcuts" class="shortcuts">
+	<strong><a target="_top" name="addressbookshortcuts">Address Book Shortcuts</a></strong>	
+	<div>
+		<ul class="first">
+			<li><a target="_top" href="http://address.mail.yahoo.com?addcontact">Add Contact</a></li>
+			<li><a target="_top" href="http://address.mail.yahoo.com?Add&A=g">Add Category</a></li>
+			<li><a target="_top" href="http://address.mail.yahoo.com?edit_grp">Add List</a></li>
+		</ul>
+		<ul>			
+			<li><a target="_top" href="http://address.mail.yahoo.com">View Contacts</a></li>
+			<li><a target="_top" href="http://address.mail.yahoo.com?A=v&cat=__ll">View Lists</a></li>
+		</ul>				
+		<ul>
+			<li><a target="_top" href="http://us.f511.mail.yahoo.com/ym/quickbuilder">Quickbuilder</a></li>
+			<li><a target="_top" href="http://address.mail.yahoo.com?A=B">Import Contacts</a></li>
+					<li><a target="_top" href="http://address.mail.yahoo.com?A=x&A2=11">Synchronize</a></li>
+				</ul>
+		<ul class="last">							
+			<li><a target="_top" href="http://address.mail.yahoo.com?A=o">Addresses Options</a></li>
+			<li><a target="_top" href="http://help.yahoo.com/help/us/ab/">Addresses Help</a></li>
+		</ul>
+	</div> 
+</div>
+
+<div id="calendarshortcuts" class="shortcuts">
+	<strong><a target="_top" name="calendarshortcuts">Calendar Shortcuts</a></strong>
+	<div>
+		<ul class="first">
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=5">Add Event</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=33">Add Task</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=5&evt_type=13">Add Birthday</a></li>
+		</ul>
+		<ul>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=0">Day</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=1">Week</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=2">Month</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=3">Year</a></li>
+		</ul>
+		<ul>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=42">Event List</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=42&POS=0&TYP=101&MOD=0">Reminders</a></li>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=32">Tasks</a></li>
+		</ul>
+		<ul>
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=84">Sharing</a></li>
+					<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=120">Synchronize</a></li>
+				</ul>
+		<ul class="last">
+			<li><a target="_top" href="http://calendar.mail.yahoo.com/?v=70">Calendar Options</a></li>
+			<li><a target="_top" href="http://help.yahoo.com/help/us/cal/">Calendar Help</a></li>
+		</ul>
+	</div>
+</div>
+
+<div id="notepadshortcuts" class="shortcuts">
+	<strong><a target="_top" name="notepadshortcuts">Notepad Shortcuts</a></strong>
+	<div>
+		<ul class="first">
+			<li><a target="_top" href="http://notepad.mail.yahoo.com/?v=161">Add Note</a></li>
+			<li><a target="_top" href="http://notepad.mail.yahoo.com/?v=168">Add Folder</a></li>
+		</ul>
+		<ul>
+			<li><a target="_top" href="http://notepad.mail.yahoo.com/?v=164">View Notes</a></li>
+		</ul>
+		<ul class="last">
+			<li><a target="_top" href="http://notepad.mail.yahoo.com/?v=165">Notepad Options</a></li>
+			<li><a target="_top" href="http://help.yahoo.com/help/us/notepad/">Notepad Help</a></li>
+		</ul>
+	</div> 
+</div>
+
+
+<div id="searchmenu" class="buttonmenu">
+<strong>Advanced Search</strong>
+<ul><li value="0">Advanced Search</li></ul>
+</div>
+<script type="text/javascript">
+
+	if(typeof Search_Click_top != 'undefined' && typeof Search_Click_bottom != 'undefined')
+	{
+	    var oSearchTop = MenuButton('searchmail0',Search_Click_top,'searchmenu',SearchMenu_Click);
+	    var oSearchBottom = MenuButton('searchmail1',Search_Click_bottom,'searchmenu',SearchMenu_Click);
+	}
+	
+</script>
+<br>
+
+<!-- SpaceID=0 timeout (ads1) -->
+
+	<!-- SpaceID=0 timeout (ads1) -->
+
+
+
+        <!-- SpaceID=0 timeout (ads1) -->
+
+        <!-- SpaceID=0 timeout (ads1) -->
+
+
+<br style="line-height: 6px;" />
+<iframe name="asynch" width=0 height=0 style="display:none;"></iframe>
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+<!-- SpaceID=0 timeout (ads1) -->
+
+</body>
+<script type="text/javascript">
+		var oReplyTop = MenuButton('replytop',Reply_Click,'replymenu',ReplyMenu_Click);
+		var oReplyBottom = MenuButton('replybottom',Reply_Click,'replymenu',ReplyMenu_Click);
+	
+		var oForwardTop = MenuButton('forwardtop',Forward_Click,'forwardmenu',ForwardMenu_Click);
+		var oForwardBottom = MenuButton('forwardbottom',Forward_Click,'forwardmenu',ForwardMenu_Click);
+		
+		var oMoveTop = MenuButton('movetop',Move_Click,'movemenu',DestinationFolder_Click);
+		var oMoveBottom = MenuButton('movebottom',Move_Click,'movemenu',DestinationFolder_Click);	
+</script>
+  
+</html>
+<!-- v3.304.18.37 1134530270 -->
+<!-- 0.43652 -->
+<!-- web51102.mail.yahoo.com compressed/chunked Fri Dec 16 10:42:31 PST 2005 -->

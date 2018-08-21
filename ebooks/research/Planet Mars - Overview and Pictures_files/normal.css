@@ -1,0 +1,78 @@
+BODY {
+	FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #000000
+}
+A:link {
+	COLOR: #0080ff
+}
+A:active {
+	COLOR: #0080ff
+}
+A:visited {
+	COLOR: #0080ff
+}
+TD.Stats {
+	FONT-SIZE: 10pt; COLOR: #ff8040; FONT-FAMILY: Verdana, Arial
+}
+H1 {
+	FONT-SIZE: 19pt; COLOR: #ffff80; FONT-FAMILY: Courier New; TEXT-ALIGN: center
+}
+H2 {
+	FONT-SIZE: 16pt; COLOR: #ffff80; FONT-FAMILY: Courier New
+}
+H3 {
+	FONT-SIZE: 11pt; COLOR: #ffff80; FONT-FAMILY: Verdana, Arial
+}
+.Planets {
+	FONT-SIZE: 10pt; FONT-FAMILY: Verdana, Arial
+}
+.Quote {
+	FONT-SIZE: 8pt; FONT-FAMILY: Arial
+}
+P {
+	FONT-SIZE: 10pt; FONT-FAMILY: Verdana, Arial
+}
+P.Big {
+	FONT-SIZE: 12pt; COLOR: #ccffff; FONT-FAMILY: Verdana, Arial
+}
+P.Small {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, Arial
+}
+.Title {
+	FONT-SIZE: 9pt; COLOR: #ffff80; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #110053
+}
+.TitleSmall {
+	FONT-SIZE: 8pt; COLOR: #ffff80; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #110053
+}
+TD.Link {
+	FONT-SIZE: 9pt; COLOR: #ffff80; FONT-FAMILY: Verdana, Arial
+}
+P.Welcome {
+	FONT-SIZE: 9pt; FONT-FAMILY: Verdana, Arial
+}
+.News {
+	FONT-SIZE: 8pt; FONT-FAMILY: Verdana, Arial
+}
+.News {
+	FONT-SIZE: 7pt; FONT-FAMILY: Verdana, Arial
+}
+.Right {
+	FONT-SIZE: 7pt; FONT-FAMILY: Verdana, Arial
+}
+.Yellow {
+	FONT-SIZE: 8pt; COLOR: #ffff80; FONT-FAMILY: Verdana, Arial
+}
+P.BigYellow {
+	FONT-SIZE: 10pt; COLOR: #ffff80; FONT-FAMILY: Verdana, Arial
+}
+.Orange {
+	FONT-SIZE: 8pt; COLOR: #ff8000; FONT-FAMILY: Verdana, Arial
+}
+P.Link {
+	FONT-SIZE: 8pt; COLOR: #ffff80; FONT-FAMILY: Verdana, Arial
+}
+.Navigate {
+	FONT-SIZE: 8pt; COLOR: #80ffff; FONT-FAMILY: Courier, Verdana
+}
+.More {
+	FONT-SIZE: 6pt; COLOR: #000240; FONT-FAMILY: Verdana, Arial
+}

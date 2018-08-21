@@ -1,0 +1,252 @@
+BODY {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/red_left_edge.png); BACKGROUND-REPEAT: repeat-y; BACKGROUND-COLOR: #fff
+}
+A:link {
+	COLOR: #00d
+}
+.VertMenu A:visited {
+	COLOR: #00d
+}
+.YouAreHere A:visited {
+	COLOR: #00d
+}
+A:visited {
+	COLOR: #d00
+}
+.Label {
+	COLOR: #d00
+}
+.Refresh A {
+	COLOR: #d00
+}
+BODY {
+	COLOR: #000
+}
+#SubsectionMenu A {
+	COLOR: #000
+}
+#MastheadStrap {
+	BACKGROUND-COLOR: #f00
+}
+#MastheadMain {
+	BACKGROUND-COLOR: #f00
+}
+#MastheadTop {
+	BACKGROUND-COLOR: #f00
+}
+#Footer {
+	BACKGROUND-COLOR: #f00
+}
+#Search {
+	BACKGROUND-COLOR: #f00
+}
+#Related H3 {
+	BACKGROUND-COLOR: #f00
+}
+#RelatedStuff TH {
+	BACKGROUND-COLOR: #f00
+}
+#SubsectionMenu LI {
+	BORDER-LEFT-COLOR: #f00; BORDER-BOTTOM-COLOR: #f00; BORDER-TOP-COLOR: #f00; BORDER-RIGHT-COLOR: #f00
+}
+#NewsPanel #Content {
+	BORDER-LEFT-COLOR: #f00; BORDER-BOTTOM-COLOR: #f00; BORDER-TOP-COLOR: #f00; BORDER-RIGHT-COLOR: #f00
+}
+.Buttons {
+	BACKGROUND-COLOR: #f30
+}
+#MastheadMain {
+	BORDER-LEFT-COLOR: #f96; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #f96; BORDER-RIGHT-COLOR: #900
+}
+#Footer {
+	BORDER-LEFT-COLOR: #f96; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #f96; BORDER-RIGHT-COLOR: #900
+}
+#Search {
+	BORDER-LEFT-COLOR: #f96; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #f96; BORDER-RIGHT-COLOR: #900
+}
+#Search P {
+	BORDER-LEFT-COLOR: #f96; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #f96; BORDER-RIGHT-COLOR: #900
+}
+#Related H3 {
+	BORDER-LEFT-COLOR: #f96; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #f96; BORDER-RIGHT-COLOR: #900
+}
+#RelatedStuff TH {
+	BORDER-LEFT-COLOR: #f96; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #f96; BORDER-RIGHT-COLOR: #900
+}
+#NewsPanel H1 {
+	BORDER-LEFT-COLOR: #f96; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #f96; BORDER-RIGHT-COLOR: #900
+}
+.DropMenu {
+	BORDER-LEFT-COLOR: #900; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #900; BORDER-RIGHT-COLOR: #900
+}
+.Buttons {
+	BORDER-LEFT-COLOR: #900; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #900; BORDER-RIGHT-COLOR: #900
+}
+.Buttons A {
+	BORDER-LEFT-COLOR: #900; BORDER-BOTTOM-COLOR: #900; BORDER-TOP-COLOR: #900; BORDER-RIGHT-COLOR: #900
+}
+#SectionMenu {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/red_highlight_top_left.png)
+}
+.Buttons A {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/red_highlight_top_left.png)
+}
+#Masthead {
+	COLOR: #fff
+}
+#Masthead A {
+	COLOR: #fff
+}
+#Footer {
+	COLOR: #fff
+}
+.Menu A {
+	COLOR: #fff
+}
+.Menu A:visited {
+	COLOR: #fff
+}
+#SitesMenu A {
+	COLOR: #fff
+}
+#MastheadStrap TD {
+	COLOR: #fff
+}
+#Related H3 {
+	COLOR: #fff
+}
+#RelatedStuff TH {
+	COLOR: #fff
+}
+#RelatedStuff TH A {
+	COLOR: #fff
+}
+.Menu A:hover {
+	COLOR: #fd9
+}
+.Menu A:unknown {
+	COLOR: #fd9
+}
+.Menu A:active {
+	COLOR: #fd9
+}
+#MastheadStrap A:hover {
+	COLOR: #fd9
+}
+#MastheadStrap A:unknown {
+	COLOR: #fd9
+}
+#MastheadStrap A:active {
+	COLOR: #fd9
+}
+#SitesMenu A:hover {
+	COLOR: #fd9
+}
+#SitesMenu A:unknown {
+	COLOR: #fd9
+}
+#SitesMenu A:active {
+	COLOR: #fd9
+}
+#MastheadTop {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/red_dark_fade.png)
+}
+#MastheadStrap {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/red_dark_fade.png)
+}
+#Masthead {
+	BACKGROUND-COLOR: #e00
+}
+.DropMenu {
+	BACKGROUND-COLOR: #e00
+}
+#SubsectionMenu {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/btm_shadow.png)
+}
+#UnderMenuBar {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/btm_shadow.png)
+}
+#UnderMenuBar HR {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/btm_shadow.png)
+}
+#Footer {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/red_watermark_btm.png)
+}
+.WatermarkedBox {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/grey_watermark_top_right.png)
+}
+H2 {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/grey_watermark_top.png)
+}
+H2 {
+	BORDER-LEFT-COLOR: #ddd; BORDER-BOTTOM-COLOR: #ddd; BORDER-TOP-COLOR: #ddd; BORDER-RIGHT-COLOR: #ddd
+}
+.WatermarkedBox {
+	BORDER-LEFT-COLOR: #ddd; BORDER-BOTTOM-COLOR: #ddd; BORDER-TOP-COLOR: #ddd; BORDER-RIGHT-COLOR: #ddd
+}
+#Related {
+	BORDER-LEFT-COLOR: #ddd; BORDER-BOTTOM-COLOR: #ddd; BORDER-TOP-COLOR: #ddd; BORDER-RIGHT-COLOR: #ddd
+}
+#RelatedStuff {
+	BORDER-LEFT-COLOR: #ddd; BORDER-BOTTOM-COLOR: #ddd; BORDER-TOP-COLOR: #ddd; BORDER-RIGHT-COLOR: #ddd
+}
+#Teaser {
+	BORDER-LEFT-COLOR: #ddd; BORDER-BOTTOM-COLOR: #ddd; BORDER-TOP-COLOR: #ddd; BORDER-RIGHT-COLOR: #ddd
+}
+.Section A {
+	COLOR: #666
+}
+.Section A:visited {
+	COLOR: #666
+}
+.Date {
+	COLOR: #666
+}
+#Related H3 {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/red_watermark_top.png)
+}
+#RelatedStuff TH.LastItem {
+	BACKGROUND-IMAGE: url(/Design/graphics/Reg_default/red_watermark_top.png)
+}
+.Error {
+	COLOR: #000; BACKGROUND-COLOR: #fbb
+}
+A:hover {
+	COLOR: #888
+}
+A:unknown {
+	COLOR: #888
+}
+#SubsectionMenu A:hover {
+	COLOR: #888
+}
+#SubsectionMenu A:unknown {
+	COLOR: #888
+}
+.YouAreHere A:hover {
+	COLOR: #888
+}
+.YouAreHere A:unknown {
+	COLOR: #888
+}
+.VertMenu A:hover {
+	COLOR: #888
+}
+.VertMenu A:unknown {
+	COLOR: #888
+}
+A:active {
+	COLOR: #aaa
+}
+A:active {
+	COLOR: #aaa
+}
+#SubsectionMenu A:active .YouAreHere A:active {
+	COLOR: #aaa
+}
+.VertMenu A:active {
+	COLOR: #aaa
+}
+#QuickJump .section {
+	COLOR: #fff; BACKGROUND-COLOR: #e00
+}

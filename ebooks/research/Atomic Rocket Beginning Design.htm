@@ -1,0 +1,918 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0046)http://www.projectrho.com/rocket/rocket3e.html -->
+<HTML><HEAD><TITLE>Atomic Rocket: Beginning Design</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252"><LINK 
+href="http://www.projectrho.com/rocket/atomic.ico" rel="SHORTCUT ICON"><LINK 
+href="Atomic Rocket Beginning Design_files/rocket3.css" type=text/css 
+rel=STYLESHEET>
+<SCRIPT src="Atomic Rocket Beginning Design_files/rocket3pages.js"></SCRIPT>
+
+<SCRIPT src="Atomic Rocket Beginning Design_files/rocket3.js"></SCRIPT>
+
+<META content="MSHTML 6.00.2800.1400" name=GENERATOR></HEAD>
+<BODY class=stdtext text=#ffffff bgColor=#001858>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+  <TBODY>
+  <TR>
+    <TD background="Atomic Rocket Beginning Design_files/index_02.jpg"><IMG 
+      src="Atomic Rocket Beginning Design_files/index_01b.jpg"></TD></TR></TBODY></TABLE>
+<DIV align=right>
+<SCRIPT language=JavaScript>
+<!--
+	RegisterRocketPage("rocket3e.html")
+	PrintRocketPageNum()
+	PrintFullLastModDate()
+//-->
+</SCRIPT>
+</DIV>
+<DIV align=center>
+<SCRIPT language=JavaScript>
+<!--
+	PrintRocketNavMenu();
+//-->
+</SCRIPT>
+</DIV>
+<DIV align=center>
+<H1>Beginning Spacecraft Design</H1></DIV>
+<DIV align=center><IMG height=300 alt="" 
+src="Atomic Rocket Beginning Design_files/galileo2.jpg" width=211 
+border=0></DIV>
+<DIV align=center><EM>The Galileo from <STRONG>Rocket Ship Galileo</STRONG> by 
+Robert A. Heinlein, 1944</EM></DIV>
+<HR>
+
+<UL type=disc>
+  <LI><STRONG><A 
+  href="http://www.projectrho.com/rocket/rocket3e.html#radshield">Radiation 
+  Shielding</A></STRONG> 
+  <LI><STRONG><A 
+  href="http://www.projectrho.com/rocket/rocket3e.html#structure">Structure</A></STRONG> 
+
+  <LI><STRONG><A 
+  href="http://www.projectrho.com/rocket/rocket3e.html#power">Power 
+  Plant</A></STRONG> 
+  <LI><STRONG><A 
+  href="http://www.projectrho.com/rocket/rocket3e.html#radiator">Heat 
+  Radiators</A></STRONG> 
+  <LI><STRONG><A 
+  href="http://www.projectrho.com/rocket/rocket3e.html#other">Other</A></STRONG> 
+  </LI></UL>
+<HR>
+
+<HR>
+
+<P>Given the mass ratio of 3, we know that the <STRONG><EM>Polaris</EM></STRONG> 
+is 66% propellant and 33% everything else. Give the total mass of 1188.9 tons 
+means 792.6 tons of propellant and 396.3 tons of everything else. Since each GC 
+engine is 30 tons, that means 150 tons of engine and 246.3 of everything 
+else.</P>
+<DIV align=center><IMG height=187 alt="" 
+src="Atomic Rocket Beginning Design_files/shadowshield.jpg" width=582 
+border=0></DIV>
+<DIV align=center><EM>diagram adapted from <STRONG>Propulsion Systems for Space 
+Flight</STRONG> by William R. Corliss, 1960</EM></DIV>
+<P>"Everything else" includes a spacecraft's structure, propellant tankage, 
+lifesystem, crewmembers, consumables, hydroponics tanks, cargo, atomic missiles, 
+and other <A href="http://www2.jpl.nasa.gov/basics/bsf11-1.html">ship 
+systems</A>. </P>
+<HR>
+
+<H2>RADIATION SHIELDING</H2>
+<P><A name=radshield>Don't</A> forget the solid lead and paraffin anti-radiation 
+"shadow shield" between the atomic engine and <STRONG><EM>Polaris'</EM></STRONG> 
+crew <EM>(lead for gamma shielding, paraffin for neutron shielding)</EM>. As a 
+matter of fact, you probably want to design the ship so that 
+<STRONG><EM>everything</EM></STRONG> is between the engine and the crew.</P>
+<P>Note that the larger the distance between the crew and the atomic engine, the 
+narrow the angle the shadow has to be, thus the smaller the shadow shield. Since 
+the shadow shield is several tons of rocket mass that is not payload, the 
+smaller it is, the better. Also note that radiation weakens with distance due to 
+the inverse-square law, which is another argument in favor of plenty of 
+distance. As <A 
+href="http://www.projectrho.com/rocket/rocket3d.html#multiple">previously 
+mentioned</A>, if the rocket has multiple atomic engines one wants them 
+clustered closely or they will require a larger shadow shield, or even one 
+shield for each engine. <EM>(for "cluster closely" read: "have the radioactive 
+components as close to the axis of the spacecraft as possible")</EM> </P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><IMG height=498 alt="" 
+      src="Atomic Rocket Beginning Design_files/clarke4.jpg" width=432 
+      border=0></DIV>
+      <DIV align=center><EM><STRONG>Reach For Tomorrow</STRONG> by Sir Arthur C. 
+      Clarke, 1956</EM></DIV></TD>
+    <TD>
+      <DIV align=center><EM>This is a classic "dumb-bell" shape. Both the 
+      life-system and nuclear drive sections are spherical in order to minimize 
+      surface area. The rod in the middle is to increase the distance between 
+      the crew and the reactor. This is a strictly orbit-to-orbit ship, which 
+      cannot land on a planet</EM></DIV></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><EM>This is a semi "dumb-bell" shape. The life-system is 
+      the sphere in front, while the nuclear drive is shielded by the propellant 
+      tanks. Note the outriggers containing the radar dishes, to give them a 
+      better field of view. This is also a strictly orbit-to-orbit 
+      ship.</EM></DIV></TD>
+    <TD>
+      <DIV align=center><IMG height=354 alt="" 
+      src="Atomic Rocket Beginning Design_files/orbiter.jpg" width=399 
+      border=0></DIV>
+      <DIV align=center><EM><STRONG>The Exploration of Space</STRONG> by Sir 
+      Arthur C. Clarke, 1951</EM></DIV></TD></TR></TBODY></TABLE>
+<P>As a rough guess, for atomic engines with a thermal power level of one 
+megawatt to one gigawatt, the shadow shield will be from 1.0 to 0.1 kilograms 
+per kilowatt. This assumes that the spacecraft is long and skinny, which reduces 
+the angular size of the shield. The shield will be a composite of gamma ray 
+shielding materials and neutron shielding materials.</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><IMG height=191 alt="" 
+      src="Atomic Rocket Beginning Design_files/nuclear_reactor.jpg" width=200 
+      border=0></DIV>
+      <DIV align=center><EM>Cherenkov Radiation.</EM></DIV>
+      <DIV align=center><EM>If you see this, the good news is you can probably 
+      live long enough write your will.</EM></DIV>
+      <DIV align=center><EM>If you write very quickly.</EM></DIV></TD>
+    <TD>
+      <P>In Heinlein's <EM>"The Green Hills of Earth"</EM>, atomic spacecraft 
+      designers are guilty of scrimping on shadow shields in order to save mass. 
+      The designers were under pressure to maximize payload mass without 
+      worrying about trivial incidentals like the health of the engine crew. 
+      This is why the jetmen working next to the atomic engines find it so hard 
+      to get insurance, and seldom have children. At least ones that are not 
+      mutants.</P></TD></TR></TBODY></TABLE>
+<HR>
+
+<P>From <STRONG>"The Green Hills of Earth</STRONG> by Robert Heinlein. 1947. 
+</P><EM style="COLOR: #bbffff">
+<P>Ten minutes later he was back. "Captain," he stated darkly, "that number two 
+jet ain't fit. The cadmium dampers are warped." </P>
+<P>"Why tell me? Tell the Chief." </P>
+<P>"I did, but he says they will do. He's wrong." </P>
+<P>The captain gestured at the book. "Scratch out your name and scram. We raise 
+ship in thirty minutes." </P>
+<P>Rhysling looked at him, shrugged, and went below again. </P>
+<P>It is a long climb to the Jovian planetoids; a Hawk-class clunker had to 
+blast for three watches before going into free flight. Rhysling had the second 
+watch. Damping was done by hand then, with a multiplying vernier and a danger 
+gauge. When the gauge showed red, he tried to correct it -- no luck. </P>
+<P>Jetmen don't wait; that's why they are jetmen. He slapped the emergency 
+discover and fished at the hot stuff with the tongs. The lights went out, he 
+went right ahead. A jetman has to know his power room the way your tongue knows 
+the inside of your mouth. </P>
+<P>He sneaked a quick look over the top of the lead baffle when the lights went 
+out. The blue radioactive glow did not help him any; he jerked his head back and 
+went on fishing by touch. </P>
+<P>When he was done he called over the tube, "Number two jet out. And for 
+crissake get me some light down here!" </P>
+<P>There was light -- the emergency circuit -- but not for him. The blue 
+radioactive glow was the last thing his optic nerve ever responded to. </P>
+<P>* * *</P>
+<P></P>
+<P>Rhysling obliged, then said, "You youngsters have got it soft. Everything 
+automatic. When I was twisting her tail you had to stay awake." </P>
+<P>"You still have to stay awake." They fell to talking shop and Macdougal 
+showed him the direct response damping rig which had replaced the manual vernier 
+control which Rhysling had used. Rhysling felt out the controls and asked 
+questions until he was familiar with the new installation. It was his conceit 
+that he was still a jetman and that his present occupation as a troubadour was 
+simply an expedient during one of the fusses with the company that any man could 
+get into. </P>
+<P>"I see you still have the old hand damping plates installed," he remarked, 
+his agile fingers flitting over the equipment. </P>
+<P>"All except the links. I unshipped them because they obscure the dials." </P>
+<P>"You ought to have them shipped. You might need them." </P>
+<P>"Oh, I don't know. I think--" Rhysling never did find out what Macdougal 
+thought for it was at that moment the trouble tore loose. Macdougal caught it 
+square, a blast of radioactivity that burned him down where he stood. </P>
+<P>Rhysling sensed what had happened. Automatic reflexes of old habit came out. 
+He slapped the discover and rang the alarm to the control room simultaneously. 
+Then he remembered the unshipped links. He had to grope until he found them, 
+while trying to keep as low as he could to get maximum benefit from the baffles. 
+Nothing but the links bothered him as to location. The place was as light to him 
+as any place could be; he knew every spot, every control, the way he knew the 
+keys of his accordion. </P>
+<P>"Power room! Power room! What's the alarm?" </P>
+<P>"Stay out!" Rhysling shouted. "The place is 'hot.'" He could feel it on his 
+face and in his bones, like desert sunshine. </P>
+<P>The links he got into place, after cursing someone, anyone, for having failed 
+to rack the wrench he needed. Then he commenced trying to reduce the trouble by 
+hand. It was a long job and ticklish. Presently he decided that the jet would 
+have to be spilled, pile and all. </P>
+<P>First he reported. "Control!" </P>
+<P>"Control aye aye!" </P>
+<P>"Spilling jet three -- emergency." </P>
+<P>"Is this Macdougal?" </P>
+<P>"Macdougal is dead. This is Rhysling, on watch. Stand by to record." </P>
+<P></P>The ship was safe now and ready to limp home shy one jet. As for himself, 
+Rhysling was not so sure. That "sunburn" seemed sharp, he thought. He was unable 
+to see the bright, rosy fog in which he worked but he knew it was there. He went 
+on with the business of flushing the air out through the outer valve, repeating 
+it several times to permit the level of radioaction to drop to something a man 
+might stand under suitable armor. 
+<P></P></EM>
+<HR>
+
+<DIV align=center><IMG height=350 alt="" 
+src="Atomic Rocket Beginning Design_files/sentry.jpg" width=882 border=0></DIV>
+<DIV align=center><EM>Artwork by Ed Valigursky</EM></DIV>
+<P>Keep in mind that these are called "shadow" shields because it is too 
+expensive to put radiation shielding all around the hot stuff <EM>("expensive" 
+in terms of reduction of payload mass)</EM>. This means that if one ventures 
+outside of the spacecraft, you run the danger of moving out of the shadow and 
+into the deadly glow of the unshielded engine. When the spacecraft is designed, 
+it is also important to ensure that no part of the ship scatters the lethal 
+radiation around the shadow shield and into the crew. The heat radiators, for 
+instance. If lifting off from a planet with an atmosphere, said atmosphere can 
+also create pesky neutron backscatter.</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <P>This does make exiting a landed ship somewhat challenging, and makes an 
+      argument for a ground crew wearing lead suits. In the Tom Corbett books, 
+      any ship that was to be on the ground for more than three days would have 
+      its liquid fissionable fuel removed by the "hot soup" wagon. Keep in mind 
+      that the neutron flux from the engine would transmute the elements 
+      composing the rocket's structure, making the aft end of the spacecraft 
+      radioactive even if all the fissionables are removed. Spaceship designers 
+      should also construct the aft end of the spacecraft out of materials that 
+      are not only strong, but that will transmute into materials of still 
+      acceptable strength.</P></TD>
+    <TD>
+      <DIV align=center><IMG height=361 alt="" 
+      src="Atomic Rocket Beginning Design_files/landing2.jpg" width=337 
+      border=0></DIV>
+      <DIV align=center><EM>from <STRONG>Timothy's Space Book</STRONG>, 
+      1952</EM></DIV></TD></TR></TBODY></TABLE>
+<HR>
+
+<P>From <STRONG>DOUBLE STAR</STRONG> by Robert Heinlein, 1956</P><EM 
+style="COLOR: #bbffff">
+<P>When we stepped out of the little car it went back where it came from. In 
+front of me was a ladder disappearing into the steel ceiling above. Dak nudged 
+me. "Up you go." There was a scuttle hole at the top and on it a sign: RADIATION 
+HAZARD-Optimax 13 Seconds. The figures had been chalked in. I stopped. I have no 
+special interest in offspring but I am no fool. Dak grinned and said, "Got your 
+lead britches on? Open it, go through at once and straight up the ladder into 
+the ship. If you don't stop to scratch, you'll make it with at least three 
+seconds to spare." </P>
+<P>I believe I made it with five seconds to spare. I was out in the sunlight for 
+about ten feet, then I was inside a long tube in the ship. I used about every 
+third rung. </P></EM>
+<HR>
+
+<DIV align=center><IMG height=353 alt="" 
+src="Atomic Rocket Beginning Design_files/elevator1.jpg" width=393 border=0> 
+<IMG height=353 alt="" src="Atomic Rocket Beginning Design_files/elevator2.jpg" 
+width=223 border=0> <IMG height=353 alt="" 
+src="Atomic Rocket Beginning Design_files/elevator3.jpg" width=276 border=0> 
+</DIV>
+<DIV align=center><EM>The FFE [AKA "SPIP"] from <A 
+href="http://us.imdb.com/Title?0053388">Battle in Outer Space (Uchu 
+daisenso)</A>, 1959</EM></DIV>
+<P>An interesting solution was in the old "B" movie Battle in Outer Space. 
+Consider, if a girder is thirty meters long when it is vertical, it is still 
+thirty meters long if horizontal. Say that thirty meters is a safe distance from 
+the atomic drive in the ship's tail. Attach a thirty meter girder by a hinge on 
+the atomic drive, and put an elevator cage on the other end. When the girder is 
+vertical, the landing party enters the cage, a safe thirty meters from the 
+drive. The girder then pivots on the hinge until the cage is on the ground. All 
+this time the landing party is still at a safe distance. They then exit the cage 
+onto the planet's surface. If the ship is streamlined, the girder and cage will 
+be recessed into the hull, with the outer part of the girder covered by the 
+ship's skin <EM>(you can see the recess hole in the middle picture above)</EM>. 
+</P>
+<P>There was a similar arrangement in <STRONG>The Jupiter Theft</STRONG> by 
+Donald Moffitt </P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><IMG height=163 alt="" 
+      src="Atomic Rocket Beginning Design_files/topjet.jpg" width=88 
+      border=0></DIV>
+      <DIV align=center><EM>In this ancient design for an atomic powered lunar 
+      lander, the radioactive propulsion unit is in the nose of the ship. This 
+      allows astronauts to exit the landed ship without going near the atomic 
+      pile.</EM></DIV></TD>
+    <TD>
+      <P>In the interest of radiation safety, the corridor to the atomic engine 
+      room is going to have dogleg bends in it. Radiation travels in straight 
+      lines but people don't have to. This allows the crew to quickly move out 
+      of direct line of sight with the reactor. The corridor exit will have an 
+      adjacent decontamination booth. </P></TD></TR></TBODY></TABLE>
+<HR>
+
+<P>From <STRONG>FARMER IN THE SKY</STRONG> by Robert Heinlein. 1950. </P><EM 
+style="COLOR: #bbffff">
+<P>"Does that give anyone a notion of why the Mayflower was assembled out in an 
+orbit and will never ever land anywhere?" </P>
+<P>"Too hot," somebody said. </P>
+<P>"'Too hot' is an understatement. If the Mayftower had blasted off from Mojave 
+space port the whole Los Angeles Borough of the City of Southern California 
+would have been reduced to a puddle of lava and people would have been killed by 
+radiation and heat from Bay City to Baja California. And that will give you an 
+idea of why the shielding runs right through the ship between here and the power 
+plant, with no way at all to get at the torch." </P>
+<P>We had the misfortune to have Noisy Edwards along, simply because he was from 
+the same bunk room. Now he spoke up and said, "Suppose you have to make a 
+repair?" </P>
+<P>"There is nothing to go wrong," explained Mr. Ortega. "The power plant has no 
+moving parts of any sort" </P>
+<P>Noisy wasn't satisfied. "But suppose something did go wrong, how would you 
+fix it if you can't get at it?" </P>
+<P>Noisy has an irritating manner at best; Mr. Ortega sounded a little impatient 
+when he answered. "Believe me, son, even if you could get at it, you wouldn't 
+want to. No indeed!" </P>
+<P>"Humph!" said Noisy. "All I've got to say is, if there isn't any way to make 
+a repair when a repair is needed, what's the use in sending engineer officers 
+along?" </P>
+<P>You could have heard a pin drop. Mr. Ortega turned red, but all he said was, 
+"Why, to answer foolish questions from youngsters like yourself, I suppose." He 
+turned to the rest of us. "Any more questions?" </P>
+<P>Naturally nobody wanted to ask any then. He added, "I think that's enough for 
+one session. School's out." </P>
+<P>I told Dad about it later. He looked grim and said, "I'm afraid Chief 
+Engineer Ortega didn't tell you the whole truth." </P>
+<P>"Huh?" </P>
+<P>"In the first place there is plenty for him to do in taking care of the 
+auxiliary machinery on this side of the shield. But it is possible to get at the 
+torch, if necessary." </P>
+<P>"Huh? How?" </P>
+<P>"There are certain adjustments which could conceivably have to be made in 
+extreme emergency. In which case it would be Mr. Ortega's proud privilege to 
+climb into a space suit, go outside and back aft, and make them." </P>
+<P>"You mean--" </P>
+<P>"I mean that the assistant chief engineer would succeed to the position of 
+chief a few minutes later. Chief engineers are very carefully chosen, Bill, and 
+not just for their technical knowledge." </P>
+<P>It made me feel chilly inside; I didn't like to think about it. </P></EM>
+<HR>
+
+<P>There was some 1950's era spacecraft designs that attempted to substitute 
+distance for lead shielding <EM>(since distance weighs nothing)</EM>. They were 
+practical designs for exploration craft but pretty silly for warships. Crew 
+cabins on the end of hundred meter booms, or dangling at the end of kilometer 
+long cables, that sort of thing. While you wouldn't want to use the designs, you 
+understand the motivation. When every gram is limited, you don't want to waste 
+it on a shield made out of one of the heaviest elements in existence. The 
+break-even point is where the mass of the boom or cable is equal to the mass of 
+the shadow shield. One source suggested that occured at a cable length of one 
+kilometer.</P>
+<DIV align=center><IMG height=226 alt="" 
+src="Atomic Rocket Beginning Design_files/convairnuke.jpg" width=517 
+border=0></DIV>
+<DIV align=center><EM>Strombecker model #D-38 designed by Krafft Ehricke, 
+1957</EM></DIV>
+<DIV align=center><IMG height=291 alt="" 
+src="Atomic Rocket Beginning Design_files/convairnuke2.jpg" width=517 
+border=0></DIV>
+<DIV align=center><EM>Artwork by Mel Hunter</EM></DIV>
+<DIV align=center><IMG height=399 alt="" 
+src="Atomic Rocket Beginning Design_files/helios.jpg" width=669 border=0></DIV>
+<DIV align=center><EM>Revell model #H-1829 designed by Krafft Ehricke, 
+1959</EM></DIV>
+<HR>
+
+<H2><A name=structure>STRUCTURE</A></H2>
+<P>What is the structure of the ship going to be composed of? The strongest yet 
+least massive of elements. This means Titanium, Magnesium, Aluminum, and those 
+fancy composite materials. And all the interior girders are going to have a 
+series of circular holes in them to reduce mass <EM>(the technical term is 
+"lightening holes")</EM>.</P>
+<DIV align=center><IMG height=280 alt="" 
+src="Atomic Rocket Beginning Design_files/lhole06.jpg" width=373 border=0></DIV>
+<DIV align=center><EM><STRONG>Flying Sub Interior Model Kit</STRONG> by <A 
+href="http://www.lunarmodelsonline.com/">Lunar Models</A></EM></EM></DIV>
+<DIV align=center><IMG height=265 alt="" 
+src="Atomic Rocket Beginning Design_files/lhole03.jpg" width=325 border=0> <IMG 
+height=285 alt="" src="Atomic Rocket Beginning Design_files/lhole05.jpg" 
+width=350 border=0> </DIV>
+<DIV align=center><EM>From <STRONG>Voyage to the Bottom of the Sea</STRONG> <A 
+href="http://www.imdb.com/title/tt0057798/">(1964)</A></EM></EM></DIV>
+<DIV align=center><IMG height=157 alt="" 
+src="Atomic Rocket Beginning Design_files/lholes01.jpg" width=227 border=0> <IMG 
+height=196 alt="" src="Atomic Rocket Beginning Design_files/lholes02.jpg" 
+width=300 border=0> </DIV>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><IMG height=299 alt="" 
+      src="Atomic Rocket Beginning Design_files/corrosion.jpg" width=315 
+      border=0></DIV></TD>
+    <TD>
+      <P>As an interesting side note, rockets constructed of aluminum are 
+      extremely vulnerable to splashes of metallic mercury or dustings of 
+      mercury salts. On aluminum, mercury is an <A 
+      href="http://www.madsci.org/posts/archives/mar98/889541118.Ch.r.html">"oxidizing 
+      catalyst"</A>, which means the blasted stuff can <A 
+      href="http://www.popsci.com/popsci/science/3c2c0b4511b84010vgnvcm1000004eecbccdrcrd.html">corrode 
+      through an aluminum beam</A> in a matter of hours <EM>(in an atmosphere 
+      containing oxygen, of course)</EM>. This is why mercury thermometers are 
+      forbidden on commercial aircraft. </P>
+      <P>Why? Ordinarily aluminum would corrode much faster than iron. However, 
+      iron oxide, <EM>i.e.,</EM> "rust", flakes off, exposing more iron to be 
+      attacked. But aluminum oxide, <EM>i.e.,</EM> "sapphire", sticks tight, 
+      protecting the remaining aluminum with a gem-hard barrier. Except mercury 
+      washes the protective layer away, allowing the aluminum to be consumed by 
+      galloping rust. </P>
+      <P>Alkalis will have a similar effect on aluminum, and acids have a 
+      similar effect on magnesium <EM>(you can dissolve magnesium with 
+      vinegar)</EM>. As far as I know nothing really touches titanium, its 
+      corrosion-resistance is second only to platinum. </P></TD></TR></TBODY></TABLE>
+<P>When laying out the floor plan, you want the spacecraft to balance. That is, 
+if you draw a line from the center of the exhaust bell through the spacecraft's 
+center of gravity, if you continue the line it had better pass through the 
+spacecraft's nose. Otherwise your ship is going to loop-the-loop or tumble like 
+a cheap Fourth of July skyrocket <EM>(Heinlein calls this a rocket "falling off 
+its tail")</EM>. This means that each deck should be "radially symmetric". 
+That's a fancy way of saying that if you have something massive in the 
+north-west corner of "D" deck, you'd better have something equally massive in 
+the south-east corner. This is another reason to strap down the crew during a 
+burn. Walking around could upset the ship's balance, resulting in the dreaded 
+rocket tumble. This will be more of a problem with tiny ships than with huge 
+cruisers, of course. Small ships might have "trim tanks", small tanks into which 
+water can be pumped in order to adjust the balance. The ship will also have 
+heavy gyroscopes that will help prevent the ship from falling off its tail, but 
+there is a limit to how much imbalance that they can compensate for. </P>
+<P>Most of the propellant of a GC engine will be hydrogen <EM>(the fissionable 
+fuel will probably be less than 1% of the total propellant load)</EM> since you 
+want propellant with the lowest molecular mass. Liquid hydrogen has a density of 
+0.07 grams per cubic centimeter. 792.6 tons of propellant = 792,600,000 grams / 
+0.07 = 11,323,000,000 cubic centimeters = 11,323 cubic meters . The volume of a 
+sphere is <STRONG>4/3&#960;r<SUP>3</SUP></STRONG> so you can fit 11,323 cubic meters 
+in a sphere about 14 meters in radius . Almost 92 feet in diameter, egad! It is 
+a pity hydrogen isn't a bit denser. If this offends your aesthetic sense, you'll 
+have to go back and change a few parameters. Maybe a 2<SUP>nd</SUP> generation 
+GC rocket, and a mission from <A 
+href="http://www.projectrho.com/rocket/rocket3Notes.html#terra">Terra</A> to 
+Mars but not back. Maybe use methane instead of hydrogen. It only has an exhaust 
+velocity of 6318 m/s instead of hydrogen's superior 8800 m/s, but it has a 
+density of 0.42 g/cm<SUP>3</SUP>, which would only require a 1.7 meter radius 
+tank. <EM>(Methane has a higher exhaust velocity than one would expect from its 
+molecular weight, due to the fact that the GC engine is hot enough to turn 
+methane into carbon and hydrogen. Note that in a NERVA style engine the reactor 
+might become clogged with carbon deposits.)</EM></P>
+<P><A name=tankmass>Robert</A> Zubrin says that as a rule of thumb, the mass of 
+a fuel tank loaded with liquid hydrogen will be about 87% hydrogen and 13% tank. 
+In other words, multiply the mass of the liquid hydrogen by 
+<STRONG>0.15</STRONG> to get the mass of the empty tank <EM>(0.13 / 0.87 = 
+0.15)</EM>. So our 792.6 tons of hydrogen will need a tank that masses 792.6 * 
+0.15 = <STRONG>119 tons.</STRONG> </P>
+<P>87% propellant and 13% tank is for a rocket designed to land on a planet. An 
+orbit-to-orbit rocket could get by with more hydrogen and less tank. This is 
+because the tanks can be more flimsy since they will not have to endure the 
+stress of landing <EM>(A landing-capable rocket that uses a propellant denser 
+than hydrogen can also get away with a smaller tank percentage)</EM>. Zubrin 
+gives the following ballpark estimates of the tank percentage: </P>
+<UL type=disc>
+  <LI>Argon <EM>(ion rocket)</EM> - 4% 
+  <LI>Water <EM>(Nuclear salt water rocket)</EM> - 4% 
+  <LI>Hydrogen <EM>(NTR / GCR)</EM> - 10% 
+  <LI>LOX/Hydrogen - 6% </LI></UL>
+<P>If you are going to use aerobraking to land your rocket, Zubrin says mass of 
+the heat shield and thermal structure will be about 15% of the total mass being 
+braked. As a wild guess, aerobraking will be limited to killing a velocity of no 
+more than 15 to 30 kilometers per second. This will mostly be used for our 
+purposes designing a emergency re-entry life pod, not a Solar Guard patrol ship. 
+With a sufficiently advanced engine it is more effective just to carry more 
+fuel, so our atomic cruiser will not need to waste mass on such a primitive 
+device. </P>
+<P>In the movie 2010, the good ship <EM>Leonov</EM> had a one-lung propulsion 
+system, so they needed an aerobraking "ballute" to slow them into Jovan orbit. 
+If you are thinking about aerobraking, keep in mind that many worlds in the 
+Solar System do not have atmospheres. </P>
+<HR>
+
+<H2><A name=power>POWER</A> PLANT</H2>
+<P>If you cannot tap your propulsion system for electrical power, you will need 
+a separate power plant <EM>(or it's going to be <STRONG>real</STRONG> dark 
+inside your spacecraft)</EM>. </P>
+<DIV align=center><IMG height=278 alt="" 
+src="Atomic Rocket Beginning Design_files/rtg3.jpg" width=400 border=0> <IMG 
+height=315 alt="" src="Atomic Rocket Beginning Design_files/rtg2.jpg" width=250 
+border=0> </DIV>
+<P><A 
+href="http://en.wikipedia.org/wiki/Radioisotope_thermoelectric_generator">Radioisotope 
+thermoelectric generators</A> <EM>(RTG)</EM> are slugs of radioisotopes 
+<EM>(usually plutonium-238 in the form of plutonium oxide)</EM> that heat up due 
+to nuclear decay, and surrounded by thermocouples to turn the heat into 
+electricity. There are engineering reasons that make it impractical to design an 
+RTG that produces more than one kilowatt. Plutonium-238 has a half life of 85 
+years, <EM>i.e.,</EM> the power output will drop to one half after 85 years. To 
+calculate power decay: </P>
+<P><STRONG>P<SUB>1</SUB> = P<SUB>0</SUB> * 
+0.9919^Y</STRONG></P>where:<BR>P<SUB>1</SUB> = current power output 
+<EM>(watts)</EM><BR>P<SUB>0</SUB> = power output when RTG was constructed 
+<EM>(watts)</EM><BR>Y = years since RTG was constructed. 
+<P>Example: If a new RTG outputs 470 watts, in 23 years it will output 470 x 
+0.9919^23 = 470 x 0.83 = <STRONG>390 watts</STRONG></P>
+<P>Wolfgang Weisselberg points out that this equation just measures the drop in 
+the power output of the slug of plutonium. In the real world, the thermocouples 
+will deteriorate under the constant radioactive bombardment, which will reduce 
+the actual electrical power output even further. Looking at the RTGs on NASA's 
+Voyager space probe, it appears that the thermocouples deteriorate at roughly 
+the same rate as the plutonium.</P>
+<P>Plutonium-238 has a specific power of 0.56 watts/gm or 560 watts per 
+kilogram, so in theory all you would need is 470 / 560 = 0.84 kilograms. Alas, 
+the thermoelectric generator which converts the thermal energy to electric 
+energy has an efficiency of only a few percent. If the thermoelectric efficiency 
+is 5%, the plutonium RTG has an effective specific power of 560 x 0.05 = 28 
+watts per kilogram <EM>(0.036 kilogram per watt or 36 kg/kW)</EM>. This means 
+you will need an entire 17 kilos of plutonium to produce 470 watts. </P>
+<P>Solar power arrays are about 45 kg/kW, and of course their power level goes 
+down the farther from the Sun they travel.</P>
+<P>Nuclear fission reactors are about 18 kg/kW. However, Los Alamos labs had an 
+amazing one megawatt Heat Pipe reactor that was only 493 kg: </P>
+<DIV align=center>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>Fuel region</TD>
+    <TD>157 kg</TD></TR>
+  <TR>
+    <TD>Reflector</TD>
+    <TD>154 kg</TD></TR>
+  <TR>
+    <TD>Heat pipes</TD>
+    <TD>117 kg</TD></TR>
+  <TR>
+    <TD>Reactor control</TD>
+    <TD>33 kg</TD></TR>
+  <TR>
+    <TD>Other support</TD>
+    <TD>32 kg</TD></TR>
+  <TR>
+    <TD>Total Reactor mass</TD>
+    <TD>493 kg</TD></TR></TBODY></TABLE></DIV>
+<P>Nuclear Thermal Rockets are basically nuclear reactors with a thrust nozzle 
+on the bottom. A concept called <A 
+href="http://ares.jsc.nasa.gov/HumanExplore/Exploration/EXLibrary/docs/MarsRef/addendum/A5.htm#figA5-6">Bimodal 
+NTR</A> allows one to tap the reactor for power. This has other advantages. 
+Since the reactor is running warm at a low level all the time <EM>(instead of 
+just while thrusting)</EM> it doesn't have to be pre-heated if you have a burn 
+coming up. This reduces thermal stress, and reduces the number of thermal 
+cyclings the reactor will have to endure over the mission. It also allows for a 
+quick engine start in case of emergency. </P>
+<HR>
+
+<DIV align=center><A name=radiator><IMG height=296 alt="" 
+src="Atomic Rocket Beginning Design_files/radiator.jpg" width=599 
+border=0></A></DIV>
+<DIV align=center><EM>ICAN-II with heat radiators from <A 
+href="http://www.engr.psu.edu/antimatter/introduction.html">Penn State 
+University</A></EM></DIV>
+<DIV align=center><IMG height=106 alt="" 
+src="Atomic Rocket Beginning Design_files/discovery.jpg" width=550 
+border=0></DIV>
+<DIV align=center><EM>Discovery from <STRONG>2001 A Space Odyssey</STRONG>, book 
+version (the "Dragonfly" model), 1969</EM></DIV>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><IMG height=391 alt="" 
+      src="Atomic Rocket Beginning Design_files/radiators3.jpg" width=365 
+      border=0></DIV></TD>
+    <TD>
+      <H2>HEAT RADIATORS</H2>
+      <P>Power plants and some propulsion systems are going to require <A 
+      href="http://website.lineone.net/~geowood/radiator.htm">heat radiators</A> 
+      to avoid system meltdown. There are only three ways of getting rid of 
+      heat: convection, conduction, and radiation; and the first two do not work 
+      at all in the vacuum of space. So the ship designer is stuck with heat 
+      radiators. See <A 
+      href="http://www.adastragames.com/products/adastra/hightrader.html">HIGH 
+      TRADER</A> for details. <A href="http://www.adastragames.com/">Ken 
+      Burnside</A> also noted that radiators are large, flimsy, and impossible 
+      to armor <EM>(except perhaps for the droplet radiator)</EM>. A liability 
+      on a warship. If you want to calculate this for yourself:</P>
+      <P><STRONG>&#8706;Q/&#8706;t = R<SUB>e</SUB> * (5.67x10e-8) * R<SUB>a</SUB> * 
+      R<SUB>t</SUB><SUP>4</SUP></STRONG></P>where<BR>&#8706;Q/&#8706;t = amount of waste 
+      heat to get rid of <EM>(watts)</EM><BR>5.67x10e-8 = Stefan's 
+      Constant<BR>R<SUB>e</SUB> = emissivity of radiator <EM>(theoretical 
+      maximum is 1.0)</EM><BR>R<SUB>a</SUB> = area of radiator 
+      <EM>(m<SUP>2</SUP>)</EM><BR>R<SUB>t</SUB> = temperature of radiator 
+      <EM>(degrees K)</EM><BR></TD></TR></TBODY></TABLE>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <P>Ken Burnside says that if one examine the equation carefully one will 
+      notice that the radiator effectiveness goes up at the fourth power of the 
+      heat of the radiator. The higher the temperature, the lower the surface 
+      area can be, which lowers the required mass of radiator fins. This is why 
+      most radiator designs use liquid sodium or lithium <EM>(or things more 
+      exotic, still)</EM>. 1600K radiators mean that you need a lot less mass 
+      than 273 K radiators. </P>
+      <P>Propulsion systems like nuclear thermal rockets do not need heat 
+      radiators because the waste heat is carried away by the exhaust plume. In 
+      effect, the exhaust <EM>is</EM> their radiator <EM>(the technical term is 
+      <STRONG>"Open-Cycle Cooling"</STRONG>)</EM>. Electrical powered drives 
+      like ion drives will require radiators on their power plants. Fusion 
+      drives may or may not require radiators, depending upon whether the design 
+      can dump the waste heat into the exhaust or not. </P>
+      <P>My source <EM>(Matthew DeBell)</EM> says that if &#8706;Q/&#8706;t = 150 gigawatts 
+      and R<SUB>t</SUB> = 3000° K, R<SUB>a</SUB> would be 
+      <STRONG>34,941m<SUP>2</SUP></STRONG>. Actually it could be half that if 
+      you have a two-sided radiator, which would make the radiator a square 
+      90-odd meters on a side. I have no idea how to estimate how much mass a 
+      radiator of a given size will be. At a rough guess, you are looking at 
+      0.01 to 0.05 kilograms per kilowatt dissipated. <EM>(The table I was 
+      looking at said that a flimsy radiator operating at 1100° K would be 0.01 
+      kg/kW and an armored meteor proof radiator operating at 2000° K would be 
+      0.05 kg/kW)</EM></P></TD>
+    <TD>
+      <DIV align=center><A 
+      href="http://www.projectrho.com/rocket/radiating2.jpg"><IMG height=350 
+      alt="" src="Atomic Rocket Beginning Design_files/radiating2sm.jpg" 
+      width=252></A></DIV>
+      <DIV align=center><EM>Artwork by <A 
+      href="http://cc.joensuu.fi/~tniemi/nimbus/">Tero Niemi</A>. <A 
+      href="http://www.projectrho.com/rocket/radiating2.jpg">Click</A> for 
+      larger image.</EM></DIV></TD></TR></TBODY></TABLE>
+<P><A name=liquidradiator>An</A> advanced <A 
+href="http://lifesci3.arc.nasa.gov/SpaceSettlement/spaceresvol2/thermalmanagement.html">design</A> 
+is the <A 
+href="http://www4.jsforum.or.jp/public/report/h12_report/kudo/kudoe.html">liquid</A> 
+droplet <A href="http://www.marsguy.com/prv_wrk/LDR/LDR.html">radiator</A>. <A 
+href="http://kirk.usc.edu/bio/schilling.html">Dr. John Schilling</A> had a few 
+comments: </P>
+<HR>
+<EM style="COLOR: #bbffff">
+<P>Liquid-droplet radiators are also a possibility. There do exist liquids which 
+have extremely low vapor pressure at high temperatures - certain organics up to 
+~600K, liquid metals (esp. lithium) to ~1500K. Using a carefully-designed nozzle 
+to create a fan-shaped spray of fine droplets towards a linear collector results 
+in a very efficient radiator, with minimal weight per unit radiating surface, 
+high temperature, and high throughput. </P>
+<P>The radiator would be essentially triangular when "deployed", with the spray 
+nozzle at one vertex and the collector along the opposite side. If the 
+nozzle-vertes is adjacent to the ship body, the collector "arm" will have to 
+extend outwards. Alternately, the collector can be run along the side of the 
+ship, and the spray nozzle extended on a boom and aimed inwards. A series of 
+closely-spaced, narrow-angle nozzles would approximate a rectangular array. </P>
+<P>There is always <STRONG>some</STRONG> loss of coolant due to evaporation in 
+vacuum, hence use of liquids with extremely low vapor pressure. You also lose 
+coolant if such a radiator is run under acceleration, unless the collector is 
+over-long and aligned parallel to the thrust axis, which imposes a constraint on 
+system geometry. You also lose coolant if the radiator "panel" is hit by enemy 
+weapons fire; on the other hand there is no mechanical damage unless the much 
+smaller nozzle or collector arms are hit. Bottom line - you'll need a small 
+surplus of coolant, unless you are running a warship, in which case you'll need 
+a <STRONG>large</STRONG> surplus. </P>
+<P>If liquid metal is used as the coolant, <A 
+href="http://www-ferp.ucsd.edu/THERMAL/mhd.shtml">MHD pumping</A> can be used at 
+the collector arms, resulting in a simplified design with no moving parts. 
+Indeed, in such a case the coolant could also be used as the working fluid in an 
+MHD generator, resulting in a single-fluid, single-cycle power system from 
+primary energy generation to waste heat radiation. Again, a simple, efficient 
+design with no moving parts. </P></EM>
+<HR>
+
+<P>What color will the radiators glow? A practical one will only glow dull red. 
+You can use the <A 
+href="http://www.shodor.org/refdesk/Resources/Models/BlackbodyRadiation/index.php">Blackbody 
+Spectrum Viewer</A> to see what temperature corresponds to what color. If it was 
+glowing white hot, the temperature would be around 6000 Kelvin. This would be 
+difficult for a solid radiator, since even diamond melts at 4300 degrees K. </P>
+<P>Technically you also need radiators to keep the life-system habitable. Human 
+bodies produce an amazing amount of heat. However, since it will be tasked with 
+dissipating mere kilowatts while the drive radiators have to get rid of 
+gigawatts, you can assume that the drive radiator can take care of the 
+life-system as well. Or if the propulsion system needs no radiator, the 
+life-system radiator is small enough to be placed over part of the hull. The 
+life-system radiators on the <A 
+href="http://nasaexplores.nasa.gov/show_912_student_st.php?id=040526125151">Space 
+Shuttle</A> are inside the cargo bay doors, which is why the doors are always 
+open while the shuttle is in space.</P>
+<HR>
+
+<P>Here is some scary math about radiators from Tony Valle, along with some 
+interesting conclusion: </P><EM style="COLOR: #bbffff">
+<P>It is surprising but there is an optimum temperature ratio at which to run a 
+starship heat exchanger (or similar power source) to achieve maximum free power 
+with a minimum of radiator area. The only assumptions necesary are that the 
+power source obeys the laws of thermodynamics and that the starship may only get 
+rid of waste heat by radiating. </P>
+<P>Let us assume that we have a heat engine as a power source with a relative 
+efficiency of &#951; (its absolute efficiency is &#951; times the Carnot efficiency &#949;). We 
+can write the available free power, F, as: </P><STRONG>F = Q&#951;&#949; = Q&#951;(1 - 
+T<SUB>1</SUB>/T<SUB>2</SUB>)</STRONG> 
+<P>where Q is the rate of heat flow into the exchanger and T<SUB>1</SUB> and 
+T<SUB>2</SUB> are the temperatures of the cold and hot sides of the engine, 
+respectively. The waste heat, H, released into the starship is Q - F, or: 
+</P><STRONG>H = Q(1 - &#951; + &#951;T<SUB>1</SUB>/T<SUB>2</SUB>)</STRONG><BR><STRONG>H = 
+F (1 - &#951; + &#951;T<SUB>1</SUB>/T<SUB>2</SUB>)/&#951;(1 - 
+T<SUB>1</SUB>/T<SUB>2</SUB>)</STRONG><BR>
+<P>For simplicity, we will measure temperature in units of T<SUB>2</SUB> and let 
+T<SUB>1</SUB> be called just T. The amount of waste heat associated with a given 
+free power is then (after dividing through by &#951;): </P><STRONG>H = F 
+(&#951;<SUP>-1</SUP> - 1 + T) / (1 -T)</STRONG><BR>
+<P>Now this waste heat must be radiated away from the ship. The power radiated 
+by a black body at temperature T and with area A is given by the 
+Stephan-Boltzmann Law: </P><STRONG>P = &#963;AT<SUP>4</SUP></STRONG><BR>
+<P>with &#963; a constant depending on the choice of units. Setting these equal to 
+each other gives: </P><STRONG>A = F (&#951;<SUP>-1</SUP> - 1 + T) / &#963;(T<SUP>4</SUP> - 
+T<SUP>5</SUP>) </STRONG><BR>
+<P>Now we can ask what value of T will give the minimum radiator area. Taking 
+the derivative of A with respect to T and setting it equal to zero gives: 
+</P><STRONG>(T<SUP>4</SUP> - T<SUP>5</SUP>) - (4T<SUP>3</SUP> - 
+5T<SUP>4</SUP>)(&#951;<SUP>-1</SUP> - 1 + T) = 0</STRONG><BR>
+<P>Or, dividing by T<SUP>3</SUP> and expanding: </P><STRONG>T - T<SUP>2</SUP> - 
+4&#951;<SUP>-1</SUP> + 4 - 4T + 5T&#951;<SUP>-1</SUP> - 5T + 5T<SUP>2</SUP> = 
+0</STRONG><BR>
+<P>After collecting terms, we have: </P><STRONG>4T<SUP>2</SUP> + 
+(5&#951;<SUP>-1</SUP> - 8)T + 4(1 - &#951;<SUP>-1</SUP>) = 0</STRONG><BR>
+<P>or, dividing through by 4:</P><STRONG>T<SUP>2</SUP> + (5/4&#951;<SUP>-1</SUP> - 
+2)T + (1 - &#951;<SUP>-1</SUP>) = 0</STRONG><BR>
+<P>We write &#951;<SUP>-1</SUP> as &#947; then the solution to the above quadratic can be 
+written: </P><STRONG>T = 1 - 5/8&#947; + 1/8 sqrt(25&#947;<SUP>2</SUP> - 16&#947;)</STRONG><BR>
+<P>In the special case where the exchanger runs at maximum theoretical 
+efficiency, &#951; = &#947; = 1 and the equation above gives T = 3/4. This means that the 
+cold side of the heat engine is at 75% of the temperature of the hot side. Of 
+course, this is not very efficient as a heat engine goes, but if the total waste 
+heat is dropped by lowering the temperature of the cold side, the total radiator 
+area must be <STRONG>increased!</STRONG> This is because of the T<SUP>4</SUP> 
+behavior of the radiation law - as the temperature of the radiator drops, it 
+dumps heat much less efficiently. This function is fairly flat - the value of T 
+only goes from 0.75 to 0.80 as the relative efficiency goes from 1 to 0.1. 
+</P></EM>
+<HR>
+
+<P>From <A 
+href="http://groups.google.com/group/rec.arts.sf.science/msg/4a99432b0105ba57?q=g:thl2532495461d&amp;dq=&amp;hl=en&amp;lr=&amp;ie=UTF-8&amp;c2coff=1">John 
+Gwinner</A></P><EM style="COLOR: #bbffff">
+<P>Take a classic space opera warship. Onboard power is generated by one or more 
+fusion reactors. If the overall power is 2 gigawatts, and the efficiency is 90% 
+(a pretty generous estimate, since projections I've seen for MHD power 
+generation are around 60%) then at full power, the reactors create 200MW of 
+waste heat. At these sorts of power levels the waste heat of the crew, 
+computers, coffee makers, etc. can be ignored. If there are energy weapons, 
+assume they too are 90% efficient and use 500MW of power when fired, generating 
+another 50MW waste heat. Lump in a lot of other minor systems and you get 
+something like 300MW total waste heat that has to be gotten rid of at peak. </P>
+<P>Where it gets complex, AFAIK, is the question of how hot you can allow the 
+ship's interior to get. Let's assume that the environmental areas have heat 
+pumps that allow them to stay a fair amount cooler than the engineering areas 
+(since they're not generating the majority of the heat to begin with) and there 
+are no low-temperature superconductors and so forth to worry about. If the 
+engines and weapons can operate happily at 150 degrees Celsius, that's 423 
+degrees Kelvin. So that's our starting point -- the coolant (probably liquid 
+sodium or lithium at that temp) gets that hot before it's pumped through the 
+radiators to cool off again, at which point: </P>
+<P><STRONG>Heat lost [watts] = 5.67e-8[Stefan's Constant] * area [m^2] * 
+emissivity * T^4 [degrees Kelvin]</STRONG>. </EM>
+<P>(ed note: same equation as above)</P><EM style="COLOR: #bbffff">
+<P></P>
+<P>If the radiators are perfectly black (emissivity of 1), and the coolant 
+temperature is 423 degrees K, then in order to radiate away 275MW of heat, the 
+radiator needs be about 150,000 square meters in area (of course it's 
+double-sided, so the actual fin(s) only need to be 75,000 m^ 2). That's a square 
+275 meters on a side, or roughly a large city block, simply to deal with the 
+ship's own waste heat at full power. If the ship needs to radiate away 
+additional heat due to taking in, say, 400MW of energy from an enemy ship's 
+lasers, you'd probably have to double or triple that figure (and make darn sure 
+to keep your fins edge-on to the enemy ship firing at you! :). Of course all 
+this is very crude and assumes perfect efficiency of a number of things (some of 
+which I'm probably unaware of :). In reality you might get 80% of that 
+theoretical performance. Or perhaps less. And the first thing damaged in a 
+battle would probably be the radiators (big, hard to protect). </P>
+<P>The structural mass of a large radiator fin could be a substantial fraction 
+of the entire ship's mass, and that slows down the acceleration of the ship, 
+which needs more power for thrust, which gives off more waste heat, and so on... 
+So the idea of using spray wands and droplet coolants is attractive. </P>
+<P>OTOH, if you need to keep the whole ship at a comfy temperature like 20C, 
+then it's almost hopeless. The radiating area required is so enormous that high 
+acceleration isn't practical at all (something like half a million m^2). </P>
+<P>Another alternative is to design the ship to only radiate away normal, 
+routine power levels, and to boil off propellant to deal with peak loads. But 
+that goes through a lot of propellant pretty fast at high power levels. 
+Dreadnaughts become like modern jet fighters -- only good for a few minutes of 
+intense combat before the fuel runs out. Once it's gone, you can't crash, but 
+you have to surrender or be boiled... </P></EM>
+<P>(ed note: He is assuming that the radiator temperature is 423K. Some of the 
+other estimates were for radiator temperatures of 1600K to 3000K, which would 
+drastically lower the radiator surface area.) </P>
+<HR>
+
+<H2><A name=other>OTHER</A></H2>
+<DIV align=center><IMG height=248 alt="" 
+src="Atomic Rocket Beginning Design_files/antenna2.jpg" width=322 
+border=0></DIV>
+<DIV align=center><IMG height=280 alt="" 
+src="Atomic Rocket Beginning Design_files/antenna1.jpg" width=695 
+border=0></DIV>
+<DIV align=center><EM>Top: <A 
+href="http://www.imdb.com/title/tt0047947/">Conquest of Space</A> 
+(1955)</EM></DIV>
+<DIV align=center><EM>Bottom: Apollo Service Module High Gain Antenna. Photos 
+courtesy of NASA</EM></DIV>
+<P>Radiators are not the only thing spoiling the Polaris' sleek external lines. 
+Roger Manning's radio needs large dish antennas. They might not be as large as 
+the monsters on <A 
+href="http://www.2001exhibit.org/science/img/discovery_ae-35.gif">2001's 
+Discovery</A>, but they won't be much smaller than the ones on the Apollo 
+service module. It might also be a good idea to have landing radar on an 
+outrigger or boom, so it won't be blinded by the exhaust. Both of these will be 
+retracted during atmospheric re-entry, with the landing radar deployed when the 
+air speed drops low enough so it won't be ripped off. </P>
+<P>A morbid but necessary fixture that nobody talks about will be the "C-Chute" 
+<EM>(from the Isaac Asimov story with the same name)</EM>. "C" is short for 
+"Casualty". A dead body will quickly contaminate the air of the lifesystem, so 
+there has to be a way to jettison the dear departed. Also of concern is the 
+effect on crew morale. Personnel will be prone to morbid thoughts while their 
+crewmate(s) mortal remains are lying in the next cabin. There will probably be a 
+tradition of laying the dead to rest within twenty-four hours of death. </P>
+<P>Before you start designing the rest of the spacecraft, you should decide what 
+sort of <A 
+href="http://www.projectrho.com/rocket/rocket3t.html#shipgrid">functions</A> it 
+will have to perform. Is it a cargo vessel? A tanker? A warship? The outer space 
+version of a Coast Guard vessel? A blockade runner? This will give a rough idea 
+of what most of the payload mass will be <EM>(cargo holds, remarkably large mass 
+ratio, weapons, deep space rescue gear, stealth technology and oversized 
+engines)</EM>. </P>
+<P>Speaking of cargo, present-day cargo ships are rated in "Net tonnage" or 
+"Gross register tonnage", where each "ton" actually indicates 100 cubic feet of 
+volume. The average cargo they carry has a density of 350 kg/m<SUP>3</SUP>. If 
+the cargo has a wildly different density, some math will be needed, but for most 
+cargo the net tonnage gives a good idea of the ship's cargo capacity. In 
+practice, while filling the cargo hold it will either "mass-out" or "bulk-out", 
+depending on which it runs out of first: lifting capacity or cargo space. </P>
+<P>In international shipping, a standard cargo container is 25 metric tons in 
+100 cubic meters. </P>
+<DIV align=center><IMG height=242 alt="" 
+src="Atomic Rocket Beginning Design_files/fv00509.gif" width=768 border=0></DIV>
+<DIV align=center><EM>And you are not allowed any clothing either.</EM></DIV>
+<DIV align=center><EM>From <A href="http://freefall.purrsia.com/">Freefall</A>, 
+one of the most scientifically accurate web comics.</EM></DIV>
+<P>As you are beginning to discover, mass is limited on a spacecraft. Many 
+Heinlein novels have passengers given strict limits on their combined 
+body+luggage mass. Officials would look disapprovingly at the passenger's 
+waistlines and wonder out loud how they can stand to carry around all that 
+"penalty weight". There are quite a few scenes in various Heinlein novels of the 
+agony of packing for a rocket flight, throwing away stuff left and right in a 
+desperate attempt to get the mass of your luggage below your mass allowance.</P>
+<TABLE>
+  <TBODY>
+  <TR>
+    <TD>
+      <DIV align=center><IMG height=263 alt="" 
+      src="Atomic Rocket Beginning Design_files/Queen_Of_Outer_Space.jpg" 
+      width=350 border=0></DIV>
+      <DIV align=center><EM>From <STRONG>The Queen of Outer 
+      Space</STRONG></EM></DIV>
+      <DIV align=center><EM>Sorry ladies, I said <STRONG>No 
+      Skirts!</STRONG></EM></DIV></TD>
+    <TD>
+      <P>Rocketeers would tend to be short and wiry. In Sir Arthur C. Clarke's 
+      classic THE OTHER SIDE OF THE SKY, space station construction crews got a 
+      pay bonus if they kept their weight below 150 pounds. Note that this would 
+      also be a good argument for rocketeers being [a] Oriental, [b] Female, or 
+      [c] Both.</P>
+      <P>Other innovations are possible. Perhaps boxes of food where the boxes 
+      are edible as well. The corridor floors will probably be metal gratings to 
+      save mass <EM>(<A name=skirt>This</A> is the second reason why female 
+      cadet shipboard uniforms will not have skirts. The first reason is the 
+      impossibility of keeping a skirt in a modest position while in 
+      free-fall)</EM>. In Frank Herbert's DUNE, spacemen had books the size of a 
+      thumb-tip, with a tiny magnifying glass. Try to make every gram do double 
+      duty.</P></TD></TR></TBODY></TABLE>
+<HR>
+
+<P>From <STRONG>DUNE</STRONG> by Frank Herbert.</P><EM style="COLOR: #bbffff">
+<P>"If it's economically feasible," Yueh said. "Arrakis has many costly perils." 
+He smoothed his drooping mustache. "Your father will be here soon. Before I go, 
+I've a gift for you, something I came across in packing." He put an object on 
+the table between them-black, oblong, no larger than the end of Paul's thumb. 
+</P>
+<P>Paul looked at it. Yueh noted how the boy did not reach for it, and thought: 
+How cautious he is. </P>
+<P>"It's a very old Orange Catholic Bible made for space travelers. Not a 
+filmbook, but actually printed on filament paper. It has its own magnifier and 
+electrostatic charge system." He picked it up, demonstrated. "The book is held 
+closed by the charge, which forces against spring-locked covers. You press the 
+edge-thus, and the pages you've selected repel each other and the book opens." 
+</P>
+<P>"It's so small." </P>
+<P>"But it has eighteen hundred pages. You press the edge-thus, and so . . . and 
+the charge moves ahead one page at a time as you read. Never touch the actual 
+pages with your fingers. The filament tissue is too delicate." He closed the 
+book, handed it t o Paul. "Try it." </P></EM>
+<HR>
+
+<DIV align=center><IMG height=683 alt="" 
+src="Atomic Rocket Beginning Design_files/comet.gif" width=450 border=0></DIV>
+<DIV align=center><EM>A poor example of scientific spacecraft design. Again they 
+forgot to put in the rest-rooms.</EM></DIV>
+<DIV align=center><EM>The Comet from the Captain Future novels by Edmond 
+Hamilton, 1969</EM></DIV></BODY></HTML>

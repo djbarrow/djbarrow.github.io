@@ -1,0 +1,305 @@
+\documentclass[a4paper,12pt,titlepage]{book}
+\usepackage{url}
+\usepackage{eurosym}
+\author {(c)2005 Written by D.J. Barrow \\\\ barrow\_dj@yahoo.com \\\\
+Inspired by others}  
+\title{Mission to Mars}
+\begin{document}
+\maketitle
+\chapter{Going to Mars, The future of space travel}
+Space Travel \& Aviation is where we aren't keeping up
+with science fiction \& most definitely not improved much
+in the last 40 years.
+Everybody thinks going to Mars \& back is much harder than going to the Moon.
+There is one critical difference which makes it in some ways easier, Mars
+has an atmosphere, jet engines will work there.
+The downside is that the gravity on Mars is much higher than the Moon's,
+this is why nobody has bothered to attempt to go to Mars yet.
+Using existing rocket technology you would need to get a Saturn V to
+Mars as the payload to get off the planet, seeing as the moon
+has only 1/6 the gravity of earth the little Eagle Module was
+enough to get off the Moon could you imagine trying to land
+a Saturn V vertically on Mars so it could take off again. 
+\paragraph
+\noindent
+Feynman first introduced the Rodger Ramjet idea of using an atomic powered
+jet engine high in the Earth's atmosphere where it is very thin
+to reach escape velocity \& slingshot to Mars.
+For compactness in the design I
+suggest to make a hybrid scramjet/rocket engine. When the
+engine starts going initially it is a Rocket \& it gradually
+changes from a rocket to a scramjet as it picks up speed,
+for the remainder of the document I am going to use
+the term scramjet to mean a rocket/scramjet hybrid.
+The great thing about an atomic scramjet is that it has almost
+no theoretical upper speed limit except for the speed of light 
+( I researched this fact quite a lot ) \& design
+limitations because it has to carry no propellant with it.
+This idea was dumped because of it's environmental fallout
+in the atmosphere not to mention in the crew compartment when it was
+realized that atomic energy causes cancer.
+I haven't researched how dirty an atomic scramjet would be
+but I suspect NASA has a very good idea, I cannot
+imagine it being as dirty as an atomic bomb.
+Hopefully this will change when curing cancer will become easier in
+the near future, see the next topic below.
+The radiation in the crew compartment is the greatest
+risk of all, this can be minimized by
+moving the crew compartment as far away from the radioactive
+core as possible \& putting a ``shadow'' shield as near
+as possible to the core which creates a radiation ``shadow''
+around the crew compartment which prevents neutrons, gamma rays
+\& other radiation from entering the crew compartment from the
+reactor core, This shadow shield will add a lot of weight
+to the craft putting the propellant tank in the way also
+will reduce the radiation risk to the crew further.
+Because it probably would be a huge lump of lead,
+I personally hate the idea of a shadow shield
+\& if anyone has a more innovative idea I am all ears.
+Ideally the scramjet should be using fusion as this
+is environmentally friendly but this probably will be
+impossible for another 50 years.
+\paragraph
+\noindent
+The ``Greenpeace friendly'' \& technically easier but more expensive
+approach would be to use
+a Saturn V to carry the atomic scramjet to Mars
+( this of course is only environmentally cleaner if the Saturn V 
+doesn't explode so for safety it would be best to choose some
+remote desert like the Sahara ),
+seeing as the atomic scramjet would now only have to work in Mars's
+atmosphere \& not have to work in Earth's it would be easier to design.
+If Greenpeace allows a halfway house \& allows the atomic
+scramjet operate high in the earths atmosphere it could
+be piggybacked high into the earths atmosphere by either
+the American U2 spyplane or scaled composites/Virgin Galactic's
+Spaceship one launch vehicle.
+\paragraph
+\noindent
+To take off in the Martian atmosphere would be more difficult
+that Earth's because the atmosphere is 100 times thinner,
+this means a lot of speed would need to be picked up before
+the scramjet in jet mode \& aerodynamics work,
+maybe aerodynamic surfaces like wings should be avoided altogether
+on some crafts if the weight impact isn't offset by the usefulness of them.
+The great thing about an atomic 
+scramjet is it needs to carry no propellant except for the 
+bit of propellant to operate start off while in rocket mode.
+It should be easy to get a unmanned small manless scramjet 
+Mars for initial testing, an average sized rocket should do.
+\paragraph
+\noindent
+A very sensitive long range radar \& an autopilot with
+the ability to make minute course adjustments
+under computer control may be needed to avoid
+space debris which would be lethal at such high speeds,
+\paragraph
+\noindent
+I would like the ship to be made as much as possible from
+one solid piece of material \& be flexible enough change shape naturally
+as aerodynamic stresses are applied to it. 
+I personally don't like things that vibrate
+vibrations typically cause things to break, for moving parts I like
+things that go round \& round like turbines, they don't break much.
+\paragraph
+\noindent
+For manless space probes hopefully no shadow shield will be
+needed provided the electronics are fault tolerant to radiation.
+This opens the possibility of a space probe going to Mars first,
+then slingshotting inside the Martian atmosphere where the
+environmentalists won't be giving out about fallout to a large
+percentage of the speed of light \& heading off to Alpha
+Centuari, this is possible with an atomic scramjet engine.
+The difficult bit which I haven't figured out
+is how to slow down the probe from the speed of light 
+once it gets there if there are no planets with atmosphere's 
+nearby of which believe
+there are none around Alpha Centuari, The atomic core
+could power a powerful radio transmitter which
+would send back data to earth 4.5 years after arriving there.
+If a probe cannot transmit receivable data over that
+great distance maybe the scramjet plane could
+get close enough into the edge of Alpha Centurai's atmosphere to
+slingshot around the sun \& return to the
+solar system without burning up.
+\paragraph
+\noindent
+Videos of Alien abductions is the place to look for ideas for spaceships.
+The more observant people will describe their experiences
+accurately. An interesting concept from a video I watched
+points the future for materials science, the materials
+blended into each other without joints.
+Anybody who watch ``Das boot'' knows that rivets pop
+in World War II U-Boats at 250 meters \& glued Space
+Shuttle heat shield tiles keep falling off not to mention O rings
+which caused the 1984 Challenger space shuttle disaster,
+Joints are from an engineering point of view bad ideas.
+\paragraph
+\noindent
+Dynamic blends of material need to be made, blending smoothly
+into each other, I suggest making alloys/dynamic blends of
+titanium, carbon fiber, plastic, glass, fiberglass \& the ceramics
+in space shuttle heat shields.
+\paragraph
+\noindent
+To prevent loss of life the initial prototypes will be radio
+controlled \& I hope John Mc Carmac would be interested in
+writing the autopilot software to land the spaceship on Mars.
+Owing to fifteen minute delays caused by radio waves getting to Mars \& back
+the distance from Earth would be too far to land by remote control 
+I also would hope that Scaled Composites could be made interested. 
+\paragraph
+\noindent
+More propellant can be accumulated in the propellant tank
+while flying by taking in some from the air intake of the
+scramjet before leaving the atmosphere, if travelling
+fast enough there may be enough gas in the vacuum
+of space to keep the scramjet going in jet mode at
+least some of the time.
+\paragraph
+\noindent
+If some of the scramjet is made in Russia
+maybe the Uranium 235 or Plutonium in some of the decommissioned
+nuclear warheads can be used as fuel for the scramjets.
+A parachute would make a good airbrake I would suggest
+making the parachute in the scramjet
+plane out of a strong metal capable of standing high
+temperatures \& possibly with hinges
+so it naturally packs away neatly,
+but maybe a metal fabric is better.
+An alternate method of braking in space would
+be to turn the plane around 180 degrees \& fire
+the rocket this could slow the ship down by
+around 10,000 miles an hour but not more as the
+rocket will run out of propellant,
+this also cannot be done in the atmosphere
+because the flames would be blown onto the
+ship \& destroy it.
+The ship I believe would need a protective magnetic 
+field to prevent cosmic rays once we get outside
+the Val Allen Belt.
+\paragraph
+\noindent
+I love Russian Tu-144 jets,
+they were made of primitive technology \& were
+300 miles an hour faster than Concorde.
+If the craft is being built by private enterprise
+it would be cheapest to build it in Russia.
+In any case I would like the other space agencies
+like NASA to get involved too.
+I am going to set a goal for getting to Mars,
+to 3 to 5 years time, see my open letter to Bob Geldof
+Richard Branson \& others if you want to see how I hope
+this will be achieved.
+
+\chapter{Cures for cancer}
+Some cancers can be cured by a virus, see
+\url{http://www.onoclyticsbiotech.com} for more info.
+Surely this is the way to go as opposed to chemotherapy.
+How about some preventative medicine imagine if children
+were immunized against cancer before they got it or
+even having the virus put into the foodchain atomic
+power would become quite safe.
+As Kristian Walsh pointed out radiation causes more
+damage than just cancer the question I ask is this
+damage acceptable. It would also be worth
+researchers while to figure out why the animals
+living near Chernobyl are surviving \& make use of
+the information.
+
+\chapter{Spacesuits}
+These wouldn't be necessary for the mission to Mars but
+if we manage to mitigate the cosmic rays
+causing cancer problem by the anti cancer virus
+in the future how about Spacesuits rather than 
+weighing around 650lbs instead made so tight
+they prevent the body exploding owing to pressure 
+outside the suit, these would not need atmospheric pressure 
+built up inside them \& be more like high altitude skydiving suits.
+The only thing I am not sure about is whether the spacesuit
+could be made to have insulation properties \& have heating
+equipment installed to survive the temperature extremes of space.
+
+\chapter{Open letter to NASA, Gerry Ryan, Bob Geldof, Bill Gates, Bono,\\
+Steve Jobs, Larry Ellison, Michael O' Leary, Eddie Jordan, Richard Branson,\\
+Burt Rutan John Mac Carmac, Paul Allen \& Michael Jackson}
+\paragraph
+\noindent
+Bill Gates I know you love Richard Feynman, so do I.
+I know you love Porches \& the film The Clockwork Orange
+my favourite film is Dangerous Liaisons, it's better,
+any interest in a Dangerous Liaison with me?
+Bill you are worth more than the GDP of many countries
+Why not give half your money to Africa \&
+your kids won't be spoilt if they
+learn the value of money, stop overprotecting them.
+You can put a tiny bit of the rest of it in the Mission to
+Mars Project, you will still be a billionaire 
+many times over anyway \&
+still worth more than the GDP of many countries.
+What the hell do you want it all for anyway?, you can't
+take it with you when you die.
+\paragraph
+\noindent
+Bob Geldof, Bono, Michael Jackson how would you
+like to hold a leg of Live Aid 2 from Mars.
+Michael Jackson you are a nice guy.
+I heard you were interested in meeting
+Martians, we can make the guys who go up in the
+scramjet citizens of Mars, would that do you?
+\paragraph
+\noindent
+Larry Ellison I know you love MIGs what do
+you think of my Bat out of hell idea would
+you like to go up?
+The Scramjet, if aerodynamics prove useful for it in the Martian
+atmosphere may perform like a fighter but would be much faster
+to get you home from Mars in time for tea, the atomic engine should last
+years while flying inside the Martian atmosphere
+( A Nuclear Thermal Rocket NTR would only use up around 10G of
+enriched U-235 to leave the Earths atmosphere ).
+\& we can put an autopilot on it so you can sleep \& you only
+have to come home when you get bored.
+Steve Jobs have any interest in dropping the rollerblades \& getting .
+involved?, what about you Richard?
+Michael O' Leary CEO of Ryanair have you any interest in keeping
+control of finances to make sure the job gets done cheaply?,
+Eddie Jordan have you any interest in organizing the advertising?
+The only thing I would like painted on the thing myself is a Swastika
+with a Star of David next to it symbolizing peace between
+Germans \& Jews \& possibly a bit of Graffiti.
+Gerry Ryan can you get Bob Geldof, Bono \& Cmdr. Collins
+the NASA Astronaut who recently went up on the Space Shuttle
+whom you interviewed recently going so he can get NASA interested,
+\& make Live Aid2 a reality.  
+\paragraph
+\noindent
+Bill I know you are interested in beating Linux at
+it's own game, here is what you do... support Cygwin.
+You can already run nearly all the Linux apps on Windows.
+Steve Jobs has got Linux engineers flying to MacOS X
+in droves because there are about 50 gui's on Linux
+hardly any of them any good except KDE. Windows is safe
+your users don't want the headache of learning Linux.
+KDE boys your software is far too expensive on Windows.
+why don't you make your software MYPL
+'pay us what you think the software is worth',
+In an ideal world everything should be under MYPL even food.
+If KDE is any good people will pay you for it rather
+than see it die. I personally hope that all the open
+source GUI developers will stop reinventing the wheel
+\& go with KDE \& give us a consistent interface for Linux.
+Bill I think all software should be sold under MYPL
+All my software is officially under GPL but
+unofficially I hope to be paid for it. I am a communist
+rather than a capitalist unlike yourself who likes
+haggling, I couldn't be arsed running around looking
+for money off people who really don't want to give it to me
+possibly because they don't think my software is much good anyway
+\& chasing ``software pirates'' it wastes too much energy.
+\paragraph
+\noindent
+Sincerely,
+D.J. Barrow
+
+\end{document}

@@ -1,0 +1,84 @@
+P {
+	FONT-FAMILY: arial,sans-serif
+}
+TD {
+	FONT-FAMILY: arial,sans-serif
+}
+DIV {
+	FONT-FAMILY: arial,sans-serif
+}
+.p {
+	FONT-FAMILY: arial,sans-serif
+}
+PRE {
+	FONT-FAMILY: monospace
+}
+A.c {
+	FONT-FAMILY: monospace
+}
+.c {
+	FONT-FAMILY: monospace
+}
+.errormsg {
+	FONT-WEIGHT: bold; COLOR: #cc0000; FONT-STYLE: italic
+}
+.errormsg:link {
+	FONT-WEIGHT: bold; COLOR: #cc0000; FONT-STYLE: italic
+}
+.errorheader {
+	FONT-WEIGHT: bold; COLOR: #cc0000; FONT-STYLE: italic
+}
+.errorheader:link {
+	FONT-WEIGHT: bold; COLOR: #cc0000; FONT-STYLE: italic
+}
+.t A:link {
+	COLOR: #ffffff
+}
+.t A:active {
+	COLOR: #ffffff
+}
+.t A:visited {
+	COLOR: #ffffff
+}
+.t {
+	COLOR: #ffffff
+}
+.t {
+	BACKGROUND-COLOR: #49188f
+}
+.f {
+	COLOR: #666666
+}
+.fl:link {
+	COLOR: #666666
+}
+A:link {
+	COLOR: #00c
+}
+A:visited {
+	COLOR: #551a8b
+}
+A:active {
+	COLOR: #f00
+}
+.i {
+	COLOR: #a90a08
+}
+.i:link {
+	COLOR: #a90a08
+}
+DIV.n {
+	MARGIN-TOP: 1ex
+}
+.n A {
+	FONT-SIZE: 10pt; COLOR: #000000
+}
+.n .i {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt
+}
+.b {
+	FONT-WEIGHT: bold; FONT-SIZE: 12pt; COLOR: #0000cc
+}
+.z {
+	DISPLAY: none
+}
