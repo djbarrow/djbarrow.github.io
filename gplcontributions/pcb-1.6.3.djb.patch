@@ -1,0 +1,1417 @@
+diff -urN pcb-1.6.3.orig/globalconst.h pcb-1.6.3.dj/globalconst.h
+--- pcb-1.6.3.orig/globalconst.h	1998-05-13 11:29:11.000000000 +0100
++++ pcb-1.6.3.dj/globalconst.h	2007-11-22 13:03:35.000000000 +0000
+@@ -74,6 +74,10 @@
+ #define	CHUNK			5	/* step size for size sliders */
+ #define	MIN_ZOOM		0	/* min zoom (shift operations) */
+ #define	MAX_ZOOM		4	/* max zoom (shift operations) */
++#define MIN_SOLDERMASK_FRAME    0      /* tolerance between soldermask & pads. */
++#define DEFAULT_SOLDERMASK_FRAME 0
++#define MAX_SOLDERMASK_FRAME     100
++
+ #define	MAX_FONTPOSITION	127	/* upper limit of characters in my font */
+ 
+ #define	MAX_COORD		20000	/* coordinate limits */
+diff -urN pcb-1.6.3.orig/lib/common.m4 pcb-1.6.3.dj/lib/common.m4
+--- pcb-1.6.3.orig/lib/common.m4	1998-05-16 22:11:07.000000000 +0100
++++ pcb-1.6.3.dj/lib/common.m4	2007-11-22 13:03:35.000000000 +0000
+@@ -54,7 +54,9 @@
+ # the first two arguments are skipped
+ #
+ define(`PIN', `Pin($1 $2 $3 $4 ifdef(`P_$5', "P_$5", "$5") ifelse($5, 1, 0x101, 0x01))')
+-define(`PAD', `Pad($1 $2 $3 $4 $5 ifdef(`P_$6', "P_$6", "$6") ifelse($6, 1, 0x00, 0x100))')
++define(`PAD', `Pad($1 $2 $3 $4 $5 ifdef(`P_$6', "P_$6", "$6") "$6" ifelse($6, 1, 0x00, 0x100))')
++
++define(`EDGECONN', `Pad($1 $2 $3 $4 $5 ifdef(`P_$6', "P_$6", "$6") "$6" $7)')
+ define(`DEFPIN', `define(`count', incr(count))' `define(`P_'count, $1)')
+ define(`DefinePinList', `ifelse($#, 1, ,
+ 	`pushdef(`count')'
+@@ -65,11 +67,16 @@
+ 	`DEFPIN(`$1')'`
+ 	_DEFPINLIST(shift($@))')')
+ 
++define(`args',`
++	ifelse($#, 0, , $#, 1,`define(`arg'cnt,`$1')',
++	`define(`arg'cnt,`$1') define(`cnt',incr(cnt)) args(shift($@))')')
++
+ include(connector.inc)
+ include(dil.inc)
+ include(misc.inc)
+ include(plcc.inc)
+ include(to.inc)
+ include(qfp.inc)
+-
++include(pci.inc)
++include(genericsmt.inc)
+ divert(0)dnl
+diff -urN pcb-1.6.3.orig/lib/fpga.list pcb-1.6.3.dj/lib/fpga.list
+--- pcb-1.6.3.orig/lib/fpga.list	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/lib/fpga.list	2007-11-22 13:03:35.000000000 +0000
+@@ -0,0 +1,2 @@
++XCS40_PQ208:COMPACTQFP:XCS40
++AT512:JEDECQFP2:JEDEC
+diff -urN pcb-1.6.3.orig/lib/fpga.m4 pcb-1.6.3.dj/lib/fpga.m4
+--- pcb-1.6.3.orig/lib/fpga.m4	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/lib/fpga.m4	2007-11-22 13:03:35.000000000 +0000
+@@ -0,0 +1,48 @@
++divert(-1)
++#
++# Definitions for Xilinx XCS40 FPGA's
++# by D.J. Barrow dj_barrow@ariasoft.ie
++#
++define(`PL_XCS40_PQ208_1',``GND',`IO_GCK1',`I/O',`I/O',`I/O',`I/O(TDI)',`I/O_TCK',`I/O',`I/O',`I/O',`I/O',`I/O'') #P12
++
++define(`PL_XCS40_PQ208_2',``GND',`I/O',`I/O',`I/O(TMS)',`I/O',`VCC'') #P18
++
++define(`PL_XCS40_PQ208_3',``I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`GND',`VCC',`I/O',`I/O',`I/O',`I/O'') #29
++
++define(`PL_XCS40_PQ208_4',``I/O',`I/O',`VCC',`I/O',`I/O',`I/O',`I/O',`GND',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O_GCK2'') #P49
++
++define(`PL_XCS40_PQ208_5',``M1',`GND',`M0',`VCC',`PWRDOWN',`I/O(GCK3)',`I/O(HDC)',`I/O',`I/O',`I/O',`I/O(LDC)',`I/O',`I/O',`I/O',`I/O',`I/O'') #66
++
++define(`PL_XCS40_PQ208_6',``GND',`I/O',`I/O',`I/O',`I/O',`VCC',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O(INIT)',`VCC',`GND',`I/O',`I/O',`I/O',`I/O'') #83
++
++define(`PL_XCS40_PQ208_7',``I/O',`I/O',`VCC',`I/O',`I/O',`I/O',`I/O',`GND',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O(GCK4)',`GND',`DONE',`VCC',`PROGRAM',`I/O(D7)'') #107
++
++define(`PL_XCS40_PQ208_8',``I/O(GCK5)',`I/O',`I/O',`I/O',`I/O(D6)',`I/O',`I/O',`I/O',`I/O',`I/O',`GND',`I/O',`I/O',`VCC',`I/O(D5)',`I/O'') #123
++
++define(`PL_XCS40_PQ208_9',``I/O',`I/O',`I/O',`I/O',`I/O(D4)',`I/O',`VCC',`GND',`I/O(D3)',`I/O',`I/O',`I/O',`I/O',`I/O'') #137
++
++define(`PL_XCS40_PQ208_10',``I/O(D2)',`I/O',`VCC',`I/O',`I/O',`GND',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O(D1)',`I/O',`I/O',`I/O',`I/O(D0_DIN)',`I/O(GCK6_DOUT)',`CCLK',`VCC',`O(TDO)'') #157
++
++define(`PL_XCS40_PQ208_11',``GND',`I/O',`I/O(GCK7)',`I/O',`I/O',`I/O(CS1)',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`GND',`I/O',`I/O',`VCC',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`GND'')
++
++define(`PL_XCS40_PQ208_12',``VCC',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`VCC',`I/O',`I/O',`GND',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O',`I/O(GCK8)',`VCC'') #208
++
++define(`Description_XCS40_PQ208',`Xilinx XCS40 PQ208')
++define(`PinList_XCS40_PQ208',`PL_XCS40_PQ208_1,PL_XCS40_PQ208_2,PL_XCS40_PQ208_3,PL_XCS40_PQ208_4,PL_XCS40_PQ208_5,PL_XCS40_PQ208_6,PL_XCS40_PQ208_7,PL_XCS40_PQ208_8,PL_XCS40_PQ208_9,PL_XCS40_PQ208_10,PL_XCS40_PQ208_11,PL_XCS40_PQ208_12')
++define(`Param1_XCS40_PQ208',`208')
++define(`Param2_XCS40_PQ208',`0')
++define(`Description_AT512',`Atmel FPGA Configuration Memory AT512 AT010')
++define(`Param1_AT512',`20')
++define(`Param2_AT512',`0')
++define(`PinList_AT512',``NC',`DATA',`NC',`CLK',`WP1',`RESET_OE',`WP2',`CE',`NC',`GND',`NC',`NC',`NC',`CEO_A2',`READY',`NC',`SER_EN',`NC',`NC',`VCC'')
++divert(0)dnl
++
++
++
++
++
++
++
++
++
++
+diff -urN pcb-1.6.3.orig/lib/genericsmt.inc pcb-1.6.3.dj/lib/genericsmt.inc
+--- pcb-1.6.3.orig/lib/genericsmt.inc	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/lib/genericsmt.inc	2007-11-22 13:03:35.000000000 +0000
+@@ -0,0 +1,42 @@
++# Convert micrometers to mils ( thousandths of an inch ) 
++define(`UM_TO_MIL',`eval(($1*10)/254)')
++# the definition of a general axial package
++# $1: canonical name
++# $2: name on PCB
++# $3: length, width,padlength
++define(`PKG_GENERIC_SMT',`
++ 	define(`cnt',`1')
++	define(`ARGS',$3)	
++	args(ARGS)
++	define(`LENGTH',`UM_TO_MIL(arg1)')
++ 	define(`WIDTH',`UM_TO_MIL(arg2)')
++	define(`PADLENGTH',`UM_TO_MIL(arg3)')
++   	define(`CENTRE',`eval(LENGTH/2)')
++	define(`PENWIDTH',`eval(PADLENGTH)')
++	define(`PADLENGTH2',`eval(LENGTH-PADLENGTH)')
++	define(`PADCENTRE',`eval(PADLENGTH/2)')
++	define(`PADCENTRE2',`eval(LENGTH-(PADLENGTH/2))')
++Element(0x00 "$1" "$2" "$3" CENTRE eval(WIDTH+10) 0 100 0x00)
++(
++ 	PAD(0,0,0,WIDTH,PENWIDTH, 1)
++	PAD(0,0,PADLENGTH,0,PENWIDTH,1)
++	PAD(PADLENGTH,0,PADLENGTH,WIDTH,PENWIDTH, 1)
++	PAD(0,WIDTH,PADLENGTH,WIDTH,PENWIDTH, 1)
++	PAD(PADCENTRE,0,PADCENTRE,WIDTH,PENWIDTH,1)
++
++
++	PAD(LENGTH,0,LENGTH,WIDTH,PENWIDTH, 1)
++	PAD(LENGTH,0,PADLENGTH2,0,PENWIDTH,1)
++	PAD(PADLENGTH2,0,PADLENGTH2,WIDTH,PENWIDTH, 1)
++	PAD(LENGTH,WIDTH,PADLENGTH2,WIDTH,PENWIDTH, 1)
++	PAD(PADCENTRE2,0,PADCENTRE2,WIDTH,PENWIDTH,1)
++
++        ElementLine(0 0 LENGTH 0 1)
++	ElementLine(LENGTH 0 LENGTH WIDTH 1)
++	ElementLine(0 WIDTH LENGTH WIDTH 1)
++	ElementLine(0 0 0 WIDTH 1)
++        	
++)
++')
++
++
+diff -urN pcb-1.6.3.orig/lib/genericsmt.list pcb-1.6.3.dj/lib/genericsmt.list
+--- pcb-1.6.3.orig/lib/genericsmt.list	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/lib/genericsmt.list	2007-11-22 13:03:35.000000000 +0000
+@@ -0,0 +1,12 @@
++JEDEC_20_PIN_PLCC:JEDECQFP:JEDEC
++SMT_402_CAP_RES:GENERIC_SMT:1000,500,250
++SMT_603_CAP_RES:GENERIC_SMT:1600,800,250
++SMT_805_CAP_RES:GENERIC_SMT:2100,1300,350
++SMT_1206_CAP_RES:GENERIC_SMT:3100,1550,450
++SMT_2010_CAP_RES:GENERIC_SMT:5000,2500,650
++SMT_2512_CAP_RES:GENERIC_SMT:6400,3200,750
++
++
++
++
++
+diff -urN pcb-1.6.3.orig/lib/genericsmt.m4 pcb-1.6.3.dj/lib/genericsmt.m4
+--- pcb-1.6.3.orig/lib/genericsmt.m4	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/lib/genericsmt.m4	2007-11-22 13:03:35.000000000 +0000
+@@ -0,0 +1,23 @@
++divert(-1)
++#
++# Definitions for common SMT components
++# by D.J. Barrow dj_barrow@ariasoft.ie
++#
++define(`Description_JEDEC_20_PIN_PLCC',`Jedec 20 pin PLCC QFP')
++define(`Param1_JEDEC_20_PIN_PLCC',`20')
++define(`Param2_JEDEC_20_PIN_PLCC',`0')
++define(`Description_SMT_402_CAP_RES',`SMT 402 type capicitor/resistor')
++define(`Description_SMT_603_CAP_RES',`SMT 603 type capicitor/resistor')
++define(`Description_SMT_805_CAP_RES',`SMT 805 type capicitor/resistor')
++define(`Description_SMT_1206_CAP_RES',`SMT 1206 type capicitor/resistor')
++define(`Description_SMT_2010_CAP_RES',`SMT 2010 type capicitor/resistor')
++define(`Description_SMT_2512_CAP_RES',`SMT 2512 type capicitor/resistor')
++divert(0)dnl
++
++
++
++
++
++
++
++
+diff -urN pcb-1.6.3.orig/lib/Imakefile pcb-1.6.3.dj/lib/Imakefile
+--- pcb-1.6.3.orig/lib/Imakefile	1998-05-16 22:36:38.000000000 +0100
++++ pcb-1.6.3.dj/lib/Imakefile	2007-11-22 13:03:35.000000000 +0000
+@@ -33,21 +33,22 @@
+ 
+ TARGETS = $(DEFAULTLIBRARY) $(DEFAULTLIBRARY).contents
+ COMMON  = common.m4
+-INC     = connector.inc dil.inc misc.inc plcc.inc to.inc qfp.inc
++INC     = connector.inc dil.inc misc.inc plcc.inc to.inc qfp.inc \
++	pci.inc genericsmt.inc
+ 
+ SRC     = TTL_74xx_DIL.m4 \
+ 		  crystal.m4 connector.m4 generic.m4 \
+ 		  linear.m4 logic.m4 lsi.m4 memory.m4 \
+ 		  optical.m4 resistor_array.m4 resistor_0.25W.m4 \
+ 		  texas_inst_voltage_reg.m4 texas_inst_amplifier.m4 \
+-		  transistor.m4
++		  transistor.m4 fpga.m4 pci.m4 genericsmt.m4
+ 
+ LIST    = TTL_74xx_DIL.list \
+ 		  crystal.list connector.list generic.list \
+ 		  linear.list logic.list lsi.list memory.list \
+ 		  optical.list resistor_array.list resistor_0.25W.list \
+ 		  texas_inst_voltage_reg.list texas_inst_amplifier.list \
+-		  transistor.list
++		  transistor.list fpga.list pci.list genericsmt.list 
+ 
+ SCRIPTS = CreateLibrary.sh CreateLibraryContents.sh \
+           ListLibraryContents.sh QueryLibrary.sh
+diff -urN pcb-1.6.3.orig/lib/pci.inc pcb-1.6.3.dj/lib/pci.inc
+--- pcb-1.6.3.orig/lib/pci.inc	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/lib/pci.inc	2007-11-22 13:03:35.000000000 +0000
+@@ -0,0 +1,133 @@
++#
++# Definitions for PCI boards
++# by D.J. Barrow dj_barrow@ariasoft.ie
++#
++# please note that you will need to edit the saved pcb file
++# by hand to move the board outline onto a seperate layer
++# I suggest one of the unused layers.
++
++define(`GETNUMARRAYS',`eval(($#)/2)')
++# $1: canonical name
++# $2: name on PCB
++# $3: boardheight,number of pins,arcradius,..., number of pins
++define(`PKG_PCIPINARRAY',
++	`
++        define(`cnt',`1')
++        define(`ARGS',$3)
++	args(ARGS)
++	define(`LEFTOFFSET',`100')
++	define(`EDGEGAP',`12')
++	define(`PINDIST',`50')
++    	define(`PINWIDTH',`25')
++	define(`NUMARRAYS',`GETNUMARRAYS(ARGS)')
++        define(`TOTALPINS1',forloop(`IDX',0,eval(NUMARRAYS-1),
++		``arg'eval((IDX*2)+2) + ')0)
++	define(`TOTALPINS',eval(TOTALPINS1))
++	ifelse(1,eval(NUMARRAYS>1),`
++		define(`TOTALDIAMETER1',forloop(`IDX',0,eval(NUMARRAYS-2),
++			``arg'eval((IDX*2)+3) + ')0)
++		define(`TOTALDIAMETER',eval(TOTALDIAMETER1))
++	')
++    	define(`PINCENTER',`eval(LEFTOFFSET+(PINDIST/2))')
++    	define(`PINRADIUS',`eval(PINWIDTH/2)')
++    	define(`PINLEFT',`eval(PINCENTER-PINRADIUS)')
++    	define(`PINRIGHT',`eval(PINCENTER+PINRADIUS)')
++    	define(`PENWIDTH',`eval(PINRADIUS+1)')
++    	define(`PENRADIUS',`eval(PENWIDTH/2)')
++    	define(`MAXIDX',`eval(TOTALPINS - 1)')
++    	define(`ARRAYWIDTH', `eval((TOTALPINS*PINDIST)+TOTALDIAMETER)')
++    	define(`CENTERX', `eval(((ARRAYWIDTH+LEFTOFFSET)/2))')
++    	define(`MINY',`20')
++    	define(`MIDY',`220')
++    	define(`MAXY',`270')
++    	define(`ARCRADIUS',`12')
++	define(`ARCDIAMETER',`eval(ARCRADIUS*2)')
++    	define(`LMAXY',`eval(MAXY+ARCRADIUS)')
++	define(`BOARDTOP',`eval(LMAXY-arg1)')
++	define(`SCREWBORDER',275)
++Element(0x00  "$1" "$2" "$3" CENTERX 10 1 30 0x00)
++(
++	Mark(CENTERX 135)
++	define(`ADDSIDE',0)
++	define(`FLAG',0x0)
++	define(`LOOPIDX1',eval(NUMARRAYS-1))
++	define(`LEFT1',`eval(PINLEFT-ARCRADIUS)')
++	define(`ARCRADIUS2',`100')
++	define(`SLOTWIDTH',`1000')
++	define(`BRACKETLEFT',`-1525')
++	define(`LEFT2',`eval(LEFT1-ARCRADIUS2)')
++	define(`LEFT3',`eval(LEFT1+ARCRADIUS2-SLOTWIDTH)')
++	define(`LEFT4',`eval(LEFT1-SLOTWIDTH)')
++	ElementArc(LEFT2 0 ARCRADIUS2 ARCRADIUS2 180 90 1)
++  	ElementLine(LEFT2 -ARCRADIUS2 LEFT3 -ARCRADIUS2 1)
++	ElementArc(LEFT3 0 ARCRADIUS2 ARCRADIUS2 270 90 1)
++	ElementLine(LEFT4 0 LEFT4 MAXY 1)
++        define(`LEFT5',`eval(LEFT4-ARCRADIUS)')
++	ElementArc(LEFT5 MAXY ARCRADIUS ARCRADIUS 90 90 1)
++        ElementLine(LEFT5 LMAXY BRACKETLEFT LMAXY 1)
++   	forloop(`SIDE',0,1,
++   	`
++		define(`IDX',`0')
++		define(`ADDDIAMETER',`0')
++		forloop(`IDX1',0,LOOPIDX1,
++		`
++			define(`CURRNUMPINS',`arg'eval((IDX1*2)+2))
++			ifelse(SIDE,`0',`
++				define(`CURRLEFT',`eval((PINDIST*IDX)+(ADDDIAMETER)+PINLEFT)')
++				define(`CURRRIGHT',`eval(CURRLEFT+((CURRNUMPINS-1)*PINDIST)+PINWIDTH)')
++				ElementLine(CURRLEFT LMAXY CURRRIGHT LMAXY 2)
++				ElementArc(CURRLEFT MAXY ARCRADIUS ARCRADIUS 0 90 2)
++				ElementArc(CURRRIGHT MAXY ARCRADIUS ARCRADIUS 90 90 2)
++				define(`CURRLEFT1',`eval(CURRLEFT-ARCRADIUS)')
++				define(`CURRRIGHT1',`eval(CURRRIGHT+ARCRADIUS)')
++		                ElementLine(CURRLEFT1 0 CURRLEFT1 MAXY 1)
++                                ElementLine(CURRRIGHT1 0 CURRRIGHT1 MAXY 1)
++		                ifelse(1,eval((NUMARRAYS>1)&&(IDX1<LOOPIDX1)),`
++					define(`CURRDIAMETER',`arg'eval((IDX1*2)+3))
++					define(`CURRRADIUS',`eval(CURRDIAMETER/2)')
++					ElementArc(eval(CURRRIGHT+EDGEGAP+(CURRDIAMETER/2)) 0 CURRRADIUS CURRRADIUS 180 180 1)
++				')
++	   			ifelse(1,eval(IDX1==LOOPIDX1),`
++					ElementLine(BRACKETLEFT LMAXY BRACKETLEFT BOARDTOP 1)
++					ElementLine(BRACKETLEFT BOARDTOP CURRRIGHT1 BOARDTOP 1)
++					ElementLine(CURRRIGHT1 BOARDTOP CURRRIGHT1 0 1)
++				        
++				        ElementArc(eval(BRACKETLEFT+SCREWBORDER) eval(LMAXY-SCREWBORDER) 125 125 0 360 1)
++				        ElementArc(eval(BRACKETLEFT+SCREWBORDER) eval(BOARDTOP+SCREWBORDER) 125 125 0 360 1)
++				')
++			')
++   			forloop(`IDX2',0,eval(CURRNUMPINS-1),
++   			`
++				define(`CURRX',`eval((PINDIST*IDX)+(ADDDIAMETER))')
++				define(`MINX',`eval(PINLEFT+CURRX)')
++				define(`MIDX',`eval(PINCENTER+CURRX)')
++				define(`MAXX',`eval(PINRIGHT+CURRX)')
++				define(`PINIDX',`eval(IDX+1+ADDSIDE)')
++	                        EDGECONN(MINX,MINY,MAXX,MINY,PENWIDTH,PINIDX,FLAG)
++				EDGECONN(MINX,MINY,MINX,MIDY,PENWIDTH,PINIDX,FLAG)
++				EDGECONN(MINX,MIDY,MIDX,MAXY,PENWIDTH,PINIDX,FLAG)
++				EDGECONN(MIDX,MINY,MIDX,MAXY,PENWIDTH,PINIDX,FLAG)
++				EDGECONN(MAXX,MINY,MAXX,MIDY,PENWIDTH,PINIDX,FLAG)
++				EDGECONN(MAXX,MIDY,MIDX,MAXY,PENWIDTH,PINIDX,FLAG)				
++				define(`IDX',incr(IDX))
++			')
++			
++			ifelse(1,eval((NUMARRAYS>1)&&(IDX1<LOOPIDX1)),`
++				define(`ADDDIAMETER1',forloop(`IDX2',0,eval(IDX1),
++				``arg'eval((IDX2*2)+3)+')0)
++				define(`ADDDIAMETER',eval(ADDDIAMETER1+(EDGEGAP*2)-PINDIST+PINWIDTH))
++			')
++		')
++		define(`ADDSIDE',`TOTALPINS')
++		define(`FLAG',0x80)
++  	')
++	 
++)')
++
++
++
++
++
++
++
++
+diff -urN pcb-1.6.3.orig/lib/pci.list pcb-1.6.3.dj/lib/pci.list
+--- pcb-1.6.3.orig/lib/pci.list	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/lib/pci.list	2007-11-22 13:03:35.000000000 +0000
+@@ -0,0 +1,6 @@
++PCI5V_AVE_HEIGHT:PCIPINARRAY:2810,49,100,11
++PCI5V_MIN_HEIGHT:PCIPINARRAY:1420,49,100,11
++PCI5V_MAX_HEIGHT:PCIPINARRAY:4200,49,100,11
++PCI5V_SMALL_HEIGHT:PCIPINARRAY:2063,49,100,11
++
++
+--- pcb-1.6.3.orig/lib/pci.m4	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/lib/pci.m4	2007-11-30 20:41:56.000000000 +0000
+@@ -0,0 +1,37 @@
++divert(-1)
++#
++# Definitions for PCI boards
++# by D.J. Barrow dj_barrow@ariasoft.ie
++#
++define(`PL_PCISideB1',``-12V',`TCK',`Ground',`TD0',`+5V',`+5V',`INTB*',`INTD*',`PRSNT1*',`Reserved',`PRSNT2*'')
++
++define(`PL_PCISideB2',``Ground',`Ground'')
++
++define(`PL_PCISideB3',``Reserved',`Ground',`CLK',`Ground',`REQ*',`+5V',`AD[31]',`AD[29]',`Ground',`AD[27]',`AD[25]',`+3.3V',`C/BE[3]*',`AD[23]',`Ground',`AD[21]',`AD[19]',`+3.3V',`AD[17]',`C/BE[2]*',`Ground',`IRDY*',`+3.3V',`DEVSEL*',`Ground',`LOCK*',`PERR*',`+3.3V',`SERR*',`+3.3V',`C/BE[1]*',`AD[14]',`Ground',`AD[12]',`AD[10]',`Ground'')
++
++define(`PL_PCISideB4',``Ground',`Ground'')
++define(`PL_PCISideB5',``AD[08]',`AD[07]',`+3.3V',`AD[05]',`AD[03]',`Ground',`AD[01]',`+5V',`ACK64*',`+5V',`+5V'')
++
++
++define(`PL_PCISideB6',``Reserved',`Ground',`C/BE[6]*',`C/BE[4]*',`Ground',`AD[63]',`AD[61]',`+5V',`AD[59]',`AD[57]',`Ground',`AD[55]',`AD[53]',`Ground',`AD[51]',`AD[49]',`+5V',`AD[47]',`AD[45]',`Ground',`AD[43]',`AD[41]',`Ground',`AD[39]',`AD[37]',`+5V',`AD[35]',`AD[33]',`Ground',`Reserved',`Reserved',`Ground'')
++
++define(`PL_PCISideA1',``TRST*',`+12V',`TMS',`TDI',`+5V',`INTA*',`INTC*',`+5V',`Reserved',`+5V',`Reserved'')
++
++define(`PL_PCISideA2',``Ground',`Ground'')
++define(`PL_PCISideA3',``3.3Vaux',`RST*',`+5V',`GNT*',`Ground',`PME*',`AD[30]',`+3.3V',`AD[28]',`AD[26]',`Ground',`AD[24]',`IDSEL',`+3.3V',`AD[22]',`AD[20]',`Ground',`AD[18]',`AD[16]',`+3.3V',`FRAME*',`Ground',`TRDY*',`Ground',`STOP*',`+3.3V',`Reserved',`Reserved',`Ground',`PAR',`AD[15]',`+3.3V',`AD[13]',`AD[11]',`Ground',`AD[09]'')
++
++
++define(`PL_PCISideA4',``Ground',`Ground'')
++define(`PL_PCISideA5',``C/BE[0]*',`+3.3V',`AD[06]',`AD[04]',`Ground',`AD[02]',`AD[00]',`+5V',`REQ64*',`+5V',`+5V'')
++
++define(`PL_PCISideA6',``Ground',`C/BE[7]*',`C/BE[5]*',`+5V',`PAR64',`AD[62]',`Ground',`AD[60]',`AD[58]',`Ground',`AD[56]',`AD[54]',`+5V',`AD[52]',`AD[50]',`Ground',`AD[48]',`AD[46]',`Ground',`AD[44]',`AD[42]',`+5V',`AD[40]',`AD[38]',`Ground',`AD[36]',`AD[34]',`Ground',`AD[32]',`Reserved',`Ground',`Reserved'')
++define(`Description_PCI5V_AVE_HEIGHT',`PCI 5V Array Average Height')
++define(`Description_PCI5V_MIN_HEIGHT',`PCI 5V Array Min Height')
++define(`Description_PCI5V_MAX_HEIGHT',`PCI 5V Array Max Height')
++define(`Description_PCI5V_SMALL_HEIGHT',`PCI 5V Array Small Height')
++define(`PinList_PCI5V',`PL_PCISideB1,PL_PCISideB2,PL_PCISideB3,PL_PCISideB5,PL_PCISideA1,PL_PCISideA2,PL_PCISideA3,PL_PCISideA5')
++define(`PinList_PCI5V_AVE_HEIGHT',`PinList_PCI5V')
++define(`PinList_PCI5V_MIN_HEIGHT',`PinList_PCI5V')
++define(`PinList_PCI5V_MAX_HEIGHT',`PinList_PCI5V')
++define(`PinList_PCI5V_SMALL_HEIGHT',`PinList_PCI5V')
++divert(0)dnl
+diff -urN pcb-1.6.3.orig/lib/qfp.inc pcb-1.6.3.dj/lib/qfp.inc
+--- pcb-1.6.3.orig/lib/qfp.inc	1998-05-16 22:11:19.000000000 +0100
++++ pcb-1.6.3.dj/lib/qfp.inc	2007-11-22 13:03:35.000000000 +0000
+@@ -21,79 +21,119 @@
+ #   Contact addresses for paper mail and Email:
+ #   Thomas Nau, Schlehenweg 15, 88471 Baustetten, Germany
+ #   Thomas.Nau@rz.uni-ulm.de
++#   Improvments by D.J. Barrow dj_barrow@ariasoft.ie
+ # 
+ #   RCS: $Id: qfp.inc,v 0.1 1998/03/31 00:34:00 olson Exp $
+ #
+ #  QFP packages
+ #
+-
+-# -------------------------------------------------------------------
+-# ThanX to Johan Andersson (johan@homemail.com), modified by Thomas Nau
+-# the definition of a plcc package for base code to make qfp package.
+-# modified for correct pad numbering by Holm Tiffe
+-#
+-# Code from plcc.inc modified by Thomas Olson to make this qfp.inc definition.
+-# Although in retrospec quad flat packs are more diverse than this algorithm will do.
+-# Many qfp are the same physical size but have more thus narrower pads. 
+ # $1: canonical name
+ # $2: name on PCB
+ # $3: value
+ # $4: number of pins
+-# $5: additional border (will be ignored)
+-#
+-define(`PKG_QFP',
++# $5: additional border
++# $6: pad pitch in millionths of inches
++# $7: pad thickness
++# $8: pad min offset ( edge nearest package )
++# $9: pad max offset ( edge furthest away from package )
++# $10: pin0 in middle
++define(`PKG_GENERIC_QFP',
+ 	`define(`QUARTER', `eval($4 /4)')
+ 	define(`OFFSET', `eval((QUARTER +1) /2)')
+-	define(`WIDTH', `eval((QUARTER-1) *31 +2*42)')
++	define(`BORDER',`$5')
++	define(`PITCH',`$6')
++	define(`WIDTH', `eval((((QUARTER-1)*PITCH)/1000)+2*BORDER)')
+ 	define(`CENTER', `eval(WIDTH / 2)')
+ 	define(`NUMPINS', `$4')
++	define(`PADTHICKNESS',`$7')
++	define(`PADMINOFFSET',`$8')
++	define(`PADMAXOFFSET',`$9')
++	define(`FARPIN',`eval(WIDTH-BORDER)')
++        define(`PIN1INMIDDLE',`$10')
++        define(`EDGECUT',`ifelse(1,eval(PIN1INMIDDLE),`0',`28')')
++	define(`STARTPIN',`ifelse(1,eval(PIN1INMIDDLE),`eval(((QUARTER+1)/2)+1)',`1')')
++	define(`CIRCLECENTRE',`ifelse(1,eval(PIN1INMIDDLE),`eval(WIDTH/2)',35)')
+ Element(0x00 "$1" "$2" "$3" 100 CENTER 0 100 0x00)
+ (
+ 
+ 	# left row
+ define(`X', 0)
+-define(`Y', 42)
+-#define(`count', `eval(OFFSET+1)')
+-define(`count', 1)
++define(`QFPPIN',`STARTPIN')
++define(`idx',0)
+ forloop(`i', 1, QUARTER,
+-	`PAD(eval(X-65), Y, eval(X+5), Y, 20, count)' `define(`count', incr(count))'
+-	`define(`Y', eval(Y+31))'
+-	)
++	`define(`Y', `eval(BORDER+((PITCH*idx)/1000))')'
++	`PAD(eval(X-PADMAXOFFSET), Y, eval(X+PADMINOFFSET), Y, PADTHICKNESS, QFPPIN)' 
++	`define(`QFPPIN', incr(QFPPIN))'
++	`define(`idx',incr(idx))'
++)
+ 
+ 	# bottom row
+-define(`X', 42)
+ define(`Y', WIDTH)
++define(`idx',0)
+ forloop(`i', 1, QUARTER,
+-	`PAD(X, eval(Y+65), X, eval(Y-5), 20, count)' `define(`count', incr(count))'
+-	`define(`X', eval(X+31))'
++	`define(`X', `eval(BORDER+((PITCH*idx)/1000))')'
++	`PAD(X, eval(Y+PADMAXOFFSET), X, eval(Y-PADMINOFFSET), PADTHICKNESS, QFPPIN)' 
++	`define(`QFPPIN', incr(QFPPIN))'
++	`define(`idx',incr(idx))'
+ )
+ 
+ 	# right row
+ define(`X', WIDTH)
+-define(`Y', eval(WIDTH-42))
++define(`idx',0)
+ forloop(`i', 1, QUARTER,
+-	`PAD(eval(X+65), Y, eval(X-5), Y, 20, count)' `define(`count', incr(count))'
+-	`define(`Y', eval(Y-31))'
++	`define(`Y', `eval(FARPIN-((PITCH*idx)/1000))')'
++	`PAD(eval(X+PADMAXOFFSET), Y, eval(X-PADMINOFFSET), Y, PADTHICKNESS, QFPPIN)' 
++	`define(`QFPPIN', incr(QFPPIN))'
++	`define(`idx',incr(idx))'
+ )
+ 
+ 	# top row
+-define(`X', eval(WIDTH-42))
+ define(`Y', 0)
++define(`idx',0)
+ forloop(`i', 1, QUARTER,
+-	`PAD(X, eval(Y-65), X, eval(Y+5), 20, count)' `define(`count', incr(count))'
+-	`ifelse(eval(count > NUMPINS), 1, `define(`count', 1)')'
+-	`define(`X', eval(X-31))'
++	`define(`X',`eval(FARPIN-((PITCH*idx)/1000))')'
++	`PAD(X, eval(Y-PADMAXOFFSET), X, eval(Y+PADMINOFFSET), PADTHICKNESS, QFPPIN)' 
++	`define(`QFPPIN', incr(QFPPIN))'
++	`ifelse(eval(QFPPIN > NUMPINS), 1, `define(`QFPPIN', 1)')'
++	`define(`idx',incr(idx))'
+ )
+ 
+-	ElementLine(28 0 WIDTH 0 10)
++	ElementLine(EDGECUT 0 WIDTH 0 10)
+ 	ElementLine(WIDTH 0 WIDTH WIDTH 10)
+ 	ElementLine(WIDTH WIDTH 0 WIDTH 10)
+-	ElementLine(0 WIDTH 0 28 10)
+-	ElementLine(0 28 28 0 10)
+-
+-	ElementArc(80 80 20 20 0 360 10)
++	ElementLine(0 WIDTH 0 EDGECUT 10)
++	ElementLine(0 EDGECUT EDGECUT 0 10)
++	ElementArc(CIRCLECENTRE 35 10 10 0 360 10)
+ 
+ 	Mark(0 0)
+ )')
+ 
+ # -------------------------------------------------------------------
++# ThanX to Johan Andersson (johan@homemail.com), modified by Thomas Nau
++# the definition of a plcc package for base code to make qfp package.
++# modified for correct pad numbering by Holm Tiffe
++#
++# Code from plcc.inc modified by Thomas Olson to make this qfp.inc definition.
++# Although in retrospec quad flat packs are more diverse than this algorithm will do.
++# Many qfp are the same physical size but have more thus narrower pads. 
++# $1: canonical name
++# $2: name on PCB
++# $3: value
++# $4: number of pins
++# $5: additional border (will be ignored)
++#
++define(`PKG_QFP',`PKG_GENERIC_QFP(`$1',`$2',`$3',`$4',`42',`31000',`20',`5',`65',`0')')	
++# Same as QFP except more compact typical example is a XCS40 PQ 208C
++define(`PKG_COMPACTQFP',`PKG_GENERIC_QFP(`$1',`$2',`$3',`$4',`39',`19685',`12',`-20',`80',`0')')
++define(`PKG_JEDECQFP2',`PKG_GENERIC_QFP(`$1',`$2',`$3',`$4',`42',`50000',`35',`-5',`65',`1')')	
++
++# -------------------------------------------------------------------
++
++
++
++
++
++
++
++
++
+diff -urN pcb-1.6.3.orig/README_FILES/CHANGES pcb-1.6.3.dj/README_FILES/CHANGES
+--- pcb-1.6.3.orig/README_FILES/CHANGES	1998-05-17 12:32:10.000000000 +0100
++++ pcb-1.6.3.dj/README_FILES/CHANGES	2007-11-22 13:03:35.000000000 +0000
+@@ -1,4 +1,62 @@
+ /*
++ * Additions of D.J. Barrow dj_barrow@ariasoft.ie
++ *
++ */
++Main changes
++A few new package definitions including 
++Common SMT components,PCI Board Templates, XCS40 FPGA,
++Improvments to QFP definitions.
++
++Made Soldermask Adjustable it was set to 15 Mils
++this was impractical for SMT components as the primary
++use of the soldermask is to prevent unwanted soldering
++of tracks & pads together & as the space between components
++on a PCI board is typically 4 mils this is too much.
++
++Made gridding adjustable to 1 mil increments 
++( 1 thousand'th of an inch ), this is required for SMT development.
++
++Fixed one crashbug in insert.c owing to missing protype
++
++
++Files added:
++lib/fpga.list
++lib/fpga.m4
++lib/pci.inc
++lib/pci.list
++lib/pci.m4
++genericsmt.inc
++genericsmt.list
++lib/genericsmt.m4
++
++Files Modified:
++globalconst.h
++lib/common.m4
++lib/qfp.inc
++lib/transistor.list
++src/Pcb.ad.raw
++src/action.c
++src/create.c
++src/dev_gerber.c
++src/dev_ps.c
++src/dev_rs274x.c
++src/file.c
++src/global.h
++src/insert.c
++src/main.c
++src/menu.c
++src/parse_l.l
++src/parse_y.h
++src/parse_y.y
++src/print.c
++src/report.c
++src/sed.script
++src/set.c
++src/set.h
++
++
++
++/*
+  *  This package is PCB 1.6.3 release by harry eaton.
+  *  
+  *  I'm too lazy to document all of the changed files
+diff -urN pcb-1.6.3.orig/README_FILES/DJBARROW_HINTS.TXT pcb-1.6.3.dj/README_FILES/DJBARROW_HINTS.TXT
+--- pcb-1.6.3.orig/README_FILES/DJBARROW_HINTS.TXT	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/README_FILES/DJBARROW_HINTS.TXT	2007-11-22 13:03:35.000000000 +0000
+@@ -0,0 +1,145 @@
++Hi all,
++
++Hopefully the following hints & suggestions will make it easier
++for you to build your PCB's.
++
++Stuff I figured out the hard way
++================================
++Firstly the unit of measurment of pcb-1.6.3 is a mil
++whichis a thousand'th of an inch.
++I defined a m4 UM_TO_MIL ( micrometer to mil ) 
++macro to ease entering metric components.
++
++The main purpose of a soldermask/component mask is to insulate
++the tracks & prevent bad soldering joining tracks
++or pads together unintensionally.
++For this reason I made the soldermask size adjustable
++it was 15 mils which was simply too big for PCI boards.
++
++
++To get good at designing new components is pretty
++painful they are written in a macro language called
++m4 & this is used extensively, this saved coding
++which otherwise would be needed in the parser of the
++gnu pcb files, a gui editor would be better provided
++it used text files which is a blessing in gnu pcb. 
++
++
++i.e. 2 passes of m4 are run by the CreateLibrary.sh
++& CreateLibraryContents.sh scripts & a final pass
++is run internally by the Expandfilename function.
++
++The most useful hotkey in gnu pcb is the c key this recentres
++the board at the current mouse cursor position which
++is extremely useful for moving around boards larger than the
++screensize.
++
++
++invoke like
++m4 -dV 
++for verbose debugging info.
++
++The large m4 files
++pcblib & pcblib.contents in
++/usr/X11R6/lib/X11/pcb
++are created by running scripts like
++CreateLibrary.sh ../pcblib m4/common.m4 m4/*.m4
++CreateLibraryContents.sh m4/common.m4 m4/*.list > pcblib.contents
++
++
++To get a single component parsed which might give you some
++ideas on debugging do something like.
++../CreateLibrary.sh ../pcblib common.m4 *.m4
++../CreateLibraryContents.sh common.m4 *.list >../pcblib.contents
++/usr/X11R6/lib/X11/pcb/QueryLibrary.sh '/usr/X11R6/lib/X11/pcb' 'pcblib' 'XCS40_PQ208' 'XCS40' 'COMPACTQFP' 
++
++
++To find out about m4 type 'info m4' if you have m4
++documentation installed in your distro.
++
++The central place where these m4 files are loaded is
++the popen call in misc.c ExpandFilename function the parseing
++functions in parse_l.l parse_y.y are called from here
++If you get parse errors get gdb involved * do some debugging.
++
++It is also very useful to edit the saved pcb files by hand
++as you can do a lot this way which might not be possible from
++within the package.
++
++
++For building boards I recommend www.pcbpool.com  ( this is not
++a plug ) however they have managed to build my boards which is pretty
++unbelievable they are very cost effective & much less painful than 
++explaining ruined carpets etc. with chemicals if you plan to do it yourself.
++
++
++For soldering SMT QFP's with .5 mil between the pins it was suggested
++by a more experienced hardware engineer to use solder paste & a stensil,
++rather than soldering the pins ( I wasted quite a few components by trying
++to solder them the normal way ), if somebody can make a stensil with an inkjet printer
++please let me know how you do it.
++
++For practicing soldering dummy components are also a good idea,
++see
++
++
++
++They have a free package online called GCPrevue which runs
++under windows ( & possibly wine too ) which is the file format
++they expect to receive the files, the gerber files from gnu pcb can be 
++imported to this transparently the only thing which causes a little fun is
++the drill sizes which need to be entered by hand.
++
++
++What can be improved
++====================
++
++It is so much easier to suggest what could be improved than spending
++the few man months required to do it.
++
++It would be an ideal final year project for some electronic engineer or
++computer science guy ( Talk to your teacher ).
++
++
++The code is okay but needs a cleanup the objects should
++be inherited from a single base & flags like solder side & component side
++shouldn't be used insead the code should have layer numbers.
++
++The objects should be a proper linked list tree ( i.e with parent child sibling ) rather than
++current 3 level Board, Element, Pad etc as it currently is.
++& it should be possible to select everything from a single
++pad to the whole board with the same code & based on a single base class
++( to use a C++ ism, this can be done in C ).
++
++e.g. 
++There is distinct code for handling lines & elementlines, arcs & elementarcs.
++I tried adding an outline layer for the PCI m4 components I added however
++the fact that an elementline has to belong to the same layer as its parent
++element & would require extensive coding & testing to verify it was okay
++prevented me.
++So for now you have to move the PCI board outline I set up by hand in the file to
++the appropriate layer.
++
++The polygon tool ( which is commonly needed for ground planes is absolutely awful ),
++it took me as long to put down ground planes as it did the rest of my board.
++This should be like a paint tool in common paint packages & automatically fill
++using the tracks & pads as an outline.
++
++A kde front end would be nice.
++
++Auto routing, there is apparently a freeware algorithm for this available,
++I am sure this would be very difficult to add till the code is cleaned up,
++it possibly can be found on www.opencollector.org.
++
++
++Have Fun,
++D.J.
++dj_barrow@ariasoft.ie
++
++
++
++
++
++
++
++
+diff -urN pcb-1.6.3.orig/src/action.c pcb-1.6.3.dj/src/action.c
+--- pcb-1.6.3.orig/src/action.c	1998-05-13 11:29:39.000000000 +0100
++++ pcb-1.6.3.dj/src/action.c	2007-11-22 13:03:35.000000000 +0000
+@@ -147,6 +147,7 @@
+ 	F_SelectedTexts,
+ 	F_SelectedVias,
+ 	F_SelectedRats,
++	F_SoldermaskFrame,
+ 	F_Text,
+ 	F_TextByName,
+ 	F_TextScale,
+@@ -252,6 +253,7 @@
+         { "SelectedRats", F_SelectedRats },
+ 	{ "SelectedTexts", F_SelectedTexts },
+ 	{ "SelectedVias", F_SelectedVias },
++	{ "SoldermaskFrame", F_SoldermaskFrame },
+ 	{ "Text", F_Text },
+ 	{ "TextByName", F_TextByName },
+ 	{ "TextScale", F_TextScale },
+@@ -894,6 +896,9 @@
+ 			case F_TextScale:
+ 				SetTextScale(r ? value +Settings.TextScale : value);
+ 				break;
++		   case F_SoldermaskFrame:
++		                SetSoldermaskFrame(r ? value + PCB->SoldermaskFrame : value);
++		                break;
+ 		}
+ 		RestoreCrosshair(True);
+ 	}
+diff -urN pcb-1.6.3.orig/src/create.c pcb-1.6.3.dj/src/create.c
+--- pcb-1.6.3.orig/src/create.c	1998-05-13 11:29:42.000000000 +0100
++++ pcb-1.6.3.dj/src/create.c	2007-11-22 13:03:35.000000000 +0000
+@@ -115,6 +115,7 @@
+ 		/* no pixmap allocated yet */
+ 	ptr->SaveUnder = BadAlloc;
+ 	ptr->ID = ID++;
++	ptr->SoldermaskFrame=Settings.SoldermaskFrame;
+ 	return(ptr);
+ }
+ 
+diff -urN pcb-1.6.3.orig/src/dev_gerber.c pcb-1.6.3.dj/src/dev_gerber.c
+--- pcb-1.6.3.orig/src/dev_gerber.c	1998-05-13 11:29:43.000000000 +0100
++++ pcb-1.6.3.dj/src/dev_gerber.c	2007-11-22 13:03:35.000000000 +0000
+@@ -21,6 +21,7 @@
+  *  Contact addresses for paper mail and Email:
+  *  Thomas Nau, Schlehenweg 15, 88471 Baustetten, Germany
+  *  Thomas.Nau@rz.uni-ulm.de
++ *  D.J. Barrow dj_barrow@ariasoft.ie added soldermask support.
+  *
+  */
+ 
+@@ -215,7 +216,7 @@
+ static	void	GB_PrintPad(PadTypePtr, int);
+ static	void	GB_PrintPinOrVia(PinTypePtr, int);
+ static	void	GB_PrintPadMask(PadTypePtr, int);
+-static	void	GB_PrintPinOrViaMask(PinTypePtr, int);
++static	void	GB_PrintPinMask(PinTypePtr, int);
+ static	void	GB_PrintClearPinOrViaOnGroundplane(PinTypePtr, int);
+ static	void	GB_PrintMaskOrGroundplaneRectangle(Position, Position,
+ 			Position, Position, int);
+@@ -255,7 +256,7 @@
+ 	GB_PrintPad,				/* print pad */
+ 	GB_PrintPinOrVia,			/* print pin or via */
+ 	GB_PrintPadMask,			/* print pad mask */
+-	GB_PrintPinOrViaMask,			/* print pin or via mask */
++	GB_PrintPinMask,			/* print pin or via mask */
+ 	GB_PrintClearPinOrViaOnGroundplane,	/* print clear pin or via on groundplane */
+ 	GB_PrintMaskOrGroundplaneRectangle,	/* print filled rectangle
+ 						   for ground planes and/or
+@@ -1126,7 +1127,7 @@
+ /* ----------------------------------------------------------------------
+  * prints a via or pin mask
+  */
+-static void GB_PrintPinOrViaMask(PinTypePtr Pin, int unsued)
++static void GB_PrintPinMask(PinTypePtr Pin, int unsued)
+ {
+ 		/* Add pin/via to the solder mask. */
+ 	GB_FPrintPinOrVia(GB_Flags.FP, Pin, unsued);
+diff -urN pcb-1.6.3.orig/src/dev_ps.c pcb-1.6.3.dj/src/dev_ps.c
+--- pcb-1.6.3.orig/src/dev_ps.c	1998-05-13 11:29:43.000000000 +0100
++++ pcb-1.6.3.dj/src/dev_ps.c	2007-11-22 13:03:35.000000000 +0000
+@@ -80,7 +80,7 @@
+ static	void	PS_PrintPinOrVia(PinTypePtr, int);
+ static	void	PS_PrintClearPinOrViaOnGroundplane(PinTypePtr, int);
+ static	void	PS_PrintPadMask(PadTypePtr, int);
+-static	void	PS_PrintPinOrViaMask(PinTypePtr, int);
++static	void	PS_PrintPinMask(PinTypePtr, int);
+ static	void	PS_FilledRectangle(Position, Position,
+ 			Position, Position, int);
+ static	void	PS_Outline(Position, Position,
+@@ -132,7 +132,7 @@
+ 	PS_PrintPad,
+ 	PS_PrintPinOrVia,
+ 	PS_PrintPadMask,
+-	PS_PrintPinOrViaMask,
++	PS_PrintPinMask,
+ 	PS_PrintClearPinOrViaOnGroundplane,
+ 	PS_FilledRectangle,
+ 	PS_Outline,
+@@ -164,7 +164,7 @@
+ 	PS_PrintPad,
+ 	PS_PrintPinOrVia,
+ 	PS_PrintPadMask,
+-	PS_PrintPinOrViaMask,
++	PS_PrintPinMask,
+ 	PS_PrintClearPinOrViaOnGroundplane,
+ 	PS_FilledRectangle,
+ 	PS_Outline,
+@@ -920,7 +920,7 @@
+ {
+ 	if (TEST_FLAG(SQUAREFLAG, Pad))
+ 	{
+-		Dimension scrunch = Pad->Thickness/2 + GROUNDPLANEFRAME;
++		Dimension scrunch = Pad->Thickness/2 + PCB->SoldermaskFrame;
+ 	fprintf(PS_Flags.FP, "%d %d %d %d CLRB\n",
+ 		((Pad->Point1.X > Pad->Point2.X) ? Pad->Point2.X  : Pad->Point1.X) - scrunch,
+ 		((Pad->Point1.Y > Pad->Point2.Y) ? Pad->Point2.Y  : Pad->Point1.Y) - scrunch,
+@@ -933,18 +933,18 @@
+ 		(int) Pad->Point1.Y,
+ 		(int) Pad->Point2.X,
+ 		(int) Pad->Point2.Y,
+-		(int) Pad->Thickness + 2*GROUNDPLANEFRAME);
++		(int) Pad->Thickness + 2* PCB->SoldermaskFrame);
+ }
+ 
+ /* ----------------------------------------------------------------------
+  * prints a via or pin mask
+  */
+-static void PS_PrintPinOrViaMask(PinTypePtr Ptr, int unused)
++static void PS_PrintPinMask(PinTypePtr Ptr, int unused)
+ {
+ 	fprintf(PS_Flags.FP, "%d %d %d %s\n",
+ 		(int) Ptr->X,
+ 		(int) Ptr->Y,
+-		(int) Ptr->Thickness + 2*GROUNDPLANEFRAME,
++		(int) Ptr->Thickness + 2* PCB->SoldermaskFrame,
+ 		TEST_FLAG(SQUAREFLAG, Ptr) ? "CLRPVSQ" : TEST_FLAG(OCTAGONFLAG, Ptr) ? "CLRPV" : "CLRPVR");
+ }
+ 
+diff -urN pcb-1.6.3.orig/src/dev_rs274x.c pcb-1.6.3.dj/src/dev_rs274x.c
+--- pcb-1.6.3.orig/src/dev_rs274x.c	1998-05-13 11:29:43.000000000 +0100
++++ pcb-1.6.3.dj/src/dev_rs274x.c	2007-11-22 13:04:12.000000000 +0000
+@@ -51,7 +51,7 @@
+ #include <sys/types.h>
+ #include <errno.h>
+ #include <unistd.h>
+-#include <varargs.h>
++#include <stdarg.h>
+ 
+ #include "global.h"
+ 
+@@ -140,7 +140,7 @@
+ static  void    GBX_PrintPad(PadTypePtr, int);
+ static  void    GBX_PrintPinOrVia(PinTypePtr, int);
+ static  void    GBX_PrintPadMask(PadTypePtr, int);
+-static  void    GBX_PrintPinOrViaMask(PinTypePtr, int);
++static  void    GBX_PrintPinMask(PinTypePtr, int);
+ static  void    GBX_PrintClearPinOrViaOnGroundplane(PinTypePtr, int);
+ static  void    GBX_PrintMaskOrGroundplaneRectangle(Position, Position, Position, Position, int);
+ static  void    GBX_PrintOutline(Position, Position, Position, Position, int);
+@@ -175,7 +175,7 @@
+ 			GBX_PrintPad,				/* print pad */
+ 			GBX_PrintPinOrVia,			/* print pin or via */
+ 			GBX_PrintPadMask,			/* print pad mask */
+-			GBX_PrintPinOrViaMask,			/* print pin or via mask */
++			GBX_PrintPinMask,			/* print pin or via mask */
+ 			GBX_PrintClearPinOrViaOnGroundplane,	/* print clear pin or via on groundplane */
+ 			GBX_PrintMaskOrGroundplaneRectangle,	/* print filled rectangle
+ 													for ground planes and/or
+@@ -218,10 +218,7 @@
+ /*----------------------------------------------------------------------------*/
+ /* Error Logging Routines                                                     */
+ /*----------------------------------------------------------------------------*/
+-static void logError(fp, format, va_alist)
+-	FILE *fp;
+-	char *format;
+-	va_dcl
++static void logError(FILE *fp,char *format,...)
+ {
+ 	va_list args;
+ 	char    s[1024];
+@@ -229,7 +226,7 @@
+ 		/* FIXME: Is it legitimate to use Message() from within a
+ 			driver? */
+ 
+-	va_start(args);
++	va_start(args,format);
+ 	vsprintf(s, format, args);
+ 	fputs(s, fp);
+ /*
+@@ -385,6 +382,8 @@
+ 				/* pads always need clear masks */
+ 			findApertureCode(&GBX_Apertures, pad->Thickness + 2*GROUNDPLANEFRAME,
+ 				TEST_FLAG(SQUAREFLAG, pad) ? SQUARE : ROUND);
++			findApertureCode(&GBX_Apertures, pad->Thickness + 2*PCB->SoldermaskFrame,
++				TEST_FLAG(SQUAREFLAG, pad) ? SQUARE : ROUND);
+ 		);
+ 		ELEMENTLINE_LOOP(element,
+ 			findApertureCode(&GBX_Apertures, line->Thickness, ROUND));
+@@ -821,7 +820,9 @@
+  */
+ static void GBX_PrintPolygon(FILE *FP, PolygonTypePtr Ptr, int unused)
+ {
++#if 0
+ 	static int isRectangle(PolygonTypePtr Ptr);
++#endif
+ 	int firstTime = 1;
+ 	Position startX, startY;
+ #if 0
+@@ -1174,7 +1175,7 @@
+ 	FILE *FP;
+ 	
+ 	FP = GBX_Flags.FP;
+-	apCode = findApertureCode(&GBX_Apertures, Pad->Thickness +2*GROUNDPLANEFRAME,
++	apCode = findApertureCode(&GBX_Apertures, Pad->Thickness +2* PCB->SoldermaskFrame,
+ 	          (Pad->Flags & SQUAREFLAG) ? SQUARE : ROUND);
+ 	if (lastAperture != apCode)
+ 	{
+@@ -1213,11 +1214,11 @@
+ /* ----------------------------------------------------------------------
+  * prints a via or pin on the solder mask
+  */
+-static void GBX_PrintPinOrViaMask(PinTypePtr Pin, int unused)
++static void GBX_PrintPinMask(PinTypePtr Pin, int unused)
+ {
+ 	int apCode;
+ 	
+-	apCode = findApertureCode(&GBX_Apertures, Pin->Thickness +2*GROUNDPLANEFRAME,
++	apCode = findApertureCode(&GBX_Apertures, Pin->Thickness +2* PCB->SoldermaskFrame,
+ 			TEST_FLAG(SQUAREFLAG, Pin) ? SQUARE :
+ 			(TEST_FLAG(OCTAGONFLAG, Pin) ? OCTAGON : ROUND));
+ 	if (lastAperture != apCode)
+diff -urN pcb-1.6.3.orig/src/error.c pcb-1.6.3.dj/src/error.c
+--- pcb-1.6.3.orig/src/error.c	1998-05-13 11:29:45.000000000 +0100
++++ pcb-1.6.3.dj/src/error.c	2007-11-22 13:04:04.000000000 +0000
+@@ -34,7 +34,7 @@
+ #include <stdio.h>
+ #include <stdlib.h>
+ #include <errno.h>
+-#include <varargs.h>
++#include <stdarg.h>
+ #include <signal.h>
+ #include <unistd.h>
+ #include <fcntl.h>
+@@ -68,15 +68,13 @@
+ /* ---------------------------------------------------------------------------
+  * output of message in a dialog window or log window
+  */
+-void Message(Format, va_alist)
+-char *Format;
+-va_dcl
++void Message(char *Format,...)
+ {
+ 	va_list	args;
+ 	char	s[1024];
+ 	XEvent	event;
+ 
+-	va_start(args);
++	va_start(args,Format);
+ 	vsprintf(s, Format, args);
+ 	va_end(args);
+ 
+@@ -156,9 +154,7 @@
+ /* ---------------------------------------------------------------------------
+  * output of fatal error message
+  */
+-void MyFatal(Format, va_alist)
+-char *Format;
+-va_dcl
++void MyFatal(char *Format,...)
+ {
+ 	va_list	args;
+ 
+@@ -166,7 +162,7 @@
+ 	RestoreStderr();
+ 	EmergencySave();
+ 
+-	va_start(args);
++	va_start(args,Format);
+ 	fprintf(stderr, "%s (%i): fatal, ", Progname, (int) getpid());
+ 	vfprintf(stderr, Format, args);
+ 	fflush(stderr);
+diff -urN pcb-1.6.3.orig/src/error.h pcb-1.6.3.dj/src/error.h
+--- pcb-1.6.3.orig/src/error.h	1998-05-13 11:29:45.000000000 +0100
++++ pcb-1.6.3.dj/src/error.h	2007-11-22 13:04:00.000000000 +0000
+@@ -37,13 +37,13 @@
+ #define	STATUS_BREAK	1
+ #define	STATUS_ERROR	-1
+ 
+-void	Message();
++void    Message(char *Format,...);
+ void	OpenErrorMessage(char *);
+ void	PopenErrorMessage(char *);
+ void	OpendirErrorMessage(char *);
+ void	ChdirErrorMessage(char *);
+ void	RestoreStderr(void);
+-void	MyFatal();
++void    MyFatal(char *Format,...);
+ void	CatchSignal(int);
+ void	X11ErrorHandler(String);
+ void	InitErrorLog(void);
+diff -urN pcb-1.6.3.orig/src/file.c pcb-1.6.3.dj/src/file.c
+--- pcb-1.6.3.orig/src/file.c	1998-05-13 11:29:45.000000000 +0100
++++ pcb-1.6.3.dj/src/file.c	2007-11-22 13:03:35.000000000 +0000
+@@ -244,6 +244,9 @@
+ 		(int) PCB->MaxWidth, (int) PCB->MaxHeight);
+ 	fprintf(FP, "Grid(%i %i %i)\n",
+ 		(int) PCB->Grid, (int) PCB->GridOffsetX, (int) PCB->GridOffsetY);
++	/* Maintain backwards compatibility with the Soldermask frame if possible */
++	if(PCB->SoldermaskFrame!=DEFAULT_SOLDERMASK_FRAME)
++	   fprintf(FP, "SoldermaskFrame(%i)\n",PCB->SoldermaskFrame);
+ 	fprintf(FP, "Cursor(%i %i %i)\n",
+ 		(int) Crosshair.X, (int) Crosshair.Y, PCB->Zoom);
+ 	fprintf(FP, "Flags(0x%08x)\n", (int) PCB->Flags);
+diff -urN pcb-1.6.3.orig/src/global.h pcb-1.6.3.dj/src/global.h
+--- pcb-1.6.3.orig/src/global.h	1998-05-13 11:29:46.000000000 +0100
++++ pcb-1.6.3.dj/src/global.h	2007-11-22 13:03:35.000000000 +0000
+@@ -355,6 +355,7 @@
+ 	RouteStyleType	RouteStyle[NUM_STYLES];
+ 	Pixmap		SaveUnder;		/* saves data during dialog handling */
+ 	DataTypePtr	Data;
++        int             SoldermaskFrame;       /* Area around pads etc not touched by soldermask */
+ } PCBType, *PCBTypePtr;
+ 
+ typedef struct				/* information about the paste buffer */
+@@ -516,6 +517,7 @@
+ 						/* produced when searching of */
+ 						/* connections is done */
+ 	XFontStruct	*PinoutFont[MAX_ZOOM+1];/* font ID used for pin names */
++        int             SoldermaskFrame;       /* Area around pads etc not touched by soldermask */
+ } SettingType, *SettingTypePtr;
+ 
+ /* ----------------------------------------------------------------------
+@@ -577,7 +579,7 @@
+ 	void		(*Pad)(PadTypePtr, int);	
+ 	void		(*PinOrVia)(PinTypePtr, int);
+ 	void		(*PadMask)(PadTypePtr, int);
+-	void		(*PinOrViaMask)(PinTypePtr, int);
++	void		(*PinMask)(PinTypePtr, int);
+ 	void		(*ClearPinOrViaOnGroundplane)(PinTypePtr, int);
+ 	void		(*FilledRectangle)(Position, Position, Position, Position, int);
+ 	void		(*Outline)(Position, Position, Position, Position, int);
+diff -urN pcb-1.6.3.orig/src/insert.c pcb-1.6.3.dj/src/insert.c
+--- pcb-1.6.3.orig/src/insert.c	1998-05-13 11:29:46.000000000 +0100
++++ pcb-1.6.3.dj/src/insert.c	2007-11-22 13:03:35.000000000 +0000
+@@ -42,6 +42,7 @@
+ #include "select.h"
+ #include "set.h"
+ #include "undo.h"
++#include "search.h"
+ 
+ /* ---------------------------------------------------------------------------
+  * some local prototypes
+diff -urN pcb-1.6.3.orig/src/main.c pcb-1.6.3.dj/src/main.c
+--- pcb-1.6.3.orig/src/main.c	1998-05-13 11:29:47.000000000 +0100
++++ pcb-1.6.3.dj/src/main.c	2007-11-22 13:03:35.000000000 +0000
+@@ -341,7 +341,10 @@
+ 	{ "warnColor", XtCColor, XtRPixel, sizeof(Pixel),
+ 	  XtOffsetOf(SettingType, WarnColor), XtRString, XtDefaultForeground },
+ 	{ "zoom", "Zoom", XtRInt, sizeof(int),
+-	  XtOffsetOf(SettingType, Zoom), XtRString, "3" }};
++	  XtOffsetOf(SettingType, Zoom), XtRString, "3" },
++	{ "SoldermaskFrame", "SoldermaskFrame", XtRInt, sizeof(int),
++	  XtOffsetOf(SettingType, SoldermaskFrame), XtRString,
++         "15" } };
+ 
+ /* ---------------------------------------------------------------------------
+  * additional command line arguments
+diff -urN pcb-1.6.3.orig/src/menu.c pcb-1.6.3.dj/src/menu.c
+--- pcb-1.6.3.orig/src/menu.c	1998-05-13 11:29:48.000000000 +0100
++++ pcb-1.6.3.dj/src/menu.c	2007-11-22 13:03:35.000000000 +0000
+@@ -135,14 +135,15 @@
+ 	{ "solderSide", "look at solder-side", CB_Action, "SwapSides", NULL },
+ 	{ "line", NULL, NULL, NULL, NULL },
+ 	{ "header", "grid setting", NULL, NULL, NULL },
++	{ "grid01", " 1 mil", CB_Position, "SetValue,Grid,1", NULL },
+ 	{ "grid05", " 5 mil", CB_Position, "SetValue,Grid,5", NULL },
+ 	{ "grid10", "10 mil", CB_Position, "SetValue,Grid,10", NULL },
+ 	{ "grid20", "20 mil", CB_Position, "SetValue,Grid,20", NULL },
+ 	{ "grid25", "25 mil", CB_Position, "SetValue,Grid,25", NULL },
+ 	{ "grid50", "50 mil", CB_Position, "SetValue,Grid,50", NULL },
+ 	{ "grid100", "100 mil", CB_Position, "SetValue,Grid,100", NULL },
+-	{ "gridInc", "increment by 5", CB_Action, "SetValue,Grid,+5", NULL },
+-	{ "gridDec", "decrement by 5", CB_Action, "SetValue,Grid,-5", NULL },
++	{ "gridInc", "increment by 1", CB_Action, "SetValue,Grid,+1", NULL },
++	{ "gridDec", "decrement by 1", CB_Action, "SetValue,Grid,-1", NULL },
+ 	{ "line", NULL, NULL, NULL, NULL },
+ 	{ "header", "zoom setting", NULL, NULL, NULL },
+ 	{ "zoom1", "1 : 1 ", CB_Position, "SetValue,Zoom,0", NULL },
+@@ -165,7 +166,7 @@
+ /* ----------------------------------------------------------------------
+  * Sizes menu button - contains variable contents
+  */
+-static	PopupEntryType 	SizesMenuEntries[NUM_STYLES * 2 + 2];
++static	PopupEntryType 	SizesMenuEntries[NUM_STYLES * 2 + 4];
+ static PopupMenuType	SizesMenu =
+ 	{ "sizes", NULL, SizesMenuEntries, CBPOPUP_Sizes, NULL, NULL };
+ static	MenuButtonType SizesMenuButton =
+@@ -392,8 +393,19 @@
+ 	SizesMenuEntries[i].Callback = CB_Action;
+ 	SizesMenuEntries[i].ClientData = (XtPointer) action[i];
+ 	i++;
++	SizesMenuEntries[i].Name="soldermaskframeInc";
++	SizesMenuEntries[i].Label="increment soldermask frame";
++	SizesMenuEntries[i].Callback = CB_Action;
++	SizesMenuEntries[i].ClientData = "SetValue,SoldermaskFrame,+1";
++	i++;
++	SizesMenuEntries[i].Name="soldermaskframeDec";
++	SizesMenuEntries[i].Label="decrement soldermask frame";
++        SizesMenuEntries[i].Callback = CB_Action;
++        SizesMenuEntries[i].ClientData = "SetValue,SoldermaskFrame,-1";
++	i++;
+ 	SizesMenuEntries[i].Name = NULL;
+ 	SizesMenuEntries[i].Label = NULL;
++
+ }
+ 
+ void UpdateSizesMenu(void)
+diff -urN pcb-1.6.3.orig/src/parse_l.l pcb-1.6.3.dj/src/parse_l.l
+--- pcb-1.6.3.orig/src/parse_l.l	1998-05-13 11:29:50.000000000 +0100
++++ pcb-1.6.3.dj/src/parse_l.l	2007-11-22 13:03:35.000000000 +0000
+@@ -98,6 +98,8 @@
+ Styles		{ return(T_STYLES); }
+ Polygon		{ return(T_POLYGON); }
+ Arc		{ return(T_ARC); }
++SoldermaskFrame { return(T_SOLDERMASKFRAME); }
++
+ 
+ \'.\'				{
+ 						yylval.number = (unsigned) *(yytext+1);
+diff -urN pcb-1.6.3.orig/src/parse_y.h pcb-1.6.3.dj/src/parse_y.h
+--- pcb-1.6.3.orig/src/parse_y.h	1998-05-17 12:25:18.000000000 +0100
++++ pcb-1.6.3.dj/src/parse_y.h	1970-01-01 01:00:00.000000000 +0100
+@@ -1,32 +0,0 @@
+-typedef union									/* define YYSTACK type */
+-{
+-	unsigned	number;
+-	char		*string;
+-} YYSTYPE;
+-#define	NUMBER	258
+-#define	CHAR_CONST	259
+-#define	STRING	260
+-#define	T_PCB	261
+-#define	T_LAYER	262
+-#define	T_VIA	263
+-#define	T_LINE	264
+-#define	T_ARC	265
+-#define	T_RECTANGLE	266
+-#define	T_TEXT	267
+-#define	T_ELEMENTLINE	268
+-#define	T_ELEMENT	269
+-#define	T_PIN	270
+-#define	T_PAD	271
+-#define	T_GRID	272
+-#define	T_FLAGS	273
+-#define	T_SYMBOL	274
+-#define	T_SYMBOLLINE	275
+-#define	T_CURSOR	276
+-#define	T_ELEMENTARC	277
+-#define	T_MARK	278
+-#define	T_GROUPS	279
+-#define	T_STYLES	280
+-#define	T_POLYGON	281
+-
+-
+-extern YYSTYPE yylval;
+diff -urN pcb-1.6.3.orig/src/parse_y.y pcb-1.6.3.dj/src/parse_y.y
+--- pcb-1.6.3.orig/src/parse_y.y	1998-05-13 11:29:50.000000000 +0100
++++ pcb-1.6.3.dj/src/parse_y.y	2007-11-22 13:03:35.000000000 +0000
+@@ -22,6 +22,7 @@
+  *  Contact addresses for paper mail and Email:
+  *  Thomas Nau, Schlehenweg 15, 88471 Baustetten, Germany
+  *  Thomas.Nau@rz.uni-ulm.de
++ *  D.J. Barrow dj_barrow@ariasoft.ie added soldermask adjustment support.
+  *
+  */
+ 
+@@ -66,7 +67,7 @@
+ 
+ %token	T_PCB T_LAYER T_VIA T_LINE T_ARC T_RECTANGLE T_TEXT T_ELEMENTLINE
+ %token	T_ELEMENT T_PIN T_PAD T_GRID T_FLAGS T_SYMBOL T_SYMBOLLINE T_CURSOR
+-%token	T_ELEMENTARC T_MARK T_GROUPS T_STYLES T_POLYGON
++%token	T_ELEMENTARC T_MARK T_GROUPS T_STYLES T_POLYGON T_SOLDERMASKFRAME
+ 
+ %type	<number>	symbolid
+ 
+@@ -98,6 +99,7 @@
+ 			}
+ 		  pcbname 
+ 		  pcbgrid
++                  pcbsoldermaskframe
+ 		  pcbcursor
+ 		  pcbflags
+ 		  pcbgroups
+@@ -168,7 +170,12 @@
+ 			}
+ 		|
+ 		;
+-
++pcbsoldermaskframe : T_SOLDERMASKFRAME '(' NUMBER ')'
++                       {
++			        yyPCB->SoldermaskFrame = $3;
++                       }
++                 |
++                 ;
+ pcbcursor
+ 		: T_CURSOR '(' NUMBER NUMBER NUMBER ')'
+ 			{
+diff -urN pcb-1.6.3.orig/src/Pcb.ad.raw pcb-1.6.3.dj/src/Pcb.ad.raw
+--- pcb-1.6.3.orig/src/Pcb.ad.raw	1998-05-13 11:29:55.000000000 +0100
++++ pcb-1.6.3.dj/src/Pcb.ad.raw	2007-11-22 13:03:35.000000000 +0000
+@@ -402,8 +402,8 @@
+   !Shift<Key>e:        DeleteRats(SelectedRats) \n\
+   None<Key>f:          Connection(Find) \n\
+   !Shift<Key>f:        Connection(Reset) \n\
+-  None<Key>g:          SetValue(Grid, +5) \n\
+-  !Shift<Key>g:        SetValue(Grid, -5) \n\
++  None<Key>g:          SetValue(Grid, +1) \n\
++  !Shift<Key>g:        SetValue(Grid, -1) \n\
+   None<Key>h:          ToggleHideName(Object) \n\
+   !Shift<Key>h:        ToggleHideName(SelectedElements) \n\
+   !Ctrl<Key>h:         ChangeHole(ToggleObject) \n\
+diff -urN pcb-1.6.3.orig/src/print.c pcb-1.6.3.dj/src/print.c
+--- pcb-1.6.3.orig/src/print.c	1998-05-13 11:29:55.000000000 +0100
++++ pcb-1.6.3.dj/src/print.c	2007-11-22 13:03:35.000000000 +0000
+@@ -498,8 +498,7 @@
+ 				ALLPAD_LOOP(PCB->Data,
+ 					if ((TEST_FLAG(ONSOLDERFLAG, pad) == 0) == (i == 0))
+ 						Device->PadMask(pad, 0););
+-				ALLPIN_LOOP(PCB->Data, Device->PinOrViaMask(pin, 0););
+-				VIA_LOOP(PCB->Data, Device->PinOrViaMask(via, 0););
++				ALLPIN_LOOP(PCB->Data, Device->PinMask(pin, 0););
+ 			}
+ 
+ 			if (GlobalAlignmentFlag)
+@@ -509,8 +508,7 @@
+ 			ALLPAD_LOOP(PCB->Data,
+ 				if ((TEST_FLAG(ONSOLDERFLAG, pad) == 0) == (i == 0))
+ 					Device->PadMask(pad, 1););
+-			ALLPIN_LOOP(PCB->Data, Device->PinOrViaMask(pin, 1););
+-			VIA_LOOP(PCB->Data, Device->PinOrViaMask(via, 1););
++			ALLPIN_LOOP(PCB->Data, Device->PinMask(pin, 1););
+ 
+ 			ClosePrintFile();
+ 		}
+diff -urN pcb-1.6.3.orig/src/report.c pcb-1.6.3.dj/src/report.c
+--- pcb-1.6.3.orig/src/report.c	1998-05-13 11:29:57.000000000 +0100
++++ pcb-1.6.3.dj/src/report.c	2007-11-22 13:03:35.000000000 +0000
+@@ -215,12 +215,15 @@
+ 			sprintf(&report[0],"PAD ID# %d   Flags:0x%08x\n"
+ 				"FirstPoint(X,Y) = (%d, %d)  ID = %d\n"
+ 				"SecondPoint(X,Y) = (%d, %d)  ID = %d\n"
++				"Name = \"%s\"\n"
+ 				"Width = %d It is owned by SMD element %s\n"
+ 				"As pin number %s and is on the %s\n"
+ 				"side of the board.\n", Pad->ID,
+ 				Pad->Flags, Pad->Point1.X,
+ 				Pad->Point1.Y, Pad->Point1.ID, Pad->Point2.X, Pad->Point2.Y,
+-				Pad->Point2.ID, Pad->Thickness,
++				Pad->Point2.ID,
++				EMPTY(Pad->Name),
++				Pad->Thickness,
+ 				EMPTY(element->Name[1].TextString), EMPTY(Pad->Number),
+ 				TEST_FLAG(ONSOLDERFLAG, Pad) ? "solder (bottom)" : "component");
+ 			break;
+diff -urN pcb-1.6.3.orig/src/set.c pcb-1.6.3.dj/src/set.c
+--- pcb-1.6.3.orig/src/set.c	1998-05-13 11:29:58.000000000 +0100
++++ pcb-1.6.3.dj/src/set.c	2007-11-22 13:03:35.000000000 +0000
+@@ -21,6 +21,7 @@
+  *  Contact addresses for paper mail and Email:
+  *  Thomas Nau, Schlehenweg 15, 88471 Baustetten, Germany
+  *  Thomas.Nau@rz.uni-ulm.de
++ *  D.J. Barrow dj_barrow@ariasoft.ie added adjustable soldermask.
+  *
+  */
+ 
+@@ -70,7 +71,7 @@
+ 	char	text[140];
+ 	int		length;
+ 
+-	sprintf(text, "%c %s,%s,%s%s, grid=%i:%i, zoom=%-i:%-i, line=%-i, via=%-i(%-i), text=%i%%, buffer=#%-i, name: ",
++	sprintf(text, "%c %s,%s,%s%s, grid=%i:%i, zoom=%-i:%-i, line=%-i, via=%-i(%-i), text=%i%%, buffer=#%-i, sold_msk_frame=%i, name: ",
+ 		PCB->Changed ? '*' : ' ',
+ 		Settings.ShowSolderSide ? "solder" : "component",
+ 		TEST_FLAG(ABSOLUTEFLAG, PCB) ? "abs" : "rel",
+@@ -84,7 +85,8 @@
+ 		(int) Settings.LineThickness,
+ 		(int) Settings.ViaThickness, (int) Settings.ViaDrillingHole,
+ 		(int) Settings.TextScale,
+-		Settings.BufferNumber+1);
++		Settings.BufferNumber+1,
++		(int) PCB->SoldermaskFrame);
+ 
+ 		/* append the name of the layout */
+ 	length = sizeof(text) -1 -strlen(text);
+@@ -152,6 +154,18 @@
+ 	SetStatusLine();
+ } 
+ 
++
++void SetSoldermaskFrame(int SoldermaskFrame)
++{
++   SoldermaskFrame = MAX(MIN_SOLDERMASK_FRAME, SoldermaskFrame);
++   SoldermaskFrame = MIN(MAX_SOLDERMASK_FRAME, SoldermaskFrame);
++   if(PCB->SoldermaskFrame!= SoldermaskFrame)
++   {
++      PCB->SoldermaskFrame=SoldermaskFrame;
++      SetStatusLine();
++   }
++}
++
+ /* ---------------------------------------------------------------------------
+  * sets a new line thickness
+  */
+diff -urN pcb-1.6.3.orig/src/set.h pcb-1.6.3.dj/src/set.h
+--- pcb-1.6.3.orig/src/set.h	1998-05-13 11:29:58.000000000 +0100
++++ pcb-1.6.3.dj/src/set.h	2007-11-22 13:03:35.000000000 +0000
+@@ -37,6 +37,7 @@
+ void		SetStatusLine(void);
+ void		SetGrid(int);
+ void		SetZoom(int);
++void            SetSoldermaskFrame(int);
+ void		SetLineSize(Dimension);
+ void		SetViaSize(Dimension, Boolean);
+ void		SetViaDrillingHole(Dimension, Boolean);
+--- pcb-1.6.3.orig/pcb.make	1970-01-01 01:00:00.000000000 +0100
++++ pcb-1.6.3.dj/pcb.make	2007-11-22 13:19:04.000000000 +0000
+@@ -0,0 +1,8 @@
++xmkmf -a
++make -i \
++	CC=%{__cc} \
++	CDEBUGFLAGS="%{rpmcflags}" \
++	EXTRA_DEFINES="-U_XOPEN_SOURCE"
++make -C doc pcb.man
++make -C src Pcb.ad
++

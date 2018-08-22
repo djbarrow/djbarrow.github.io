@@ -1,0 +1,450 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+<title>gplcontributions</title>
+<META name="description" content="Aria Software Ireland Ltd. - GPL Contributions Kernel, Driver, VHDL & Compiler Development.">
+<META name="keywords" content="GPL,Gnu Public License,GPL Contributions,PCB,pcb,pcb-1.6.3,RSA,travelsmart,fundamental,Eureqa,Open Source Eureqa,oeis,Online Enclyopedia Of Integer Sequences,PLSQ,Bailey,Borwein,Plouffe,boozy,DOS Game,Abandonware,PCSL Ireland Ltd.,Alcohol Educational Game software,driver development,,iphone development,kernel development,linux,gcc,gnu,vhdl,fpga,hardware,contract,aria,aria enterprises,aria software,aria software ireland,aria software ireland ltd,aria software ireland ltd.,barrow,d.j. barrow,denis barrow,dj barrow,denis joseph barrow,scarra,glantane,mallow,co. cork,cork,county cork,ireland">
+<link rel=stylesheet href=ariastyle.css>
+</head>
+<body>
+&nbsp;
+<center><table COLS=2 WIDTH="100%" NOSAVE >
+<tr>
+<td ALIGN=CENTER><img SRC="images/aria_enterprises_logosmall.jpg" NOSAVE height=96 width=160></td>
+
+<td ALIGN=CENTER><img SRC="images/gplcontributionshead.jpg" NOSAVE height=60 width=360></td>
+</tr>
+</table></center><table CELLSPACING=40 >
+<tr>
+<td>
+  <h1>fundamental</h1>
+I am going to concentrate latest development of fundamental from the github repository <a href="https://github.com/djbarrow/fundamental">here</a><br> I'm back on active development so expect tidy ups.<br>
+fundamental.tgz is as of 08/12/2015 is available <a href="gplcontributions/fundamental08122015.tgz">here</a>. tar -zxpvf fundamental08122015.tgz to extract the tarball.<br>
+<p>
+This barely works beautifully but is my most original program to date.
+I've recently found out that it uses a technique called <a href="https://en.wikipedia.org/wiki/Symbolic_regression">Symbolic Regression</a>.
+</p>
+<p>
+I read about genetic programming before inventing fundamental and I'm sure
+i got inspired by wondering how data mining works.
+My program is rough but almost identical in functionality to Eureqa
+if I'm doing a bad job at explaining how fundamental works please watch <a href="http://formulize.nutonian.com/documentation/eureqa/">the following beautiful videos of Eureqa</a>. <a href="http://www.haaretz.com/israel-news/an-israeli-professor-s-eureqa-moment-1.410881">A Isralei professors Eureqa moment.</a>
+
+Tony also has some code written but his <a href="https://github.com/verdverm">open source eureqa</a> seems too simple to be as mature as fundamental, it is designed for paralell processing something yet to be done in fundamental.
+Tony also implemented
+<a href="https://www.lri.fr/~hansen/proceedings/2013/GECCO/proceedings/p1021.pdf">PGE</a> but in python which means it would be slow.
+   
+One last link for reference <a href="https://www.quora.com/Are-there-any-good-alternatives-to-Nutonian-Eureqa-Formulize-for-curve-fitting">Quora thread for alternatives to Eureqa</a>
+</p>
+<p>
+Fundamental is a toolbox for finding relationships between
+<ul>
+<li> numbers, e.g. is there any relationship between the numbers
+PI, e, the square root of 2?
+</li>
+<li> sequences of numbers, e.g. the sequence 2, 4, 6, 8, 10, ...
+It could replace/compliment this <a
+href="http://oeis.org/">encylopedia of integer sequences (OEIS)</a> website.
+</ul>
+</p>
+<p>
+It could have found the following formulas which started quantum
+physics had it been around in the 1860's & 1890's.
+<a href="http://www.colorado.edu/physics/2000/quantumzone/balmer.html">Balmer Series</a><br>
+</p>
+<p>
+It could have found <a href="http://en.wikipedia.org/wiki/Planck%27s_law">Planck's Law</a> if on a supercomputer or used SETI at home's computer network.<br>
+</p>
+<p>
+It could with some improvements in pattern matching have found Mendeleev's periodic table
+of elements or did some of Murray Gell Mann's
+work for which he got a Nobel Prize in 1969 for developing the Standard Model in Physics.
+<p>
+To date I've had little luck in coming up with a fast formula for
+factorising large large numbers but God loves a tryer.
+</p>
+<p>
+In short it's for hacking the laws of nature & mathematics
+</p>
+<p>
+it is in some ways related to curve fitting ( or more percisely a program
+for finding integer relations )
+where you have some data & are looking for a formula to describe it,
+curve fitting can usually be done by a human, fundamental
+is more a brute force method where you tell fundamental what
+operators are allowed + - x / bitwise and or etc.
+The constants, e PI, it starts with the most simple sums &
+progresses towards the more complex.
+</p>
+</li>
+<p>
+My original motivation for writing it was while reading
+Max Borns book on the theory or relativity I fell over
+a fantastic insight one of Maxwells equations.<br>
+<p>
+<center>
+sqrt(permability of material*permittivity of material ) =
+speed of light.</br>
+</center>
+</p>
+ They didn't at the time know
+that light was electromagnetic radiation. What I fell over was
+that there were redundant constants of physics
+& if a program mas made to search for interrelations
+between the constants of physics on might by brute force
+find redundancies, simplifications & potentially new laws of 
+of physics, I was onto a winner which I knew I could pull off.
+I had the first prototype of "Fundamental" laws of Physics
+written in 36 hours around 300 lines of code.
+It found existing laws of physics but no new ones.
+</p>
+<p>
+It uses reverse polish notation (RPN) explained
+<a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">here.</a>
+The beauty of reverse polish notation is that there
+is no need for brackets
+the sum
+2+3x2=8 or 10 depending on whether you interpret
+the sum as
+(2+3)x2 or 2+(3x2) reverse polish notation gets
+us out of this bind because the order of the numbers
+& operators gaurantees a unique & unambiguous algorithmic
+way to do the sum. It also makes it very easy to sequence
+or "count" through legal sums algorithmically & be gauranteed
+that each sum is unique.<br>
+e.g.<br>
+2+3 is an illegal RPN sum as the + binary
+operator needs 2 numbers to its left.<br>
+2 3 + in RPN is equal to 5.
+<p>
+This is the beautiful idea which made funamental possible.
+The only conditions you need to make in RPN to do any equation
+is that there needs to be one less binary operator than numbers
+in the equation. The first binary must have at least 2 numbers
+to it's left A unary operatior has to have at least 1 number to its left
+</p>
+<p>
+e.g.<br>
+5 ! ! ! 2 3 + 5 + +
+is a legal sum ! being the factorial unary operator.
+</p>
+<p>
+Also the equations generated using RPN are easily countable.
+e.g. it is easily algorithmically possible to write a program
+for every possible RPN equation with constraints.
+( an example of constraints are only numbers between 0 and 5 are allowed
+& only the + & * operators are allowed * being the multiplication operator.
+</p>
+<p>
+One of the thing I've had no success with fundamental is
+finding a formula for the nth prime, primality testing
+& pulling out the smallest or largest factor from
+a very big number.
+</p>
+<p>
+Fundamental is a step towards automatic algorithm generation.
+I am very proud of Fundamental & have great hopes for it, 
+it's by far my best idea to date,
+</p>
+<p>
+It's open source & I hope someday it will help someone solve significant problems,
+if it does please give me some credit for helping you on your way.
+It may be of use in
+Mathematics, Chemistry, Physics & Economics for Modeling data
+without a known formula.
+The program could be enhanced to do automatic algorithm
+generation using an open source forth language engine like Paflof 
+or else Java bytecode.
+however it will be about 20 years before computation speeds
+will make this possible.
+Here is a description of what it how it works & what it currently does.
+<p>
+Fundamental internally uses reverse polish notation algorithm to search
+a solution space for a formula given test data,
+it can search for formulas for 
+sequences of numbers as well as relationships between constants.
+To date it was successfully able to find the following by a brute force 
+solution space search for..
+<br>
+generate the <a href="http://en.wikipedia.org/wiki/Taylor_series">Taylor Series for e(x)</a>
+<br>
+An estimate formula for the nth prime.
+<br>
+Design an n bit adder using only boolean logic.
+<br>
+
+It could have found the formula for the Balmier lines in the hydrogen 
+spectrum
+<p>
+<a href="http://en.wikipedia.org/wiki/Bailey%E2%80%93Borwein%E2%80%93Plouffe_formula">The Miraculous Bailey-Borwein-Plouffe Pi Algorithm</a>
+<a href="http://en.wikipedia.org/wiki/Borwein's_algorithm">Borweins Algorithm</a>
+was found by a similar ( but fundamentally much different ) program.
+<p>
+<h2>Example</h2>
+When set up properly you can enter a sequence like<br>
+5,8,11,14,17 as follows<br>
+fundamental -h 5 -m 5 -i 5 5 8 11 14 17<br>
+Setting -h to 5 sets the maximum integer in the solution space to 5.<br>
+Setting -m to 5 sets the stack depth or the maximum complexity of the
+sum to 5 term.<br>
+
+Setting -i to 5 tells fundamental that there are 5 terms following
+which contain the sequence.<br>
+The output of the testrun is:<br>
+5 3 n[0]  *  +<br>
+(5 + (3 * n[0]))<br>
+5 -3 -n[0]  *  +<br>
+(5 + (-3 * -n[0]))<br>
+So the sequence formula is y=f(n[0])=5+(3 x n[0]), n[0] being an integer. <br>
+<h2>Accolades & Delusions of Grandeur ;)</h2>
+<h3>Pio a Friend and Fundamental</h3>
+<p>
+Pio is a bright guy, speaks 5 languages, Degree in numerical
+computation & mathematics currently doing a hdip in cloud computing.
+I've been 6 years trying to convince Pio that Fundamental was more
+than curve fitting. After reading Carsten Otte's compliment he decided
+he'd better investigate himself.
+Now he's spouting things like GO FOR IT!!, Smart Cookie D.J., uv
+cracked it this time D.J. Google can't help but buy it.
+Now he is in disbelief that nothing like it has ever been done before.
+Stuart Russell & <a href="http://norvig.com">Peter Norvig<a> in
+Artificial Intelligence a modern approach hint that it can be done but
+is totally impractical, my program proves otherwise.
+Pio has agreed to write a fisher price web interface for fundamental
+& explore data mining possibilities which he is learning in the cloud
+computing course.... Thanks Pio.
+</p>
+<p>A colleage at Pace in West Yorkshire who knew Richard Feynman personally said Fundamental was bloody useful.
+</p>
+<p>
+A colleague at IBM Boeblingen Carsten Otte had this to say...<br>
+I browsed through the code of fundamental a bit.<br>
+I find the idea brilliant, and I think this might be worth drilling deeper.<br>
+</p>
+<p>
+<a href="http://en.wikipedia.org/wiki/Fabrice_Bellard">Fabrice Bellard<a> didn't directly sing it's praises but here is what he'd to say</br>
+Someone told me about a similar project some time ago and I find the idea interesting. Of course the problem is to limit the exponential growth of the search space. I guess that an exhaustive search cannot lead to very interesting discoveries because the programs are too small. But there may be ways to explore a subspace of the "interesting" possible programs with a well chosen language and search algorithm.
+</p>
+<p>
+I guess that you already know the <a
+href="http://en.wikipedia.org/wiki/Integer_relation_algorithm">PSLQ
+algorithm</a> <a href="http://arminstraub.com/files/pslq.pdf">( very
+intersting pdf here on the topic )</a>used to find the BBP Pi formula
+you mention. It just finds a linear combination with small integer
+coefficients of constants giving a zero result. It is very limited but
+already quite effective to find interesting relations.
+</p>
+<p>
+Most importantly is only 2k lines of code.<br>
+</p>
+<p>
+This is not curve fitting as defined by Wikipedia,
+curve fitting can be done using pen & paper & it gauranteed to produce
+an answer for the class of problems it solves, fundamental typically
+does billions of calculations when used for curve fitting without
+gaurantee of an answer & can handle classes of problems not handleable
+by traditional curve fitting or Mathematica.
+</p>
+<h2>Caveats</h2>
+<p>
+Yes the code is buggy if you aren't acquainted with the gdb debugger now is the time to get familiar, the code compiles using gcc & runs on Linux & possibly Cygwin for Windows.
+</p>
+<p>
+The section of the code enabled loops ( e.g. needed to find the Taylor series expansion formula for e(x) ) by the MAX_NUM_LOOPVARS is hopelessly broken, don't use it & #ifdef it out, I'm currently rewriting fundamental so that it can develop code automatically for things like bubblesorts automatically rather than just the rather limited loop.
+</p>
+<h2>Documentation</h2>
+<p>
+Fundamental now contains a Fundamental Overview.doc readme
+explaining most of the internals of fundamental, please feel welcome
+to send questions to me at dj_barrow@ariasoft.ie and I will add detail
+to the document explaining your concern.
+</p>
+<h1>Travelsmart</h1>
+A carpool website I developed finished in 2009 to version 1.0 available <a href="https://github.com/djbarrow/travelsmart">here on github.</a>
+<p>
+A nice young apprentice named Chuk from the U.S. is helping me maintain it.
+</p>
+<h2>Documentation</h2>
+<p>
+travelsmart/htdocs/give_it_away_now.php,travelsmart/htdocs/templates/give_it_away_now.tpl<br>
+in the tarball goes into more detail about travelsmart.  
+Have a look at the Carpool Protocol.doc file<br>
+It briefly explains how to get carpool websites to cooperate.<br>
+</p>
+<p>
+Other open source carpool websites which could be merged with travelsmart are <a href="http://www.findbestopensource.com/tagged/carpooling">here</a>.
+</p>
+<!--
+<p>
+Greedy carpool websites like Uber don't support carpool protocol<br>
+so they can't share their carpools with other carpool websites<br>
+They don't want to either and are using dirty tactics to put Lyft<br>
+out of business like ringing up carpool drivers with non existent passengers.<br>
+Other carpool websites get 30% of the drivers commission.<br>
+While travelsmart allows any host to put up advertising for free on travelsmart<br>
+Win win win win win............<br>
+</p>
+-->
+<h1>PCB-1.6.3</h1>
+A pcb-1.6.3 patch is finally available <a href="gplcontributions/pcb-1.6.3.djb.patch">here.</a>
+<p>
+The patch has been tested against pcb-1.6.3 from Suse 6.3 only.
+<h2>Improvements</h2>
+The pcb-1.6.3 is finally suitable for SMT development.
+<p>
+A few new package definitions have been added including 
+Common SMT components,PCI Board Templates, XCS40 FPGA,
+Improvments to QFP definitions.
+<p>
+Made Soldermask Adjustable it was set to 15 Mils
+this was impractical for SMT components as the primary
+use of the soldermask is to prevent unwanted soldering
+of tracks & pads together & as the space between components
+on a PCI board is typically 4 mils this is too much.
+This meant some modification to the Gerber & Postscript output.
+<p>
+Made gridding adjustable to 1 mil increments 
+( 1 thousand'th of an inch ), this is required for SMT development.
+<p>
+Fixed one crashbug in insert.c owing to missing protype.
+<p>
+I am not the maintainer of this package so don't email me to complain,
+However if I will give advise by email if the problem can be resolved quickly.
+<p>
+Read README_FILES/CHANGES &  README_FILES/DJBARROW_HINTS.TXT for more info.
+<p>
+PCI pin definitions were added for all variations of PCI, however,
+minor improvments to pci.list & pci.inc still need to be done to deal with 3.3V & 64 bit PCI.
+<p>
+<h1>A FPGA Based PCI Board</h1>
+The pci board designed with pcb-1.6.3 & my enhancements is
+available <a href="gplcontributions/pcb.tgz">here.</a> 
+This project is currently around halfway to completion it
+uasesXilinx XCS40 FPGA ( Field programmable gate array,
+essentially reconfigurable digital hardware )
+& An Atmel FPGA configuration Memory
+on the board so it
+can be programmed to accelerate computation tasks
+or emulate various pieces of hardware.
+I gave up on the project as I was unable
+to solder the 208 pin Xilinx chip as the pitch
+between the pins is 0.75mm.
+<a href="http://www.pcbpool.com">pcbpool</a>
+are excellent at building prototype pcbs 
+you are strongly advised to use them.
+Contact me at my email address dj_barrow@ariasoft.ie if you want
+to take this project further, the more intrest shown the
+faster it goes up on my website.
+I am hoping the project will ultimately go to
+<a href="http://www.opencores.org">opencores</a>.
+<h1>Boozy</h1>
+Oh yes Boozy download <a href="./gplcontributions/boozy.zip">here</a>.<br>
+A peice of personal DOS history from 1992, it's a SuperMario style
+alcohol educational game ( which is so enjoyable it's an encouragement to sin ) about the adventures of a drunken horse Boozy and
+Wild Bill Hiccup which runs some paralells with my own existance.<br>
+It runs on DosBox DOS Emulator download <a href="https://www.dosbox.com/download.php?main=1">here</a>.<br>
+A low quality youtube video of the game is <a href="https://www.youtube.com/watch?v=wvsuf-PlXO8">here</a>.
+<h2>To install</h2>
+Use pkzip,stuffit expander,winzip or unzip expand the boozy.zip file in
+a directory specially created for boozy and take note where it is.<br>
+In dosbox type<br>  
+MOUNT [Drive-Letter] [Local-Directory containing boozy.exe]
+cd [Drive-Letter]<br>
+boozy.exe<br>
+More info on the Dosbox mount command available <a href="https://www.dosbox.com/wiki/MOUNT">here</a>.<br>
+<h3>To run on your android phone</h3>
+  Download DosBox & AndroZip from google play.<br>
+  Download Boozy using the link above from your Chrome browser on your phone.<br>
+  Start Androzip<br>
+  boozy.zip typically installs in the Downloads directory<br>
+  In Androzip create a boozy directory<br>
+  extract boozy.zip there.<br>
+  Start Dosbox<br>
+  From DosBox type cd .\Downloads\boozy typically works if it doesn't<br>
+  study the directory structure on your phone and play with the mount command described in the link above<br>
+  DosBox keyboard and joystick emulation fiddy play with it.<br>
+  Try to press the Escape key on DosBox use cursor keys on emulated keyboard<br>
+  to switch on Joystick support in boozy<br>
+  switch on Joystick emulation in DosBox and play the game.<br>
+
+<h1>Perfect Pitch</h1>
+A Qt portaudio based mp3 to sheet music converter available <a href="./gplcontributions/perfect_pitch.kde.portaudio26022017.tgz">here</a> picture <a href="./perfect_pitch_screenshot.png">here</a>  the code is not clean and full of half cooked experiments,it works for guitar but not as well for
+songs with drums & multiple instruments,<br>
+Uses a original technique called resonance analysis which is more like
+how the human ear works than fourier analysis.<br>
+70% code complete.<br>
+In 2009 when this was originally coded it was compeditive but now there
+are better open source projects like <a href="http://www.sonicvisualiser.org/">sonic-visualiser</a>
+and resonance analysis is not as good as the <a href="https://github.com/cannam/constant-q-cpp">constant q transform.</a>
+
+<h1>Other projects I'm considering open sourcing</h1>
+<h2>Voicetagger</h2>
+An android app which can recognise voice recordings so blind<br>
+people can make phone calls without a 3g connection for voice
+recognition.<br>
+Current state... voice tagger is 90% accurate with 5 voice tags<br>
+UI done but voice recognition needs a major improvement<br>
+I'll open source these when I get time.<br>
+<h1>Licence</h1>
+All the software unless otherwise stated is under GPL 2.1.<br>
+But it would be great if you pay me what you think the software is worth, or better yet give me a job.<br>
+To make contributions for future development of the software<br>
+here are my bank details<br>
+Bank Address: BOI Blackpool,Cork,Ireland.<br>
+Account Name: Denis Joseph Barrow.<br>
+Sort Code: 902688<br>
+Account No: 48030751<br>
+BIC: BOFIIE2D<br>
+IBAN: IE82 BOFI 9026 8848 0307 51<br>
+</td>
+</tr>
+</table>
+<hr WIDTH="90%">
+<table BORDER=0 WIDTH="90%" >
+<tr>
+<td>
+<center><a href="index.html">About</a></center>
+</td>
+<td>
+<center><a href="contact.html">Contact</a></center>
+</td>
+
+<td>
+<center><a href="projects.html">Projects</a></center>
+</td>
+<td>
+<center><a href="coollinks.html">Links</a></center>
+</td>
+<td>
+<center><a href="gplcontributions.html">GPL Contributions</a></center>
+</td>
+<td>
+<center><a href="bookmarks.html">Bookmarks</a></center>
+</td>
+<td>
+<center><a href="ebooks.html">Ebooks</a></center>
+</td>
+</tr>
+</table>
+
+<hr WIDTH="90%">
+<table BORDER=0 WIDTH="90%" >
+<tr>
+<td>
+<center><p><font color="#CC99FF" size=-1>copyright 2000 aria software ireland
+ltd - all rights reserved</font></center>
+</td>
+</tr>
+<tr>
+<td align=right>
+<i><font color="#CC99FF" size=-1>Website Artwork by&nbsp;
+<a href="kristiancontact.html">Kristian Walsh</a></font></i>
+</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+
