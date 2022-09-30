@@ -1,0 +1,2251 @@
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+acceleration_due_to_gravity stefan_boltzmann_constant 5  !  *  * 
+9.806650e+00 5.670510e+08 5  !  *  * 
+(acceleration_due_to_gravity * (stefan_boltzmann_constant * (5)!))
+(9.806650e+00  * (5.670510e+08  * (5)!))
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+stefan_boltzmann_constant acceleration_due_to_gravity 5  !  *  * 
+5.670510e+08 9.806650e+00 5  !  *  * 
+(stefan_boltzmann_constant * (acceleration_due_to_gravity * (5)!))
+(5.670510e+08  * (9.806650e+00  * (5)!))
+Found match error=6.816348e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.805982e+00
+gravitational_constant stefan_boltzmann_constant 5  !  *  / 
+6.672590e+11 5.670510e+08 5  !  *  / 
+(gravitational_constant / (stefan_boltzmann_constant * (5)!))
+(6.672590e+11  / (5.670510e+08  * (5)!))
+Found match error=6.816348e-05 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670124e+08
+gravitational_constant acceleration_due_to_gravity 5  !  *  / 
+6.672590e+11 9.806650e+00 5  !  *  / 
+(gravitational_constant / (acceleration_due_to_gravity * (5)!))
+(6.672590e+11  / (9.806650e+00  * (5)!))
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+acceleration_due_to_gravity 5  ! stefan_boltzmann_constant  *  * 
+9.806650e+00 5  ! 5.670510e+08  *  * 
+(acceleration_due_to_gravity * ((5)! * stefan_boltzmann_constant))
+(9.806650e+00  * ((5)! * 5.670510e+08 ))
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+stefan_boltzmann_constant 5  ! acceleration_due_to_gravity  *  * 
+5.670510e+08 5  ! 9.806650e+00  *  * 
+(stefan_boltzmann_constant * ((5)! * acceleration_due_to_gravity))
+(5.670510e+08  * ((5)! * 9.806650e+00 ))
+Found match error=6.816348e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.805982e+00
+gravitational_constant 5  ! stefan_boltzmann_constant  *  / 
+6.672590e+11 5  ! 5.670510e+08  *  / 
+(gravitational_constant / ((5)! * stefan_boltzmann_constant))
+(6.672590e+11  / ((5)! * 5.670510e+08 ))
+Found match error=6.816348e-05 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670124e+08
+gravitational_constant 5  ! acceleration_due_to_gravity  *  / 
+6.672590e+11 5  ! 9.806650e+00  *  / 
+(gravitational_constant / ((5)! * acceleration_due_to_gravity))
+(6.672590e+11  / ((5)! * 9.806650e+00 ))
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+acceleration_due_to_gravity 5  !  * stefan_boltzmann_constant  * 
+9.806650e+00 5  !  * 5.670510e+08  * 
+((acceleration_due_to_gravity * (5)!) * stefan_boltzmann_constant)
+((9.806650e+00  * (5)!) * 5.670510e+08 )
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+stefan_boltzmann_constant 5  !  * acceleration_due_to_gravity  * 
+5.670510e+08 5  !  * 9.806650e+00  * 
+((stefan_boltzmann_constant * (5)!) * acceleration_due_to_gravity)
+((5.670510e+08  * (5)!) * 9.806650e+00 )
+Found match error=6.816348e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.805982e+00
+gravitational_constant 5  !  / stefan_boltzmann_constant  / 
+6.672590e+11 5  !  / 5.670510e+08  / 
+((gravitational_constant / (5)!) / stefan_boltzmann_constant)
+((6.672590e+11  / (5)!) / 5.670510e+08 )
+Found match error=6.816348e-05 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670124e+08
+gravitational_constant 5  !  / acceleration_due_to_gravity  / 
+6.672590e+11 5  !  / 9.806650e+00  / 
+((gravitational_constant / (5)!) / acceleration_due_to_gravity)
+((6.672590e+11  / (5)!) / 9.806650e+00 )
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+acceleration_due_to_gravity stefan_boltzmann_constant  * 5  !  * 
+9.806650e+00 5.670510e+08  * 5  !  * 
+((acceleration_due_to_gravity * stefan_boltzmann_constant) * (5)!)
+((9.806650e+00  * 5.670510e+08 ) * (5)!)
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+stefan_boltzmann_constant acceleration_due_to_gravity  * 5  !  * 
+5.670510e+08 9.806650e+00  * 5  !  * 
+((stefan_boltzmann_constant * acceleration_due_to_gravity) * (5)!)
+((5.670510e+08  * 9.806650e+00 ) * (5)!)
+Found match error=6.816348e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.805982e+00
+gravitational_constant stefan_boltzmann_constant  / 5  !  / 
+6.672590e+11 5.670510e+08  / 5  !  / 
+((gravitational_constant / stefan_boltzmann_constant) / (5)!)
+((6.672590e+11  / 5.670510e+08 ) / (5)!)
+Found match error=6.816348e-05 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670124e+08
+gravitational_constant acceleration_due_to_gravity  / 5  !  / 
+6.672590e+11 9.806650e+00  / 5  !  / 
+((gravitational_constant / acceleration_due_to_gravity) / (5)!)
+((6.672590e+11  / 9.806650e+00 ) / (5)!)
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+5  ! acceleration_due_to_gravity stefan_boltzmann_constant  *  * 
+5  ! 9.806650e+00 5.670510e+08  *  * 
+((5)! * (acceleration_due_to_gravity * stefan_boltzmann_constant))
+((5)! * (9.806650e+00  * 5.670510e+08 ))
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+5  ! stefan_boltzmann_constant acceleration_due_to_gravity  *  * 
+5  ! 5.670510e+08 9.806650e+00  *  * 
+((5)! * (stefan_boltzmann_constant * acceleration_due_to_gravity))
+((5)! * (5.670510e+08  * 9.806650e+00 ))
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+5  ! acceleration_due_to_gravity  * stefan_boltzmann_constant  * 
+5  ! 9.806650e+00  * 5.670510e+08  * 
+(((5)! * acceleration_due_to_gravity) * stefan_boltzmann_constant)
+(((5)! * 9.806650e+00 ) * 5.670510e+08 )
+Found match error=6.815884e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.673045e+11
+5  ! stefan_boltzmann_constant  * acceleration_due_to_gravity  * 
+5  ! 5.670510e+08  * 9.806650e+00  * 
+(((5)! * stefan_boltzmann_constant) * acceleration_due_to_gravity)
+(((5)! * 5.670510e+08 ) * 9.806650e+00 )
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron mass_of_electron golden_ratio  *  +  + 
+1.672623e-27 9.109390e-31 9.109390e-31 1.618034e+00  *  +  + 
+(mass_of_proton + (mass_of_electron + (mass_of_electron * golden_ratio)))
+(1.672623e-27  + (9.109390e-31  + (9.109390e-31  * 1.618034e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_electron mass_of_proton mass_of_electron golden_ratio  *  +  + 
+9.109390e-31 1.672623e-27 9.109390e-31 1.618034e+00  *  +  + 
+(mass_of_electron + (mass_of_proton + (mass_of_electron * golden_ratio)))
+(9.109390e-31  + (1.672623e-27  + (9.109390e-31  * 1.618034e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron golden_ratio mass_of_electron  *  +  + 
+1.672623e-27 9.109390e-31 1.618034e+00 9.109390e-31  *  +  + 
+(mass_of_proton + (mass_of_electron + (golden_ratio * mass_of_electron)))
+(1.672623e-27  + (9.109390e-31  + (1.618034e+00  * 9.109390e-31 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_electron mass_of_proton golden_ratio mass_of_electron  *  +  + 
+9.109390e-31 1.672623e-27 1.618034e+00 9.109390e-31  *  +  + 
+(mass_of_electron + (mass_of_proton + (golden_ratio * mass_of_electron)))
+(9.109390e-31  + (1.672623e-27  + (1.618034e+00  * 9.109390e-31 )))
+Found match error=6.767543e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313947e+00
+acceleration_due_to_gravity fine_structure_constant 3 2  /  -  + 
+9.806650e+00 7.297350e-03 3 2  /  -  + 
+(acceleration_due_to_gravity + (fine_structure_constant - (3 / 2)))
+(9.806650e+00  + (7.297350e-03  - (3 / 2)))
+Found match error=6.767543e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313947e+00
+fine_structure_constant acceleration_due_to_gravity 3 2  /  -  + 
+7.297350e-03 9.806650e+00 3 2  /  -  + 
+(fine_structure_constant + (acceleration_due_to_gravity - (3 / 2)))
+(7.297350e-03  + (9.806650e+00  - (3 / 2)))
+Found match error=7.948149e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675062e-27
+mass_of_proton mass_of_electron golden_ratio semitone_multiple  +  *  + 
+1.672623e-27 9.109390e-31 1.618034e+00 1.059463e+00  +  *  + 
+(mass_of_proton + (mass_of_electron * (golden_ratio + semitone_multiple)))
+(1.672623e-27  + (9.109390e-31  * (1.618034e+00  + 1.059463e+00 )))
+Found match error=4.818072e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059412e+00
+1 fine_structure_constant 5 pi  +  *  + 
+1 7.297350e-03 5 3.141593e+00  +  *  + 
+(1 + (fine_structure_constant * (5 + pi)))
+(1 + (7.297350e-03  * (5 + 3.141593e+00 )))
+Found match error=7.948149e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675062e-27
+mass_of_proton mass_of_electron semitone_multiple golden_ratio  +  *  + 
+1.672623e-27 9.109390e-31 1.059463e+00 1.618034e+00  +  *  + 
+(mass_of_proton + (mass_of_electron * (semitone_multiple + golden_ratio)))
+(1.672623e-27  + (9.109390e-31  * (1.059463e+00  + 1.618034e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron 1 golden_ratio  +  *  + 
+1.672623e-27 9.109390e-31 1 1.618034e+00  +  *  + 
+(mass_of_proton + (mass_of_electron * (1 + golden_ratio)))
+(1.672623e-27  + (9.109390e-31  * (1 + 1.618034e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron golden_ratio 1  +  *  + 
+1.672623e-27 9.109390e-31 1.618034e+00 1  +  *  + 
+(mass_of_proton + (mass_of_electron * (golden_ratio + 1)))
+(1.672623e-27  + (9.109390e-31  * (1.618034e+00  + 1)))
+Found match error=4.818072e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059412e+00
+1 fine_structure_constant pi 5  +  *  + 
+1 7.297350e-03 3.141593e+00 5  +  *  + 
+(1 + (fine_structure_constant * (pi + 5)))
+(1 + (7.297350e-03  * (3.141593e+00  + 5)))
+Found match error=9.769096e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675093e-27
+mass_of_proton mass_of_electron e fine_structure_constant  -  *  + 
+1.672623e-27 9.109390e-31 2.718282e+00 7.297350e-03  -  *  + 
+(mass_of_proton + (mass_of_electron * (e - fine_structure_constant)))
+(1.672623e-27  + (9.109390e-31  * (2.718282e+00  - 7.297350e-03 )))
+Found match error=9.784477e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672459e-27
+mass_of_neutron mass_of_electron fine_structure_constant e  -  *  + 
+1.674929e-27 9.109390e-31 7.297350e-03 2.718282e+00  -  *  + 
+(mass_of_neutron + (mass_of_electron * (fine_structure_constant - e)))
+(1.674929e-27  + (9.109390e-31  * (7.297350e-03  - 2.718282e+00 )))
+Found match error=8.124845e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674793e-27
+mass_of_proton mass_of_electron 4 golden_ratio  -  *  + 
+1.672623e-27 9.109390e-31 4 1.618034e+00  -  *  + 
+(mass_of_proton + (mass_of_electron * (4 - golden_ratio)))
+(1.672623e-27  + (9.109390e-31  * (4 - 1.618034e+00 )))
+Found match error=8.134724e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672759e-27
+mass_of_neutron mass_of_electron golden_ratio 4  -  *  + 
+1.674929e-27 9.109390e-31 1.618034e+00 4  -  *  + 
+(mass_of_neutron + (mass_of_electron * (golden_ratio - 4)))
+(1.674929e-27  + (9.109390e-31  * (1.618034e+00  - 4)))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 3 e fine_structure_constant  *  *  + 
+1 3 2.718282e+00 7.297350e-03  *  *  + 
+(1 + (3 * (e * fine_structure_constant)))
+(1 + (3 * (2.718282e+00  * 7.297350e-03 )))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 e 3 fine_structure_constant  *  *  + 
+1 2.718282e+00 3 7.297350e-03  *  *  + 
+(1 + (e * (3 * fine_structure_constant)))
+(1 + (2.718282e+00  * (3 * 7.297350e-03 )))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 3 fine_structure_constant e  *  *  + 
+1 3 7.297350e-03 2.718282e+00  *  *  + 
+(1 + (3 * (fine_structure_constant * e)))
+(1 + (3 * (7.297350e-03  * 2.718282e+00 )))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 fine_structure_constant 3 e  *  *  + 
+1 7.297350e-03 3 2.718282e+00  *  *  + 
+(1 + (fine_structure_constant * (3 * e)))
+(1 + (7.297350e-03  * (3 * 2.718282e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron golden_ratio golden_ratio  *  *  + 
+1.672623e-27 9.109390e-31 1.618034e+00 1.618034e+00  *  *  + 
+(mass_of_proton + (mass_of_electron * (golden_ratio * golden_ratio)))
+(1.672623e-27  + (9.109390e-31  * (1.618034e+00  * 1.618034e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton golden_ratio mass_of_electron golden_ratio  *  *  + 
+1.672623e-27 1.618034e+00 9.109390e-31 1.618034e+00  *  *  + 
+(mass_of_proton + (golden_ratio * (mass_of_electron * golden_ratio)))
+(1.672623e-27  + (1.618034e+00  * (9.109390e-31  * 1.618034e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton golden_ratio golden_ratio mass_of_electron  *  *  + 
+1.672623e-27 1.618034e+00 1.618034e+00 9.109390e-31  *  *  + 
+(mass_of_proton + (golden_ratio * (golden_ratio * mass_of_electron)))
+(1.672623e-27  + (1.618034e+00  * (1.618034e+00  * 9.109390e-31 )))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 e fine_structure_constant 3  *  *  + 
+1 2.718282e+00 7.297350e-03 3  *  *  + 
+(1 + (e * (fine_structure_constant * 3)))
+(1 + (2.718282e+00  * (7.297350e-03  * 3)))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 fine_structure_constant e 3  *  *  + 
+1 7.297350e-03 2.718282e+00 3  *  *  + 
+(1 + (fine_structure_constant * (e * 3)))
+(1 + (7.297350e-03  * (2.718282e+00  * 3)))
+Found match error=1.869361e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674960e-27
+mass_of_proton mass_of_electron e semitone_multiple  /  *  + 
+1.672623e-27 9.109390e-31 2.718282e+00 1.059463e+00  /  *  + 
+(mass_of_proton + (mass_of_electron * (e / semitone_multiple)))
+(1.672623e-27  + (9.109390e-31  * (2.718282e+00  / 1.059463e+00 )))
+Found match error=1.869361e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674960e-27
+mass_of_proton e mass_of_electron semitone_multiple  /  *  + 
+1.672623e-27 2.718282e+00 9.109390e-31 1.059463e+00  /  *  + 
+(mass_of_proton + (e * (mass_of_electron / semitone_multiple)))
+(1.672623e-27  + (2.718282e+00  * (9.109390e-31  / 1.059463e+00 )))
+Found match error=6.267493e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675034e-27
+mass_of_proton molar_gas_constant mass_of_electron pi  /  *  + 
+1.672623e-27 8.314510e+00 9.109390e-31 3.141593e+00  /  *  + 
+(mass_of_proton + (molar_gas_constant * (mass_of_electron / pi)))
+(1.672623e-27  + (8.314510e+00  * (9.109390e-31  / 3.141593e+00 )))
+Found match error=6.267493e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675034e-27
+mass_of_proton mass_of_electron molar_gas_constant pi  /  *  + 
+1.672623e-27 9.109390e-31 8.314510e+00 3.141593e+00  /  *  + 
+(mass_of_proton + (mass_of_electron * (molar_gas_constant / pi)))
+(1.672623e-27  + (9.109390e-31  * (8.314510e+00  / 3.141593e+00 )))
+Found match error=3.220241e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674875e-27
+mass_of_proton 4 mass_of_electron golden_ratio  /  *  + 
+1.672623e-27 4 9.109390e-31 1.618034e+00  /  *  + 
+(mass_of_proton + (4 * (mass_of_electron / golden_ratio)))
+(1.672623e-27  + (4 * (9.109390e-31  / 1.618034e+00 )))
+Found match error=3.220241e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674875e-27
+mass_of_proton mass_of_electron 4 golden_ratio  /  *  + 
+1.672623e-27 9.109390e-31 4 1.618034e+00  /  *  + 
+(mass_of_proton + (mass_of_electron * (4 / golden_ratio)))
+(1.672623e-27  + (9.109390e-31  * (4 / 1.618034e+00 )))
+Found match error=5.693772e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton 4 electric_constant charge_of_electron  /  *  + 
+1.672623e-27 4 8.854188e-12 1.602177e+19  /  *  + 
+(mass_of_proton + (4 * (electric_constant / charge_of_electron)))
+(1.672623e-27  + (4 * (8.854188e-12  / 1.602177e+19 )))
+Found match error=5.693772e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton electric_constant 4 charge_of_electron  /  *  + 
+1.672623e-27 8.854188e-12 4 1.602177e+19  /  *  + 
+(mass_of_proton + (electric_constant * (4 / charge_of_electron)))
+(1.672623e-27  + (8.854188e-12  * (4 / 1.602177e+19 )))
+Found match error=5.679503e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton magnetic_constant semitone_multiple avodagro_constant  /  *  + 
+1.672623e-27 1.256637e-06 1.059463e+00 6.022137e+23  /  *  + 
+(mass_of_proton + (magnetic_constant * (semitone_multiple / avodagro_constant)))
+(1.672623e-27  + (1.256637e-06  * (1.059463e+00  / 6.022137e+23 )))
+Found match error=5.679503e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton semitone_multiple magnetic_constant avodagro_constant  /  *  + 
+1.672623e-27 1.059463e+00 1.256637e-06 6.022137e+23  /  *  + 
+(mass_of_proton + (semitone_multiple * (magnetic_constant / avodagro_constant)))
+(1.672623e-27  + (1.059463e+00  * (1.256637e-06  / 6.022137e+23 )))
+Found match error=1.704733e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674900e-27
+mass_of_proton 5 mass_of_electron 2  /  *  + 
+1.672623e-27 5 9.109390e-31 2  /  *  + 
+(mass_of_proton + (5 * (mass_of_electron / 2)))
+(1.672623e-27  + (5 * (9.109390e-31  / 2)))
+Found match error=1.704733e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674900e-27
+mass_of_proton mass_of_electron 5 2  /  *  + 
+1.672623e-27 9.109390e-31 5 2  /  *  + 
+(mass_of_proton + (mass_of_electron * (5 / 2)))
+(1.672623e-27  + (9.109390e-31  * (5 / 2)))
+Found match error=4.333810e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674856e-27
+mass_of_proton acceleration_due_to_gravity mass_of_electron 4  /  *  + 
+1.672623e-27 9.806650e+00 9.109390e-31 4  /  *  + 
+(mass_of_proton + (acceleration_due_to_gravity * (mass_of_electron / 4)))
+(1.672623e-27  + (9.806650e+00  * (9.109390e-31  / 4)))
+Found match error=4.333810e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674856e-27
+mass_of_proton mass_of_electron acceleration_due_to_gravity 4  /  *  + 
+1.672623e-27 9.109390e-31 9.806650e+00 4  /  *  + 
+(mass_of_proton + (mass_of_electron * (acceleration_due_to_gravity / 4)))
+(1.672623e-27  + (9.109390e-31  * (9.806650e+00  / 4)))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton mass_of_proton fine_structure_constant 5  /  *  + 
+1.672623e-27 1.672623e-27 7.297350e-03 5  /  *  + 
+(mass_of_proton + (mass_of_proton * (fine_structure_constant / 5)))
+(1.672623e-27  + (1.672623e-27  * (7.297350e-03  / 5)))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton fine_structure_constant mass_of_proton 5  /  *  + 
+1.672623e-27 7.297350e-03 1.672623e-27 5  /  *  + 
+(mass_of_proton + (fine_structure_constant * (mass_of_proton / 5)))
+(1.672623e-27  + (7.297350e-03  * (1.672623e-27  / 5)))
+Found match error=1.066272e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141626e+00
+3 golden_ratio acceleration_due_to_gravity golden_ratio  +  /  + 
+3 1.618034e+00 9.806650e+00 1.618034e+00  +  /  + 
+(3 + (golden_ratio / (acceleration_due_to_gravity + golden_ratio)))
+(3 + (1.618034e+00  / (9.806650e+00  + 1.618034e+00 )))
+Found match error=1.066272e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141626e+00
+3 golden_ratio golden_ratio acceleration_due_to_gravity  +  /  + 
+3 1.618034e+00 1.618034e+00 9.806650e+00  +  /  + 
+(3 + (golden_ratio / (golden_ratio + acceleration_due_to_gravity)))
+(3 + (1.618034e+00  / (1.618034e+00  + 9.806650e+00 )))
+Found match error=5.707917e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141772e+00
+e 5 2 acceleration_due_to_gravity  +  /  + 
+2.718282e+00 5 2 9.806650e+00  +  /  + 
+(e + (5 / (2 + acceleration_due_to_gravity)))
+(2.718282e+00  + (5 / (2 + 9.806650e+00 )))
+Found match error=5.707917e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141772e+00
+e 5 acceleration_due_to_gravity 2  +  /  + 
+2.718282e+00 5 9.806650e+00 2  +  /  + 
+(e + (5 / (acceleration_due_to_gravity + 2)))
+(2.718282e+00  + (5 / (9.806650e+00  + 2)))
+Found match error=9.452694e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141890e+00
+semitone_multiple molar_gas_constant 4 fine_structure_constant  -  /  + 
+1.059463e+00 8.314510e+00 4 7.297350e-03  -  /  + 
+(semitone_multiple + (molar_gas_constant / (4 - fine_structure_constant)))
+(1.059463e+00  + (8.314510e+00  / (4 - 7.297350e-03 )))
+Found match error=9.203930e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672777e-27
+mass_of_neutron mass_of_electron e pi  -  /  + 
+1.674929e-27 9.109390e-31 2.718282e+00 3.141593e+00  -  /  + 
+(mass_of_neutron + (mass_of_electron / (e - pi)))
+(1.674929e-27  + (9.109390e-31  / (2.718282e+00  - 3.141593e+00 )))
+Found match error=9.192950e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674775e-27
+mass_of_proton mass_of_electron pi e  -  /  + 
+1.672623e-27 9.109390e-31 3.141593e+00 2.718282e+00  -  /  + 
+(mass_of_proton + (mass_of_electron / (pi - e)))
+(1.672623e-27  + (9.109390e-31  / (3.141593e+00  - 2.718282e+00 )))
+Found match error=2.617895e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141510e+00
+e 3 acceleration_due_to_gravity e  -  /  + 
+2.718282e+00 3 9.806650e+00 2.718282e+00  -  /  + 
+(e + (3 / (acceleration_due_to_gravity - e)))
+(2.718282e+00  + (3 / (9.806650e+00  - 2.718282e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron 2 golden_ratio  -  /  + 
+1.672623e-27 9.109390e-31 2 1.618034e+00  -  /  + 
+(mass_of_proton + (mass_of_electron / (2 - golden_ratio)))
+(1.672623e-27  + (9.109390e-31  / (2 - 1.618034e+00 )))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron golden_ratio 2  -  /  + 
+1.674929e-27 9.109390e-31 1.618034e+00 2  -  /  + 
+(mass_of_neutron + (mass_of_electron / (golden_ratio - 2)))
+(1.674929e-27  + (9.109390e-31  / (1.618034e+00  - 2)))
+Found match error=4.161820e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674999e-27
+mass_of_proton mass_of_proton faraday_constant fine_structure_constant  *  /  + 
+1.672623e-27 1.672623e-27 9.648453e+04 7.297350e-03  *  /  + 
+(mass_of_proton + (mass_of_proton / (faraday_constant * fine_structure_constant)))
+(1.672623e-27  + (1.672623e-27  / (9.648453e+04  * 7.297350e-03 )))
+Found match error=2.470881e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674970e-27
+mass_of_proton mass_of_proton stefan_boltzmann_constant magnetic_constant  *  /  + 
+1.672623e-27 1.672623e-27 5.670510e+08 1.256637e-06  *  /  + 
+(mass_of_proton + (mass_of_proton / (stefan_boltzmann_constant * magnetic_constant)))
+(1.672623e-27  + (1.672623e-27  / (5.670510e+08  * 1.256637e-06 )))
+Found match error=5.784063e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674832e-27
+mass_of_proton stefan_boltzmann_constant charge_of_electron charge_of_electron  *  /  + 
+1.672623e-27 5.670510e+08 1.602177e+19 1.602177e+19  *  /  + 
+(mass_of_proton + (stefan_boltzmann_constant / (charge_of_electron * charge_of_electron)))
+(1.672623e-27  + (5.670510e+08  / (1.602177e+19  * 1.602177e+19 )))
+Found match error=8.378308e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141856e+00
+3 acceleration_due_to_gravity molar_gas_constant molar_gas_constant  *  /  + 
+3 9.806650e+00 8.314510e+00 8.314510e+00  *  /  + 
+(3 + (acceleration_due_to_gravity / (molar_gas_constant * molar_gas_constant)))
+(3 + (9.806650e+00  / (8.314510e+00  * 8.314510e+00 )))
+Found match error=4.161820e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674999e-27
+mass_of_proton mass_of_proton fine_structure_constant faraday_constant  *  /  + 
+1.672623e-27 1.672623e-27 7.297350e-03 9.648453e+04  *  /  + 
+(mass_of_proton + (mass_of_proton / (fine_structure_constant * faraday_constant)))
+(1.672623e-27  + (1.672623e-27  / (7.297350e-03  * 9.648453e+04 )))
+Found match error=2.470881e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674970e-27
+mass_of_proton mass_of_proton magnetic_constant stefan_boltzmann_constant  *  /  + 
+1.672623e-27 1.672623e-27 1.256637e-06 5.670510e+08  *  /  + 
+(mass_of_proton + (mass_of_proton / (magnetic_constant * stefan_boltzmann_constant)))
+(1.672623e-27  + (1.672623e-27  / (1.256637e-06  * 5.670510e+08 )))
+Found match error=5.679503e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton magnetic_constant avodagro_constant semitone_multiple  /  /  + 
+1.672623e-27 1.256637e-06 6.022137e+23 1.059463e+00  /  /  + 
+(mass_of_proton + (magnetic_constant / (avodagro_constant / semitone_multiple)))
+(1.672623e-27  + (1.256637e-06  / (6.022137e+23  / 1.059463e+00 )))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton mass_of_proton 5 fine_structure_constant  /  /  + 
+1.672623e-27 1.672623e-27 5 7.297350e-03  /  /  + 
+(mass_of_proton + (mass_of_proton / (5 / fine_structure_constant)))
+(1.672623e-27  + (1.672623e-27  / (5 / 7.297350e-03 )))
+Found match error=1.869361e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674960e-27
+mass_of_proton mass_of_electron semitone_multiple e  /  /  + 
+1.672623e-27 9.109390e-31 1.059463e+00 2.718282e+00  /  /  + 
+(mass_of_proton + (mass_of_electron / (semitone_multiple / e)))
+(1.672623e-27  + (9.109390e-31  / (1.059463e+00  / 2.718282e+00 )))
+Found match error=5.679503e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton semitone_multiple avodagro_constant magnetic_constant  /  /  + 
+1.672623e-27 1.059463e+00 6.022137e+23 1.256637e-06  /  /  + 
+(mass_of_proton + (semitone_multiple / (avodagro_constant / magnetic_constant)))
+(1.672623e-27  + (1.059463e+00  / (6.022137e+23  / 1.256637e-06 )))
+Found match error=5.693772e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton 4 charge_of_electron electric_constant  /  /  + 
+1.672623e-27 4 1.602177e+19 8.854188e-12  /  /  + 
+(mass_of_proton + (4 / (charge_of_electron / electric_constant)))
+(1.672623e-27  + (4 / (1.602177e+19  / 8.854188e-12 )))
+Found match error=1.869361e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674960e-27
+mass_of_proton e semitone_multiple mass_of_electron  /  /  + 
+1.672623e-27 2.718282e+00 1.059463e+00 9.109390e-31  /  /  + 
+(mass_of_proton + (e / (semitone_multiple / mass_of_electron)))
+(1.672623e-27  + (2.718282e+00  / (1.059463e+00  / 9.109390e-31 )))
+Found match error=6.267493e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675034e-27
+mass_of_proton molar_gas_constant pi mass_of_electron  /  /  + 
+1.672623e-27 8.314510e+00 3.141593e+00 9.109390e-31  /  /  + 
+(mass_of_proton + (molar_gas_constant / (pi / mass_of_electron)))
+(1.672623e-27  + (8.314510e+00  / (3.141593e+00  / 9.109390e-31 )))
+Found match error=3.220241e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674875e-27
+mass_of_proton 4 golden_ratio mass_of_electron  /  /  + 
+1.672623e-27 4 1.618034e+00 9.109390e-31  /  /  + 
+(mass_of_proton + (4 / (golden_ratio / mass_of_electron)))
+(1.672623e-27  + (4 / (1.618034e+00  / 9.109390e-31 )))
+Found match error=1.704733e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674900e-27
+mass_of_proton 5 2 mass_of_electron  /  /  + 
+1.672623e-27 5 2 9.109390e-31  /  /  + 
+(mass_of_proton + (5 / (2 / mass_of_electron)))
+(1.672623e-27  + (5 / (2 / 9.109390e-31 )))
+Found match error=4.333810e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674856e-27
+mass_of_proton acceleration_due_to_gravity 4 mass_of_electron  /  /  + 
+1.672623e-27 9.806650e+00 4 9.109390e-31  /  /  + 
+(mass_of_proton + (acceleration_due_to_gravity / (4 / mass_of_electron)))
+(1.672623e-27  + (9.806650e+00  / (4 / 9.109390e-31 )))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton fine_structure_constant 5 mass_of_proton  /  /  + 
+1.672623e-27 7.297350e-03 5 1.672623e-27  /  /  + 
+(mass_of_proton + (fine_structure_constant / (5 / mass_of_proton)))
+(1.672623e-27  + (7.297350e-03  / (5 / 1.672623e-27 )))
+Found match error=6.267493e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675034e-27
+mass_of_proton mass_of_electron pi molar_gas_constant  /  /  + 
+1.672623e-27 9.109390e-31 3.141593e+00 8.314510e+00  /  /  + 
+(mass_of_proton + (mass_of_electron / (pi / molar_gas_constant)))
+(1.672623e-27  + (9.109390e-31  / (3.141593e+00  / 8.314510e+00 )))
+Found match error=4.333810e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674856e-27
+mass_of_proton mass_of_electron 4 acceleration_due_to_gravity  /  /  + 
+1.672623e-27 9.109390e-31 4 9.806650e+00  /  /  + 
+(mass_of_proton + (mass_of_electron / (4 / acceleration_due_to_gravity)))
+(1.672623e-27  + (9.109390e-31  / (4 / 9.806650e+00 )))
+Found match error=3.220241e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674875e-27
+mass_of_proton mass_of_electron golden_ratio 4  /  /  + 
+1.672623e-27 9.109390e-31 1.618034e+00 4  /  /  + 
+(mass_of_proton + (mass_of_electron / (golden_ratio / 4)))
+(1.672623e-27  + (9.109390e-31  / (1.618034e+00  / 4)))
+Found match error=5.693772e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton electric_constant charge_of_electron 4  /  /  + 
+1.672623e-27 8.854188e-12 1.602177e+19 4  /  /  + 
+(mass_of_proton + (electric_constant / (charge_of_electron / 4)))
+(1.672623e-27  + (8.854188e-12  / (1.602177e+19  / 4)))
+Found match error=1.704733e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674900e-27
+mass_of_proton mass_of_electron 2 5  /  /  + 
+1.672623e-27 9.109390e-31 2 5  /  /  + 
+(mass_of_proton + (mass_of_electron / (2 / 5)))
+(1.672623e-27  + (9.109390e-31  / (2 / 5)))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron mass_of_electron golden_ratio  *  +  - 
+1.674929e-27 9.109390e-31 9.109390e-31 1.618034e+00  *  +  - 
+(mass_of_neutron - (mass_of_electron + (mass_of_electron * golden_ratio)))
+(1.674929e-27  - (9.109390e-31  + (9.109390e-31  * 1.618034e+00 )))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron golden_ratio mass_of_electron  *  +  - 
+1.674929e-27 9.109390e-31 1.618034e+00 9.109390e-31  *  +  - 
+(mass_of_neutron - (mass_of_electron + (golden_ratio * mass_of_electron)))
+(1.674929e-27  - (9.109390e-31  + (1.618034e+00  * 9.109390e-31 )))
+Found match error=5.410862e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141423e+00
+5 golden_ratio 2 molar_gas_constant  /  +  - 
+5 1.618034e+00 2 8.314510e+00  /  +  - 
+(5 - (golden_ratio + (2 / molar_gas_constant)))
+(5 - (1.618034e+00  + (2 / 8.314510e+00 )))
+Found match error=9.581289e-06 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.806744e+00
+2 golden_ratio 3 pi  *  -  - 
+2 1.618034e+00 3 3.141593e+00  *  -  - 
+(2 - (golden_ratio - (3 * pi)))
+(2 - (1.618034e+00  - (3 * 3.141593e+00 )))
+Found match error=5.806787e-05 fundamental constant name=golden_ratio value=1.618034e+00
+result=1.618128e+00
+2 acceleration_due_to_gravity 3 pi  *  -  - 
+2 9.806650e+00 3 3.141593e+00  *  -  - 
+(2 - (acceleration_due_to_gravity - (3 * pi)))
+(2 - (9.806650e+00  - (3 * 3.141593e+00 )))
+Found match error=9.581289e-06 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.806744e+00
+2 golden_ratio pi 3  *  -  - 
+2 1.618034e+00 3.141593e+00 3  *  -  - 
+(2 - (golden_ratio - (pi * 3)))
+(2 - (1.618034e+00  - (3.141593e+00  * 3)))
+Found match error=5.806787e-05 fundamental constant name=golden_ratio value=1.618034e+00
+result=1.618128e+00
+2 acceleration_due_to_gravity pi 3  *  -  - 
+2 9.806650e+00 3.141593e+00 3  *  -  - 
+(2 - (acceleration_due_to_gravity - (pi * 3)))
+(2 - (9.806650e+00  - (3.141593e+00  * 3)))
+Found match error=5.737104e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.807213e+00
+molar_gas_constant fine_structure_constant 3 2  /  -  - 
+8.314510e+00 7.297350e-03 3 2  /  -  - 
+(molar_gas_constant - (fine_structure_constant - (3 / 2)))
+(8.314510e+00  - (7.297350e-03  - (3 / 2)))
+Found match error=7.960373e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672490e-27
+mass_of_neutron mass_of_electron golden_ratio semitone_multiple  +  *  - 
+1.674929e-27 9.109390e-31 1.618034e+00 1.059463e+00  +  *  - 
+(mass_of_neutron - (mass_of_electron * (golden_ratio + semitone_multiple)))
+(1.674929e-27  - (9.109390e-31  * (1.618034e+00  + 1.059463e+00 )))
+Found match error=7.960373e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672490e-27
+mass_of_neutron mass_of_electron semitone_multiple golden_ratio  +  *  - 
+1.674929e-27 9.109390e-31 1.059463e+00 1.618034e+00  +  *  - 
+(mass_of_neutron - (mass_of_electron * (semitone_multiple + golden_ratio)))
+(1.674929e-27  - (9.109390e-31  * (1.059463e+00  + 1.618034e+00 )))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron 1 golden_ratio  +  *  - 
+1.674929e-27 9.109390e-31 1 1.618034e+00  +  *  - 
+(mass_of_neutron - (mass_of_electron * (1 + golden_ratio)))
+(1.674929e-27  - (9.109390e-31  * (1 + 1.618034e+00 )))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron golden_ratio 1  +  *  - 
+1.674929e-27 9.109390e-31 1.618034e+00 1  +  *  - 
+(mass_of_neutron - (mass_of_electron * (golden_ratio + 1)))
+(1.674929e-27  - (9.109390e-31  * (1.618034e+00  + 1)))
+Found match error=9.784477e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672459e-27
+mass_of_neutron mass_of_electron e fine_structure_constant  -  *  - 
+1.674929e-27 9.109390e-31 2.718282e+00 7.297350e-03  -  *  - 
+(mass_of_neutron - (mass_of_electron * (e - fine_structure_constant)))
+(1.674929e-27  - (9.109390e-31  * (2.718282e+00  - 7.297350e-03 )))
+Found match error=9.769096e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675093e-27
+mass_of_proton mass_of_electron fine_structure_constant e  -  *  - 
+1.672623e-27 9.109390e-31 7.297350e-03 2.718282e+00  -  *  - 
+(mass_of_proton - (mass_of_electron * (fine_structure_constant - e)))
+(1.672623e-27  - (9.109390e-31  * (7.297350e-03  - 2.718282e+00 )))
+Found match error=8.134724e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672759e-27
+mass_of_neutron mass_of_electron 4 golden_ratio  -  *  - 
+1.674929e-27 9.109390e-31 4 1.618034e+00  -  *  - 
+(mass_of_neutron - (mass_of_electron * (4 - golden_ratio)))
+(1.674929e-27  - (9.109390e-31  * (4 - 1.618034e+00 )))
+Found match error=8.124845e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674793e-27
+mass_of_proton mass_of_electron golden_ratio 4  -  *  - 
+1.672623e-27 9.109390e-31 1.618034e+00 4  -  *  - 
+(mass_of_proton - (mass_of_electron * (golden_ratio - 4)))
+(1.672623e-27  - (9.109390e-31  * (1.618034e+00  - 4)))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron golden_ratio golden_ratio  *  *  - 
+1.674929e-27 9.109390e-31 1.618034e+00 1.618034e+00  *  *  - 
+(mass_of_neutron - (mass_of_electron * (golden_ratio * golden_ratio)))
+(1.674929e-27  - (9.109390e-31  * (1.618034e+00  * 1.618034e+00 )))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron golden_ratio mass_of_electron golden_ratio  *  *  - 
+1.674929e-27 1.618034e+00 9.109390e-31 1.618034e+00  *  *  - 
+(mass_of_neutron - (golden_ratio * (mass_of_electron * golden_ratio)))
+(1.674929e-27  - (1.618034e+00  * (9.109390e-31  * 1.618034e+00 )))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron golden_ratio golden_ratio mass_of_electron  *  *  - 
+1.674929e-27 1.618034e+00 1.618034e+00 9.109390e-31  *  *  - 
+(mass_of_neutron - (golden_ratio * (golden_ratio * mass_of_electron)))
+(1.674929e-27  - (1.618034e+00  * (1.618034e+00  * 9.109390e-31 )))
+Found match error=1.872008e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672592e-27
+mass_of_neutron mass_of_electron e semitone_multiple  /  *  - 
+1.674929e-27 9.109390e-31 2.718282e+00 1.059463e+00  /  *  - 
+(mass_of_neutron - (mass_of_electron * (e / semitone_multiple)))
+(1.674929e-27  - (9.109390e-31  * (2.718282e+00  / 1.059463e+00 )))
+Found match error=1.872008e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672592e-27
+mass_of_neutron e mass_of_electron semitone_multiple  /  *  - 
+1.674929e-27 2.718282e+00 9.109390e-31 1.059463e+00  /  *  - 
+(mass_of_neutron - (e * (mass_of_electron / semitone_multiple)))
+(1.674929e-27  - (2.718282e+00  * (9.109390e-31  / 1.059463e+00 )))
+Found match error=6.276921e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672518e-27
+mass_of_neutron molar_gas_constant mass_of_electron pi  /  *  - 
+1.674929e-27 8.314510e+00 9.109390e-31 3.141593e+00  /  *  - 
+(mass_of_neutron - (molar_gas_constant * (mass_of_electron / pi)))
+(1.674929e-27  - (8.314510e+00  * (9.109390e-31  / 3.141593e+00 )))
+Found match error=6.276921e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672518e-27
+mass_of_neutron mass_of_electron molar_gas_constant pi  /  *  - 
+1.674929e-27 9.109390e-31 8.314510e+00 3.141593e+00  /  *  - 
+(mass_of_neutron - (mass_of_electron * (molar_gas_constant / pi)))
+(1.674929e-27  - (9.109390e-31  * (8.314510e+00  / 3.141593e+00 )))
+Found match error=3.224473e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672677e-27
+mass_of_neutron 4 mass_of_electron golden_ratio  /  *  - 
+1.674929e-27 4 9.109390e-31 1.618034e+00  /  *  - 
+(mass_of_neutron - (4 * (mass_of_electron / golden_ratio)))
+(1.674929e-27  - (4 * (9.109390e-31  / 1.618034e+00 )))
+Found match error=3.224473e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672677e-27
+mass_of_neutron mass_of_electron 4 golden_ratio  /  *  - 
+1.674929e-27 9.109390e-31 4 1.618034e+00  /  *  - 
+(mass_of_neutron - (mass_of_electron * (4 / golden_ratio)))
+(1.674929e-27  - (9.109390e-31  * (4 / 1.618034e+00 )))
+Found match error=5.700972e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron 4 electric_constant charge_of_electron  /  *  - 
+1.674929e-27 4 8.854188e-12 1.602177e+19  /  *  - 
+(mass_of_neutron - (4 * (electric_constant / charge_of_electron)))
+(1.674929e-27  - (4 * (8.854188e-12  / 1.602177e+19 )))
+Found match error=5.700972e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron electric_constant 4 charge_of_electron  /  *  - 
+1.674929e-27 8.854188e-12 4 1.602177e+19  /  *  - 
+(mass_of_neutron - (electric_constant * (4 / charge_of_electron)))
+(1.674929e-27  - (8.854188e-12  * (4 / 1.602177e+19 )))
+Found match error=5.686686e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron magnetic_constant semitone_multiple avodagro_constant  /  *  - 
+1.674929e-27 1.256637e-06 1.059463e+00 6.022137e+23  /  *  - 
+(mass_of_neutron - (magnetic_constant * (semitone_multiple / avodagro_constant)))
+(1.674929e-27  - (1.256637e-06  * (1.059463e+00  / 6.022137e+23 )))
+Found match error=5.686686e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron semitone_multiple magnetic_constant avodagro_constant  /  *  - 
+1.674929e-27 1.059463e+00 1.256637e-06 6.022137e+23  /  *  - 
+(mass_of_neutron - (semitone_multiple * (magnetic_constant / avodagro_constant)))
+(1.674929e-27  - (1.059463e+00  * (1.256637e-06  / 6.022137e+23 )))
+Found match error=1.707025e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672652e-27
+mass_of_neutron 5 mass_of_electron 2  /  *  - 
+1.674929e-27 5 9.109390e-31 2  /  *  - 
+(mass_of_neutron - (5 * (mass_of_electron / 2)))
+(1.674929e-27  - (5 * (9.109390e-31  / 2)))
+Found match error=1.707025e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672652e-27
+mass_of_neutron mass_of_electron 5 2  /  *  - 
+1.674929e-27 9.109390e-31 5 2  /  *  - 
+(mass_of_neutron - (mass_of_electron * (5 / 2)))
+(1.674929e-27  - (9.109390e-31  * (5 / 2)))
+Found match error=4.339408e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672696e-27
+mass_of_neutron acceleration_due_to_gravity mass_of_electron 4  /  *  - 
+1.674929e-27 9.806650e+00 9.109390e-31 4  /  *  - 
+(mass_of_neutron - (acceleration_due_to_gravity * (mass_of_electron / 4)))
+(1.674929e-27  - (9.806650e+00  * (9.109390e-31  / 4)))
+Found match error=4.339408e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672696e-27
+mass_of_neutron mass_of_electron acceleration_due_to_gravity 4  /  *  - 
+1.674929e-27 9.109390e-31 9.806650e+00 4  /  *  - 
+(mass_of_neutron - (mass_of_electron * (acceleration_due_to_gravity / 4)))
+(1.674929e-27  - (9.109390e-31  * (9.806650e+00  / 4)))
+Found match error=8.287588e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672484e-27
+mass_of_neutron mass_of_neutron fine_structure_constant 5  /  *  - 
+1.674929e-27 1.674929e-27 7.297350e-03 5  /  *  - 
+(mass_of_neutron - (mass_of_neutron * (fine_structure_constant / 5)))
+(1.674929e-27  - (1.674929e-27  * (7.297350e-03  / 5)))
+Found match error=8.287588e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672484e-27
+mass_of_neutron fine_structure_constant mass_of_neutron 5  /  *  - 
+1.674929e-27 7.297350e-03 1.674929e-27 5  /  *  - 
+(mass_of_neutron - (fine_structure_constant * (mass_of_neutron / 5)))
+(1.674929e-27  - (7.297350e-03  * (1.674929e-27  / 5)))
+Found match error=1.066272e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141626e+00
+4 acceleration_due_to_gravity acceleration_due_to_gravity golden_ratio  +  /  - 
+4 9.806650e+00 9.806650e+00 1.618034e+00  +  /  - 
+(4 - (acceleration_due_to_gravity / (acceleration_due_to_gravity + golden_ratio)))
+(4 - (9.806650e+00  / (9.806650e+00  + 1.618034e+00 )))
+Found match error=1.066272e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141626e+00
+4 acceleration_due_to_gravity golden_ratio acceleration_due_to_gravity  +  /  - 
+4 9.806650e+00 1.618034e+00 9.806650e+00  +  /  - 
+(4 - (acceleration_due_to_gravity / (golden_ratio + acceleration_due_to_gravity)))
+(4 - (9.806650e+00  / (1.618034e+00  + 9.806650e+00 )))
+Found match error=6.597608e-05 fundamental constant name=e value=2.718282e+00
+result=2.718102e+00
+pi 5 2 acceleration_due_to_gravity  +  /  - 
+3.141593e+00 5 2 9.806650e+00  +  /  - 
+(pi - (5 / (2 + acceleration_due_to_gravity)))
+(3.141593e+00  - (5 / (2 + 9.806650e+00 )))
+Found match error=6.597608e-05 fundamental constant name=e value=2.718282e+00
+result=2.718102e+00
+pi 5 acceleration_due_to_gravity 2  +  /  - 
+3.141593e+00 5 9.806650e+00 2  +  /  - 
+(pi - (5 / (acceleration_due_to_gravity + 2)))
+(3.141593e+00  - (5 / (9.806650e+00  + 2)))
+Found match error=9.192950e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674775e-27
+mass_of_proton mass_of_electron e pi  -  /  - 
+1.672623e-27 9.109390e-31 2.718282e+00 3.141593e+00  -  /  - 
+(mass_of_proton - (mass_of_electron / (e - pi)))
+(1.672623e-27  - (9.109390e-31  / (2.718282e+00  - 3.141593e+00 )))
+Found match error=9.203930e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672777e-27
+mass_of_neutron mass_of_electron pi e  -  /  - 
+1.674929e-27 9.109390e-31 3.141593e+00 2.718282e+00  -  /  - 
+(mass_of_neutron - (mass_of_electron / (pi - e)))
+(1.674929e-27  - (9.109390e-31  / (3.141593e+00  - 2.718282e+00 )))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron 2 golden_ratio  -  /  - 
+1.674929e-27 9.109390e-31 2 1.618034e+00  -  /  - 
+(mass_of_neutron - (mass_of_electron / (2 - golden_ratio)))
+(1.674929e-27  - (9.109390e-31  / (2 - 1.618034e+00 )))
+Found match error=2.617895e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141510e+00
+e 3 e acceleration_due_to_gravity  -  /  - 
+2.718282e+00 3 2.718282e+00 9.806650e+00  -  /  - 
+(e - (3 / (e - acceleration_due_to_gravity)))
+(2.718282e+00  - (3 / (2.718282e+00  - 9.806650e+00 )))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron golden_ratio 2  -  /  - 
+1.672623e-27 9.109390e-31 1.618034e+00 2  -  /  - 
+(mass_of_proton - (mass_of_electron / (golden_ratio - 2)))
+(1.672623e-27  - (9.109390e-31  / (1.618034e+00  - 2)))
+Found match error=9.452694e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141890e+00
+semitone_multiple molar_gas_constant fine_structure_constant 4  -  /  - 
+1.059463e+00 8.314510e+00 7.297350e-03 4  -  /  - 
+(semitone_multiple - (molar_gas_constant / (fine_structure_constant - 4)))
+(1.059463e+00  - (8.314510e+00  / (7.297350e-03  - 4)))
+Found match error=4.363724e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672550e-27
+mass_of_neutron mass_of_neutron faraday_constant fine_structure_constant  *  /  - 
+1.674929e-27 1.674929e-27 9.648453e+04 7.297350e-03  *  /  - 
+(mass_of_neutron - (mass_of_neutron / (faraday_constant * fine_structure_constant)))
+(1.674929e-27  - (1.674929e-27  / (9.648453e+04  * 7.297350e-03 )))
+Found match error=2.667888e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672578e-27
+mass_of_neutron mass_of_neutron stefan_boltzmann_constant magnetic_constant  *  /  - 
+1.674929e-27 1.674929e-27 5.670510e+08 1.256637e-06  *  /  - 
+(mass_of_neutron - (mass_of_neutron / (stefan_boltzmann_constant * magnetic_constant)))
+(1.674929e-27  - (1.674929e-27  / (5.670510e+08  * 1.256637e-06 )))
+Found match error=5.791367e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672720e-27
+mass_of_neutron stefan_boltzmann_constant charge_of_electron charge_of_electron  *  /  - 
+1.674929e-27 5.670510e+08 1.602177e+19 1.602177e+19  *  /  - 
+(mass_of_neutron - (stefan_boltzmann_constant / (charge_of_electron * charge_of_electron)))
+(1.674929e-27  - (5.670510e+08  / (1.602177e+19  * 1.602177e+19 )))
+Found match error=4.363724e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672550e-27
+mass_of_neutron mass_of_neutron fine_structure_constant faraday_constant  *  /  - 
+1.674929e-27 1.674929e-27 7.297350e-03 9.648453e+04  *  /  - 
+(mass_of_neutron - (mass_of_neutron / (fine_structure_constant * faraday_constant)))
+(1.674929e-27  - (1.674929e-27  / (7.297350e-03  * 9.648453e+04 )))
+Found match error=2.667888e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672578e-27
+mass_of_neutron mass_of_neutron magnetic_constant stefan_boltzmann_constant  *  /  - 
+1.674929e-27 1.674929e-27 1.256637e-06 5.670510e+08  *  /  - 
+(mass_of_neutron - (mass_of_neutron / (magnetic_constant * stefan_boltzmann_constant)))
+(1.674929e-27  - (1.674929e-27  / (1.256637e-06  * 5.670510e+08 )))
+Found match error=5.686686e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron magnetic_constant avodagro_constant semitone_multiple  /  /  - 
+1.674929e-27 1.256637e-06 6.022137e+23 1.059463e+00  /  /  - 
+(mass_of_neutron - (magnetic_constant / (avodagro_constant / semitone_multiple)))
+(1.674929e-27  - (1.256637e-06  / (6.022137e+23  / 1.059463e+00 )))
+Found match error=8.287588e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672484e-27
+mass_of_neutron mass_of_neutron 5 fine_structure_constant  /  /  - 
+1.674929e-27 1.674929e-27 5 7.297350e-03  /  /  - 
+(mass_of_neutron - (mass_of_neutron / (5 / fine_structure_constant)))
+(1.674929e-27  - (1.674929e-27  / (5 / 7.297350e-03 )))
+Found match error=1.872008e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672592e-27
+mass_of_neutron mass_of_electron semitone_multiple e  /  /  - 
+1.674929e-27 9.109390e-31 1.059463e+00 2.718282e+00  /  /  - 
+(mass_of_neutron - (mass_of_electron / (semitone_multiple / e)))
+(1.674929e-27  - (9.109390e-31  / (1.059463e+00  / 2.718282e+00 )))
+Found match error=5.686686e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron semitone_multiple avodagro_constant magnetic_constant  /  /  - 
+1.674929e-27 1.059463e+00 6.022137e+23 1.256637e-06  /  /  - 
+(mass_of_neutron - (semitone_multiple / (avodagro_constant / magnetic_constant)))
+(1.674929e-27  - (1.059463e+00  / (6.022137e+23  / 1.256637e-06 )))
+Found match error=5.700972e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron 4 charge_of_electron electric_constant  /  /  - 
+1.674929e-27 4 1.602177e+19 8.854188e-12  /  /  - 
+(mass_of_neutron - (4 / (charge_of_electron / electric_constant)))
+(1.674929e-27  - (4 / (1.602177e+19  / 8.854188e-12 )))
+Found match error=1.872008e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672592e-27
+mass_of_neutron e semitone_multiple mass_of_electron  /  /  - 
+1.674929e-27 2.718282e+00 1.059463e+00 9.109390e-31  /  /  - 
+(mass_of_neutron - (e / (semitone_multiple / mass_of_electron)))
+(1.674929e-27  - (2.718282e+00  / (1.059463e+00  / 9.109390e-31 )))
+Found match error=6.276921e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672518e-27
+mass_of_neutron molar_gas_constant pi mass_of_electron  /  /  - 
+1.674929e-27 8.314510e+00 3.141593e+00 9.109390e-31  /  /  - 
+(mass_of_neutron - (molar_gas_constant / (pi / mass_of_electron)))
+(1.674929e-27  - (8.314510e+00  / (3.141593e+00  / 9.109390e-31 )))
+Found match error=3.224473e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672677e-27
+mass_of_neutron 4 golden_ratio mass_of_electron  /  /  - 
+1.674929e-27 4 1.618034e+00 9.109390e-31  /  /  - 
+(mass_of_neutron - (4 / (golden_ratio / mass_of_electron)))
+(1.674929e-27  - (4 / (1.618034e+00  / 9.109390e-31 )))
+Found match error=1.707025e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672652e-27
+mass_of_neutron 5 2 mass_of_electron  /  /  - 
+1.674929e-27 5 2 9.109390e-31  /  /  - 
+(mass_of_neutron - (5 / (2 / mass_of_electron)))
+(1.674929e-27  - (5 / (2 / 9.109390e-31 )))
+Found match error=4.339408e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672696e-27
+mass_of_neutron acceleration_due_to_gravity 4 mass_of_electron  /  /  - 
+1.674929e-27 9.806650e+00 4 9.109390e-31  /  /  - 
+(mass_of_neutron - (acceleration_due_to_gravity / (4 / mass_of_electron)))
+(1.674929e-27  - (9.806650e+00  / (4 / 9.109390e-31 )))
+Found match error=8.287588e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672484e-27
+mass_of_neutron fine_structure_constant 5 mass_of_neutron  /  /  - 
+1.674929e-27 7.297350e-03 5 1.674929e-27  /  /  - 
+(mass_of_neutron - (fine_structure_constant / (5 / mass_of_neutron)))
+(1.674929e-27  - (7.297350e-03  / (5 / 1.674929e-27 )))
+Found match error=6.276921e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672518e-27
+mass_of_neutron mass_of_electron pi molar_gas_constant  /  /  - 
+1.674929e-27 9.109390e-31 3.141593e+00 8.314510e+00  /  /  - 
+(mass_of_neutron - (mass_of_electron / (pi / molar_gas_constant)))
+(1.674929e-27  - (9.109390e-31  / (3.141593e+00  / 8.314510e+00 )))
+Found match error=4.339408e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672696e-27
+mass_of_neutron mass_of_electron 4 acceleration_due_to_gravity  /  /  - 
+1.674929e-27 9.109390e-31 4 9.806650e+00  /  /  - 
+(mass_of_neutron - (mass_of_electron / (4 / acceleration_due_to_gravity)))
+(1.674929e-27  - (9.109390e-31  / (4 / 9.806650e+00 )))
+Found match error=3.224473e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672677e-27
+mass_of_neutron mass_of_electron golden_ratio 4  /  /  - 
+1.674929e-27 9.109390e-31 1.618034e+00 4  /  /  - 
+(mass_of_neutron - (mass_of_electron / (golden_ratio / 4)))
+(1.674929e-27  - (9.109390e-31  / (1.618034e+00  / 4)))
+Found match error=5.700972e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron electric_constant charge_of_electron 4  /  /  - 
+1.674929e-27 8.854188e-12 1.602177e+19 4  /  /  - 
+(mass_of_neutron - (electric_constant / (charge_of_electron / 4)))
+(1.674929e-27  - (8.854188e-12  / (1.602177e+19  / 4)))
+Found match error=1.707025e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672652e-27
+mass_of_neutron mass_of_electron 2 5  /  /  - 
+1.674929e-27 9.109390e-31 2 5  /  /  - 
+(mass_of_neutron - (mass_of_electron / (2 / 5)))
+(1.674929e-27  - (9.109390e-31  / (2 / 5)))
+Found match error=9.855404e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.805684e+00
+pi 3 faraday_constant magnetic_constant  *  +  * 
+3.141593e+00 3 9.648453e+04 1.256637e-06  *  +  * 
+(pi * (3 + (faraday_constant * magnetic_constant)))
+(3.141593e+00  * (3 + (9.648453e+04  * 1.256637e-06 )))
+Found match error=4.756694e-05 fundamental constant name=speed_of_light value=2.997925e+08
+result=2.997782e+08
+magnetic_constant gravitational_constant loschmidt_constant electric_constant  *  +  * 
+1.256637e-06 6.672590e+11 2.686736e+25 8.854188e-12  *  +  * 
+(magnetic_constant * (gravitational_constant + (loschmidt_constant * electric_constant)))
+(1.256637e-06  * (6.672590e+11  + (2.686736e+25  * 8.854188e-12 )))
+Found match error=4.266800e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.314865e+00
+5 golden_ratio loschmidt_constant mass_of_proton  *  +  * 
+5 1.618034e+00 2.686736e+25 1.672623e-27  *  +  * 
+(5 * (golden_ratio + (loschmidt_constant * mass_of_proton)))
+(5 * (1.618034e+00  + (2.686736e+25  * 1.672623e-27 )))
+Found match error=7.991965e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.315175e+00
+5 golden_ratio loschmidt_constant mass_of_neutron  *  +  * 
+5 1.618034e+00 2.686736e+25 1.674929e-27  *  +  * 
+(5 * (golden_ratio + (loschmidt_constant * mass_of_neutron)))
+(5 * (1.618034e+00  + (2.686736e+25  * 1.674929e-27 )))
+Found match error=4.756694e-05 fundamental constant name=speed_of_light value=2.997925e+08
+result=2.997782e+08
+magnetic_constant gravitational_constant electric_constant loschmidt_constant  *  +  * 
+1.256637e-06 6.672590e+11 8.854188e-12 2.686736e+25  *  +  * 
+(magnetic_constant * (gravitational_constant + (electric_constant * loschmidt_constant)))
+(1.256637e-06  * (6.672590e+11  + (8.854188e-12  * 2.686736e+25 )))
+Found match error=4.266800e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.314865e+00
+5 golden_ratio mass_of_proton loschmidt_constant  *  +  * 
+5 1.618034e+00 1.672623e-27 2.686736e+25  *  +  * 
+(5 * (golden_ratio + (mass_of_proton * loschmidt_constant)))
+(5 * (1.618034e+00  + (1.672623e-27  * 2.686736e+25 )))
+Found match error=7.991965e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.315175e+00
+5 golden_ratio mass_of_neutron loschmidt_constant  *  +  * 
+5 1.618034e+00 1.674929e-27 2.686736e+25  *  +  * 
+(5 * (golden_ratio + (mass_of_neutron * loschmidt_constant)))
+(5 * (1.618034e+00  + (1.674929e-27  * 2.686736e+25 )))
+Found match error=9.855404e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.805684e+00
+pi 3 magnetic_constant faraday_constant  *  +  * 
+3.141593e+00 3 1.256637e-06 9.648453e+04  *  +  * 
+(pi * (3 + (magnetic_constant * faraday_constant)))
+(3.141593e+00  * (3 + (1.256637e-06  * 9.648453e+04 )))
+Found match error=4.059691e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.807048e+00
+3 pi semitone_multiple molar_gas_constant  /  +  * 
+3 3.141593e+00 1.059463e+00 8.314510e+00  /  +  * 
+(3 * (pi + (semitone_multiple / molar_gas_constant)))
+(3 * (3.141593e+00  + (1.059463e+00  / 8.314510e+00 )))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton 1 fine_structure_constant 5  /  +  * 
+1.672623e-27 1 7.297350e-03 5  /  +  * 
+(mass_of_proton * (1 + (fine_structure_constant / 5)))
+(1.672623e-27  * (1 + (7.297350e-03  / 5)))
+Found match error=1.532209e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141641e+00
+golden_ratio golden_ratio golden_ratio 5  /  +  * 
+1.618034e+00 1.618034e+00 1.618034e+00 5  /  +  * 
+(golden_ratio * (golden_ratio + (golden_ratio / 5)))
+(1.618034e+00  * (1.618034e+00  + (1.618034e+00  / 5)))
+Found match error=6.494651e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.807287e+00
+pi pi e fine_structure_constant  *  -  * 
+3.141593e+00 3.141593e+00 2.718282e+00 7.297350e-03  *  -  * 
+(pi * (pi - (e * fine_structure_constant)))
+(3.141593e+00  * (3.141593e+00  - (2.718282e+00  * 7.297350e-03 )))
+Found match error=4.856421e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.314914e+00
+pi e acceleration_due_to_gravity fine_structure_constant  *  -  * 
+3.141593e+00 2.718282e+00 9.806650e+00 7.297350e-03  *  -  * 
+(pi * (e - (acceleration_due_to_gravity * fine_structure_constant)))
+(3.141593e+00  * (2.718282e+00  - (9.806650e+00  * 7.297350e-03 )))
+Found match error=6.494651e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.807287e+00
+pi pi fine_structure_constant e  *  -  * 
+3.141593e+00 3.141593e+00 7.297350e-03 2.718282e+00  *  -  * 
+(pi * (pi - (fine_structure_constant * e)))
+(3.141593e+00  * (3.141593e+00  - (7.297350e-03  * 2.718282e+00 )))
+Found match error=4.856421e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.314914e+00
+pi e fine_structure_constant acceleration_due_to_gravity  *  -  * 
+3.141593e+00 2.718282e+00 7.297350e-03 9.806650e+00  *  -  * 
+(pi * (e - (fine_structure_constant * acceleration_due_to_gravity)))
+(3.141593e+00  * (2.718282e+00  - (7.297350e-03  * 9.806650e+00 )))
+Found match error=8.394306e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313812e+00
+5 2 semitone_multiple pi  /  -  * 
+5 2 1.059463e+00 3.141593e+00  /  -  * 
+(5 * (2 - (semitone_multiple / pi)))
+(5 * (2 - (1.059463e+00  / 3.141593e+00 )))
+Found match error=9.630347e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.315311e+00
+pi 3 semitone_multiple 3  /  -  * 
+3.141593e+00 3 1.059463e+00 3  /  -  * 
+(pi * (3 - (semitone_multiple / 3)))
+(3.141593e+00  * (3 - (1.059463e+00  / 3)))
+Found match error=6.032617e-05 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670852e+08
+speed_of_light pi 5 4  /  -  * 
+2.997925e+08 3.141593e+00 5 4  /  -  * 
+(speed_of_light * (pi - (5 / 4)))
+(2.997925e+08  * (3.141593e+00  - (5 / 4)))
+Found match error=8.287588e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672484e-27
+mass_of_neutron 1 fine_structure_constant 5  /  -  * 
+1.674929e-27 1 7.297350e-03 5  /  -  * 
+(mass_of_neutron * (1 - (fine_structure_constant / 5)))
+(1.674929e-27  * (1 - (7.297350e-03  / 5)))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+gravitational_constant charge_of_electron magnetic_constant magnetic_constant  +  *  * 
+6.672590e+11 1.602177e+19 1.256637e-06 1.256637e-06  +  *  * 
+(gravitational_constant * (charge_of_electron * (magnetic_constant + magnetic_constant)))
+(6.672590e+11  * (1.602177e+19  * (1.256637e-06  + 1.256637e-06 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+charge_of_electron gravitational_constant magnetic_constant magnetic_constant  +  *  * 
+1.602177e+19 6.672590e+11 1.256637e-06 1.256637e-06  +  *  * 
+(charge_of_electron * (gravitational_constant * (magnetic_constant + magnetic_constant)))
+(1.602177e+19  * (6.672590e+11  * (1.256637e-06  + 1.256637e-06 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+gravitational_constant magnetic_constant charge_of_electron charge_of_electron  +  *  * 
+6.672590e+11 1.256637e-06 1.602177e+19 1.602177e+19  +  *  * 
+(gravitational_constant * (magnetic_constant * (charge_of_electron + charge_of_electron)))
+(6.672590e+11  * (1.256637e-06  * (1.602177e+19  + 1.602177e+19 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+magnetic_constant gravitational_constant charge_of_electron charge_of_electron  +  *  * 
+1.256637e-06 6.672590e+11 1.602177e+19 1.602177e+19  +  *  * 
+(magnetic_constant * (gravitational_constant * (charge_of_electron + charge_of_electron)))
+(1.256637e-06  * (6.672590e+11  * (1.602177e+19  + 1.602177e+19 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+charge_of_electron magnetic_constant gravitational_constant gravitational_constant  +  *  * 
+1.602177e+19 1.256637e-06 6.672590e+11 6.672590e+11  +  *  * 
+(charge_of_electron * (magnetic_constant * (gravitational_constant + gravitational_constant)))
+(1.602177e+19  * (1.256637e-06  * (6.672590e+11  + 6.672590e+11 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+magnetic_constant charge_of_electron gravitational_constant gravitational_constant  +  *  * 
+1.256637e-06 1.602177e+19 6.672590e+11 6.672590e+11  +  *  * 
+(magnetic_constant * (charge_of_electron * (gravitational_constant + gravitational_constant)))
+(1.256637e-06  * (1.602177e+19  * (6.672590e+11  + 6.672590e+11 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+2 gravitational_constant charge_of_electron magnetic_constant  *  *  * 
+2 6.672590e+11 1.602177e+19 1.256637e-06  *  *  * 
+(2 * (gravitational_constant * (charge_of_electron * magnetic_constant)))
+(2 * (6.672590e+11  * (1.602177e+19  * 1.256637e-06 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+gravitational_constant 2 charge_of_electron magnetic_constant  *  *  * 
+6.672590e+11 2 1.602177e+19 1.256637e-06  *  *  * 
+(gravitational_constant * (2 * (charge_of_electron * magnetic_constant)))
+(6.672590e+11  * (2 * (1.602177e+19  * 1.256637e-06 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+2 charge_of_electron gravitational_constant magnetic_constant  *  *  * 
+2 1.602177e+19 6.672590e+11 1.256637e-06  *  *  * 
+(2 * (charge_of_electron * (gravitational_constant * magnetic_constant)))
+(2 * (1.602177e+19  * (6.672590e+11  * 1.256637e-06 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+charge_of_electron 2 gravitational_constant magnetic_constant  *  *  * 
+1.602177e+19 2 6.672590e+11 1.256637e-06  *  *  * 
+(charge_of_electron * (2 * (gravitational_constant * magnetic_constant)))
+(1.602177e+19  * (2 * (6.672590e+11  * 1.256637e-06 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+gravitational_constant charge_of_electron 2 magnetic_constant  *  *  * 
+6.672590e+11 1.602177e+19 2 1.256637e-06  *  *  * 
+(gravitational_constant * (charge_of_electron * (2 * magnetic_constant)))
+(6.672590e+11  * (1.602177e+19  * (2 * 1.256637e-06 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+charge_of_electron gravitational_constant 2 magnetic_constant  *  *  * 
+1.602177e+19 6.672590e+11 2 1.256637e-06  *  *  * 
+(charge_of_electron * (gravitational_constant * (2 * magnetic_constant)))
+(1.602177e+19  * (6.672590e+11  * (2 * 1.256637e-06 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+2 gravitational_constant magnetic_constant charge_of_electron  *  *  * 
+2 6.672590e+11 1.256637e-06 1.602177e+19  *  *  * 
+(2 * (gravitational_constant * (magnetic_constant * charge_of_electron)))
+(2 * (6.672590e+11  * (1.256637e-06  * 1.602177e+19 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+gravitational_constant 2 magnetic_constant charge_of_electron  *  *  * 
+6.672590e+11 2 1.256637e-06 1.602177e+19  *  *  * 
+(gravitational_constant * (2 * (magnetic_constant * charge_of_electron)))
+(6.672590e+11  * (2 * (1.256637e-06  * 1.602177e+19 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+2 magnetic_constant gravitational_constant charge_of_electron  *  *  * 
+2 1.256637e-06 6.672590e+11 1.602177e+19  *  *  * 
+(2 * (magnetic_constant * (gravitational_constant * charge_of_electron)))
+(2 * (1.256637e-06  * (6.672590e+11  * 1.602177e+19 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+magnetic_constant 2 gravitational_constant charge_of_electron  *  *  * 
+1.256637e-06 2 6.672590e+11 1.602177e+19  *  *  * 
+(magnetic_constant * (2 * (gravitational_constant * charge_of_electron)))
+(1.256637e-06  * (2 * (6.672590e+11  * 1.602177e+19 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+gravitational_constant magnetic_constant 2 charge_of_electron  *  *  * 
+6.672590e+11 1.256637e-06 2 1.602177e+19  *  *  * 
+(gravitational_constant * (magnetic_constant * (2 * charge_of_electron)))
+(6.672590e+11  * (1.256637e-06  * (2 * 1.602177e+19 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+magnetic_constant gravitational_constant 2 charge_of_electron  *  *  * 
+1.256637e-06 6.672590e+11 2 1.602177e+19  *  *  * 
+(magnetic_constant * (gravitational_constant * (2 * charge_of_electron)))
+(1.256637e-06  * (6.672590e+11  * (2 * 1.602177e+19 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+2 charge_of_electron magnetic_constant gravitational_constant  *  *  * 
+2 1.602177e+19 1.256637e-06 6.672590e+11  *  *  * 
+(2 * (charge_of_electron * (magnetic_constant * gravitational_constant)))
+(2 * (1.602177e+19  * (1.256637e-06  * 6.672590e+11 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+charge_of_electron 2 magnetic_constant gravitational_constant  *  *  * 
+1.602177e+19 2 1.256637e-06 6.672590e+11  *  *  * 
+(charge_of_electron * (2 * (magnetic_constant * gravitational_constant)))
+(1.602177e+19  * (2 * (1.256637e-06  * 6.672590e+11 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+2 magnetic_constant charge_of_electron gravitational_constant  *  *  * 
+2 1.256637e-06 1.602177e+19 6.672590e+11  *  *  * 
+(2 * (magnetic_constant * (charge_of_electron * gravitational_constant)))
+(2 * (1.256637e-06  * (1.602177e+19  * 6.672590e+11 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+magnetic_constant 2 charge_of_electron gravitational_constant  *  *  * 
+1.256637e-06 2 1.602177e+19 6.672590e+11  *  *  * 
+(magnetic_constant * (2 * (charge_of_electron * gravitational_constant)))
+(1.256637e-06  * (2 * (1.602177e+19  * 6.672590e+11 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+charge_of_electron magnetic_constant 2 gravitational_constant  *  *  * 
+1.602177e+19 1.256637e-06 2 6.672590e+11  *  *  * 
+(charge_of_electron * (magnetic_constant * (2 * gravitational_constant)))
+(1.602177e+19  * (1.256637e-06  * (2 * 6.672590e+11 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+magnetic_constant charge_of_electron 2 gravitational_constant  *  *  * 
+1.256637e-06 1.602177e+19 2 6.672590e+11  *  *  * 
+(magnetic_constant * (charge_of_electron * (2 * gravitational_constant)))
+(1.256637e-06  * (1.602177e+19  * (2 * 6.672590e+11 )))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+gravitational_constant charge_of_electron magnetic_constant 2  *  *  * 
+6.672590e+11 1.602177e+19 1.256637e-06 2  *  *  * 
+(gravitational_constant * (charge_of_electron * (magnetic_constant * 2)))
+(6.672590e+11  * (1.602177e+19  * (1.256637e-06  * 2)))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+charge_of_electron gravitational_constant magnetic_constant 2  *  *  * 
+1.602177e+19 6.672590e+11 1.256637e-06 2  *  *  * 
+(charge_of_electron * (gravitational_constant * (magnetic_constant * 2)))
+(1.602177e+19  * (6.672590e+11  * (1.256637e-06  * 2)))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+gravitational_constant magnetic_constant charge_of_electron 2  *  *  * 
+6.672590e+11 1.256637e-06 1.602177e+19 2  *  *  * 
+(gravitational_constant * (magnetic_constant * (charge_of_electron * 2)))
+(6.672590e+11  * (1.256637e-06  * (1.602177e+19  * 2)))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+magnetic_constant gravitational_constant charge_of_electron 2  *  *  * 
+1.256637e-06 6.672590e+11 1.602177e+19 2  *  *  * 
+(magnetic_constant * (gravitational_constant * (charge_of_electron * 2)))
+(1.256637e-06  * (6.672590e+11  * (1.602177e+19  * 2)))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+charge_of_electron magnetic_constant gravitational_constant 2  *  *  * 
+1.602177e+19 1.256637e-06 6.672590e+11 2  *  *  * 
+(charge_of_electron * (magnetic_constant * (gravitational_constant * 2)))
+(1.602177e+19  * (1.256637e-06  * (6.672590e+11  * 2)))
+Found match error=4.579233e-05 fundamental constant name=loschmidt_constant value=2.686736e+25
+result=2.686859e+25
+magnetic_constant charge_of_electron gravitational_constant 2  *  *  * 
+1.256637e-06 1.602177e+19 6.672590e+11 2  *  *  * 
+(magnetic_constant * (charge_of_electron * (gravitational_constant * 2)))
+(1.256637e-06  * (1.602177e+19  * (6.672590e+11  * 2)))
+Found match error=8.074565e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672488e-27
+5 mass_of_neutron 5 fine_structure_constant  +  /  * 
+5 1.674929e-27 5 7.297350e-03  +  /  * 
+(5 * (mass_of_neutron / (5 + fine_structure_constant)))
+(5 * (1.674929e-27  / (5 + 7.297350e-03 )))
+Found match error=8.074565e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672488e-27
+mass_of_neutron 5 5 fine_structure_constant  +  /  * 
+1.674929e-27 5 5 7.297350e-03  +  /  * 
+(mass_of_neutron * (5 / (5 + fine_structure_constant)))
+(1.674929e-27  * (5 / (5 + 7.297350e-03 )))
+Found match error=4.067543e-06 fundamental constant name=speed_of_light value=2.997925e+08
+result=2.997912e+08
+stefan_boltzmann_constant e 2 pi  +  /  * 
+5.670510e+08 2.718282e+00 2 3.141593e+00  +  /  * 
+(stefan_boltzmann_constant * (e / (2 + pi)))
+(5.670510e+08  * (2.718282e+00  / (2 + 3.141593e+00 )))
+Found match error=4.067543e-06 fundamental constant name=speed_of_light value=2.997925e+08
+result=2.997912e+08
+e stefan_boltzmann_constant 2 pi  +  /  * 
+2.718282e+00 5.670510e+08 2 3.141593e+00  +  /  * 
+(e * (stefan_boltzmann_constant / (2 + pi)))
+(2.718282e+00  * (5.670510e+08  / (2 + 3.141593e+00 )))
+Found match error=9.181121e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313747e+00
+4 acceleration_due_to_gravity 2 e  +  /  * 
+4 9.806650e+00 2 2.718282e+00  +  /  * 
+(4 * (acceleration_due_to_gravity / (2 + e)))
+(4 * (9.806650e+00  / (2 + 2.718282e+00 )))
+Found match error=9.181121e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313747e+00
+acceleration_due_to_gravity 4 2 e  +  /  * 
+9.806650e+00 4 2 2.718282e+00  +  /  * 
+(acceleration_due_to_gravity * (4 / (2 + e)))
+(9.806650e+00  * (4 / (2 + 2.718282e+00 )))
+Found match error=4.067543e-06 fundamental constant name=speed_of_light value=2.997925e+08
+result=2.997912e+08
+stefan_boltzmann_constant e pi 2  +  /  * 
+5.670510e+08 2.718282e+00 3.141593e+00 2  +  /  * 
+(stefan_boltzmann_constant * (e / (pi + 2)))
+(5.670510e+08  * (2.718282e+00  / (3.141593e+00  + 2)))
+Found match error=4.067543e-06 fundamental constant name=speed_of_light value=2.997925e+08
+result=2.997912e+08
+e stefan_boltzmann_constant pi 2  +  /  * 
+2.718282e+00 5.670510e+08 3.141593e+00 2  +  /  * 
+(e * (stefan_boltzmann_constant / (pi + 2)))
+(2.718282e+00  * (5.670510e+08  / (3.141593e+00  + 2)))
+Found match error=9.181121e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313747e+00
+4 acceleration_due_to_gravity e 2  +  /  * 
+4 9.806650e+00 2.718282e+00 2  +  /  * 
+(4 * (acceleration_due_to_gravity / (e + 2)))
+(4 * (9.806650e+00  / (2.718282e+00  + 2)))
+Found match error=9.181121e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313747e+00
+acceleration_due_to_gravity 4 e 2  +  /  * 
+9.806650e+00 4 2.718282e+00 2  +  /  * 
+(acceleration_due_to_gravity * (4 / (e + 2)))
+(9.806650e+00  * (4 / (2.718282e+00  + 2)))
+Found match error=8.074565e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672488e-27
+5 mass_of_neutron fine_structure_constant 5  +  /  * 
+5 1.674929e-27 7.297350e-03 5  +  /  * 
+(5 * (mass_of_neutron / (fine_structure_constant + 5)))
+(5 * (1.674929e-27  / (7.297350e-03  + 5)))
+Found match error=8.074565e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672488e-27
+mass_of_neutron 5 fine_structure_constant 5  +  /  * 
+1.674929e-27 5 7.297350e-03 5  +  /  * 
+(mass_of_neutron * (5 / (fine_structure_constant + 5)))
+(1.674929e-27  * (5 / (7.297350e-03  + 5)))
+Found match error=7.358332e-06 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670468e+08
+avodagro_constant electronic_radius 3 fine_structure_constant  -  /  * 
+6.022137e+23 2.817941e-15 3 7.297350e-03  -  /  * 
+(avodagro_constant * (electronic_radius / (3 - fine_structure_constant)))
+(6.022137e+23  * (2.817941e-15  / (3 - 7.297350e-03 )))
+Found match error=7.358332e-06 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670468e+08
+electronic_radius avodagro_constant 3 fine_structure_constant  -  /  * 
+2.817941e-15 6.022137e+23 3 7.297350e-03  -  /  * 
+(electronic_radius * (avodagro_constant / (3 - fine_structure_constant)))
+(2.817941e-15  * (6.022137e+23  / (3 - 7.297350e-03 )))
+Found match error=8.286901e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675068e-27
+5 mass_of_proton 5 fine_structure_constant  -  /  * 
+5 1.672623e-27 5 7.297350e-03  -  /  * 
+(5 * (mass_of_proton / (5 - fine_structure_constant)))
+(5 * (1.672623e-27  / (5 - 7.297350e-03 )))
+Found match error=8.286901e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675068e-27
+mass_of_proton 5 5 fine_structure_constant  -  /  * 
+1.672623e-27 5 5 7.297350e-03  -  /  * 
+(mass_of_proton * (5 / (5 - fine_structure_constant)))
+(1.672623e-27  * (5 / (5 - 7.297350e-03 )))
+Found match error=9.854433e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141902e+00
+acceleration_due_to_gravity 3 faraday_constant magnetic_constant  *  +  / 
+9.806650e+00 3 9.648453e+04 1.256637e-06  *  +  / 
+(acceleration_due_to_gravity / (3 + (faraday_constant * magnetic_constant)))
+(9.806650e+00  / (3 + (9.648453e+04  * 1.256637e-06 )))
+Found match error=4.756468e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256697e-06
+speed_of_light gravitational_constant loschmidt_constant electric_constant  *  +  / 
+2.997925e+08 6.672590e+11 2.686736e+25 8.854188e-12  *  +  / 
+(speed_of_light / (gravitational_constant + (loschmidt_constant * electric_constant)))
+(2.997925e+08  / (6.672590e+11  + (2.686736e+25  * 8.854188e-12 )))
+Found match error=4.756468e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256697e-06
+speed_of_light gravitational_constant electric_constant loschmidt_constant  *  +  / 
+2.997925e+08 6.672590e+11 8.854188e-12 2.686736e+25  *  +  / 
+(speed_of_light / (gravitational_constant + (electric_constant * loschmidt_constant)))
+(2.997925e+08  / (6.672590e+11  + (8.854188e-12  * 2.686736e+25 )))
+Found match error=9.854433e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141902e+00
+acceleration_due_to_gravity 3 magnetic_constant faraday_constant  *  +  / 
+9.806650e+00 3 1.256637e-06 9.648453e+04  *  +  / 
+(acceleration_due_to_gravity / (3 + (magnetic_constant * faraday_constant)))
+(9.806650e+00  / (3 + (1.256637e-06  * 9.648453e+04 )))
+Found match error=8.074565e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672488e-27
+mass_of_neutron 1 fine_structure_constant 5  /  +  / 
+1.674929e-27 1 7.297350e-03 5  /  +  / 
+(mass_of_neutron / (1 + (fine_structure_constant / 5)))
+(1.674929e-27  / (1 + (7.297350e-03  / 5)))
+Found match error=4.856657e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141440e+00
+molar_gas_constant e acceleration_due_to_gravity fine_structure_constant  *  -  / 
+8.314510e+00 2.718282e+00 9.806650e+00 7.297350e-03  *  -  / 
+(molar_gas_constant / (e - (acceleration_due_to_gravity * fine_structure_constant)))
+(8.314510e+00  / (2.718282e+00  - (9.806650e+00  * 7.297350e-03 )))
+Found match error=7.269639e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141364e+00
+3 1 loschmidt_constant mass_of_neutron  *  -  / 
+3 1 2.686736e+25 1.674929e-27  *  -  / 
+(3 / (1 - (loschmidt_constant * mass_of_neutron)))
+(3 / (1 - (2.686736e+25  * 1.674929e-27 )))
+Found match error=7.269639e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141364e+00
+3 1 mass_of_neutron loschmidt_constant  *  -  / 
+3 1 1.674929e-27 2.686736e+25  *  -  / 
+(3 / (1 - (mass_of_neutron * loschmidt_constant)))
+(3 / (1 - (1.674929e-27  * 2.686736e+25 )))
+Found match error=4.856657e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141440e+00
+molar_gas_constant e fine_structure_constant acceleration_due_to_gravity  *  -  / 
+8.314510e+00 2.718282e+00 7.297350e-03 9.806650e+00  *  -  / 
+(molar_gas_constant / (e - (fine_structure_constant * acceleration_due_to_gravity)))
+(8.314510e+00  / (2.718282e+00  - (7.297350e-03  * 9.806650e+00 )))
+Found match error=9.631274e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141290e+00
+molar_gas_constant 3 semitone_multiple 3  /  -  / 
+8.314510e+00 3 1.059463e+00 3  /  -  / 
+(molar_gas_constant / (3 - (semitone_multiple / 3)))
+(8.314510e+00  / (3 - (1.059463e+00  / 3)))
+Found match error=6.032981e-05 fundamental constant name=speed_of_light value=2.997925e+08
+result=2.997744e+08
+stefan_boltzmann_constant pi 5 4  /  -  / 
+5.670510e+08 3.141593e+00 5 4  /  -  / 
+(stefan_boltzmann_constant / (pi - (5 / 4)))
+(5.670510e+08  / (3.141593e+00  - (5 / 4)))
+Found match error=8.286901e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675068e-27
+mass_of_proton 1 fine_structure_constant 5  /  -  / 
+1.672623e-27 1 7.297350e-03 5  /  -  / 
+(mass_of_proton / (1 - (fine_structure_constant / 5)))
+(1.672623e-27  / (1 - (7.297350e-03  / 5)))
+Found match error=4.579443e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.672284e+11
+loschmidt_constant charge_of_electron magnetic_constant magnetic_constant  +  *  / 
+2.686736e+25 1.602177e+19 1.256637e-06 1.256637e-06  +  *  / 
+(loschmidt_constant / (charge_of_electron * (magnetic_constant + magnetic_constant)))
+(2.686736e+25  / (1.602177e+19  * (1.256637e-06  + 1.256637e-06 )))
+Found match error=4.579443e-05 fundamental constant name=charge_of_electron value=1.602177e+19
+result=1.602104e+19
+loschmidt_constant gravitational_constant magnetic_constant magnetic_constant  +  *  / 
+2.686736e+25 6.672590e+11 1.256637e-06 1.256637e-06  +  *  / 
+(loschmidt_constant / (gravitational_constant * (magnetic_constant + magnetic_constant)))
+(2.686736e+25  / (6.672590e+11  * (1.256637e-06  + 1.256637e-06 )))
+Found match error=4.579443e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.672284e+11
+loschmidt_constant magnetic_constant charge_of_electron charge_of_electron  +  *  / 
+2.686736e+25 1.256637e-06 1.602177e+19 1.602177e+19  +  *  / 
+(loschmidt_constant / (magnetic_constant * (charge_of_electron + charge_of_electron)))
+(2.686736e+25  / (1.256637e-06  * (1.602177e+19  + 1.602177e+19 )))
+Found match error=4.579443e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256580e-06
+loschmidt_constant gravitational_constant charge_of_electron charge_of_electron  +  *  / 
+2.686736e+25 6.672590e+11 1.602177e+19 1.602177e+19  +  *  / 
+(loschmidt_constant / (gravitational_constant * (charge_of_electron + charge_of_electron)))
+(2.686736e+25  / (6.672590e+11  * (1.602177e+19  + 1.602177e+19 )))
+Found match error=4.579443e-05 fundamental constant name=charge_of_electron value=1.602177e+19
+result=1.602104e+19
+loschmidt_constant magnetic_constant gravitational_constant gravitational_constant  +  *  / 
+2.686736e+25 1.256637e-06 6.672590e+11 6.672590e+11  +  *  / 
+(loschmidt_constant / (magnetic_constant * (gravitational_constant + gravitational_constant)))
+(2.686736e+25  / (1.256637e-06  * (6.672590e+11  + 6.672590e+11 )))
+Found match error=4.579443e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256580e-06
+loschmidt_constant charge_of_electron gravitational_constant gravitational_constant  +  *  / 
+2.686736e+25 1.602177e+19 6.672590e+11 6.672590e+11  +  *  / 
+(loschmidt_constant / (charge_of_electron * (gravitational_constant + gravitational_constant)))
+(2.686736e+25  / (1.602177e+19  * (6.672590e+11  + 6.672590e+11 )))
+Found match error=6.681844e-11 fundamental constant name=electric_constant value=8.854188e-12
+result=8.854188e-12
+1 magnetic_constant speed_of_light speed_of_light  *  *  / 
+1 1.256637e-06 2.997925e+08 2.997925e+08  *  *  / 
+(1 / (magnetic_constant * (speed_of_light * speed_of_light)))
+(1 / (1.256637e-06  * (2.997925e+08  * 2.997925e+08 )))
+Found match error=6.681844e-11 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256637e-06
+1 electric_constant speed_of_light speed_of_light  *  *  / 
+1 8.854188e-12 2.997925e+08 2.997925e+08  *  *  / 
+(1 / (electric_constant * (speed_of_light * speed_of_light)))
+(1 / (8.854188e-12  * (2.997925e+08  * 2.997925e+08 )))
+Found match error=6.681844e-11 fundamental constant name=electric_constant value=8.854188e-12
+result=8.854188e-12
+1 speed_of_light magnetic_constant speed_of_light  *  *  / 
+1 2.997925e+08 1.256637e-06 2.997925e+08  *  *  / 
+(1 / (speed_of_light * (magnetic_constant * speed_of_light)))
+(1 / (2.997925e+08  * (1.256637e-06  * 2.997925e+08 )))
+Found match error=6.681844e-11 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256637e-06
+1 speed_of_light electric_constant speed_of_light  *  *  / 
+1 2.997925e+08 8.854188e-12 2.997925e+08  *  *  / 
+(1 / (speed_of_light * (electric_constant * speed_of_light)))
+(1 / (2.997925e+08  * (8.854188e-12  * 2.997925e+08 )))
+Found match error=6.681844e-11 fundamental constant name=electric_constant value=8.854188e-12
+result=8.854188e-12
+1 speed_of_light speed_of_light magnetic_constant  *  *  / 
+1 2.997925e+08 2.997925e+08 1.256637e-06  *  *  / 
+(1 / (speed_of_light * (speed_of_light * magnetic_constant)))
+(1 / (2.997925e+08  * (2.997925e+08  * 1.256637e-06 )))
+Found match error=4.579443e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.672284e+11
+loschmidt_constant 2 charge_of_electron magnetic_constant  *  *  / 
+2.686736e+25 2 1.602177e+19 1.256637e-06  *  *  / 
+(loschmidt_constant / (2 * (charge_of_electron * magnetic_constant)))
+(2.686736e+25  / (2 * (1.602177e+19  * 1.256637e-06 )))
+Found match error=4.579443e-05 fundamental constant name=charge_of_electron value=1.602177e+19
+result=1.602104e+19
+loschmidt_constant 2 gravitational_constant magnetic_constant  *  *  / 
+2.686736e+25 2 6.672590e+11 1.256637e-06  *  *  / 
+(loschmidt_constant / (2 * (gravitational_constant * magnetic_constant)))
+(2.686736e+25  / (2 * (6.672590e+11  * 1.256637e-06 )))
+Found match error=4.579443e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.672284e+11
+loschmidt_constant charge_of_electron 2 magnetic_constant  *  *  / 
+2.686736e+25 1.602177e+19 2 1.256637e-06  *  *  / 
+(loschmidt_constant / (charge_of_electron * (2 * magnetic_constant)))
+(2.686736e+25  / (1.602177e+19  * (2 * 1.256637e-06 )))
+Found match error=4.579443e-05 fundamental constant name=charge_of_electron value=1.602177e+19
+result=1.602104e+19
+loschmidt_constant gravitational_constant 2 magnetic_constant  *  *  / 
+2.686736e+25 6.672590e+11 2 1.256637e-06  *  *  / 
+(loschmidt_constant / (gravitational_constant * (2 * magnetic_constant)))
+(2.686736e+25  / (6.672590e+11  * (2 * 1.256637e-06 )))
+Found match error=6.681844e-11 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256637e-06
+1 speed_of_light speed_of_light electric_constant  *  *  / 
+1 2.997925e+08 2.997925e+08 8.854188e-12  *  *  / 
+(1 / (speed_of_light * (speed_of_light * electric_constant)))
+(1 / (2.997925e+08  * (2.997925e+08  * 8.854188e-12 )))
+Found match error=4.579443e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.672284e+11
+loschmidt_constant 2 magnetic_constant charge_of_electron  *  *  / 
+2.686736e+25 2 1.256637e-06 1.602177e+19  *  *  / 
+(loschmidt_constant / (2 * (magnetic_constant * charge_of_electron)))
+(2.686736e+25  / (2 * (1.256637e-06  * 1.602177e+19 )))
+Found match error=4.579443e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256580e-06
+loschmidt_constant 2 gravitational_constant charge_of_electron  *  *  / 
+2.686736e+25 2 6.672590e+11 1.602177e+19  *  *  / 
+(loschmidt_constant / (2 * (gravitational_constant * charge_of_electron)))
+(2.686736e+25  / (2 * (6.672590e+11  * 1.602177e+19 )))
+Found match error=4.579443e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.672284e+11
+loschmidt_constant magnetic_constant 2 charge_of_electron  *  *  / 
+2.686736e+25 1.256637e-06 2 1.602177e+19  *  *  / 
+(loschmidt_constant / (magnetic_constant * (2 * charge_of_electron)))
+(2.686736e+25  / (1.256637e-06  * (2 * 1.602177e+19 )))
+Found match error=4.579443e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256580e-06
+loschmidt_constant gravitational_constant 2 charge_of_electron  *  *  / 
+2.686736e+25 6.672590e+11 2 1.602177e+19  *  *  / 
+(loschmidt_constant / (gravitational_constant * (2 * charge_of_electron)))
+(2.686736e+25  / (6.672590e+11  * (2 * 1.602177e+19 )))
+Found match error=4.579443e-05 fundamental constant name=charge_of_electron value=1.602177e+19
+result=1.602104e+19
+loschmidt_constant 2 magnetic_constant gravitational_constant  *  *  / 
+2.686736e+25 2 1.256637e-06 6.672590e+11  *  *  / 
+(loschmidt_constant / (2 * (magnetic_constant * gravitational_constant)))
+(2.686736e+25  / (2 * (1.256637e-06  * 6.672590e+11 )))
+Found match error=4.579443e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256580e-06
+loschmidt_constant 2 charge_of_electron gravitational_constant  *  *  / 
+2.686736e+25 2 1.602177e+19 6.672590e+11  *  *  / 
+(loschmidt_constant / (2 * (charge_of_electron * gravitational_constant)))
+(2.686736e+25  / (2 * (1.602177e+19  * 6.672590e+11 )))
+Found match error=4.579443e-05 fundamental constant name=charge_of_electron value=1.602177e+19
+result=1.602104e+19
+loschmidt_constant magnetic_constant 2 gravitational_constant  *  *  / 
+2.686736e+25 1.256637e-06 2 6.672590e+11  *  *  / 
+(loschmidt_constant / (magnetic_constant * (2 * gravitational_constant)))
+(2.686736e+25  / (1.256637e-06  * (2 * 6.672590e+11 )))
+Found match error=4.579443e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256580e-06
+loschmidt_constant charge_of_electron 2 gravitational_constant  *  *  / 
+2.686736e+25 1.602177e+19 2 6.672590e+11  *  *  / 
+(loschmidt_constant / (charge_of_electron * (2 * gravitational_constant)))
+(2.686736e+25  / (1.602177e+19  * (2 * 6.672590e+11 )))
+Found match error=4.579443e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.672284e+11
+loschmidt_constant charge_of_electron magnetic_constant 2  *  *  / 
+2.686736e+25 1.602177e+19 1.256637e-06 2  *  *  / 
+(loschmidt_constant / (charge_of_electron * (magnetic_constant * 2)))
+(2.686736e+25  / (1.602177e+19  * (1.256637e-06  * 2)))
+Found match error=4.579443e-05 fundamental constant name=charge_of_electron value=1.602177e+19
+result=1.602104e+19
+loschmidt_constant gravitational_constant magnetic_constant 2  *  *  / 
+2.686736e+25 6.672590e+11 1.256637e-06 2  *  *  / 
+(loschmidt_constant / (gravitational_constant * (magnetic_constant * 2)))
+(2.686736e+25  / (6.672590e+11  * (1.256637e-06  * 2)))
+Found match error=4.579443e-05 fundamental constant name=gravitational_constant value=6.672590e+11
+result=6.672284e+11
+loschmidt_constant magnetic_constant charge_of_electron 2  *  *  / 
+2.686736e+25 1.256637e-06 1.602177e+19 2  *  *  / 
+(loschmidt_constant / (magnetic_constant * (charge_of_electron * 2)))
+(2.686736e+25  / (1.256637e-06  * (1.602177e+19  * 2)))
+Found match error=4.579443e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256580e-06
+loschmidt_constant gravitational_constant charge_of_electron 2  *  *  / 
+2.686736e+25 6.672590e+11 1.602177e+19 2  *  *  / 
+(loschmidt_constant / (gravitational_constant * (charge_of_electron * 2)))
+(2.686736e+25  / (6.672590e+11  * (1.602177e+19  * 2)))
+Found match error=4.579443e-05 fundamental constant name=charge_of_electron value=1.602177e+19
+result=1.602104e+19
+loschmidt_constant magnetic_constant gravitational_constant 2  *  *  / 
+2.686736e+25 1.256637e-06 6.672590e+11 2  *  *  / 
+(loschmidt_constant / (magnetic_constant * (gravitational_constant * 2)))
+(2.686736e+25  / (1.256637e-06  * (6.672590e+11  * 2)))
+Found match error=4.579443e-05 fundamental constant name=magnetic_constant value=1.256637e-06
+result=1.256580e-06
+loschmidt_constant charge_of_electron gravitational_constant 2  *  *  / 
+2.686736e+25 1.602177e+19 6.672590e+11 2  *  *  / 
+(loschmidt_constant / (charge_of_electron * (gravitational_constant * 2)))
+(2.686736e+25  / (1.602177e+19  * (6.672590e+11  * 2)))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton 5 5 fine_structure_constant  +  /  / 
+1.672623e-27 5 5 7.297350e-03  +  /  / 
+(mass_of_proton / (5 / (5 + fine_structure_constant)))
+(1.672623e-27  / (5 / (5 + 7.297350e-03 )))
+Found match error=4.067527e-06 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670533e+08
+speed_of_light e 2 pi  +  /  / 
+2.997925e+08 2.718282e+00 2 3.141593e+00  +  /  / 
+(speed_of_light / (e / (2 + pi)))
+(2.997925e+08  / (2.718282e+00  / (2 + 3.141593e+00 )))
+Found match error=4.067527e-06 fundamental constant name=e value=2.718282e+00
+result=2.718293e+00
+speed_of_light stefan_boltzmann_constant 2 pi  +  /  / 
+2.997925e+08 5.670510e+08 2 3.141593e+00  +  /  / 
+(speed_of_light / (stefan_boltzmann_constant / (2 + pi)))
+(2.997925e+08  / (5.670510e+08  / (2 + 3.141593e+00 )))
+Found match error=9.180278e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.807550e+00
+molar_gas_constant 4 2 e  +  /  / 
+8.314510e+00 4 2 2.718282e+00  +  /  / 
+(molar_gas_constant / (4 / (2 + e)))
+(8.314510e+00  / (4 / (2 + 2.718282e+00 )))
+Found match error=4.067527e-06 fundamental constant name=stefan_boltzmann_constant value=5.670510e+08
+result=5.670533e+08
+speed_of_light e pi 2  +  /  / 
+2.997925e+08 2.718282e+00 3.141593e+00 2  +  /  / 
+(speed_of_light / (e / (pi + 2)))
+(2.997925e+08  / (2.718282e+00  / (3.141593e+00  + 2)))
+Found match error=4.067527e-06 fundamental constant name=e value=2.718282e+00
+result=2.718293e+00
+speed_of_light stefan_boltzmann_constant pi 2  +  /  / 
+2.997925e+08 5.670510e+08 3.141593e+00 2  +  /  / 
+(speed_of_light / (stefan_boltzmann_constant / (pi + 2)))
+(2.997925e+08  / (5.670510e+08  / (3.141593e+00  + 2)))
+Found match error=9.180278e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.807550e+00
+molar_gas_constant 4 e 2  +  /  / 
+8.314510e+00 4 2.718282e+00 2  +  /  / 
+(molar_gas_constant / (4 / (e + 2)))
+(8.314510e+00  / (4 / (2.718282e+00  + 2)))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton 5 fine_structure_constant 5  +  /  / 
+1.672623e-27 5 7.297350e-03 5  +  /  / 
+(mass_of_proton / (5 / (fine_structure_constant + 5)))
+(1.672623e-27  / (5 / (7.297350e-03  + 5)))
+Found match error=7.358278e-06 fundamental constant name=avodagro_constant value=6.022137e+23
+result=6.022181e+23
+stefan_boltzmann_constant electronic_radius 3 fine_structure_constant  -  /  / 
+5.670510e+08 2.817941e-15 3 7.297350e-03  -  /  / 
+(stefan_boltzmann_constant / (electronic_radius / (3 - fine_structure_constant)))
+(5.670510e+08  / (2.817941e-15  / (3 - 7.297350e-03 )))
+Found match error=7.358278e-06 fundamental constant name=electronic_radius value=2.817941e-15
+result=2.817962e-15
+stefan_boltzmann_constant avodagro_constant 3 fine_structure_constant  -  /  / 
+5.670510e+08 6.022137e+23 3 7.297350e-03  -  /  / 
+(stefan_boltzmann_constant / (avodagro_constant / (3 - fine_structure_constant)))
+(5.670510e+08  / (6.022137e+23  / (3 - 7.297350e-03 )))
+Found match error=8.287588e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672484e-27
+mass_of_neutron 5 5 fine_structure_constant  -  /  / 
+1.674929e-27 5 5 7.297350e-03  -  /  / 
+(mass_of_neutron / (5 / (5 - fine_structure_constant)))
+(1.674929e-27  / (5 / (5 - 7.297350e-03 )))
+Found match error=1.026161e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674946e-27
+mass_of_proton mass_of_proton pi  !  !  /  + 
+1.672623e-27 1.672623e-27 3.141593e+00  !  !  /  + 
+(mass_of_proton + (mass_of_proton / ((pi)!)!))
+(1.672623e-27  + (1.672623e-27  / ((3.141593e+00 )!)!))
+Found match error=1.026161e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674946e-27
+mass_of_proton mass_of_proton 3  !  !  /  + 
+1.672623e-27 1.672623e-27 3  !  !  /  + 
+(mass_of_proton + (mass_of_proton / ((3)!)!))
+(1.672623e-27  + (1.672623e-27  / ((3)!)!))
+Found match error=1.219075e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672603e-27
+mass_of_neutron mass_of_neutron pi  !  !  /  - 
+1.674929e-27 1.674929e-27 3.141593e+00  !  !  /  - 
+(mass_of_neutron - (mass_of_neutron / ((pi)!)!))
+(1.674929e-27  - (1.674929e-27  / ((3.141593e+00 )!)!))
+Found match error=1.219075e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672603e-27
+mass_of_neutron mass_of_neutron 3  !  !  /  - 
+1.674929e-27 1.674929e-27 3  !  !  /  - 
+(mass_of_neutron - (mass_of_neutron / ((3)!)!))
+(1.674929e-27  - (1.674929e-27  / ((3)!)!))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron golden_ratio  * mass_of_electron  +  + 
+1.672623e-27 9.109390e-31 1.618034e+00  * 9.109390e-31  +  + 
+(mass_of_proton + ((mass_of_electron * golden_ratio) + mass_of_electron))
+(1.672623e-27  + ((9.109390e-31  * 1.618034e+00 ) + 9.109390e-31 ))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton golden_ratio mass_of_electron  * mass_of_electron  +  + 
+1.672623e-27 1.618034e+00 9.109390e-31  * 9.109390e-31  +  + 
+(mass_of_proton + ((golden_ratio * mass_of_electron) + mass_of_electron))
+(1.672623e-27  + ((1.618034e+00  * 9.109390e-31 ) + 9.109390e-31 ))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_electron mass_of_electron golden_ratio  * mass_of_proton  +  + 
+9.109390e-31 9.109390e-31 1.618034e+00  * 1.672623e-27  +  + 
+(mass_of_electron + ((mass_of_electron * golden_ratio) + mass_of_proton))
+(9.109390e-31  + ((9.109390e-31  * 1.618034e+00 ) + 1.672623e-27 ))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_electron golden_ratio mass_of_electron  * mass_of_proton  +  + 
+9.109390e-31 1.618034e+00 9.109390e-31  * 1.672623e-27  +  + 
+(mass_of_electron + ((golden_ratio * mass_of_electron) + mass_of_proton))
+(9.109390e-31  + ((1.618034e+00  * 9.109390e-31 ) + 1.672623e-27 ))
+Found match error=9.581289e-06 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.806744e+00
+2 3 pi  * golden_ratio  -  + 
+2 3 3.141593e+00  * 1.618034e+00  -  + 
+(2 + ((3 * pi) - golden_ratio))
+(2 + ((3 * 3.141593e+00 ) - 1.618034e+00 ))
+Found match error=9.581289e-06 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.806744e+00
+2 pi 3  * golden_ratio  -  + 
+2 3.141593e+00 3  * 1.618034e+00  -  + 
+(2 + ((pi * 3) - golden_ratio))
+(2 + ((3.141593e+00  * 3) - 1.618034e+00 ))
+Found match error=5.806787e-05 fundamental constant name=golden_ratio value=1.618034e+00
+result=1.618128e+00
+2 3 pi  * acceleration_due_to_gravity  -  + 
+2 3 3.141593e+00  * 9.806650e+00  -  + 
+(2 + ((3 * pi) - acceleration_due_to_gravity))
+(2 + ((3 * 3.141593e+00 ) - 9.806650e+00 ))
+Found match error=5.806787e-05 fundamental constant name=golden_ratio value=1.618034e+00
+result=1.618128e+00
+2 pi 3  * acceleration_due_to_gravity  -  + 
+2 3.141593e+00 3  * 9.806650e+00  -  + 
+(2 + ((pi * 3) - acceleration_due_to_gravity))
+(2 + ((3.141593e+00  * 3) - 9.806650e+00 ))
+Found match error=5.737104e-05 fundamental constant name=acceleration_due_to_gravity value=9.806650e+00
+result=9.807213e+00
+molar_gas_constant 3 2  / fine_structure_constant  -  + 
+8.314510e+00 3 2  / 7.297350e-03  -  + 
+(molar_gas_constant + ((3 / 2) - fine_structure_constant))
+(8.314510e+00  + ((3 / 2) - 7.297350e-03 ))
+Found match error=4.818072e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059412e+00
+1 5 pi  + fine_structure_constant  *  + 
+1 5 3.141593e+00  + 7.297350e-03  *  + 
+(1 + ((5 + pi) * fine_structure_constant))
+(1 + ((5 + 3.141593e+00 ) * 7.297350e-03 ))
+Found match error=4.818072e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059412e+00
+1 pi 5  + fine_structure_constant  *  + 
+1 3.141593e+00 5  + 7.297350e-03  *  + 
+(1 + ((pi + 5) * fine_structure_constant))
+(1 + ((3.141593e+00  + 5) * 7.297350e-03 ))
+Found match error=7.948149e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675062e-27
+mass_of_proton golden_ratio semitone_multiple  + mass_of_electron  *  + 
+1.672623e-27 1.618034e+00 1.059463e+00  + 9.109390e-31  *  + 
+(mass_of_proton + ((golden_ratio + semitone_multiple) * mass_of_electron))
+(1.672623e-27  + ((1.618034e+00  + 1.059463e+00 ) * 9.109390e-31 ))
+Found match error=7.948149e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675062e-27
+mass_of_proton semitone_multiple golden_ratio  + mass_of_electron  *  + 
+1.672623e-27 1.059463e+00 1.618034e+00  + 9.109390e-31  *  + 
+(mass_of_proton + ((semitone_multiple + golden_ratio) * mass_of_electron))
+(1.672623e-27  + ((1.059463e+00  + 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton 1 golden_ratio  + mass_of_electron  *  + 
+1.672623e-27 1 1.618034e+00  + 9.109390e-31  *  + 
+(mass_of_proton + ((1 + golden_ratio) * mass_of_electron))
+(1.672623e-27  + ((1 + 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton golden_ratio 1  + mass_of_electron  *  + 
+1.672623e-27 1.618034e+00 1  + 9.109390e-31  *  + 
+(mass_of_proton + ((golden_ratio + 1) * mass_of_electron))
+(1.672623e-27  + ((1.618034e+00  + 1) * 9.109390e-31 ))
+Found match error=9.769096e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675093e-27
+mass_of_proton e fine_structure_constant  - mass_of_electron  *  + 
+1.672623e-27 2.718282e+00 7.297350e-03  - 9.109390e-31  *  + 
+(mass_of_proton + ((e - fine_structure_constant) * mass_of_electron))
+(1.672623e-27  + ((2.718282e+00  - 7.297350e-03 ) * 9.109390e-31 ))
+Found match error=9.784477e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672459e-27
+mass_of_neutron fine_structure_constant e  - mass_of_electron  *  + 
+1.674929e-27 7.297350e-03 2.718282e+00  - 9.109390e-31  *  + 
+(mass_of_neutron + ((fine_structure_constant - e) * mass_of_electron))
+(1.674929e-27  + ((7.297350e-03  - 2.718282e+00 ) * 9.109390e-31 ))
+Found match error=8.124845e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674793e-27
+mass_of_proton 4 golden_ratio  - mass_of_electron  *  + 
+1.672623e-27 4 1.618034e+00  - 9.109390e-31  *  + 
+(mass_of_proton + ((4 - golden_ratio) * mass_of_electron))
+(1.672623e-27  + ((4 - 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=8.134724e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672759e-27
+mass_of_neutron golden_ratio 4  - mass_of_electron  *  + 
+1.674929e-27 1.618034e+00 4  - 9.109390e-31  *  + 
+(mass_of_neutron + ((golden_ratio - 4) * mass_of_electron))
+(1.674929e-27  + ((1.618034e+00  - 4) * 9.109390e-31 ))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 3 e  * fine_structure_constant  *  + 
+1 3 2.718282e+00  * 7.297350e-03  *  + 
+(1 + ((3 * e) * fine_structure_constant))
+(1 + ((3 * 2.718282e+00 ) * 7.297350e-03 ))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 e 3  * fine_structure_constant  *  + 
+1 2.718282e+00 3  * 7.297350e-03  *  + 
+(1 + ((e * 3) * fine_structure_constant))
+(1 + ((2.718282e+00  * 3) * 7.297350e-03 ))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 3 fine_structure_constant  * e  *  + 
+1 3 7.297350e-03  * 2.718282e+00  *  + 
+(1 + ((3 * fine_structure_constant) * e))
+(1 + ((3 * 7.297350e-03 ) * 2.718282e+00 ))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 fine_structure_constant 3  * e  *  + 
+1 7.297350e-03 3  * 2.718282e+00  *  + 
+(1 + ((fine_structure_constant * 3) * e))
+(1 + ((7.297350e-03  * 3) * 2.718282e+00 ))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton mass_of_electron golden_ratio  * golden_ratio  *  + 
+1.672623e-27 9.109390e-31 1.618034e+00  * 1.618034e+00  *  + 
+(mass_of_proton + ((mass_of_electron * golden_ratio) * golden_ratio))
+(1.672623e-27  + ((9.109390e-31  * 1.618034e+00 ) * 1.618034e+00 ))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton golden_ratio mass_of_electron  * golden_ratio  *  + 
+1.672623e-27 1.618034e+00 9.109390e-31  * 1.618034e+00  *  + 
+(mass_of_proton + ((golden_ratio * mass_of_electron) * golden_ratio))
+(1.672623e-27  + ((1.618034e+00  * 9.109390e-31 ) * 1.618034e+00 ))
+Found match error=4.714556e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675008e-27
+mass_of_proton golden_ratio golden_ratio  * mass_of_electron  *  + 
+1.672623e-27 1.618034e+00 1.618034e+00  * 9.109390e-31  *  + 
+(mass_of_proton + ((golden_ratio * golden_ratio) * mass_of_electron))
+(1.672623e-27  + ((1.618034e+00  * 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 e fine_structure_constant  * 3  *  + 
+1 2.718282e+00 7.297350e-03  * 3  *  + 
+(1 + ((e * fine_structure_constant) * 3))
+(1 + ((2.718282e+00  * 7.297350e-03 ) * 3))
+Found match error=4.310236e-05 fundamental constant name=semitone_multiple value=1.059463e+00
+result=1.059509e+00
+1 fine_structure_constant e  * 3  *  + 
+1 7.297350e-03 2.718282e+00  * 3  *  + 
+(1 + ((fine_structure_constant * e) * 3))
+(1 + ((7.297350e-03  * 2.718282e+00 ) * 3))
+Found match error=5.679503e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton magnetic_constant avodagro_constant  / semitone_multiple  *  + 
+1.672623e-27 1.256637e-06 6.022137e+23  / 1.059463e+00  *  + 
+(mass_of_proton + ((magnetic_constant / avodagro_constant) * semitone_multiple))
+(1.672623e-27  + ((1.256637e-06  / 6.022137e+23 ) * 1.059463e+00 ))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton mass_of_proton 5  / fine_structure_constant  *  + 
+1.672623e-27 1.672623e-27 5  / 7.297350e-03  *  + 
+(mass_of_proton + ((mass_of_proton / 5) * fine_structure_constant))
+(1.672623e-27  + ((1.672623e-27  / 5) * 7.297350e-03 ))
+Found match error=1.869361e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674960e-27
+mass_of_proton mass_of_electron semitone_multiple  / e  *  + 
+1.672623e-27 9.109390e-31 1.059463e+00  / 2.718282e+00  *  + 
+(mass_of_proton + ((mass_of_electron / semitone_multiple) * e))
+(1.672623e-27  + ((9.109390e-31  / 1.059463e+00 ) * 2.718282e+00 ))
+Found match error=5.679503e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton semitone_multiple avodagro_constant  / magnetic_constant  *  + 
+1.672623e-27 1.059463e+00 6.022137e+23  / 1.256637e-06  *  + 
+(mass_of_proton + ((semitone_multiple / avodagro_constant) * magnetic_constant))
+(1.672623e-27  + ((1.059463e+00  / 6.022137e+23 ) * 1.256637e-06 ))
+Found match error=5.693772e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton 4 charge_of_electron  / electric_constant  *  + 
+1.672623e-27 4 1.602177e+19  / 8.854188e-12  *  + 
+(mass_of_proton + ((4 / charge_of_electron) * electric_constant))
+(1.672623e-27  + ((4 / 1.602177e+19 ) * 8.854188e-12 ))
+Found match error=1.869361e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674960e-27
+mass_of_proton e semitone_multiple  / mass_of_electron  *  + 
+1.672623e-27 2.718282e+00 1.059463e+00  / 9.109390e-31  *  + 
+(mass_of_proton + ((e / semitone_multiple) * mass_of_electron))
+(1.672623e-27  + ((2.718282e+00  / 1.059463e+00 ) * 9.109390e-31 ))
+Found match error=6.267493e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675034e-27
+mass_of_proton molar_gas_constant pi  / mass_of_electron  *  + 
+1.672623e-27 8.314510e+00 3.141593e+00  / 9.109390e-31  *  + 
+(mass_of_proton + ((molar_gas_constant / pi) * mass_of_electron))
+(1.672623e-27  + ((8.314510e+00  / 3.141593e+00 ) * 9.109390e-31 ))
+Found match error=3.220241e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674875e-27
+mass_of_proton 4 golden_ratio  / mass_of_electron  *  + 
+1.672623e-27 4 1.618034e+00  / 9.109390e-31  *  + 
+(mass_of_proton + ((4 / golden_ratio) * mass_of_electron))
+(1.672623e-27  + ((4 / 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=1.704733e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674900e-27
+mass_of_proton 5 2  / mass_of_electron  *  + 
+1.672623e-27 5 2  / 9.109390e-31  *  + 
+(mass_of_proton + ((5 / 2) * mass_of_electron))
+(1.672623e-27  + ((5 / 2) * 9.109390e-31 ))
+Found match error=4.333810e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674856e-27
+mass_of_proton acceleration_due_to_gravity 4  / mass_of_electron  *  + 
+1.672623e-27 9.806650e+00 4  / 9.109390e-31  *  + 
+(mass_of_proton + ((acceleration_due_to_gravity / 4) * mass_of_electron))
+(1.672623e-27  + ((9.806650e+00  / 4) * 9.109390e-31 ))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton fine_structure_constant 5  / mass_of_proton  *  + 
+1.672623e-27 7.297350e-03 5  / 1.672623e-27  *  + 
+(mass_of_proton + ((fine_structure_constant / 5) * mass_of_proton))
+(1.672623e-27  + ((7.297350e-03  / 5) * 1.672623e-27 ))
+Found match error=6.267493e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675034e-27
+mass_of_proton mass_of_electron pi  / molar_gas_constant  *  + 
+1.672623e-27 9.109390e-31 3.141593e+00  / 8.314510e+00  *  + 
+(mass_of_proton + ((mass_of_electron / pi) * molar_gas_constant))
+(1.672623e-27  + ((9.109390e-31  / 3.141593e+00 ) * 8.314510e+00 ))
+Found match error=4.333810e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674856e-27
+mass_of_proton mass_of_electron 4  / acceleration_due_to_gravity  *  + 
+1.672623e-27 9.109390e-31 4  / 9.806650e+00  *  + 
+(mass_of_proton + ((mass_of_electron / 4) * acceleration_due_to_gravity))
+(1.672623e-27  + ((9.109390e-31  / 4) * 9.806650e+00 ))
+Found match error=3.220241e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674875e-27
+mass_of_proton mass_of_electron golden_ratio  / 4  *  + 
+1.672623e-27 9.109390e-31 1.618034e+00  / 4  *  + 
+(mass_of_proton + ((mass_of_electron / golden_ratio) * 4))
+(1.672623e-27  + ((9.109390e-31  / 1.618034e+00 ) * 4))
+Found match error=5.693772e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton electric_constant charge_of_electron  / 4  *  + 
+1.672623e-27 8.854188e-12 1.602177e+19  / 4  *  + 
+(mass_of_proton + ((electric_constant / charge_of_electron) * 4))
+(1.672623e-27  + ((8.854188e-12  / 1.602177e+19 ) * 4))
+Found match error=1.704733e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674900e-27
+mass_of_proton mass_of_electron 2  / 5  *  + 
+1.672623e-27 9.109390e-31 2  / 5  *  + 
+(mass_of_proton + ((mass_of_electron / 2) * 5))
+(1.672623e-27  + ((9.109390e-31  / 2) * 5))
+Found match error=8.697287e-05 fundamental constant name=golden_ratio value=1.618034e+00
+result=1.617893e+00
+1 5 semitone_multiple  + acceleration_due_to_gravity  /  + 
+1 5 1.059463e+00  + 9.806650e+00  /  + 
+(1 + ((5 + semitone_multiple) / acceleration_due_to_gravity))
+(1 + ((5 + 1.059463e+00 ) / 9.806650e+00 ))
+Found match error=8.697287e-05 fundamental constant name=golden_ratio value=1.618034e+00
+result=1.617893e+00
+1 semitone_multiple 5  + acceleration_due_to_gravity  /  + 
+1 1.059463e+00 5  + 9.806650e+00  /  + 
+(1 + ((semitone_multiple + 5) / acceleration_due_to_gravity))
+(1 + ((1.059463e+00  + 5) / 9.806650e+00 ))
+Found match error=1.869361e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674960e-27
+mass_of_proton mass_of_electron e  * semitone_multiple  /  + 
+1.672623e-27 9.109390e-31 2.718282e+00  * 1.059463e+00  /  + 
+(mass_of_proton + ((mass_of_electron * e) / semitone_multiple))
+(1.672623e-27  + ((9.109390e-31  * 2.718282e+00 ) / 1.059463e+00 ))
+Found match error=1.869361e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674960e-27
+mass_of_proton e mass_of_electron  * semitone_multiple  /  + 
+1.672623e-27 2.718282e+00 9.109390e-31  * 1.059463e+00  /  + 
+(mass_of_proton + ((e * mass_of_electron) / semitone_multiple))
+(1.672623e-27  + ((2.718282e+00  * 9.109390e-31 ) / 1.059463e+00 ))
+Found match error=6.267493e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675034e-27
+mass_of_proton molar_gas_constant mass_of_electron  * pi  /  + 
+1.672623e-27 8.314510e+00 9.109390e-31  * 3.141593e+00  /  + 
+(mass_of_proton + ((molar_gas_constant * mass_of_electron) / pi))
+(1.672623e-27  + ((8.314510e+00  * 9.109390e-31 ) / 3.141593e+00 ))
+Found match error=6.267493e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675034e-27
+mass_of_proton mass_of_electron molar_gas_constant  * pi  /  + 
+1.672623e-27 9.109390e-31 8.314510e+00  * 3.141593e+00  /  + 
+(mass_of_proton + ((mass_of_electron * molar_gas_constant) / pi))
+(1.672623e-27  + ((9.109390e-31  * 8.314510e+00 ) / 3.141593e+00 ))
+Found match error=3.220241e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674875e-27
+mass_of_proton 4 mass_of_electron  * golden_ratio  /  + 
+1.672623e-27 4 9.109390e-31  * 1.618034e+00  /  + 
+(mass_of_proton + ((4 * mass_of_electron) / golden_ratio))
+(1.672623e-27  + ((4 * 9.109390e-31 ) / 1.618034e+00 ))
+Found match error=3.220241e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674875e-27
+mass_of_proton mass_of_electron 4  * golden_ratio  /  + 
+1.672623e-27 9.109390e-31 4  * 1.618034e+00  /  + 
+(mass_of_proton + ((mass_of_electron * 4) / golden_ratio))
+(1.672623e-27  + ((9.109390e-31  * 4) / 1.618034e+00 ))
+Found match error=5.693772e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton 4 electric_constant  * charge_of_electron  /  + 
+1.672623e-27 4 8.854188e-12  * 1.602177e+19  /  + 
+(mass_of_proton + ((4 * electric_constant) / charge_of_electron))
+(1.672623e-27  + ((4 * 8.854188e-12 ) / 1.602177e+19 ))
+Found match error=5.693772e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton electric_constant 4  * charge_of_electron  /  + 
+1.672623e-27 8.854188e-12 4  * 1.602177e+19  /  + 
+(mass_of_proton + ((electric_constant * 4) / charge_of_electron))
+(1.672623e-27  + ((8.854188e-12  * 4) / 1.602177e+19 ))
+Found match error=5.679503e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton magnetic_constant semitone_multiple  * avodagro_constant  /  + 
+1.672623e-27 1.256637e-06 1.059463e+00  * 6.022137e+23  /  + 
+(mass_of_proton + ((magnetic_constant * semitone_multiple) / avodagro_constant))
+(1.672623e-27  + ((1.256637e-06  * 1.059463e+00 ) / 6.022137e+23 ))
+Found match error=5.679503e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674834e-27
+mass_of_proton semitone_multiple magnetic_constant  * avodagro_constant  /  + 
+1.672623e-27 1.059463e+00 1.256637e-06  * 6.022137e+23  /  + 
+(mass_of_proton + ((semitone_multiple * magnetic_constant) / avodagro_constant))
+(1.672623e-27  + ((1.059463e+00  * 1.256637e-06 ) / 6.022137e+23 ))
+Found match error=1.704733e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674900e-27
+mass_of_proton 5 mass_of_electron  * 2  /  + 
+1.672623e-27 5 9.109390e-31  * 2  /  + 
+(mass_of_proton + ((5 * mass_of_electron) / 2))
+(1.672623e-27  + ((5 * 9.109390e-31 ) / 2))
+Found match error=1.704733e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674900e-27
+mass_of_proton mass_of_electron 5  * 2  /  + 
+1.672623e-27 9.109390e-31 5  * 2  /  + 
+(mass_of_proton + ((mass_of_electron * 5) / 2))
+(1.672623e-27  + ((9.109390e-31  * 5) / 2))
+Found match error=4.333810e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674856e-27
+mass_of_proton acceleration_due_to_gravity mass_of_electron  * 4  /  + 
+1.672623e-27 9.806650e+00 9.109390e-31  * 4  /  + 
+(mass_of_proton + ((acceleration_due_to_gravity * mass_of_electron) / 4))
+(1.672623e-27  + ((9.806650e+00  * 9.109390e-31 ) / 4))
+Found match error=4.333810e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674856e-27
+mass_of_proton mass_of_electron acceleration_due_to_gravity  * 4  /  + 
+1.672623e-27 9.109390e-31 9.806650e+00  * 4  /  + 
+(mass_of_proton + ((mass_of_electron * acceleration_due_to_gravity) / 4))
+(1.672623e-27  + ((9.109390e-31  * 9.806650e+00 ) / 4))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton mass_of_proton fine_structure_constant  * 5  /  + 
+1.672623e-27 1.672623e-27 7.297350e-03  * 5  /  + 
+(mass_of_proton + ((mass_of_proton * fine_structure_constant) / 5))
+(1.672623e-27  + ((1.672623e-27  * 7.297350e-03 ) / 5))
+Found match error=8.073913e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675064e-27
+mass_of_proton fine_structure_constant mass_of_proton  * 5  /  + 
+1.672623e-27 7.297350e-03 1.672623e-27  * 5  /  + 
+(mass_of_proton + ((fine_structure_constant * mass_of_proton) / 5))
+(1.672623e-27  + ((7.297350e-03  * 1.672623e-27 ) / 5))
+Found match error=4.161820e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674999e-27
+mass_of_proton mass_of_proton faraday_constant  / fine_structure_constant  /  + 
+1.672623e-27 1.672623e-27 9.648453e+04  / 7.297350e-03  /  + 
+(mass_of_proton + ((mass_of_proton / faraday_constant) / fine_structure_constant))
+(1.672623e-27  + ((1.672623e-27  / 9.648453e+04 ) / 7.297350e-03 ))
+Found match error=2.470881e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674970e-27
+mass_of_proton mass_of_proton stefan_boltzmann_constant  / magnetic_constant  /  + 
+1.672623e-27 1.672623e-27 5.670510e+08  / 1.256637e-06  /  + 
+(mass_of_proton + ((mass_of_proton / stefan_boltzmann_constant) / magnetic_constant))
+(1.672623e-27  + ((1.672623e-27  / 5.670510e+08 ) / 1.256637e-06 ))
+Found match error=5.784063e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674832e-27
+mass_of_proton stefan_boltzmann_constant charge_of_electron  / charge_of_electron  /  + 
+1.672623e-27 5.670510e+08 1.602177e+19  / 1.602177e+19  /  + 
+(mass_of_proton + ((stefan_boltzmann_constant / charge_of_electron) / charge_of_electron))
+(1.672623e-27  + ((5.670510e+08  / 1.602177e+19 ) / 1.602177e+19 ))
+Found match error=8.378308e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141856e+00
+3 acceleration_due_to_gravity molar_gas_constant  / molar_gas_constant  /  + 
+3 9.806650e+00 8.314510e+00  / 8.314510e+00  /  + 
+(3 + ((acceleration_due_to_gravity / molar_gas_constant) / molar_gas_constant))
+(3 + ((9.806650e+00  / 8.314510e+00 ) / 8.314510e+00 ))
+Found match error=4.161820e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674999e-27
+mass_of_proton mass_of_proton fine_structure_constant  / faraday_constant  /  + 
+1.672623e-27 1.672623e-27 7.297350e-03  / 9.648453e+04  /  + 
+(mass_of_proton + ((mass_of_proton / fine_structure_constant) / faraday_constant))
+(1.672623e-27  + ((1.672623e-27  / 7.297350e-03 ) / 9.648453e+04 ))
+Found match error=2.470881e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674970e-27
+mass_of_proton mass_of_proton magnetic_constant  / stefan_boltzmann_constant  /  + 
+1.672623e-27 1.672623e-27 1.256637e-06  / 5.670510e+08  /  + 
+(mass_of_proton + ((mass_of_proton / magnetic_constant) / stefan_boltzmann_constant))
+(1.672623e-27  + ((1.672623e-27  / 1.256637e-06 ) / 5.670510e+08 ))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron golden_ratio  * mass_of_electron  +  - 
+1.674929e-27 9.109390e-31 1.618034e+00  * 9.109390e-31  +  - 
+(mass_of_neutron - ((mass_of_electron * golden_ratio) + mass_of_electron))
+(1.674929e-27  - ((9.109390e-31  * 1.618034e+00 ) + 9.109390e-31 ))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron golden_ratio mass_of_electron  * mass_of_electron  +  - 
+1.674929e-27 1.618034e+00 9.109390e-31  * 9.109390e-31  +  - 
+(mass_of_neutron - ((golden_ratio * mass_of_electron) + mass_of_electron))
+(1.674929e-27  - ((1.618034e+00  * 9.109390e-31 ) + 9.109390e-31 ))
+Found match error=5.410862e-05 fundamental constant name=pi value=3.141593e+00
+result=3.141423e+00
+5 2 molar_gas_constant  / golden_ratio  +  - 
+5 2 8.314510e+00  / 1.618034e+00  +  - 
+(5 - ((2 / molar_gas_constant) + golden_ratio))
+(5 - ((2 / 8.314510e+00 ) + 1.618034e+00 ))
+Found match error=6.767543e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313947e+00
+acceleration_due_to_gravity 3 2  / fine_structure_constant  -  - 
+9.806650e+00 3 2  / 7.297350e-03  -  - 
+(acceleration_due_to_gravity - ((3 / 2) - fine_structure_constant))
+(9.806650e+00  - ((3 / 2) - 7.297350e-03 ))
+Found match error=6.767543e-05 fundamental constant name=molar_gas_constant value=8.314510e+00
+result=8.313947e+00
+fine_structure_constant 3 2  / acceleration_due_to_gravity  -  - 
+7.297350e-03 3 2  / 9.806650e+00  -  - 
+(fine_structure_constant - ((3 / 2) - acceleration_due_to_gravity))
+(7.297350e-03  - ((3 / 2) - 9.806650e+00 ))
+Found match error=7.960373e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672490e-27
+mass_of_neutron golden_ratio semitone_multiple  + mass_of_electron  *  - 
+1.674929e-27 1.618034e+00 1.059463e+00  + 9.109390e-31  *  - 
+(mass_of_neutron - ((golden_ratio + semitone_multiple) * mass_of_electron))
+(1.674929e-27  - ((1.618034e+00  + 1.059463e+00 ) * 9.109390e-31 ))
+Found match error=7.960373e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672490e-27
+mass_of_neutron semitone_multiple golden_ratio  + mass_of_electron  *  - 
+1.674929e-27 1.059463e+00 1.618034e+00  + 9.109390e-31  *  - 
+(mass_of_neutron - ((semitone_multiple + golden_ratio) * mass_of_electron))
+(1.674929e-27  - ((1.059463e+00  + 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron 1 golden_ratio  + mass_of_electron  *  - 
+1.674929e-27 1 1.618034e+00  + 9.109390e-31  *  - 
+(mass_of_neutron - ((1 + golden_ratio) * mass_of_electron))
+(1.674929e-27  - ((1 + 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron golden_ratio 1  + mass_of_electron  *  - 
+1.674929e-27 1.618034e+00 1  + 9.109390e-31  *  - 
+(mass_of_neutron - ((golden_ratio + 1) * mass_of_electron))
+(1.674929e-27  - ((1.618034e+00  + 1) * 9.109390e-31 ))
+Found match error=9.784477e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672459e-27
+mass_of_neutron e fine_structure_constant  - mass_of_electron  *  - 
+1.674929e-27 2.718282e+00 7.297350e-03  - 9.109390e-31  *  - 
+(mass_of_neutron - ((e - fine_structure_constant) * mass_of_electron))
+(1.674929e-27  - ((2.718282e+00  - 7.297350e-03 ) * 9.109390e-31 ))
+Found match error=9.769096e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.675093e-27
+mass_of_proton fine_structure_constant e  - mass_of_electron  *  - 
+1.672623e-27 7.297350e-03 2.718282e+00  - 9.109390e-31  *  - 
+(mass_of_proton - ((fine_structure_constant - e) * mass_of_electron))
+(1.672623e-27  - ((7.297350e-03  - 2.718282e+00 ) * 9.109390e-31 ))
+Found match error=8.134724e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672759e-27
+mass_of_neutron 4 golden_ratio  - mass_of_electron  *  - 
+1.674929e-27 4 1.618034e+00  - 9.109390e-31  *  - 
+(mass_of_neutron - ((4 - golden_ratio) * mass_of_electron))
+(1.674929e-27  - ((4 - 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=8.124845e-05 fundamental constant name=mass_of_neutron value=1.674929e-27
+result=1.674793e-27
+mass_of_proton golden_ratio 4  - mass_of_electron  *  - 
+1.672623e-27 1.618034e+00 4  - 9.109390e-31  *  - 
+(mass_of_proton - ((golden_ratio - 4) * mass_of_electron))
+(1.672623e-27  - ((1.618034e+00  - 4) * 9.109390e-31 ))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron mass_of_electron golden_ratio  * golden_ratio  *  - 
+1.674929e-27 9.109390e-31 1.618034e+00  * 1.618034e+00  *  - 
+(mass_of_neutron - ((mass_of_electron * golden_ratio) * golden_ratio))
+(1.674929e-27  - ((9.109390e-31  * 1.618034e+00 ) * 1.618034e+00 ))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron golden_ratio mass_of_electron  * golden_ratio  *  - 
+1.674929e-27 1.618034e+00 9.109390e-31  * 1.618034e+00  *  - 
+(mass_of_neutron - ((golden_ratio * mass_of_electron) * golden_ratio))
+(1.674929e-27  - ((1.618034e+00  * 9.109390e-31 ) * 1.618034e+00 ))
+Found match error=4.721501e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672544e-27
+mass_of_neutron golden_ratio golden_ratio  * mass_of_electron  *  - 
+1.674929e-27 1.618034e+00 1.618034e+00  * 9.109390e-31  *  - 
+(mass_of_neutron - ((golden_ratio * golden_ratio) * mass_of_electron))
+(1.674929e-27  - ((1.618034e+00  * 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=5.686686e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron magnetic_constant avodagro_constant  / semitone_multiple  *  - 
+1.674929e-27 1.256637e-06 6.022137e+23  / 1.059463e+00  *  - 
+(mass_of_neutron - ((magnetic_constant / avodagro_constant) * semitone_multiple))
+(1.674929e-27  - ((1.256637e-06  / 6.022137e+23 ) * 1.059463e+00 ))
+Found match error=8.287588e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672484e-27
+mass_of_neutron mass_of_neutron 5  / fine_structure_constant  *  - 
+1.674929e-27 1.674929e-27 5  / 7.297350e-03  *  - 
+(mass_of_neutron - ((mass_of_neutron / 5) * fine_structure_constant))
+(1.674929e-27  - ((1.674929e-27  / 5) * 7.297350e-03 ))
+Found match error=1.872008e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672592e-27
+mass_of_neutron mass_of_electron semitone_multiple  / e  *  - 
+1.674929e-27 9.109390e-31 1.059463e+00  / 2.718282e+00  *  - 
+(mass_of_neutron - ((mass_of_electron / semitone_multiple) * e))
+(1.674929e-27  - ((9.109390e-31  / 1.059463e+00 ) * 2.718282e+00 ))
+Found match error=5.686686e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron semitone_multiple avodagro_constant  / magnetic_constant  *  - 
+1.674929e-27 1.059463e+00 6.022137e+23  / 1.256637e-06  *  - 
+(mass_of_neutron - ((semitone_multiple / avodagro_constant) * magnetic_constant))
+(1.674929e-27  - ((1.059463e+00  / 6.022137e+23 ) * 1.256637e-06 ))
+Found match error=5.700972e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672718e-27
+mass_of_neutron 4 charge_of_electron  / electric_constant  *  - 
+1.674929e-27 4 1.602177e+19  / 8.854188e-12  *  - 
+(mass_of_neutron - ((4 / charge_of_electron) * electric_constant))
+(1.674929e-27  - ((4 / 1.602177e+19 ) * 8.854188e-12 ))
+Found match error=1.872008e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672592e-27
+mass_of_neutron e semitone_multiple  / mass_of_electron  *  - 
+1.674929e-27 2.718282e+00 1.059463e+00  / 9.109390e-31  *  - 
+(mass_of_neutron - ((e / semitone_multiple) * mass_of_electron))
+(1.674929e-27  - ((2.718282e+00  / 1.059463e+00 ) * 9.109390e-31 ))
+Found match error=6.276921e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672518e-27
+mass_of_neutron molar_gas_constant pi  / mass_of_electron  *  - 
+1.674929e-27 8.314510e+00 3.141593e+00  / 9.109390e-31  *  - 
+(mass_of_neutron - ((molar_gas_constant / pi) * mass_of_electron))
+(1.674929e-27  - ((8.314510e+00  / 3.141593e+00 ) * 9.109390e-31 ))
+Found match error=3.224473e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672677e-27
+mass_of_neutron 4 golden_ratio  / mass_of_electron  *  - 
+1.674929e-27 4 1.618034e+00  / 9.109390e-31  *  - 
+(mass_of_neutron - ((4 / golden_ratio) * mass_of_electron))
+(1.674929e-27  - ((4 / 1.618034e+00 ) * 9.109390e-31 ))
+Found match error=1.707025e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672652e-27
+mass_of_neutron 5 2  / mass_of_electron  *  - 
+1.674929e-27 5 2  / 9.109390e-31  *  - 
+(mass_of_neutron - ((5 / 2) * mass_of_electron))
+(1.674929e-27  - ((5 / 2) * 9.109390e-31 ))
+Found match error=4.339408e-05 fundamental constant name=mass_of_proton value=1.672623e-27
+result=1.672696e-27
+mass_of_neutron acceleration_due_to_gravity 4  / mass_of_electron  *  - 
+1.674929e-27 9.806650e+00 4  / 9.109390e-31  *  - 
+(mass_of_neutron - ((acceleration_due_to_gravity / 4) * mass_of_electron))
+(1.674929e-27  - ((9.806650e+00  / 4) * 9.109390e-31 ))
+Found match error=8.287588e-05 fundamen
