@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Name=Boozy
+Comment=DOS SuperMario Like Alcohol Education Game
+GenericName=Boozy
+Exec=/usr/bin/dosbox -conf /home/pi/.dosbox/boozy.conf
+Terminal=false
+Type=Application
+Icon=boozy
+Categories=Game
+StartupNotify=true
+MimeType=application/x-extension-fcstd

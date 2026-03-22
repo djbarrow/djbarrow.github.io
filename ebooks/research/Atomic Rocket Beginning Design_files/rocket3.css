@@ -1,0 +1,24 @@
+BODY {
+	SCROLLBAR-FACE-COLOR: #003eaf; SCROLLBAR-HIGHLIGHT-COLOR: #3c5ba7; SCROLLBAR-SHADOW-COLOR: #002b91; SCROLLBAR-3DLIGHT-COLOR: #254287; SCROLLBAR-ARROW-COLOR: #0e131e; SCROLLBAR-TRACK-COLOR: #1e2a46; SCROLLBAR-DARKSHADOW-COLOR: #01143f
+}
+A:link {
+	COLOR: #00ffff
+}
+A:visited {
+	COLOR: #cca8ee
+}
+.greek {
+	COLOR: white; FONT-FAMILY: symbol, sans-serif
+}
+.stdtext {
+	COLOR: white; FONT-FAMILY: helvetica, sans-serif
+}
+.blacktext {
+	COLOR: black
+}
+H1 {
+	TEXT-TRANSFORM: uppercase; COLOR: white; FONT-FAMILY: haettenschweiler, sans-serif
+}
+P {
+	TEXT-INDENT: 2em
+}
